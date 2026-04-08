@@ -83,7 +83,7 @@ app.use(
 
       callback(new Error("Origin not allowed by CORS"));
     },
-  })
+  }),
 );
 
 app.use(express.json());
@@ -139,11 +139,13 @@ app.get("/residences", (req, res) => {
 });
 
 app.get("/cities/:cityAlias/residences", (req, res) => {
-  const cityAlias = req.params.cityAlias;
+  const cityAlias = req.params.cityAlias.toLocaleLowerCase();
   const residences = allResidencesPayload.residences || [];
 
   const filtered = residences.filter(
-    (r) => r.city === cityAlias || r.cityAlias === cityAlias
+    (r) =>
+      r.city.toLocaleLowerCase() === cityAlias ||
+      r.cityAlias.toLocaleLowerCase() === cityAlias,
   );
 
   res.json({
@@ -159,7 +161,9 @@ app.get("/cities/:cityAlias/residences/:id", (req, res) => {
   const detail = residenceDetailsById[residenceId];
 
   if (!detail) {
-    res.status(404).json({ error: "Residence not found", cityAlias, residenceId });
+    res
+      .status(404)
+      .json({ error: "Residence not found", cityAlias, residenceId });
     return;
   }
 
@@ -172,7 +176,6 @@ app.get("/cities/:cityAlias/residences/:id", (req, res) => {
     offers,
   });
 });
-
 
 app.get("/admin-tr", (req, res) => {
   res.json(adminTRPayload);
