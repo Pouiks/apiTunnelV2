@@ -21,26 +21,40 @@ paths:
       tags: [Residences]
       summary: GetAllResidences
       description: >
-        Retourne le catalogue complet des residences (10 mock : 4 ECLA, 6 UXCO STUDENT).
-        Filtre optionnel par `city` ou `cityAlias`.
-        Chaque ligne inclut `offerSummaries` (offres applicables a cette residence).
-        `offersContext` aligne la liste avec le referentiel offres (cache React / vue Fabric).
-      parameters:
-        - in: query
-          name: city
-          required: false
-          schema:
-            type: string
-          description: Filtre par `city` ou `cityAlias` (ex. Paris retourne les 4 ECLA).
+        Catalogue global de toutes les residences France (dezoom map).
+        Aucun filtre ville — retourne les 10 residences mock.
+        Chaque ligne inclut `offerSummaries`.
       responses:
         "200":
-          description: Liste des residences
+          description: Catalogue complet
           content:
             application/json:
               schema:
                 $ref: "#/components/schemas/ResidencesResponse"
 
-  /residences/{id}:
+  /cities/{cityAlias}/residences:
+    get:
+      tags: [Residences]
+      summary: GetResidencesByCity
+      description: >
+        Residences d'une ville (filtre sur `cityAlias` ou `city`).
+        Ex. `/cities/Paris/residences` retourne les 4 ECLA.
+      parameters:
+        - in: path
+          name: cityAlias
+          required: true
+          schema:
+            type: string
+          description: Alias de ville (ex. Paris, Lyon, Toulouse).
+      responses:
+        "200":
+          description: Residences de la ville
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CityResidencesResponse"
+
+  /cities/{cityAlias}/residences/{id}:
     get:
       tags: [Residences]
       summary: GetOneResidence
@@ -50,6 +64,12 @@ paths:
         `adminOverlay` (surcouche back-office), `offerSummaries`, `offers` et `offersContext`.
         Le front charge et cache cette reponse pour alimenter tout le tunnel.
       parameters:
+        - in: path
+          name: cityAlias
+          required: true
+          schema:
+            type: string
+          description: Alias de ville (alimente les etats in-app).
         - in: path
           name: id
           required: true
@@ -71,6 +91,8 @@ paths:
                 type: object
                 properties:
                   error:
+                    type: string
+                  cityAlias:
                     type: string
                   residenceId:
                     type: string
@@ -324,20 +346,29 @@ components:
 
     ResidencesResponse:
       type: object
+      description: Catalogue global (GET /residences) — toutes les residences France.
       properties:
-        city:
-          type: string
-          description: Ville demandee ou `France` si aucune query.
-        cityAlias:
-          type: string
-          nullable: true
         offersContext:
           $ref: "#/components/schemas/OffersContext"
         residences:
           type: array
           items:
             $ref: "#/components/schemas/ResidenceListItem"
-      required: [city, offersContext, residences]
+      required: [offersContext, residences]
+
+    CityResidencesResponse:
+      type: object
+      description: Residences d'une ville (GET /cities/{cityAlias}/residences).
+      properties:
+        cityAlias:
+          type: string
+        offersContext:
+          $ref: "#/components/schemas/OffersContext"
+        residences:
+          type: array
+          items:
+            $ref: "#/components/schemas/ResidenceListItem"
+      required: [cityAlias, offersContext, residences]
 
     CommonAmenity:
       type: object

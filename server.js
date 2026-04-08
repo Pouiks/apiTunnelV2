@@ -131,33 +131,42 @@ app.get("/docs", (req, res) => {
 
 app.get("/residences", (req, res) => {
   const residences = allResidencesPayload.residences || [];
-  const qCity = req.query.city;
-
-  const filtered = qCity
-    ? residences.filter((r) => r.city === qCity || r.cityAlias === qCity)
-    : residences;
 
   res.json({
-    city: qCity || "France",
-    cityAlias: qCity || null,
+    offersContext: offersContextPayload(),
+    residences: residences.map(attachOffersToResidenceRow),
+  });
+});
+
+app.get("/cities/:cityAlias/residences", (req, res) => {
+  const cityAlias = req.params.cityAlias;
+  const residences = allResidencesPayload.residences || [];
+
+  const filtered = residences.filter(
+    (r) => r.city === cityAlias || r.cityAlias === cityAlias
+  );
+
+  res.json({
+    cityAlias,
     offersContext: offersContextPayload(),
     residences: filtered.map(attachOffersToResidenceRow),
   });
 });
 
-app.get("/residences/:id", (req, res) => {
-  const residenceId = req.params.id;
+app.get("/cities/:cityAlias/residences/:id", (req, res) => {
+  const { cityAlias, id: residenceId } = req.params;
 
   const detail = residenceDetailsById[residenceId];
 
   if (!detail) {
-    res.status(404).json({ error: "Residence not found", residenceId });
+    res.status(404).json({ error: "Residence not found", cityAlias, residenceId });
     return;
   }
 
   const offers = offersForResidence(residenceId);
   res.json({
     ...detail,
+    cityAlias,
     offersContext: offersContextPayload(),
     offerSummaries: offers.map(summarizeOffer),
     offers,
@@ -171,7 +180,8 @@ app.get("/admin-tr", (req, res) => {
 
 /**
  * Referentiel offres global (vue Fabric / outils). Preferer les champs
- * `offerSummaries` + `offers` sur GET /residences et GET /residences/:id pour le tunnel.
+ * `offerSummaries` + `offers` sur GET /cities/:cityAlias/residences et
+ * GET /cities/:cityAlias/residences/:id pour le tunnel.
  */
 app.get("/offers", (req, res) => {
   res.json(offersPayload);
