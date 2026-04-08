@@ -1,0 +1,648 @@
+openapi: 3.0.3
+info:
+  title: Mock API - Tunnel Reservation
+  version: 2.0.0
+  description: >
+    API REST mock Node.js + Express pour simuler Snaplogic pendant le developpement.
+    Architecture simplifiee : chaque GET /residences/:id retourne la fiche complete
+    (typologies, scenarios pricing, offres, admin overlay) en un seul appel.
+servers:
+  - url: http://localhost:8081
+    description: Local mock server
+tags:
+  - name: Residences
+  - name: Offers
+  - name: Reservations
+
+paths:
+  /residences:
+    get:
+      tags: [Residences]
+      summary: GetAllResidences
+      description: >
+        Retourne le catalogue complet des residences (10 mock : 4 ECLA, 6 UXCO STUDENT).
+        Filtre optionnel par `city` ou `cityAlias`.
+        Chaque ligne inclut `offerSummaries` (offres applicables a cette residence).
+        `offersContext` aligne la liste avec le referentiel offres (cache React / vue Fabric).
+      parameters:
+        - in: query
+          name: city
+          required: false
+          schema:
+            type: string
+          description: Filtre par `city` ou `cityAlias` (ex. Paris retourne les 4 ECLA).
+      responses:
+        "200":
+          description: Liste des residences
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ResidencesResponse"
+
+  /residences/{id}:
+    get:
+      tags: [Residences]
+      summary: GetOneResidence
+      description: >
+        Fiche residence complete en un seul appel.
+        Inclut `typologyScenarios` (STANDARD, EARLY_BIRD, HIGH_DEMAND avec pricing/options),
+        `adminOverlay` (surcouche back-office), `offerSummaries`, `offers` et `offersContext`.
+        Le front charge et cache cette reponse pour alimenter tout le tunnel.
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+          description: UUID de la residence (ex. 19f2179b-7d14-f011-998a-6045bd1919a1).
+      responses:
+        "200":
+          description: Fiche residence complete
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ResidenceDetail"
+        "404":
+          description: Residence introuvable
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                  residenceId:
+                    type: string
+
+  /offers:
+    get:
+      tags: [Offers]
+      summary: GetOffers
+      description: >
+        Referentiel offres global (vue Fabric / outils). Pour le tunnel React,
+        privilegier `offerSummaries` et `offers` sur GET /residences et GET /residences/:id.
+      parameters:
+        - in: query
+          name: city
+          required: false
+          schema:
+            type: string
+        - in: query
+          name: bookingDate
+          required: false
+          schema:
+            type: string
+            format: date
+      responses:
+        "200":
+          description: Liste des offres
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/OffersResponse"
+
+  /reservations:
+    post:
+      tags: [Reservations]
+      summary: PushReservationWithFullInformations
+      description: Retourne une confirmation fixe de reservation.
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        "200":
+          description: Reservation acceptee
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ReservationAcceptedResponse"
+
+components:
+  schemas:
+    Coordinates:
+      type: object
+      properties:
+        lat:
+          type: number
+          format: double
+        lng:
+          type: number
+          format: double
+      required: [lat, lng]
+
+    TypologyPreview:
+      type: object
+      properties:
+        typologyCode:
+          type: string
+          example: STUDIO
+        label:
+          type: string
+          example: Studio
+        baseRent:
+          type: number
+        lowestUnitPrice:
+          type: number
+      required: [typologyCode, label, baseRent, lowestUnitPrice]
+
+    Floors:
+      type: object
+      properties:
+        min:
+          type: integer
+        max:
+          type: integer
+      required: [min, max]
+
+    ResidenceListItem:
+      type: object
+      properties:
+        residenceId:
+          type: string
+        residenceCode:
+          type: string
+        name:
+          type: string
+        brand:
+          type: string
+          enum: [ECLA, UXCO STUDENT]
+        city:
+          type: string
+        cityAlias:
+          type: string
+          description: Alias de ville pour le front (ECLA => Paris).
+        address:
+          type: string
+        coordinates:
+          $ref: "#/components/schemas/Coordinates"
+        availabilityStatus:
+          type: string
+        baseRentFrom:
+          type: number
+        typologies:
+          type: array
+          items:
+            $ref: "#/components/schemas/TypologyPreview"
+        floors:
+          $ref: "#/components/schemas/Floors"
+        features:
+          type: array
+          items:
+            type: string
+        offerSummaries:
+          type: array
+          items:
+            $ref: "#/components/schemas/OfferSummary"
+      required:
+        - residenceId
+        - residenceCode
+        - name
+        - brand
+        - city
+        - cityAlias
+        - address
+        - coordinates
+        - availabilityStatus
+        - baseRentFrom
+        - typologies
+        - floors
+        - features
+        - offerSummaries
+
+    OffersContext:
+      type: object
+      description: Metadonnees communes au referentiel offres (alignement cache).
+      properties:
+        bookingDate:
+          type: string
+          format: date
+        city:
+          type: string
+      required: [bookingDate, city]
+
+    OfferSummary:
+      type: object
+      properties:
+        offerCode:
+          type: string
+        label:
+          type: string
+        badge:
+          type: string
+          nullable: true
+        type:
+          type: string
+        promoCode:
+          type: string
+          nullable: true
+        bookingDeadline:
+          type: string
+          format: date
+          nullable: true
+        discountTarget:
+          type: string
+          nullable: true
+        discountAmount:
+          type: number
+          nullable: true
+        discountReductionType:
+          type: string
+          nullable: true
+        billingTiming:
+          type: string
+          nullable: true
+      required: [offerCode, label, type]
+
+    ResidencesResponse:
+      type: object
+      properties:
+        city:
+          type: string
+          description: Ville demandee ou `France` si aucune query.
+        cityAlias:
+          type: string
+          nullable: true
+        offersContext:
+          $ref: "#/components/schemas/OffersContext"
+        residences:
+          type: array
+          items:
+            $ref: "#/components/schemas/ResidenceListItem"
+      required: [city, offersContext, residences]
+
+    CommonAmenity:
+      type: object
+      properties:
+        code:
+          type: string
+        label:
+          type: string
+      required: [code, label]
+
+    TypologyDetail:
+      type: object
+      properties:
+        typologyCode:
+          type: string
+        label:
+          type: string
+        surface:
+          type: number
+        baseRent:
+          type: number
+        lowestUnitPrice:
+          type: number
+        highestUnitPrice:
+          type: number
+      required:
+        - typologyCode
+        - label
+        - surface
+        - baseRent
+        - lowestUnitPrice
+        - highestUnitPrice
+
+    Pricing:
+      type: object
+      properties:
+        baseRent:
+          type: number
+        lowestUnitPrice:
+          type: number
+        highestUnitPrice:
+          type: number
+        applicationFee:
+          type: number
+        securityDeposit:
+          type: number
+      required: [baseRent, lowestUnitPrice, highestUnitPrice, applicationFee, securityDeposit]
+
+    Amenity:
+      type: object
+      properties:
+        code:
+          type: string
+        label:
+          type: string
+      required: [code, label]
+
+    OptionVariant:
+      type: object
+      properties:
+        variantCode:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+          nullable: true
+        amount:
+          type: number
+        billingTiming:
+          type: string
+        isDefault:
+          type: boolean
+        productCode:
+          type: string
+          nullable: true
+        accountingDestinationCode:
+          type: string
+          nullable: true
+      required: [variantCode, label, amount, billingTiming, isDefault]
+
+    OptionGroup:
+      type: object
+      properties:
+        groupCode:
+          type: string
+        label:
+          type: string
+        icon:
+          type: string
+          nullable: true
+        variants:
+          type: array
+          items:
+            $ref: "#/components/schemas/OptionVariant"
+      required: [groupCode, label, variants]
+
+    TypologyWithPricing:
+      type: object
+      properties:
+        typologyCode:
+          type: string
+        label:
+          type: string
+        pricing:
+          $ref: "#/components/schemas/Pricing"
+        productCode:
+          type: string
+          nullable: true
+        amenities:
+          type: array
+          items:
+            $ref: "#/components/schemas/Amenity"
+        optionGroups:
+          type: array
+          items:
+            $ref: "#/components/schemas/OptionGroup"
+      required: [typologyCode, label, pricing, amenities, optionGroups]
+
+    TypologyScenario:
+      type: object
+      description: >
+        Payload typologies/pricing/options pour un scenario donne (STANDARD, EARLY_BIRD, HIGH_DEMAND).
+      properties:
+        residenceId:
+          type: string
+        scenario:
+          type: string
+          enum: [STANDARD, EARLY_BIRD, HIGH_DEMAND]
+        startDate:
+          type: string
+          format: date
+        bookingDate:
+          type: string
+          format: date
+        typologies:
+          type: array
+          items:
+            $ref: "#/components/schemas/TypologyWithPricing"
+        floors:
+          $ref: "#/components/schemas/Floors"
+      required: [residenceId, scenario, startDate, bookingDate, typologies]
+
+    TypologyScenarios:
+      type: object
+      description: >
+        Les 3 scenarios de pricing embarques dans la fiche residence.
+        Le front selectionne le scenario adapte (bookingDate, promo, etc.).
+      properties:
+        STANDARD:
+          $ref: "#/components/schemas/TypologyScenario"
+        EARLY_BIRD:
+          $ref: "#/components/schemas/TypologyScenario"
+        HIGH_DEMAND:
+          $ref: "#/components/schemas/TypologyScenario"
+      required: [STANDARD, EARLY_BIRD, HIGH_DEMAND]
+
+    AdminOverlay:
+      type: object
+      description: Surcouche back-office / ERP embarquee dans la fiche residence.
+      properties:
+        managementCompany:
+          type: string
+        contractType:
+          type: string
+        internalContactEmail:
+          type: string
+        lastAuditDate:
+          type: string
+          format: date
+        complianceStatus:
+          type: string
+        operatorNotes:
+          type: string
+          nullable: true
+
+    ResidenceDetail:
+      type: object
+      description: >
+        Fiche complete residence : infos generales, typologies avec pricing par scenario,
+        surcouche admin, offres completes et contexte offres. Un seul appel pour le tunnel.
+      properties:
+        residenceId:
+          type: string
+        residenceCode:
+          type: string
+        name:
+          type: string
+        brand:
+          type: string
+          enum: [ECLA, UXCO STUDENT]
+        city:
+          type: string
+        cityAlias:
+          type: string
+        address:
+          type: string
+        coordinates:
+          $ref: "#/components/schemas/Coordinates"
+        availabilityStatus:
+          type: string
+        description:
+          type: string
+        commonAmenities:
+          type: array
+          items:
+            $ref: "#/components/schemas/CommonAmenity"
+        features:
+          type: array
+          items:
+            type: string
+        typologies:
+          type: array
+          items:
+            $ref: "#/components/schemas/TypologyDetail"
+        floors:
+          $ref: "#/components/schemas/Floors"
+        typologyScenarios:
+          $ref: "#/components/schemas/TypologyScenarios"
+        adminOverlay:
+          $ref: "#/components/schemas/AdminOverlay"
+        offersContext:
+          $ref: "#/components/schemas/OffersContext"
+        offerSummaries:
+          type: array
+          items:
+            $ref: "#/components/schemas/OfferSummary"
+        offers:
+          type: array
+          items:
+            $ref: "#/components/schemas/Offer"
+      required:
+        - residenceId
+        - residenceCode
+        - name
+        - brand
+        - city
+        - cityAlias
+        - address
+        - coordinates
+        - availabilityStatus
+        - description
+        - commonAmenities
+        - features
+        - typologies
+        - floors
+        - typologyScenarios
+        - adminOverlay
+        - offersContext
+        - offerSummaries
+        - offers
+
+    OfferScope:
+      type: object
+      properties:
+        residences:
+          type: array
+          items:
+            type: string
+        typologies:
+          type: array
+          items:
+            type: string
+      required: [residences, typologies]
+
+    OfferConditions:
+      type: object
+      properties:
+        bookingDeadline:
+          type: string
+          format: date
+          nullable: true
+        startDateFrom:
+          type: string
+          format: date
+          nullable: true
+        startDateTo:
+          type: string
+          format: date
+          nullable: true
+        minDurationMonths:
+          type: integer
+          nullable: true
+      required: [bookingDeadline, startDateFrom, startDateTo, minDurationMonths]
+
+    OfferDiscount:
+      type: object
+      properties:
+        target:
+          type: string
+        reductionType:
+          type: string
+        amount:
+          type: number
+        billingTiming:
+          type: string
+        recurrenceMonths:
+          type: integer
+          nullable: true
+      required: [target, reductionType, amount, billingTiming]
+
+    OfferAccounting:
+      type: object
+      properties:
+        productCode:
+          type: string
+        accountingDestinationCode:
+          type: string
+      required: [productCode, accountingDestinationCode]
+
+    Offer:
+      type: object
+      properties:
+        offerCode:
+          type: string
+        label:
+          type: string
+        badge:
+          type: string
+          nullable: true
+        promoCode:
+          type: string
+          nullable: true
+        scope:
+          $ref: "#/components/schemas/OfferScope"
+        conditions:
+          $ref: "#/components/schemas/OfferConditions"
+        discount:
+          $ref: "#/components/schemas/OfferDiscount"
+        accounting:
+          $ref: "#/components/schemas/OfferAccounting"
+        type:
+          type: string
+      required:
+        - offerCode
+        - label
+        - promoCode
+        - scope
+        - conditions
+        - discount
+        - accounting
+        - type
+
+    OffersResponse:
+      type: object
+      properties:
+        bookingDate:
+          type: string
+          format: date
+        city:
+          type: string
+        offers:
+          type: array
+          items:
+            $ref: "#/components/schemas/Offer"
+      required: [bookingDate, city, offers]
+
+    ReservationAcceptedResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: ACCEPTED
+        quoteRequestId:
+          type: string
+          example: BQ-2026-000123
+        eccoOpportunityId:
+          type: string
+          example: OPP-2026-XXXXX
+        message:
+          type: string
+          example: Reservation creee avec succes dans ECCO.
+      required: [status, quoteRequestId, eccoOpportunityId, message]

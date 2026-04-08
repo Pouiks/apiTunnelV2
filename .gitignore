@@ -1,0 +1,45 @@
+# Dépendances (Le plus lourd)
+node_modules/
+jspm_packages/
+
+# Sécurité (CRITIQUE : Ne jamais partager tes clés d'API/mots de passe)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# Build et compilation (TypeScript / Bundlers)
+dist/
+build/
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Tests
+coverage/
+.nyc_output
+
+# Système et IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Divers
+.temp
+.tmp

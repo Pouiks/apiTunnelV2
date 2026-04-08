@@ -1,0 +1,58 @@
+Résidences
+
+Une résidence a un availabilityStatus global : AVAILABLE, PARTIAL, ou FULL — c'est la résidence qui porte la disponibilité, pas les typologies
+Une résidence expose baseRentFrom — le minimum des baseRent de toutes ses typologies — pour l'affichage "à partir de" sur la carte
+Une résidence expose floors.min et floors.max pour que le front construise dynamiquement les paliers d'étage
+Les images ne sont pas dans l'API — construites côté front par convention S3 : {residenceCode}_{typologyCode}
+
+
+Typologies
+
+Une typologie n'a pas de champ available — la disponibilité est uniquement portée par la résidence
+Une typologie expose trois niveaux de prix :
+
+baseRent : loyer de base attribué à la ville/résidence pour ce type de logement — jamais affiché au client
+lowestUnitPrice : prix du logement physique le moins cher de cette typologie, celui dont tous les équipements fixes sont au minimum — c'est le "à partir de" affiché
+highestUnitPrice : prix du logement physique le plus cher — pour afficher une fourchette
+
+
+Le détail du calcul lowestUnitPrice reste dans l'outil tiers (Revenue Manager) — le tunnel ne le déconstruit pas
+Dans le Flux 1 et 2, lowestUnitPrice est égal à baseRent car la startDate n'est pas encore connue — c'est Fabric qui calcule le vrai lowestUnitPrice dans le Flux 3 une fois la date connue
+
+
+Équipements — deux niveaux distincts
+
+commonAmenities : équipements communs de la résidence (gym, cowork, cinébox…) — inclus dans le loyer, affichés sur la fiche résidence
+amenities sur la typologie : équipements inclus de base dans ce type de logement (meublé, wifi, salle de bain privative…) — inclus dans le baseRent, non payants
+optionGroups : suppléments additionnels que le client choisit en plus — payants, sélectionnables dans le tunnel
+
+
+optionGroups — règles de structure
+
+Chaque groupe (FLOOR, SURFACE, BEDDING, PREMIUM, AC, BALCONY) contient des variantes
+Chaque variante a un amount : 0 si incluse, positif si payante
+La variante avec amount: 0 et isDefault: true est l'option plancher — elle ne génère pas d'item dans le JSON de soumission
+Seules les variantes avec amount > 0 sélectionnées par le client génèrent un item dans pricing.items[]
+Le groupe FLOOR est filtré dynamiquement selon floors.max de la résidence — si max: 4, la variante FLOOR_HIGH (6+) n'est pas affichée
+Les groupes disponibles peuvent varier selon la typologie — une COLOC peut n'avoir aucun optionGroup
+
+
+Offres et codes promo
+
+Offres et codes promo sont le même objet, distingués par type: "OFFER" ou type: "PROMO_CODE"
+Une offre cible des résidences via scope.residences[] et optionnellement des typologies via scope.typologies[]
+Si scope.typologies est vide, l'offre s'applique à toutes les typologies des résidences ciblées
+Une seule offre active à la fois par ligne de pricing
+Les conditions d'éligibilité : bookingDeadline, startDateFrom, startDateTo, minDurationMonths
+Les offres sont chargées dans un endpoint dédié GET /offers en parallèle des résidences — elles ne sont pas embarquées dans les réponses résidences ou typologies
+Snaplogic revalide les offres au moment du submit — le front ne fait pas confiance à son propre store pour la validation finale
+
+
+JSON de soumission — règles
+
+bookingDate est généré côté front au moment du submit (= today) — distinct de stay.startDate
+selection.optionGroups liste tous les groupes avec le selectedVariantCode choisi — y compris les défauts
+Seules les variantes non-default avec amount > 0 apparaissent dans pricing.items[]
+Un seul item BASE_PRODUCT par soumission
+Les recurrence.durationMonths et recurrence.startDate sont obligatoires sur un discount RECURRING ciblant BASE_RENT
+Snaplogic valide et rejette en 422 si un champ obligatoire manque — ne pousse pas vers ECCO

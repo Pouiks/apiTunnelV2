@@ -1,0 +1,658 @@
+{
+  "brands": [
+    "ECLA",
+    "UXCO STUDENT"
+  ],
+  "residences": [
+    {
+      "residenceId": "ff5544a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "ALBERT_THOMAS",
+      "name": "ALBERT THOMAS",
+      "brand": "UXCO STUDENT",
+      "city": "Lyon",
+      "cityAlias": "Lyon",
+      "address": "14 Avenue Berthelot, 69007 Lyon",
+      "coordinates": {
+        "lat": 45.7439,
+        "lng": 4.8357
+      },
+      "availabilityStatus": "AVAILABLE",
+      "baseRentFrom": 430,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 430,
+          "lowestUnitPrice": 430
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 515,
+          "lowestUnitPrice": 515
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 575,
+          "lowestUnitPrice": 575
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 655,
+          "lowestUnitPrice": 655
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 745,
+          "lowestUnitPrice": 745
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 835,
+          "lowestUnitPrice": 835
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 8
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Laverie 24/7",
+        "Salles d'étude",
+        "Local vélos sécurisé",
+        "Wi-Fi fibre"
+      ]
+    },
+    {
+      "residenceId": "045644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "ANDROMAQUE",
+      "name": "ANDROMAQUE",
+      "brand": "UXCO STUDENT",
+      "city": "Villeurbanne",
+      "cityAlias": "Villeurbanne",
+      "address": "107 Cours Émile Zola, 69100 Villeurbanne",
+      "coordinates": {
+        "lat": 45.7719,
+        "lng": 4.8902
+      },
+      "availabilityStatus": "AVAILABLE",
+      "baseRentFrom": 425,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 425,
+          "lowestUnitPrice": 425
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 505,
+          "lowestUnitPrice": 505
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 565,
+          "lowestUnitPrice": 565
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 645,
+          "lowestUnitPrice": 645
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 725,
+          "lowestUnitPrice": 725
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 810,
+          "lowestUnitPrice": 810
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 6
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Laverie 24/7",
+        "Salles d'étude",
+        "Local vélos sécurisé",
+        "Wi-Fi fibre"
+      ]
+    },
+    {
+      "residenceId": "065644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "AQUITAINE",
+      "name": "AQUITAINE",
+      "brand": "UXCO STUDENT",
+      "city": "Bègles",
+      "cityAlias": "Bègles",
+      "address": "1 Rue de Pelleport, 33130 Bègles",
+      "coordinates": {
+        "lat": 44.8076,
+        "lng": -0.5514
+      },
+      "availabilityStatus": "PARTIAL",
+      "baseRentFrom": 410,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 410,
+          "lowestUnitPrice": 410
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 490,
+          "lowestUnitPrice": 490
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 550,
+          "lowestUnitPrice": 550
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 625,
+          "lowestUnitPrice": 625
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 705,
+          "lowestUnitPrice": 705
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 790,
+          "lowestUnitPrice": 790
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 5
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Laverie 24/7",
+        "Salles d'étude",
+        "Local vélos sécurisé",
+        "Wi-Fi fibre"
+      ]
+    },
+    {
+      "residenceId": "6ff9af84-6e14-f011-998a-6045bd6d55ca",
+      "residenceCode": "ATLAS",
+      "name": "ATLAS",
+      "brand": "UXCO STUDENT",
+      "city": "Toulouse",
+      "cityAlias": "Toulouse",
+      "address": "2 Allée de Brienne, 31000 Toulouse",
+      "coordinates": {
+        "lat": 43.6047,
+        "lng": 1.4442
+      },
+      "availabilityStatus": "AVAILABLE",
+      "baseRentFrom": 420,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 420,
+          "lowestUnitPrice": 420
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 500,
+          "lowestUnitPrice": 500
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 565,
+          "lowestUnitPrice": 565
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 645,
+          "lowestUnitPrice": 645
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 730,
+          "lowestUnitPrice": 730
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 820,
+          "lowestUnitPrice": 820
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 7
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Laverie 24/7",
+        "Salles d'étude",
+        "Local vélos sécurisé",
+        "Wi-Fi fibre"
+      ]
+    },
+    {
+      "residenceId": "0c5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "BABYLONE",
+      "name": "BABYLONE",
+      "brand": "UXCO STUDENT",
+      "city": "Villeneuve-d'Ascq",
+      "cityAlias": "Villeneuve-d'Ascq",
+      "address": "125 Avenue du Huit Mai 1945, 59650 Villeneuve-d'Ascq",
+      "coordinates": {
+        "lat": 50.6229,
+        "lng": 3.1479
+      },
+      "availabilityStatus": "AVAILABLE",
+      "baseRentFrom": 395,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 395,
+          "lowestUnitPrice": 395
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 475,
+          "lowestUnitPrice": 475
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 535,
+          "lowestUnitPrice": 535
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 615,
+          "lowestUnitPrice": 615
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 695,
+          "lowestUnitPrice": 695
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 780,
+          "lowestUnitPrice": 780
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 6
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Laverie 24/7",
+        "Salles d'étude",
+        "Local vélos sécurisé",
+        "Wi-Fi fibre"
+      ]
+    },
+    {
+      "residenceId": "359b3195-7814-f011-998a-6045bd6bf874",
+      "residenceCode": "BAKER_HILL",
+      "name": "BAKER HILL",
+      "brand": "UXCO STUDENT",
+      "city": "Saint-Étienne",
+      "cityAlias": "Saint-Étienne",
+      "address": "10 Rue Gambetta, 42000 Saint-Étienne",
+      "coordinates": {
+        "lat": 45.4397,
+        "lng": 4.3872
+      },
+      "availabilityStatus": "PARTIAL",
+      "baseRentFrom": 380,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 380,
+          "lowestUnitPrice": 380
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 455,
+          "lowestUnitPrice": 455
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 510,
+          "lowestUnitPrice": 510
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 590,
+          "lowestUnitPrice": 590
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 670,
+          "lowestUnitPrice": 670
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 755,
+          "lowestUnitPrice": 755
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 5
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Laverie 24/7",
+        "Salles d'étude",
+        "Local vélos sécurisé",
+        "Wi-Fi fibre"
+      ]
+    },
+    {
+      "residenceId": "19f2179b-7d14-f011-998a-6045bd1919a1",
+      "residenceCode": "ECLA_GENEVE_ARCHAMPS",
+      "name": "ECLA GENEVE ARCHAMPS",
+      "brand": "ECLA",
+      "city": "Archamps",
+      "cityAlias": "Paris",
+      "address": "Route des Creuses, 74160 Archamps",
+      "coordinates": {
+        "lat": 46.1328,
+        "lng": 6.1399
+      },
+      "availabilityStatus": "AVAILABLE",
+      "baseRentFrom": 590,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 590,
+          "lowestUnitPrice": 590
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 720,
+          "lowestUnitPrice": 720
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 810,
+          "lowestUnitPrice": 810
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 920,
+          "lowestUnitPrice": 920
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 1040,
+          "lowestUnitPrice": 1040
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 1180,
+          "lowestUnitPrice": 1180
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 9
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Cinébox",
+        "Courts de padel",
+        "Laverie 24/7",
+        "Interval – restauration"
+      ]
+    },
+    {
+      "residenceId": "195644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "ECLA_MP",
+      "name": "ECLA MP",
+      "brand": "ECLA",
+      "city": "Massy",
+      "cityAlias": "Paris",
+      "address": "2 Rue des Maraîchers, 91300 Massy",
+      "coordinates": {
+        "lat": 48.7167,
+        "lng": 2.2667
+      },
+      "availabilityStatus": "AVAILABLE",
+      "baseRentFrom": 480,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 480,
+          "lowestUnitPrice": 480
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 600,
+          "lowestUnitPrice": 600
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 685,
+          "lowestUnitPrice": 685
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 760,
+          "lowestUnitPrice": 760
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 870,
+          "lowestUnitPrice": 870
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 990,
+          "lowestUnitPrice": 990
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 8
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Cinébox",
+        "Courts de padel",
+        "Laverie 24/7",
+        "Interval – restauration"
+      ]
+    },
+    {
+      "residenceId": "1d5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "ECLA_PALAISEAU_EXTENSION_OPCO",
+      "name": "ECLA PALAISEAU EXTENSION OPCO",
+      "brand": "ECLA",
+      "city": "Massy",
+      "cityAlias": "Paris",
+      "address": "8 Avenue de Cambridge, 91300 Massy",
+      "coordinates": {
+        "lat": 48.7149,
+        "lng": 2.2603
+      },
+      "availabilityStatus": "AVAILABLE",
+      "baseRentFrom": 490,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 490,
+          "lowestUnitPrice": 490
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 615,
+          "lowestUnitPrice": 615
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 700,
+          "lowestUnitPrice": 700
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 785,
+          "lowestUnitPrice": 785
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 895,
+          "lowestUnitPrice": 895
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 1015,
+          "lowestUnitPrice": 1015
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 7
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Cinébox",
+        "Courts de padel",
+        "Laverie 24/7",
+        "Interval – restauration"
+      ]
+    },
+    {
+      "residenceId": "1b5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "ECLA_NLG",
+      "name": "ECLA NLG",
+      "brand": "ECLA",
+      "city": "Noisy-le-Grand",
+      "cityAlias": "Paris",
+      "address": "12 Avenue du Général de Gaulle, 93160 Noisy-le-Grand",
+      "coordinates": {
+        "lat": 48.8478,
+        "lng": 2.5522
+      },
+      "availabilityStatus": "PARTIAL",
+      "baseRentFrom": 460,
+      "typologies": [
+        {
+          "typologyCode": "COLOC",
+          "label": "Chambre en colocation",
+          "baseRent": 460,
+          "lowestUnitPrice": 460
+        },
+        {
+          "typologyCode": "STUDIO",
+          "label": "Studio",
+          "baseRent": 585,
+          "lowestUnitPrice": 585
+        },
+        {
+          "typologyCode": "T1_BIS",
+          "label": "T1 BIS",
+          "baseRent": 665,
+          "lowestUnitPrice": 665
+        },
+        {
+          "typologyCode": "T2",
+          "label": "T2",
+          "baseRent": 745,
+          "lowestUnitPrice": 745
+        },
+        {
+          "typologyCode": "T2_DUPLEX",
+          "label": "T2 Duplex",
+          "baseRent": 860,
+          "lowestUnitPrice": 860
+        },
+        {
+          "typologyCode": "T3",
+          "label": "T3",
+          "baseRent": 970,
+          "lowestUnitPrice": 970
+        }
+      ],
+      "floors": {
+        "min": 0,
+        "max": 8
+      },
+      "features": [
+        "Salle de sport",
+        "Espace coworking",
+        "Cinébox",
+        "Courts de padel",
+        "Laverie 24/7",
+        "Interval – restauration"
+      ]
+    }
+  ]
+}
