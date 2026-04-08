@@ -1,0 +1,332 @@
+{
+  "modals": {
+    "STEP_1__EXPRESS_CONDITIONS": {
+      "step": 1,
+      "trigger": "EXPRESS_BOOKING_CLICK",
+      "fr": {
+        "title": "Réservation express - Conditions",
+        "subtitle": "Pour bénéficier de l'arrivée express sous 72h, veuillez remplir les conditions suivantes.",
+        "sections": [
+          {
+            "icon": "document",
+            "title": "Remise des documents avant 17h",
+            "description": "Tous vos <strong>justificatifs</strong> doivent être transmis <strong>avant 17h le jour même</strong> de votre réservation.",
+            "listHeading": "Documents requis :",
+            "listItems": [
+              "Pièce d'identité en cours de validité",
+              "Justificatif de revenus (3 derniers mois)",
+              "Justificatif de domicile",
+              "Attestation d'assurance habitation"
+            ],
+            "infoBox": {
+              "icon": "lightbulb",
+              "content": "Vous recevrez un lien sécurisé par e-mail pour déposer vos documents."
+            }
+          },
+          {
+            "icon": "shield",
+            "title": "Sous réserve de solvabilité",
+            "description": "Votre dossier doit répondre aux <strong>critères de solvabilité requis.</strong>",
+            "listHeading": "Critères standards :",
+            "listItems": [
+              "Revenus ≥ 3× le montant du loyer",
+              "CDI, CDD ou justificatif étudiant",
+              "Garant accepté si nécessaire",
+              "Aucun incident bancaire récent"
+            ],
+            "infoBox": {
+              "icon": "clock",
+              "content": "Vérification accélérée sous 24h."
+            }
+          },
+          {
+            "icon": "home",
+            "title": "Sous réserve de disponibilité",
+            "description": "Le logement doit être <strong>effectivement disponible</strong> et prêt à accueillir un nouveau locataire sous 72h.",
+            "listHeading": "Vérifications effectuées :",
+            "listItems": [
+              "État du logement et ménage finalisé",
+              "Équipements fonctionnels",
+              "Clés et accès disponibles",
+              "Contrats énergie activés"
+            ],
+            "infoBox": {
+              "icon": "check",
+              "content": "Confirmation immédiate si tout est conforme."
+            }
+          }
+        ]
+      },
+      "en": {
+        "title": "Express booking - Conditions",
+        "subtitle": "To benefit from express arrival within 72h, please meet the following conditions.",
+        "sections": [
+          {
+            "icon": "document",
+            "title": "Document submission before 5pm",
+            "description": "All your <strong>supporting documents</strong> must be submitted <strong>before 5pm on the same day</strong> as your booking.",
+            "listHeading": "Required documents:",
+            "listItems": [
+              "Valid identity document",
+              "Proof of income (last 3 months)",
+              "Proof of address",
+              "Home insurance certificate"
+            ],
+            "infoBox": {
+              "icon": "lightbulb",
+              "content": "You will receive a secure link by email to submit your documents."
+            }
+          },
+          {
+            "icon": "shield",
+            "title": "Subject to solvency",
+            "description": "Your application must meet the <strong>required solvency criteria.</strong>",
+            "listHeading": "Standard criteria:",
+            "listItems": [
+              "Income ≥ 3× the rent amount",
+              "Permanent contract, fixed-term contract or student proof",
+              "Guarantor accepted if necessary",
+              "No recent banking incidents"
+            ],
+            "infoBox": {
+              "icon": "clock",
+              "content": "Accelerated verification within 24h."
+            }
+          },
+          {
+            "icon": "home",
+            "title": "Subject to availability",
+            "description": "The accommodation must be <strong>actually available</strong> and ready to welcome a new tenant within 72h.",
+            "listHeading": "Checks performed:",
+            "listItems": [
+              "Accommodation condition and finalized cleaning",
+              "Functional equipment",
+              "Keys and access available",
+              "Energy contracts activated"
+            ],
+            "infoBox": {
+              "icon": "check",
+              "content": "Immediate confirmation if everything is okay."
+            }
+          }
+        ]
+      }
+    },
+    "STEP_2__PAYMENT_INFO": {
+      "step": 2,
+      "trigger": "PAYMENT_STEP_ENTER",
+      "fr": {
+        "title": "Informations de paiement",
+        "subtitle": "Détails sur le règlement de votre réservation.",
+        "sections": [
+          {
+            "icon": "credit-card",
+            "title": "Frais de réservation",
+            "description": "Des <strong>frais de dossier</strong> sont demandés pour valider votre réservation. Ils sont <strong>non remboursables</strong> en cas de désistement après confirmation.",
+            "listHeading": "Inclus dans les frais :",
+            "listItems": [
+              "Traitement administratif du dossier",
+              "Vérification de solvabilité",
+              "Réservation garantie du logement"
+            ],
+            "infoBox": {
+              "icon": "lock",
+              "content": "Paiement sécurisé par carte bancaire via notre partenaire."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Échéancier des paiements",
+            "description": "Le premier loyer et le dépôt de garantie sont à régler <strong>avant la remise des clés</strong>.",
+            "listHeading": "Calendrier :",
+            "listItems": [
+              "Frais de dossier : à la réservation",
+              "Dépôt de garantie : avant l'entrée",
+              "Premier loyer : au prorata à l'entrée",
+              "Loyers suivants : prélèvement le 5 de chaque mois"
+            ],
+            "infoBox": {
+              "icon": "info",
+              "content": "Un récapitulatif détaillé vous sera envoyé par e-mail."
+            }
+          }
+        ]
+      },
+      "en": {
+        "title": "Payment information",
+        "subtitle": "Details about your booking payment.",
+        "sections": [
+          {
+            "icon": "credit-card",
+            "title": "Booking fees",
+            "description": "An <strong>application fee</strong> is required to validate your booking. It is <strong>non-refundable</strong> in case of withdrawal after confirmation.",
+            "listHeading": "Included in fees:",
+            "listItems": [
+              "Administrative processing",
+              "Solvency verification",
+              "Guaranteed accommodation reservation"
+            ],
+            "infoBox": {
+              "icon": "lock",
+              "content": "Secure payment by credit card through our partner."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Payment schedule",
+            "description": "The first rent and security deposit must be paid <strong>before key handover</strong>.",
+            "listHeading": "Schedule:",
+            "listItems": [
+              "Application fee: at booking",
+              "Security deposit: before move-in",
+              "First rent: pro-rata at move-in",
+              "Following rents: direct debit on the 5th of each month"
+            ],
+            "infoBox": {
+              "icon": "info",
+              "content": "A detailed summary will be sent to you by email."
+            }
+          }
+        ]
+      }
+    },
+    "STEP_3__DOCUMENTS_UPLOAD": {
+      "step": 3,
+      "trigger": "DOCUMENTS_STEP_ENTER",
+      "fr": {
+        "title": "Envoi des documents",
+        "subtitle": "Transmettez vos justificatifs pour finaliser votre dossier.",
+        "sections": [
+          {
+            "icon": "upload",
+            "title": "Formats acceptés",
+            "description": "Vos documents doivent être <strong>lisibles et complets</strong>.",
+            "listHeading": "Formats supportés :",
+            "listItems": [
+              "PDF, JPG, PNG (max 10 Mo par fichier)",
+              "Documents non altérés (pas de captures d'écran tronquées)",
+              "Recto-verso si nécessaire"
+            ],
+            "infoBox": {
+              "icon": "lightbulb",
+              "content": "Préparez vos documents à l'avance pour accélérer le traitement."
+            }
+          },
+          {
+            "icon": "check-circle",
+            "title": "Validation du dossier",
+            "description": "Votre dossier sera examiné dans un délai de <strong>24 à 48h ouvrées</strong>.",
+            "listHeading": "Étapes de validation :",
+            "listItems": [
+              "Réception et vérification automatique",
+              "Analyse manuelle par notre équipe",
+              "Notification par e-mail du résultat"
+            ],
+            "infoBox": {
+              "icon": "info",
+              "content": "Vous pouvez suivre l'avancement depuis votre espace personnel."
+            }
+          }
+        ]
+      },
+      "en": {
+        "title": "Document upload",
+        "subtitle": "Submit your supporting documents to finalize your application.",
+        "sections": [
+          {
+            "icon": "upload",
+            "title": "Accepted formats",
+            "description": "Your documents must be <strong>readable and complete</strong>.",
+            "listHeading": "Supported formats:",
+            "listItems": [
+              "PDF, JPG, PNG (max 10 MB per file)",
+              "Unaltered documents (no cropped screenshots)",
+              "Front and back if necessary"
+            ],
+            "infoBox": {
+              "icon": "lightbulb",
+              "content": "Prepare your documents in advance to speed up processing."
+            }
+          },
+          {
+            "icon": "check-circle",
+            "title": "Application review",
+            "description": "Your application will be reviewed within <strong>24 to 48 business hours</strong>.",
+            "listHeading": "Review steps:",
+            "listItems": [
+              "Automatic receipt and verification",
+              "Manual review by our team",
+              "Email notification of the result"
+            ],
+            "infoBox": {
+              "icon": "info",
+              "content": "You can track progress from your personal space."
+            }
+          }
+        ]
+      }
+    }
+  },
+  "steps": [
+    {
+      "stepCode": "CHOOSE_RESIDENCE",
+      "order": 1,
+      "fr": {
+        "title": "Choisissez votre résidence",
+        "description": "Sélectionnez la résidence et le type de logement qui vous conviennent."
+      },
+      "en": {
+        "title": "Choose your residence",
+        "description": "Select the residence and accommodation type that suits you."
+      }
+    },
+    {
+      "stepCode": "CONFIGURE_STAY",
+      "order": 2,
+      "fr": {
+        "title": "Configurez votre séjour",
+        "description": "Choisissez vos options, la date d'entrée et la durée de votre bail."
+      },
+      "en": {
+        "title": "Configure your stay",
+        "description": "Choose your options, move-in date and lease duration."
+      }
+    },
+    {
+      "stepCode": "PAYMENT",
+      "order": 3,
+      "fr": {
+        "title": "Paiement",
+        "description": "Réglez les frais de réservation pour garantir votre logement."
+      },
+      "en": {
+        "title": "Payment",
+        "description": "Pay the booking fee to secure your accommodation."
+      }
+    },
+    {
+      "stepCode": "DOCUMENTS",
+      "order": 4,
+      "fr": {
+        "title": "Documents",
+        "description": "Transmettez les justificatifs nécessaires à la validation de votre dossier."
+      },
+      "en": {
+        "title": "Documents",
+        "description": "Submit the required documents to validate your application."
+      }
+    },
+    {
+      "stepCode": "CONFIRMATION",
+      "order": 5,
+      "fr": {
+        "title": "Confirmation",
+        "description": "Votre réservation est confirmée. Retrouvez le récapitulatif dans votre espace."
+      },
+      "en": {
+        "title": "Confirmation",
+        "description": "Your booking is confirmed. Find the summary in your personal space."
+      }
+    }
+  ]
+}

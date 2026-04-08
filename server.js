@@ -18,6 +18,7 @@ function loadMockJSON(filename) {
 const allResidencesPayload = loadMockJSON("GetAllResidences.json");
 const residenceDetailsById = loadMockJSON("GetOneResidenceById.json");
 const offersPayload = loadMockJSON("GetOffers.json");
+const adminTRPayload = loadMockJSON("GetAdminTR.json");
 const postReservationAccepted = loadMockJSON("PostReservationAccepted.json");
 
 const swaggerPath = path.join(__dirname, "swagger.yaml");
@@ -163,6 +164,10 @@ app.get("/residences/:id", (req, res) => {
   });
 });
 
+
+app.get("/admin-tr", (req, res) => {
+  res.json(adminTRPayload);
+});
 
 /**
  * Referentiel offres global (vue Fabric / outils). Preferer les champs

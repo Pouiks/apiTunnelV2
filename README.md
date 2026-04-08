@@ -21,8 +21,9 @@ Les reponses statiques sont chargees depuis le dossier [`mock-routes/`](mock-rou
 
 | Fichier | Route | Contenu |
 | --- | --- | --- |
-| `GetAllResidences.json` | `GET /residences` | Listing leger : `brands`, `residences[]` (10 residences, pas de typologyScenarios) |
-| `GetOneResidenceById.json` | `GET /residences/:id` | Fiche complete par UUID : description, commonAmenities, typologyScenarios (3 scenarios), adminOverlay |
+| `GetAllResidences.json` | `GET /residences` | Listing : residences[] avec commercialName, tag, typologyTags, photos, offerSummaries |
+| `GetOneResidenceById.json` | `GET /residences/:id` | Fiche complete par UUID : typologyScenarios, adminOverlay, photos, tag, offers |
+| `GetAdminTR.json` | `GET /admin-tr` | Config tunnel : modals FR/EN par step+trigger, steps informatifs |
 | `GetOffers.json` | `GET /offers` | Referentiel offres (aussi injecte dans les deux routes residences) |
 | `PostReservationAccepted.json` | `POST /reservations` | Reponse fixe de confirmation |
 
@@ -33,7 +34,14 @@ Les reponses statiques sont chargees depuis le dossier [`mock-routes/`](mock-rou
 Retourne le catalogue complet (10 residences : 4 ECLA, 6 UXCO STUDENT).
 Filtre optionnel par `?city=` sur `city` ou `cityAlias`.
 
-Chaque residence inclut **`offerSummaries`** (offres applicables). La racine inclut **`offersContext`** (`bookingDate`, `city`) pour aligner le cache React.
+Chaque residence inclut :
+- **`commercialName`** : nom commercial (peut differer du nom technique)
+- **`tag`** : badge residence (POPULAR, SPECIAL_OFFER, NEW, LAST_UNITS) — un seul actif
+- **`typologyTags`** : badge par typologie — un seul actif par typologyCode
+- **`photos`** : URLs S3 simulees (HERO, COMMON, TYPOLOGY)
+- **`offerSummaries`** : offres applicables
+
+La racine inclut **`offersContext`** (`bookingDate`, `city`) pour aligner le cache React.
 
 ```bash
 curl "http://localhost:8081/residences"
@@ -45,6 +53,7 @@ curl "http://localhost:8081/residences?city=Lyon"
 
 Fiche residence complete en un seul appel. Inclut :
 
+- **`commercialName`**, **`tag`**, **`typologyTags`**, **`photos`** : memes champs que le listing
 - **`typologyScenarios`** : les 3 scenarios de pricing (STANDARD, EARLY_BIRD, HIGH_DEMAND), chacun avec typologies/pricing/options/amenities
 - **`adminOverlay`** : surcouche back-office (managementCompany, contractType, complianceStatus, etc.)
 - **`offerSummaries`** + **`offers`** : offres filtrees par residence
@@ -53,6 +62,17 @@ Fiche residence complete en un seul appel. Inclut :
 ```bash
 curl "http://localhost:8081/residences/19f2179b-7d14-f011-998a-6045bd1919a1"
 curl "http://localhost:8081/residences/ff5544a8-4fa7-ef11-b8e9-6045bd19a503"
+```
+
+### GET /admin-tr
+
+Configuration globale du tunnel de reservation (independante de la residence). Charge une seule fois au boot du tunnel. Contient :
+
+- **`modals`** : modals bilingues (FR/EN) indexees par cle (`STEP_1__EXPRESS_CONDITIONS`, etc.), chacune avec `step`, `trigger` et `sections`
+- **`steps`** : etapes du tunnel (CHOOSE_RESIDENCE, CONFIGURE_STAY, PAYMENT, DOCUMENTS, CONFIRMATION) bilingues
+
+```bash
+curl "http://localhost:8081/admin-tr"
 ```
 
 ### GET /offers

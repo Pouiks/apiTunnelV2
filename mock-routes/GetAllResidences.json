@@ -67,6 +67,65 @@
         "Salles d'étude",
         "Local vélos sécurisé",
         "Wi-Fi fibre"
+      ],
+      "commercialName": "Résidence Albert Thomas",
+      "tag": {
+        "code": "POPULAR",
+        "label": "Populaire"
+      },
+      "typologyTags": {
+        "STUDIO": {
+          "code": "SPECIAL_OFFER",
+          "label": "Offre spéciale"
+        }
+      },
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -132,6 +191,62 @@
         "Salles d'étude",
         "Local vélos sécurisé",
         "Wi-Fi fibre"
+      ],
+      "commercialName": "Résidence Andromaque",
+      "tag": null,
+      "typologyTags": {
+        "COLOC": {
+          "code": "POPULAR",
+          "label": "Populaire"
+        }
+      },
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -197,6 +312,60 @@
         "Salles d'étude",
         "Local vélos sécurisé",
         "Wi-Fi fibre"
+      ],
+      "commercialName": "Résidence Aquitaine",
+      "tag": {
+        "code": "NEW",
+        "label": "Nouveauté"
+      },
+      "typologyTags": {},
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -262,6 +431,65 @@
         "Salles d'étude",
         "Local vélos sécurisé",
         "Wi-Fi fibre"
+      ],
+      "commercialName": "Résidence Atlas",
+      "tag": {
+        "code": "SPECIAL_OFFER",
+        "label": "Offre spéciale"
+      },
+      "typologyTags": {
+        "T2": {
+          "code": "POPULAR",
+          "label": "Populaire"
+        }
+      },
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -327,6 +555,62 @@
         "Salles d'étude",
         "Local vélos sécurisé",
         "Wi-Fi fibre"
+      ],
+      "commercialName": "Résidence Babylone",
+      "tag": null,
+      "typologyTags": {
+        "STUDIO": {
+          "code": "LAST_UNITS",
+          "label": "Dernières disponibilités"
+        }
+      },
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -392,6 +676,60 @@
         "Salles d'étude",
         "Local vélos sécurisé",
         "Wi-Fi fibre"
+      ],
+      "commercialName": "Résidence Baker Hill",
+      "tag": {
+        "code": "POPULAR",
+        "label": "Populaire"
+      },
+      "typologyTags": {},
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -457,6 +795,65 @@
         "Courts de padel",
         "Laverie 24/7",
         "Interval – restauration"
+      ],
+      "commercialName": "Ecla Genève-Archamps",
+      "tag": {
+        "code": "SPECIAL_OFFER",
+        "label": "Offre spéciale"
+      },
+      "typologyTags": {
+        "T2_DUPLEX": {
+          "code": "POPULAR",
+          "label": "Populaire"
+        }
+      },
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -522,6 +919,65 @@
         "Courts de padel",
         "Laverie 24/7",
         "Interval – restauration"
+      ],
+      "commercialName": "Ecla Massy-Palaiseau",
+      "tag": {
+        "code": "POPULAR",
+        "label": "Populaire"
+      },
+      "typologyTags": {
+        "STUDIO": {
+          "code": "SPECIAL_OFFER",
+          "label": "Offre spéciale"
+        }
+      },
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -587,6 +1043,62 @@
         "Courts de padel",
         "Laverie 24/7",
         "Interval – restauration"
+      ],
+      "commercialName": "Ecla Palaiseau OPCO",
+      "tag": null,
+      "typologyTags": {
+        "T1_BIS": {
+          "code": "NEW",
+          "label": "Nouveauté"
+        }
+      },
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     },
     {
@@ -652,6 +1164,69 @@
         "Courts de padel",
         "Laverie 24/7",
         "Interval – restauration"
+      ],
+      "commercialName": "Ecla Noisy-le-Grand",
+      "tag": {
+        "code": "NEW",
+        "label": "Nouveauté"
+      },
+      "typologyTags": {
+        "COLOC": {
+          "code": "POPULAR",
+          "label": "Populaire"
+        },
+        "T3": {
+          "code": "SPECIAL_OFFER",
+          "label": "Offre spéciale"
+        }
+      },
+      "photos": [
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/hero-01.webp",
+          "alt": "Vue extérieure",
+          "order": 1,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/hero-02.webp",
+          "alt": "Hall d'entrée",
+          "order": 2,
+          "context": "HERO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/common-01.webp",
+          "alt": "Espace commun",
+          "order": 3,
+          "context": "COMMON"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/studio-01.webp",
+          "alt": "Studio meublé",
+          "order": 4,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/studio-02.webp",
+          "alt": "Studio - salle de bain",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/t2-01.webp",
+          "alt": "T2 - séjour",
+          "order": 6,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
+        },
+        {
+          "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/coloc-01.webp",
+          "alt": "Chambre colocation",
+          "order": 7,
+          "context": "TYPOLOGY",
+          "typologyCode": "COLOC"
+        }
       ]
     }
   ]

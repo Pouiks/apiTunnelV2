@@ -11,6 +11,7 @@ servers:
     description: Local mock server
 tags:
   - name: Residences
+  - name: AdminTR
   - name: Offers
   - name: Reservations
 
@@ -73,6 +74,22 @@ paths:
                     type: string
                   residenceId:
                     type: string
+
+  /admin-tr:
+    get:
+      tags: [AdminTR]
+      summary: GetInformationAdminTR
+      description: >
+        Configuration globale du tunnel de reservation geree par l'espace admin.
+        Contient les modals (FR/EN) declenchees par step+event et les steps informatifs.
+        Independant de la residence — charge une seule fois au boot du tunnel.
+      responses:
+        "200":
+          description: Configuration admin tunnel
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/AdminTRResponse"
 
   /offers:
     get:
@@ -158,6 +175,36 @@ components:
           type: integer
       required: [min, max]
 
+    ResidenceTag:
+      type: object
+      nullable: true
+      properties:
+        code:
+          type: string
+          enum: [POPULAR, SPECIAL_OFFER, NEW, LAST_UNITS]
+        label:
+          type: string
+      required: [code, label]
+
+    ResidencePhoto:
+      type: object
+      properties:
+        url:
+          type: string
+          format: uri
+        alt:
+          type: string
+        order:
+          type: integer
+        context:
+          type: string
+          enum: [HERO, COMMON, TYPOLOGY]
+        typologyCode:
+          type: string
+          nullable: true
+          description: Present uniquement si context = TYPOLOGY.
+      required: [url, alt, order, context]
+
     ResidenceListItem:
       type: object
       properties:
@@ -167,6 +214,9 @@ components:
           type: string
         name:
           type: string
+        commercialName:
+          type: string
+          description: Nom commercial de la residence (peut differer du nom technique).
         brand:
           type: string
           enum: [ECLA, UXCO STUDENT]
@@ -183,6 +233,17 @@ components:
           type: string
         baseRentFrom:
           type: number
+        tag:
+          $ref: "#/components/schemas/ResidenceTag"
+        typologyTags:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/ResidenceTag"
+          description: Un tag par typologyCode (max un actif par typologie).
+        photos:
+          type: array
+          items:
+            $ref: "#/components/schemas/ResidencePhoto"
         typologies:
           type: array
           items:
@@ -201,6 +262,7 @@ components:
         - residenceId
         - residenceCode
         - name
+        - commercialName
         - brand
         - city
         - cityAlias
@@ -208,6 +270,9 @@ components:
         - coordinates
         - availabilityStatus
         - baseRentFrom
+        - tag
+        - typologyTags
+        - photos
         - typologies
         - floors
         - features
@@ -461,6 +526,8 @@ components:
           type: string
         name:
           type: string
+        commercialName:
+          type: string
         brand:
           type: string
           enum: [ECLA, UXCO STUDENT]
@@ -476,6 +543,16 @@ components:
           type: string
         description:
           type: string
+        tag:
+          $ref: "#/components/schemas/ResidenceTag"
+        typologyTags:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/ResidenceTag"
+        photos:
+          type: array
+          items:
+            $ref: "#/components/schemas/ResidencePhoto"
         commonAmenities:
           type: array
           items:
@@ -508,6 +585,7 @@ components:
         - residenceId
         - residenceCode
         - name
+        - commercialName
         - brand
         - city
         - cityAlias
@@ -515,6 +593,9 @@ components:
         - coordinates
         - availabilityStatus
         - description
+        - tag
+        - typologyTags
+        - photos
         - commonAmenities
         - features
         - typologies
@@ -629,6 +710,101 @@ components:
           items:
             $ref: "#/components/schemas/Offer"
       required: [bookingDate, city, offers]
+
+    ModalInfoBox:
+      type: object
+      properties:
+        icon:
+          type: string
+        content:
+          type: string
+      required: [icon, content]
+
+    ModalSection:
+      type: object
+      properties:
+        icon:
+          type: string
+        title:
+          type: string
+        description:
+          type: string
+          description: Peut contenir du HTML inline (strong, em).
+        listHeading:
+          type: string
+        listItems:
+          type: array
+          items:
+            type: string
+        infoBox:
+          $ref: "#/components/schemas/ModalInfoBox"
+      required: [icon, title, description, listItems]
+
+    ModalLocalized:
+      type: object
+      properties:
+        title:
+          type: string
+        subtitle:
+          type: string
+        sections:
+          type: array
+          items:
+            $ref: "#/components/schemas/ModalSection"
+      required: [title, subtitle, sections]
+
+    Modal:
+      type: object
+      properties:
+        step:
+          type: integer
+        trigger:
+          type: string
+          description: Evenement declencheur (ex. EXPRESS_BOOKING_CLICK, PAYMENT_STEP_ENTER).
+        fr:
+          $ref: "#/components/schemas/ModalLocalized"
+        en:
+          $ref: "#/components/schemas/ModalLocalized"
+      required: [step, trigger, fr, en]
+
+    TunnelStepLocalized:
+      type: object
+      properties:
+        title:
+          type: string
+        description:
+          type: string
+      required: [title, description]
+
+    TunnelStep:
+      type: object
+      properties:
+        stepCode:
+          type: string
+        order:
+          type: integer
+        fr:
+          $ref: "#/components/schemas/TunnelStepLocalized"
+        en:
+          $ref: "#/components/schemas/TunnelStepLocalized"
+      required: [stepCode, order, fr, en]
+
+    AdminTRResponse:
+      type: object
+      description: >
+        Configuration globale du tunnel de reservation.
+        Modals bilingues par step+trigger, steps informatifs.
+        Charge une seule fois au boot, independant de la residence.
+      properties:
+        modals:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/Modal"
+        steps:
+          type: array
+          items:
+            $ref: "#/components/schemas/TunnelStep"
+      required: [modals, steps]
 
     ReservationAcceptedResponse:
       type: object
