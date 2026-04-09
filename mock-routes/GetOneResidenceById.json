@@ -45,48 +45,70 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 430,
-        "lowestUnitPrice": 430,
-        "highestUnitPrice": 430
+        "photos": [
+          "https://picsum.photos/seed/200/800/600",
+          "https://picsum.photos/seed/201/800/600",
+          "https://picsum.photos/seed/202/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 515,
-        "lowestUnitPrice": 515,
-        "highestUnitPrice": 795
+        "reducedBaseRent": 495,
+        "photos": [
+          "https://picsum.photos/seed/203/800/600",
+          "https://picsum.photos/seed/204/800/600",
+          "https://picsum.photos/seed/205/800/600",
+          "https://picsum.photos/seed/206/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 575,
-        "lowestUnitPrice": 575,
-        "highestUnitPrice": 975
+        "reducedBaseRent": 565,
+        "photos": [
+          "https://picsum.photos/seed/207/800/600",
+          "https://picsum.photos/seed/208/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 655,
-        "lowestUnitPrice": 655,
-        "highestUnitPrice": 1235
+        "photos": [
+          "https://picsum.photos/seed/209/800/600",
+          "https://picsum.photos/seed/210/800/600",
+          "https://picsum.photos/seed/211/800/600",
+          "https://picsum.photos/seed/212/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 745,
-        "lowestUnitPrice": 745,
-        "highestUnitPrice": 1465
+        "reducedBaseRent": 735,
+        "photos": [
+          "https://picsum.photos/seed/213/800/600",
+          "https://picsum.photos/seed/214/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 835,
-        "lowestUnitPrice": 835,
-        "highestUnitPrice": 1735
+        "photos": [
+          "https://picsum.photos/seed/215/800/600",
+          "https://picsum.photos/seed/216/800/600",
+          "https://picsum.photos/seed/217/800/600",
+          "https://picsum.photos/seed/218/800/600"
+        ]
       }
     ],
     "floors": {
@@ -2374,48 +2396,66 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 425,
-        "lowestUnitPrice": 425,
-        "highestUnitPrice": 425
+        "photos": [
+          "https://picsum.photos/seed/219/800/600",
+          "https://picsum.photos/seed/220/800/600",
+          "https://picsum.photos/seed/221/800/600",
+          "https://picsum.photos/seed/222/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 505,
-        "lowestUnitPrice": 505,
-        "highestUnitPrice": 785
+        "reducedBaseRent": 500,
+        "photos": [
+          "https://picsum.photos/seed/223/800/600",
+          "https://picsum.photos/seed/224/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 565,
-        "lowestUnitPrice": 565,
-        "highestUnitPrice": 965
+        "reducedBaseRent": 550,
+        "photos": [
+          "https://picsum.photos/seed/225/800/600",
+          "https://picsum.photos/seed/226/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 645,
-        "lowestUnitPrice": 645,
-        "highestUnitPrice": 1225
+        "reducedBaseRent": 630,
+        "photos": [
+          "https://picsum.photos/seed/227/800/600",
+          "https://picsum.photos/seed/228/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 725,
-        "lowestUnitPrice": 725,
-        "highestUnitPrice": 1445
+        "photos": [
+          "https://picsum.photos/seed/229/800/600",
+          "https://picsum.photos/seed/230/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 810,
-        "lowestUnitPrice": 810,
-        "highestUnitPrice": 1710
+        "photos": [
+          "https://picsum.photos/seed/231/800/600",
+          "https://picsum.photos/seed/232/800/600",
+          "https://picsum.photos/seed/233/800/600"
+        ]
       }
     ],
     "floors": {
@@ -4700,48 +4740,68 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 410,
-        "lowestUnitPrice": 410,
-        "highestUnitPrice": 410
+        "reducedBaseRent": 400,
+        "photos": [
+          "https://picsum.photos/seed/234/800/600",
+          "https://picsum.photos/seed/235/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 490,
-        "lowestUnitPrice": 490,
-        "highestUnitPrice": 770
+        "reducedBaseRent": 475,
+        "photos": [
+          "https://picsum.photos/seed/236/800/600",
+          "https://picsum.photos/seed/237/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 550,
-        "lowestUnitPrice": 550,
-        "highestUnitPrice": 950
+        "photos": [
+          "https://picsum.photos/seed/238/800/600",
+          "https://picsum.photos/seed/239/800/600",
+          "https://picsum.photos/seed/240/800/600",
+          "https://picsum.photos/seed/241/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 625,
-        "lowestUnitPrice": 625,
-        "highestUnitPrice": 1205
+        "reducedBaseRent": 610,
+        "photos": [
+          "https://picsum.photos/seed/242/800/600",
+          "https://picsum.photos/seed/243/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 705,
-        "lowestUnitPrice": 705,
-        "highestUnitPrice": 1425
+        "reducedBaseRent": 685,
+        "photos": [
+          "https://picsum.photos/seed/244/800/600",
+          "https://picsum.photos/seed/245/800/600",
+          "https://picsum.photos/seed/246/800/600",
+          "https://picsum.photos/seed/247/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 790,
-        "lowestUnitPrice": 790,
-        "highestUnitPrice": 1690
+        "photos": [
+          "https://picsum.photos/seed/248/800/600",
+          "https://picsum.photos/seed/249/800/600"
+        ]
       }
     ],
     "floors": {
@@ -7024,48 +7084,65 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 420,
-        "lowestUnitPrice": 420,
-        "highestUnitPrice": 420
+        "photos": [
+          "https://picsum.photos/seed/250/800/600",
+          "https://picsum.photos/seed/251/800/600",
+          "https://picsum.photos/seed/252/800/600",
+          "https://picsum.photos/seed/253/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 500,
-        "lowestUnitPrice": 500,
-        "highestUnitPrice": 780
+        "reducedBaseRent": 495,
+        "photos": [
+          "https://picsum.photos/seed/254/800/600",
+          "https://picsum.photos/seed/255/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 565,
-        "lowestUnitPrice": 565,
-        "highestUnitPrice": 965
+        "photos": [
+          "https://picsum.photos/seed/256/800/600",
+          "https://picsum.photos/seed/257/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 645,
-        "lowestUnitPrice": 645,
-        "highestUnitPrice": 1225
+        "photos": [
+          "https://picsum.photos/seed/258/800/600",
+          "https://picsum.photos/seed/259/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 730,
-        "lowestUnitPrice": 730,
-        "highestUnitPrice": 1450
+        "photos": [
+          "https://picsum.photos/seed/260/800/600",
+          "https://picsum.photos/seed/261/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 820,
-        "lowestUnitPrice": 820,
-        "highestUnitPrice": 1720
+        "reducedBaseRent": 805,
+        "photos": [
+          "https://picsum.photos/seed/262/800/600",
+          "https://picsum.photos/seed/263/800/600",
+          "https://picsum.photos/seed/264/800/600"
+        ]
       }
     ],
     "floors": {
@@ -9353,48 +9430,64 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 395,
-        "lowestUnitPrice": 395,
-        "highestUnitPrice": 395
+        "reducedBaseRent": 390,
+        "photos": [
+          "https://picsum.photos/seed/265/800/600",
+          "https://picsum.photos/seed/266/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 475,
-        "lowestUnitPrice": 475,
-        "highestUnitPrice": 755
+        "photos": [
+          "https://picsum.photos/seed/267/800/600",
+          "https://picsum.photos/seed/268/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 535,
-        "lowestUnitPrice": 535,
-        "highestUnitPrice": 935
+        "photos": [
+          "https://picsum.photos/seed/269/800/600",
+          "https://picsum.photos/seed/270/800/600",
+          "https://picsum.photos/seed/271/800/600",
+          "https://picsum.photos/seed/272/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 615,
-        "lowestUnitPrice": 615,
-        "highestUnitPrice": 1195
+        "photos": [
+          "https://picsum.photos/seed/273/800/600",
+          "https://picsum.photos/seed/274/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 695,
-        "lowestUnitPrice": 695,
-        "highestUnitPrice": 1415
+        "reducedBaseRent": 675,
+        "photos": [
+          "https://picsum.photos/seed/275/800/600",
+          "https://picsum.photos/seed/276/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 780,
-        "lowestUnitPrice": 780,
-        "highestUnitPrice": 1680
+        "photos": [
+          "https://picsum.photos/seed/277/800/600",
+          "https://picsum.photos/seed/278/800/600"
+        ]
       }
     ],
     "floors": {
@@ -11679,48 +11772,69 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 380,
-        "lowestUnitPrice": 380,
-        "highestUnitPrice": 380
+        "photos": [
+          "https://picsum.photos/seed/279/800/600",
+          "https://picsum.photos/seed/280/800/600",
+          "https://picsum.photos/seed/281/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 455,
-        "lowestUnitPrice": 455,
-        "highestUnitPrice": 735
+        "photos": [
+          "https://picsum.photos/seed/282/800/600",
+          "https://picsum.photos/seed/283/800/600",
+          "https://picsum.photos/seed/284/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 510,
-        "lowestUnitPrice": 510,
-        "highestUnitPrice": 910
+        "reducedBaseRent": 495,
+        "photos": [
+          "https://picsum.photos/seed/285/800/600",
+          "https://picsum.photos/seed/286/800/600",
+          "https://picsum.photos/seed/287/800/600",
+          "https://picsum.photos/seed/288/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 590,
-        "lowestUnitPrice": 590,
-        "highestUnitPrice": 1170
+        "photos": [
+          "https://picsum.photos/seed/289/800/600",
+          "https://picsum.photos/seed/290/800/600",
+          "https://picsum.photos/seed/291/800/600",
+          "https://picsum.photos/seed/292/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 670,
-        "lowestUnitPrice": 670,
-        "highestUnitPrice": 1390
+        "photos": [
+          "https://picsum.photos/seed/293/800/600",
+          "https://picsum.photos/seed/294/800/600",
+          "https://picsum.photos/seed/295/800/600",
+          "https://picsum.photos/seed/296/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 755,
-        "lowestUnitPrice": 755,
-        "highestUnitPrice": 1655
+        "photos": [
+          "https://picsum.photos/seed/297/800/600",
+          "https://picsum.photos/seed/298/800/600"
+        ]
       }
     ],
     "floors": {
@@ -14003,48 +14117,72 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 590,
-        "lowestUnitPrice": 590,
-        "highestUnitPrice": 590
+        "reducedBaseRent": 575,
+        "photos": [
+          "https://picsum.photos/seed/299/800/600",
+          "https://picsum.photos/seed/300/800/600",
+          "https://picsum.photos/seed/301/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 720,
-        "lowestUnitPrice": 720,
-        "highestUnitPrice": 1000
+        "photos": [
+          "https://picsum.photos/seed/302/800/600",
+          "https://picsum.photos/seed/303/800/600",
+          "https://picsum.photos/seed/304/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 810,
-        "lowestUnitPrice": 810,
-        "highestUnitPrice": 1210
+        "photos": [
+          "https://picsum.photos/seed/305/800/600",
+          "https://picsum.photos/seed/306/800/600",
+          "https://picsum.photos/seed/307/800/600",
+          "https://picsum.photos/seed/308/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 920,
-        "lowestUnitPrice": 920,
-        "highestUnitPrice": 1500
+        "reducedBaseRent": 915,
+        "photos": [
+          "https://picsum.photos/seed/309/800/600",
+          "https://picsum.photos/seed/310/800/600",
+          "https://picsum.photos/seed/311/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 1040,
-        "lowestUnitPrice": 1040,
-        "highestUnitPrice": 1760
+        "reducedBaseRent": 1035,
+        "photos": [
+          "https://picsum.photos/seed/312/800/600",
+          "https://picsum.photos/seed/313/800/600",
+          "https://picsum.photos/seed/314/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 1180,
-        "lowestUnitPrice": 1180,
-        "highestUnitPrice": 2080
+        "reducedBaseRent": 1160,
+        "photos": [
+          "https://picsum.photos/seed/315/800/600",
+          "https://picsum.photos/seed/316/800/600",
+          "https://picsum.photos/seed/317/800/600",
+          "https://picsum.photos/seed/318/800/600"
+        ]
       }
     ],
     "floors": {
@@ -16332,48 +16470,67 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 480,
-        "lowestUnitPrice": 480,
-        "highestUnitPrice": 480
+        "photos": [
+          "https://picsum.photos/seed/319/800/600",
+          "https://picsum.photos/seed/320/800/600",
+          "https://picsum.photos/seed/321/800/600",
+          "https://picsum.photos/seed/322/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 600,
-        "lowestUnitPrice": 600,
-        "highestUnitPrice": 880
+        "photos": [
+          "https://picsum.photos/seed/323/800/600",
+          "https://picsum.photos/seed/324/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 685,
-        "lowestUnitPrice": 685,
-        "highestUnitPrice": 1085
+        "reducedBaseRent": 680,
+        "photos": [
+          "https://picsum.photos/seed/325/800/600",
+          "https://picsum.photos/seed/326/800/600",
+          "https://picsum.photos/seed/327/800/600",
+          "https://picsum.photos/seed/328/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 760,
-        "lowestUnitPrice": 760,
-        "highestUnitPrice": 1340
+        "photos": [
+          "https://picsum.photos/seed/329/800/600",
+          "https://picsum.photos/seed/330/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 870,
-        "lowestUnitPrice": 870,
-        "highestUnitPrice": 1590
+        "photos": [
+          "https://picsum.photos/seed/331/800/600",
+          "https://picsum.photos/seed/332/800/600",
+          "https://picsum.photos/seed/333/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 990,
-        "lowestUnitPrice": 990,
-        "highestUnitPrice": 1890
+        "reducedBaseRent": 970,
+        "photos": [
+          "https://picsum.photos/seed/334/800/600",
+          "https://picsum.photos/seed/335/800/600"
+        ]
       }
     ],
     "floors": {
@@ -18661,48 +18818,67 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 490,
-        "lowestUnitPrice": 490,
-        "highestUnitPrice": 490
+        "photos": [
+          "https://picsum.photos/seed/336/800/600",
+          "https://picsum.photos/seed/337/800/600",
+          "https://picsum.photos/seed/338/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 615,
-        "lowestUnitPrice": 615,
-        "highestUnitPrice": 895
+        "reducedBaseRent": 610,
+        "photos": [
+          "https://picsum.photos/seed/339/800/600",
+          "https://picsum.photos/seed/340/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 700,
-        "lowestUnitPrice": 700,
-        "highestUnitPrice": 1100
+        "photos": [
+          "https://picsum.photos/seed/341/800/600",
+          "https://picsum.photos/seed/342/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 785,
-        "lowestUnitPrice": 785,
-        "highestUnitPrice": 1365
+        "reducedBaseRent": 780,
+        "photos": [
+          "https://picsum.photos/seed/343/800/600",
+          "https://picsum.photos/seed/344/800/600",
+          "https://picsum.photos/seed/345/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 895,
-        "lowestUnitPrice": 895,
-        "highestUnitPrice": 1615
+        "photos": [
+          "https://picsum.photos/seed/346/800/600",
+          "https://picsum.photos/seed/347/800/600",
+          "https://picsum.photos/seed/348/800/600",
+          "https://picsum.photos/seed/349/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 1015,
-        "lowestUnitPrice": 1015,
-        "highestUnitPrice": 1915
+        "reducedBaseRent": 1010,
+        "photos": [
+          "https://picsum.photos/seed/350/800/600",
+          "https://picsum.photos/seed/351/800/600"
+        ]
       }
     ],
     "floors": {
@@ -20987,48 +21163,73 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 460,
-        "lowestUnitPrice": 460,
-        "highestUnitPrice": 460
+        "reducedBaseRent": 455,
+        "photos": [
+          "https://picsum.photos/seed/352/800/600",
+          "https://picsum.photos/seed/353/800/600",
+          "https://picsum.photos/seed/354/800/600"
+        ]
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 585,
-        "lowestUnitPrice": 585,
-        "highestUnitPrice": 865
+        "reducedBaseRent": 565,
+        "photos": [
+          "https://picsum.photos/seed/355/800/600",
+          "https://picsum.photos/seed/356/800/600"
+        ]
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 665,
-        "lowestUnitPrice": 665,
-        "highestUnitPrice": 1065
+        "reducedBaseRent": 650,
+        "photos": [
+          "https://picsum.photos/seed/357/800/600",
+          "https://picsum.photos/seed/358/800/600",
+          "https://picsum.photos/seed/359/800/600",
+          "https://picsum.photos/seed/360/800/600"
+        ]
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 745,
-        "lowestUnitPrice": 745,
-        "highestUnitPrice": 1325
+        "reducedBaseRent": 740,
+        "photos": [
+          "https://picsum.photos/seed/361/800/600",
+          "https://picsum.photos/seed/362/800/600",
+          "https://picsum.photos/seed/363/800/600",
+          "https://picsum.photos/seed/364/800/600"
+        ]
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 860,
-        "lowestUnitPrice": 860,
-        "highestUnitPrice": 1580
+        "reducedBaseRent": 840,
+        "photos": [
+          "https://picsum.photos/seed/365/800/600",
+          "https://picsum.photos/seed/366/800/600",
+          "https://picsum.photos/seed/367/800/600",
+          "https://picsum.photos/seed/368/800/600"
+        ]
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 970,
-        "lowestUnitPrice": 970,
-        "highestUnitPrice": 1870
+        "reducedBaseRent": 955,
+        "photos": [
+          "https://picsum.photos/seed/369/800/600",
+          "https://picsum.photos/seed/370/800/600"
+        ]
       }
     ],
     "floors": {
