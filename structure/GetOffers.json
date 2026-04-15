@@ -1,0 +1,39 @@
+{
+    "bookingDate": "string (YYYY-MM-DD)",
+    "city": "string",
+  
+    "offers": [
+      {
+        "offerCode": "string",
+        "label": "string",
+        "badge": "string",
+        "promoCode": "string | null",
+        "type": "string (OFFER | PROMO_CODE)",
+  
+        "scope": {
+          "residences": ["string (uuid)"],
+          "typologies": ["string (COLOC | STUDIO | T1 | T1_BIS | T2 | T2_DUPLEX | T3)"]
+        },
+  
+        "conditions": {
+          "bookingDeadline": "string (YYYY-MM-DD) | null",
+          "startDateFrom": "string (YYYY-MM-DD) | null",
+          "startDateTo": "string (YYYY-MM-DD) | null",
+          "minDurationMonths": "number | null"
+        },
+  
+        "discount": {
+          "target": "string (BASE_RENT | APP_FEE)",
+          "reductionType": "string (FIXED_AMOUNT | PERCENTAGE)",
+          "amount": "number (négatif, € ou %)",
+          "billingTiming": "string (RECURRING | ONE_SHOT)",
+          "recurrenceMonths": "number | null"
+        },
+  
+        "accounting": {
+          "productCode": "string",
+          "accountingDestinationCode": "string"
+        }
+      }
+    ]
+  }

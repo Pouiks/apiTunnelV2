@@ -1,0 +1,89 @@
+{
+    "<residenceId (uuid)>": {
+      "residenceId": "string (uuid)",
+      "residenceCode": "string",
+      "name": "string",
+      "commercialName": "string",
+      "brand": "string (ECLA | UXCO STUDENT)",
+      "city": "string",
+      "cityAlias": "string",
+      "address": "string",
+      "coordinates": { "lat": "number", "lng": "number" },
+      "availabilityStatus": "string (AVAILABLE | PARTIAL)",
+      "description": "string",
+      "commonAmenities": [
+        { "code": "string (GYM | COWORK | LAUNDRY | STUDY | BIKE | WIFI | CINEMA | PADEL | RESTO)", "label": "string" }
+      ],
+      "floors": { "min": "number", "max": "number" },
+      "features": ["string"],
+      "tag": { "code": "string (POPULAR | NEW | SPECIAL_OFFER) | null", "label": "string" },
+      "typologyTags": {
+        "<typologyCode>": { "code": "string (POPULAR | NEW | SPECIAL_OFFER | LAST_UNITS)", "label": "string" }
+      },
+  
+      "typologies": [
+        {
+          "typologyCode": "string (COLOC | STUDIO | T1_BIS | T2 | T2_DUPLEX | T3)",
+          "label": "string",
+          "surface": "number (m²)",
+          "baseRent": "number (€)",
+          "reducedBaseRent": "number (€) | undefined"
+        }
+      ],
+  
+      "typologyScenarios": {
+        "<scenario (STANDARD | EARLY_BIRD | HIGH_DEMAND)>": {
+          "residenceId": "string (uuid)",
+          "startDate": "string (YYYY-MM-DD)",
+          "bookingDate": "string (YYYY-MM-DD)",
+          "scenario": "string (STANDARD | EARLY_BIRD | HIGH_DEMAND)",
+          "floors": { "min": "number", "max": "number" },
+          "typologies": [
+            {
+              "typologyCode": "string (COLOC | STUDIO | T1 | T1_BIS | T2 | T2_DUPLEX | T3)",
+              "label": "string",
+              "productCode": "string",
+              "pricing": {
+                "baseRent": "number (€)",
+                "lowestUnitPrice": "number (€)",
+                "highestUnitPrice": "number (€)",
+                "applicationFee": "number (€)",
+                "securityDeposit": "number (€)"
+              },
+              "amenities": [
+                { "code": "string (FURNISHED | WIFI | KITCHEN | BATHROOM | SHARED_BATH | SHARED_KITCH | LIVING)", "label": "string" }
+              ],
+              "optionGroups": [
+                {
+                  "groupCode": "string (FLOOR | SURFACE | BEDDING | PREMIUM | AC | BALCONY)",
+                  "label": "string",
+                  "icon": "string",
+                  "variants": [
+                    {
+                      "variantCode": "string",
+                      "label": "string",
+                      "description": "string",
+                      "amount": "number (€, 0 si défaut)",
+                      "billingTiming": "string (RECURRING)",
+                      "isDefault": "boolean",
+                      "productCode": "string | null",
+                      "accountingDestinationCode": "string | null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+  
+      "adminOverlay": {
+        "managementCompany": "string",
+        "contractType": "string (BAIL_MEUBLE_ETUDIANT)",
+        "internalContactEmail": "string",
+        "lastAuditDate": "string (YYYY-MM-DD)",
+        "complianceStatus": "string (CONFORME)",
+        "operatorNotes": "string | null"
+      }
+    }
+  }

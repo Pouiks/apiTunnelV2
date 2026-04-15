@@ -1,0 +1,47 @@
+{
+    "brands": ["string (ECLA | UXCO STUDENT)"],
+  
+    "residences": [
+      {
+        "residenceId": "string (uuid)",
+        "residenceCode": "string",
+        "name": "string",
+        "commercialName": "string",
+        "brand": "string (ECLA | UXCO STUDENT)",
+        "city": "string",
+        "cityAlias": "string",
+        "address": "string",
+        "coordinates": {
+          "lat": "number",
+          "lng": "number"
+        },
+        "availabilityStatus": "string (AVAILABLE | PARTIAL)",
+        "baseRentFrom": "number (€)",
+        "reducedBaseRentFrom": "number (€) | undefined",
+        "floors": {
+          "min": "number",
+          "max": "number"
+        },
+        "features": ["string"],
+        "tag": {
+          "code": "string (POPULAR | NEW | SPECIAL_OFFER) | null",
+          "label": "string"
+        },
+        "typologyTags": {
+          "<typologyCode>": {
+            "code": "string (POPULAR | NEW | SPECIAL_OFFER | LAST_UNITS)",
+            "label": "string"
+          }
+        },
+        "typologies": [
+          {
+            "typologyCode": "string (COLOC | STUDIO | T1_BIS | T2 | T2_DUPLEX | T3)",
+            "label": "string",
+            "baseRent": "number (€)",
+            "lowestUnitPrice": "number (€)",
+            "reducedBaseRent": "number (€) | undefined"
+          }
+        ]
+      }
+    ]
+  }

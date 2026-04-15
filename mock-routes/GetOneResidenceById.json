@@ -44,71 +44,40 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "surface": 11,
-        "baseRent": 430,
-        "photos": [
-          "https://picsum.photos/seed/200/800/600",
-          "https://picsum.photos/seed/201/800/600",
-          "https://picsum.photos/seed/202/800/600"
-        ]
+        "baseRent": 430
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 515,
-        "reducedBaseRent": 495,
-        "photos": [
-          "https://picsum.photos/seed/203/800/600",
-          "https://picsum.photos/seed/204/800/600",
-          "https://picsum.photos/seed/205/800/600",
-          "https://picsum.photos/seed/206/800/600"
-        ]
+        "reducedBaseRent": 495
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 575,
-        "reducedBaseRent": 565,
-        "photos": [
-          "https://picsum.photos/seed/207/800/600",
-          "https://picsum.photos/seed/208/800/600"
-        ]
+        "reducedBaseRent": 565
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
-        "baseRent": 655,
-        "photos": [
-          "https://picsum.photos/seed/209/800/600",
-          "https://picsum.photos/seed/210/800/600",
-          "https://picsum.photos/seed/211/800/600",
-          "https://picsum.photos/seed/212/800/600"
-        ]
+        "baseRent": 655
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 745,
-        "reducedBaseRent": 735,
-        "photos": [
-          "https://picsum.photos/seed/213/800/600",
-          "https://picsum.photos/seed/214/800/600"
-        ]
+        "reducedBaseRent": 735
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
-        "baseRent": 835,
-        "photos": [
-          "https://picsum.photos/seed/215/800/600",
-          "https://picsum.photos/seed/216/800/600",
-          "https://picsum.photos/seed/217/800/600",
-          "https://picsum.photos/seed/218/800/600"
-        ]
+        "baseRent": 835
       }
     ],
     "floors": {
@@ -2300,55 +2269,7 @@
         "code": "SPECIAL_OFFER",
         "label": "Offre spéciale"
       }
-    },
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/albert-thomas/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    }
   },
   "045644a8-4fa7-ef11-b8e9-6045bd19a503": {
     "residenceId": "045644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -2395,67 +2316,40 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "surface": 11,
-        "baseRent": 425,
-        "photos": [
-          "https://picsum.photos/seed/219/800/600",
-          "https://picsum.photos/seed/220/800/600",
-          "https://picsum.photos/seed/221/800/600",
-          "https://picsum.photos/seed/222/800/600"
-        ]
+        "baseRent": 425
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 505,
-        "reducedBaseRent": 500,
-        "photos": [
-          "https://picsum.photos/seed/223/800/600",
-          "https://picsum.photos/seed/224/800/600"
-        ]
+        "reducedBaseRent": 500
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 565,
-        "reducedBaseRent": 550,
-        "photos": [
-          "https://picsum.photos/seed/225/800/600",
-          "https://picsum.photos/seed/226/800/600"
-        ]
+        "reducedBaseRent": 550
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 645,
-        "reducedBaseRent": 630,
-        "photos": [
-          "https://picsum.photos/seed/227/800/600",
-          "https://picsum.photos/seed/228/800/600"
-        ]
+        "reducedBaseRent": 630
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
-        "baseRent": 725,
-        "photos": [
-          "https://picsum.photos/seed/229/800/600",
-          "https://picsum.photos/seed/230/800/600"
-        ]
+        "baseRent": 725
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
-        "baseRent": 810,
-        "photos": [
-          "https://picsum.photos/seed/231/800/600",
-          "https://picsum.photos/seed/232/800/600",
-          "https://picsum.photos/seed/233/800/600"
-        ]
+        "baseRent": 810
       }
     ],
     "floors": {
@@ -4644,55 +4538,7 @@
         "code": "POPULAR",
         "label": "Populaire"
       }
-    },
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/andromaque/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    }
   },
   "065644a8-4fa7-ef11-b8e9-6045bd19a503": {
     "residenceId": "065644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -4740,68 +4586,40 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 410,
-        "reducedBaseRent": 400,
-        "photos": [
-          "https://picsum.photos/seed/234/800/600",
-          "https://picsum.photos/seed/235/800/600"
-        ]
+        "reducedBaseRent": 400
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 490,
-        "reducedBaseRent": 475,
-        "photos": [
-          "https://picsum.photos/seed/236/800/600",
-          "https://picsum.photos/seed/237/800/600"
-        ]
+        "reducedBaseRent": 475
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
-        "baseRent": 550,
-        "photos": [
-          "https://picsum.photos/seed/238/800/600",
-          "https://picsum.photos/seed/239/800/600",
-          "https://picsum.photos/seed/240/800/600",
-          "https://picsum.photos/seed/241/800/600"
-        ]
+        "baseRent": 550
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 625,
-        "reducedBaseRent": 610,
-        "photos": [
-          "https://picsum.photos/seed/242/800/600",
-          "https://picsum.photos/seed/243/800/600"
-        ]
+        "reducedBaseRent": 610
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 705,
-        "reducedBaseRent": 685,
-        "photos": [
-          "https://picsum.photos/seed/244/800/600",
-          "https://picsum.photos/seed/245/800/600",
-          "https://picsum.photos/seed/246/800/600",
-          "https://picsum.photos/seed/247/800/600"
-        ]
+        "reducedBaseRent": 685
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
-        "baseRent": 790,
-        "photos": [
-          "https://picsum.photos/seed/248/800/600",
-          "https://picsum.photos/seed/249/800/600"
-        ]
+        "baseRent": 790
       }
     ],
     "floors": {
@@ -6988,55 +6806,7 @@
       "code": "NEW",
       "label": "Nouveauté"
     },
-    "typologyTags": {},
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/aquitaine/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    "typologyTags": {}
   },
   "6ff9af84-6e14-f011-998a-6045bd6d55ca": {
     "residenceId": "6ff9af84-6e14-f011-998a-6045bd6d55ca",
@@ -7083,66 +6853,39 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "surface": 11,
-        "baseRent": 420,
-        "photos": [
-          "https://picsum.photos/seed/250/800/600",
-          "https://picsum.photos/seed/251/800/600",
-          "https://picsum.photos/seed/252/800/600",
-          "https://picsum.photos/seed/253/800/600"
-        ]
+        "baseRent": 420
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 500,
-        "reducedBaseRent": 495,
-        "photos": [
-          "https://picsum.photos/seed/254/800/600",
-          "https://picsum.photos/seed/255/800/600"
-        ]
+        "reducedBaseRent": 495
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
-        "baseRent": 565,
-        "photos": [
-          "https://picsum.photos/seed/256/800/600",
-          "https://picsum.photos/seed/257/800/600"
-        ]
+        "baseRent": 565
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
-        "baseRent": 645,
-        "photos": [
-          "https://picsum.photos/seed/258/800/600",
-          "https://picsum.photos/seed/259/800/600"
-        ]
+        "baseRent": 645
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
-        "baseRent": 730,
-        "photos": [
-          "https://picsum.photos/seed/260/800/600",
-          "https://picsum.photos/seed/261/800/600"
-        ]
+        "baseRent": 730
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 820,
-        "reducedBaseRent": 805,
-        "photos": [
-          "https://picsum.photos/seed/262/800/600",
-          "https://picsum.photos/seed/263/800/600",
-          "https://picsum.photos/seed/264/800/600"
-        ]
+        "reducedBaseRent": 805
       }
     ],
     "floors": {
@@ -9334,55 +9077,7 @@
         "code": "POPULAR",
         "label": "Populaire"
       }
-    },
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/atlas/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    }
   },
   "0c5644a8-4fa7-ef11-b8e9-6045bd19a503": {
     "residenceId": "0c5644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -9430,64 +9125,38 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 395,
-        "reducedBaseRent": 390,
-        "photos": [
-          "https://picsum.photos/seed/265/800/600",
-          "https://picsum.photos/seed/266/800/600"
-        ]
+        "reducedBaseRent": 390
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
-        "baseRent": 475,
-        "photos": [
-          "https://picsum.photos/seed/267/800/600",
-          "https://picsum.photos/seed/268/800/600"
-        ]
+        "baseRent": 475
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
-        "baseRent": 535,
-        "photos": [
-          "https://picsum.photos/seed/269/800/600",
-          "https://picsum.photos/seed/270/800/600",
-          "https://picsum.photos/seed/271/800/600",
-          "https://picsum.photos/seed/272/800/600"
-        ]
+        "baseRent": 535
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
-        "baseRent": 615,
-        "photos": [
-          "https://picsum.photos/seed/273/800/600",
-          "https://picsum.photos/seed/274/800/600"
-        ]
+        "baseRent": 615
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 695,
-        "reducedBaseRent": 675,
-        "photos": [
-          "https://picsum.photos/seed/275/800/600",
-          "https://picsum.photos/seed/276/800/600"
-        ]
+        "reducedBaseRent": 675
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
-        "baseRent": 780,
-        "photos": [
-          "https://picsum.photos/seed/277/800/600",
-          "https://picsum.photos/seed/278/800/600"
-        ]
+        "baseRent": 780
       }
     ],
     "floors": {
@@ -11676,55 +11345,7 @@
         "code": "LAST_UNITS",
         "label": "Dernières disponibilités"
       }
-    },
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/babylone/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    }
   },
   "359b3195-7814-f011-998a-6045bd6bf874": {
     "residenceId": "359b3195-7814-f011-998a-6045bd6bf874",
@@ -11771,70 +11392,38 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "surface": 11,
-        "baseRent": 380,
-        "photos": [
-          "https://picsum.photos/seed/279/800/600",
-          "https://picsum.photos/seed/280/800/600",
-          "https://picsum.photos/seed/281/800/600"
-        ]
+        "baseRent": 380
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
-        "baseRent": 455,
-        "photos": [
-          "https://picsum.photos/seed/282/800/600",
-          "https://picsum.photos/seed/283/800/600",
-          "https://picsum.photos/seed/284/800/600"
-        ]
+        "baseRent": 455
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 510,
-        "reducedBaseRent": 495,
-        "photos": [
-          "https://picsum.photos/seed/285/800/600",
-          "https://picsum.photos/seed/286/800/600",
-          "https://picsum.photos/seed/287/800/600",
-          "https://picsum.photos/seed/288/800/600"
-        ]
+        "reducedBaseRent": 495
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
-        "baseRent": 590,
-        "photos": [
-          "https://picsum.photos/seed/289/800/600",
-          "https://picsum.photos/seed/290/800/600",
-          "https://picsum.photos/seed/291/800/600",
-          "https://picsum.photos/seed/292/800/600"
-        ]
+        "baseRent": 590
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
-        "baseRent": 670,
-        "photos": [
-          "https://picsum.photos/seed/293/800/600",
-          "https://picsum.photos/seed/294/800/600",
-          "https://picsum.photos/seed/295/800/600",
-          "https://picsum.photos/seed/296/800/600"
-        ]
+        "baseRent": 670
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
-        "baseRent": 755,
-        "photos": [
-          "https://picsum.photos/seed/297/800/600",
-          "https://picsum.photos/seed/298/800/600"
-        ]
+        "baseRent": 755
       }
     ],
     "floors": {
@@ -14021,55 +13610,7 @@
       "code": "POPULAR",
       "label": "Populaire"
     },
-    "typologyTags": {},
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/baker-hill/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    "typologyTags": {}
   },
   "19f2179b-7d14-f011-998a-6045bd1919a1": {
     "residenceId": "19f2179b-7d14-f011-998a-6045bd1919a1",
@@ -14117,72 +13658,40 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 590,
-        "reducedBaseRent": 575,
-        "photos": [
-          "https://picsum.photos/seed/299/800/600",
-          "https://picsum.photos/seed/300/800/600",
-          "https://picsum.photos/seed/301/800/600"
-        ]
+        "reducedBaseRent": 575
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
-        "baseRent": 720,
-        "photos": [
-          "https://picsum.photos/seed/302/800/600",
-          "https://picsum.photos/seed/303/800/600",
-          "https://picsum.photos/seed/304/800/600"
-        ]
+        "baseRent": 720
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
-        "baseRent": 810,
-        "photos": [
-          "https://picsum.photos/seed/305/800/600",
-          "https://picsum.photos/seed/306/800/600",
-          "https://picsum.photos/seed/307/800/600",
-          "https://picsum.photos/seed/308/800/600"
-        ]
+        "baseRent": 810
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 920,
-        "reducedBaseRent": 915,
-        "photos": [
-          "https://picsum.photos/seed/309/800/600",
-          "https://picsum.photos/seed/310/800/600",
-          "https://picsum.photos/seed/311/800/600"
-        ]
+        "reducedBaseRent": 915
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 1040,
-        "reducedBaseRent": 1035,
-        "photos": [
-          "https://picsum.photos/seed/312/800/600",
-          "https://picsum.photos/seed/313/800/600",
-          "https://picsum.photos/seed/314/800/600"
-        ]
+        "reducedBaseRent": 1035
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 1180,
-        "reducedBaseRent": 1160,
-        "photos": [
-          "https://picsum.photos/seed/315/800/600",
-          "https://picsum.photos/seed/316/800/600",
-          "https://picsum.photos/seed/317/800/600",
-          "https://picsum.photos/seed/318/800/600"
-        ]
+        "reducedBaseRent": 1160
       }
     ],
     "floors": {
@@ -16374,55 +15883,7 @@
         "code": "POPULAR",
         "label": "Populaire"
       }
-    },
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-geneve-archamps/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    }
   },
   "195644a8-4fa7-ef11-b8e9-6045bd19a503": {
     "residenceId": "195644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -16469,68 +15930,39 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "surface": 11,
-        "baseRent": 480,
-        "photos": [
-          "https://picsum.photos/seed/319/800/600",
-          "https://picsum.photos/seed/320/800/600",
-          "https://picsum.photos/seed/321/800/600",
-          "https://picsum.photos/seed/322/800/600"
-        ]
+        "baseRent": 480
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
-        "baseRent": 600,
-        "photos": [
-          "https://picsum.photos/seed/323/800/600",
-          "https://picsum.photos/seed/324/800/600"
-        ]
+        "baseRent": 600
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 685,
-        "reducedBaseRent": 680,
-        "photos": [
-          "https://picsum.photos/seed/325/800/600",
-          "https://picsum.photos/seed/326/800/600",
-          "https://picsum.photos/seed/327/800/600",
-          "https://picsum.photos/seed/328/800/600"
-        ]
+        "reducedBaseRent": 680
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
-        "baseRent": 760,
-        "photos": [
-          "https://picsum.photos/seed/329/800/600",
-          "https://picsum.photos/seed/330/800/600"
-        ]
+        "baseRent": 760
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
-        "baseRent": 870,
-        "photos": [
-          "https://picsum.photos/seed/331/800/600",
-          "https://picsum.photos/seed/332/800/600",
-          "https://picsum.photos/seed/333/800/600"
-        ]
+        "baseRent": 870
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 990,
-        "reducedBaseRent": 970,
-        "photos": [
-          "https://picsum.photos/seed/334/800/600",
-          "https://picsum.photos/seed/335/800/600"
-        ]
+        "reducedBaseRent": 970
       }
     ],
     "floors": {
@@ -18722,55 +18154,7 @@
         "code": "SPECIAL_OFFER",
         "label": "Offre spéciale"
       }
-    },
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-mp/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    }
   },
   "1d5644a8-4fa7-ef11-b8e9-6045bd19a503": {
     "residenceId": "1d5644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -18817,68 +18201,40 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "surface": 11,
-        "baseRent": 490,
-        "photos": [
-          "https://picsum.photos/seed/336/800/600",
-          "https://picsum.photos/seed/337/800/600",
-          "https://picsum.photos/seed/338/800/600"
-        ]
+        "baseRent": 490
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 615,
-        "reducedBaseRent": 610,
-        "photos": [
-          "https://picsum.photos/seed/339/800/600",
-          "https://picsum.photos/seed/340/800/600"
-        ]
+        "reducedBaseRent": 610
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
-        "baseRent": 700,
-        "photos": [
-          "https://picsum.photos/seed/341/800/600",
-          "https://picsum.photos/seed/342/800/600"
-        ]
+        "baseRent": 700
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 785,
-        "reducedBaseRent": 780,
-        "photos": [
-          "https://picsum.photos/seed/343/800/600",
-          "https://picsum.photos/seed/344/800/600",
-          "https://picsum.photos/seed/345/800/600"
-        ]
+        "reducedBaseRent": 780
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
-        "baseRent": 895,
-        "photos": [
-          "https://picsum.photos/seed/346/800/600",
-          "https://picsum.photos/seed/347/800/600",
-          "https://picsum.photos/seed/348/800/600",
-          "https://picsum.photos/seed/349/800/600"
-        ]
+        "baseRent": 895
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 1015,
-        "reducedBaseRent": 1010,
-        "photos": [
-          "https://picsum.photos/seed/350/800/600",
-          "https://picsum.photos/seed/351/800/600"
-        ]
+        "reducedBaseRent": 1010
       }
     ],
     "floors": {
@@ -21067,55 +20423,7 @@
         "code": "NEW",
         "label": "Nouveauté"
       }
-    },
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-palaiseau-extension-opco/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    }
   },
   "1b5644a8-4fa7-ef11-b8e9-6045bd19a503": {
     "residenceId": "1b5644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -21163,73 +20471,42 @@
         "label": "Chambre en colocation",
         "surface": 11,
         "baseRent": 460,
-        "reducedBaseRent": 455,
-        "photos": [
-          "https://picsum.photos/seed/352/800/600",
-          "https://picsum.photos/seed/353/800/600",
-          "https://picsum.photos/seed/354/800/600"
-        ]
+        "reducedBaseRent": 455
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "surface": 19,
         "baseRent": 585,
-        "reducedBaseRent": 565,
-        "photos": [
-          "https://picsum.photos/seed/355/800/600",
-          "https://picsum.photos/seed/356/800/600"
-        ]
+        "reducedBaseRent": 565
       },
       {
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "surface": 26,
         "baseRent": 665,
-        "reducedBaseRent": 650,
-        "photos": [
-          "https://picsum.photos/seed/357/800/600",
-          "https://picsum.photos/seed/358/800/600",
-          "https://picsum.photos/seed/359/800/600",
-          "https://picsum.photos/seed/360/800/600"
-        ]
+        "reducedBaseRent": 650
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "surface": 34,
         "baseRent": 745,
-        "reducedBaseRent": 740,
-        "photos": [
-          "https://picsum.photos/seed/361/800/600",
-          "https://picsum.photos/seed/362/800/600",
-          "https://picsum.photos/seed/363/800/600",
-          "https://picsum.photos/seed/364/800/600"
-        ]
+        "reducedBaseRent": 740
       },
       {
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "surface": 42,
         "baseRent": 860,
-        "reducedBaseRent": 840,
-        "photos": [
-          "https://picsum.photos/seed/365/800/600",
-          "https://picsum.photos/seed/366/800/600",
-          "https://picsum.photos/seed/367/800/600",
-          "https://picsum.photos/seed/368/800/600"
-        ]
+        "reducedBaseRent": 840
       },
       {
         "typologyCode": "T3",
         "label": "T3",
         "surface": 52,
         "baseRent": 970,
-        "reducedBaseRent": 955,
-        "photos": [
-          "https://picsum.photos/seed/369/800/600",
-          "https://picsum.photos/seed/370/800/600"
-        ]
+        "reducedBaseRent": 955
       }
     ],
     "floors": {
@@ -23425,54 +22702,6 @@
         "code": "SPECIAL_OFFER",
         "label": "Offre spéciale"
       }
-    },
-    "photos": [
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/hero-01.webp",
-        "alt": "Vue extérieure",
-        "order": 1,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/hero-02.webp",
-        "alt": "Hall d'entrée",
-        "order": 2,
-        "context": "HERO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/common-01.webp",
-        "alt": "Espace commun",
-        "order": 3,
-        "context": "COMMON"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/studio-01.webp",
-        "alt": "Studio meublé",
-        "order": 4,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/studio-02.webp",
-        "alt": "Studio - salle de bain",
-        "order": 5,
-        "context": "TYPOLOGY",
-        "typologyCode": "STUDIO"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/t2-01.webp",
-        "alt": "T2 - séjour",
-        "order": 6,
-        "context": "TYPOLOGY",
-        "typologyCode": "T2"
-      },
-      {
-        "url": "https://s3.eu-west-1.amazonaws.com/cdn.ecla-uxco.fr/residences/ecla-nlg/coloc-01.webp",
-        "alt": "Chambre colocation",
-        "order": 7,
-        "context": "TYPOLOGY",
-        "typologyCode": "COLOC"
-      }
-    ]
+    }
   }
 }
