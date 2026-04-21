@@ -267,6 +267,182 @@
       }
     }
   },
+  "residenceOverrides": {
+    "ff5544a8-4fa7-ef11-b8e9-6045bd19a503": {
+      "residenceId": "ff5544a8-4fa7-ef11-b8e9-6045bd19a503",
+      "city": "Lyon",
+      "cityAlias": "Lyon",
+      "flag": {
+        "code": "POPULAR",
+        "label": "Populaire",
+        "typologies": ["STUDIO", "COLOC"]
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-01.webp", "alt": "Vue extérieure Résidence Albert Thomas", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-02.webp", "alt": "Hall d'entrée Albert Thomas", "order": 1, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-gym.webp", "alt": "Salle de sport Albert Thomas", "order": 2, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-cowork.webp", "alt": "Espace coworking Albert Thomas", "order": 3, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-coloc-01.webp", "alt": "Chambre colocation Albert Thomas", "order": 4, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+        { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-studio-01.webp", "alt": "Studio Albert Thomas", "order": 5, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+        { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-t2-01.webp", "alt": "T2 Albert Thomas", "order": 6, "context": "TYPOLOGY", "typologyCode": "T2" }
+      ]
+    },
+    "045644a8-4fa7-ef11-b8e9-6045bd19a503": {
+      "residenceId": "045644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "city": "Villeurbanne",
+      "cityAlias": "Villeurbanne",
+      "flag": {
+        "code": "LAST_UNITS",
+        "label": "Dernières disponibilités",
+        "typologies": ["COLOC"]
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/villeurbanne/andromaque/hero-01.webp", "alt": "Vue extérieure Résidence Andromaque", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/villeurbanne/andromaque/common-laundry.webp", "alt": "Laverie Andromaque", "order": 1, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/villeurbanne/andromaque/typo-coloc-01.webp", "alt": "Colocation Andromaque", "order": 2, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+        { "url": "https://cdn.mock.ecla.io/villeurbanne/andromaque/typo-studio-01.webp", "alt": "Studio Andromaque", "order": 3, "context": "TYPOLOGY", "typologyCode": "STUDIO" }
+      ]
+    },
+    "065644a8-4fa7-ef11-b8e9-6045bd19a503": {
+      "residenceId": "065644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "city": "Bègles",
+      "cityAlias": "Bègles",
+      "flag": {
+        "code": "NEW",
+        "label": "Nouveauté",
+        "typologies": []
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/begles/aquitaine/hero-01.webp", "alt": "Vue extérieure Résidence Aquitaine", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/begles/aquitaine/common-study.webp", "alt": "Salle d'étude Aquitaine", "order": 1, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/begles/aquitaine/typo-t1bis-01.webp", "alt": "T1 BIS Aquitaine", "order": 2, "context": "TYPOLOGY", "typologyCode": "T1_BIS" },
+        { "url": "https://cdn.mock.ecla.io/begles/aquitaine/typo-t3-01.webp", "alt": "T3 Aquitaine", "order": 3, "context": "TYPOLOGY", "typologyCode": "T3" }
+      ]
+    },
+    "6ff9af84-6e14-f011-998a-6045bd6d55ca": {
+      "residenceId": "6ff9af84-6e14-f011-998a-6045bd6d55ca",
+      "city": "Toulouse",
+      "cityAlias": "Toulouse",
+      "flag": {
+        "code": "SPECIAL_OFFER",
+        "label": "Offre spéciale",
+        "typologies": []
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/toulouse/atlas/hero-01.webp", "alt": "Vue extérieure Résidence Atlas", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/toulouse/atlas/hero-02.webp", "alt": "Entrée principale Atlas", "order": 1, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/toulouse/atlas/common-gym.webp", "alt": "Salle de sport Atlas", "order": 2, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/toulouse/atlas/typo-coloc-01.webp", "alt": "Colocation Atlas", "order": 3, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+        { "url": "https://cdn.mock.ecla.io/toulouse/atlas/typo-t2-01.webp", "alt": "T2 Atlas", "order": 4, "context": "TYPOLOGY", "typologyCode": "T2" },
+        { "url": "https://cdn.mock.ecla.io/toulouse/atlas/typo-t2duplex-01.webp", "alt": "T2 Duplex Atlas", "order": 5, "context": "TYPOLOGY", "typologyCode": "T2_DUPLEX" }
+      ]
+    },
+    "0c5644a8-4fa7-ef11-b8e9-6045bd19a503": {
+      "residenceId": "0c5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "city": "Villeneuve-d'Ascq",
+      "cityAlias": "Villeneuve-d'Ascq",
+      "flag": {
+        "code": "LAST_UNITS",
+        "label": "Dernières disponibilités",
+        "typologies": ["STUDIO"]
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/villeneuve/babylone/hero-01.webp", "alt": "Vue extérieure Résidence Babylone", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/villeneuve/babylone/typo-studio-01.webp", "alt": "Studio Babylone", "order": 1, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+        { "url": "https://cdn.mock.ecla.io/villeneuve/babylone/typo-t2duplex-01.webp", "alt": "T2 Duplex Babylone", "order": 2, "context": "TYPOLOGY", "typologyCode": "T2_DUPLEX" }
+      ]
+    },
+    "359b3195-7814-f011-998a-6045bd6bf874": {
+      "residenceId": "359b3195-7814-f011-998a-6045bd6bf874",
+      "city": "Saint-Étienne",
+      "cityAlias": "Saint-Étienne",
+      "flag": {
+        "code": "POPULAR",
+        "label": "Populaire",
+        "typologies": []
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/st-etienne/baker-hill/hero-01.webp", "alt": "Vue extérieure Résidence Baker Hill", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/st-etienne/baker-hill/common-bike.webp", "alt": "Local vélos Baker Hill", "order": 1, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/st-etienne/baker-hill/typo-coloc-01.webp", "alt": "Colocation Baker Hill", "order": 2, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+        { "url": "https://cdn.mock.ecla.io/st-etienne/baker-hill/typo-t1bis-01.webp", "alt": "T1 BIS Baker Hill", "order": 3, "context": "TYPOLOGY", "typologyCode": "T1_BIS" }
+      ]
+    },
+    "19f2179b-7d14-f011-998a-6045bd1919a1": {
+      "residenceId": "19f2179b-7d14-f011-998a-6045bd1919a1",
+      "city": "Archamps",
+      "cityAlias": "Genève",
+      "flag": {
+        "code": "SPECIAL_OFFER",
+        "label": "Offre spéciale",
+        "typologies": ["STUDIO", "T1_BIS"]
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/hero-01.webp", "alt": "Vue aérienne Ecla Genève-Archamps", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/hero-02.webp", "alt": "Façade Ecla Genève-Archamps", "order": 1, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/common-padel.webp", "alt": "Courts de padel Ecla Archamps", "order": 2, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/common-cinema.webp", "alt": "Cinébox Ecla Archamps", "order": 3, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/typo-studio-01.webp", "alt": "Studio Ecla Archamps", "order": 4, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+        { "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/typo-t1bis-01.webp", "alt": "T1 BIS Ecla Archamps", "order": 5, "context": "TYPOLOGY", "typologyCode": "T1_BIS" },
+        { "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/typo-t2-01.webp", "alt": "T2 Ecla Archamps", "order": 6, "context": "TYPOLOGY", "typologyCode": "T2" },
+        { "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/typo-t2duplex-01.webp", "alt": "T2 Duplex Ecla Archamps", "order": 7, "context": "TYPOLOGY", "typologyCode": "T2_DUPLEX" }
+      ]
+    },
+    "195644a8-4fa7-ef11-b8e9-6045bd19a503": {
+      "residenceId": "195644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "city": "Massy",
+      "cityAlias": "Paris",
+      "flag": {
+        "code": "POPULAR",
+        "label": "Populaire",
+        "typologies": []
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-mp/hero-01.webp", "alt": "Vue extérieure Ecla Massy-Palaiseau", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-mp/hero-02.webp", "alt": "Rooftop Ecla Massy-Palaiseau", "order": 1, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-mp/common-cowork.webp", "alt": "Espace coworking Ecla MP", "order": 2, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-mp/common-resto.webp", "alt": "Restaurant Interval Ecla MP", "order": 3, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-mp/typo-coloc-01.webp", "alt": "Colocation Ecla MP", "order": 4, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-mp/typo-studio-01.webp", "alt": "Studio Ecla MP", "order": 5, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-mp/typo-t2-01.webp", "alt": "T2 Ecla MP", "order": 6, "context": "TYPOLOGY", "typologyCode": "T2" }
+      ]
+    },
+    "1d5644a8-4fa7-ef11-b8e9-6045bd19a503": {
+      "residenceId": "1d5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "city": "Massy",
+      "cityAlias": "Paris",
+      "flag": {
+        "code": "NEW",
+        "label": "Nouveauté",
+        "typologies": ["T1_BIS", "T2"]
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-opco/hero-01.webp", "alt": "Vue extérieure Ecla Palaiseau OPCO", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-opco/common-gym.webp", "alt": "Salle de sport Ecla OPCO", "order": 1, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t1bis-01.webp", "alt": "T1 BIS Ecla OPCO", "order": 2, "context": "TYPOLOGY", "typologyCode": "T1_BIS" },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t2-01.webp", "alt": "T2 Ecla OPCO", "order": 3, "context": "TYPOLOGY", "typologyCode": "T2" },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t2duplex-01.webp", "alt": "T2 Duplex Ecla OPCO", "order": 4, "context": "TYPOLOGY", "typologyCode": "T2_DUPLEX" }
+      ]
+    },
+    "1b5644a8-4fa7-ef11-b8e9-6045bd19a503": {
+      "residenceId": "1b5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "city": "Noisy-le-Grand",
+      "cityAlias": "Paris",
+      "flag": {
+        "code": "SPECIAL_OFFER",
+        "label": "Offre spéciale",
+        "typologies": []
+      },
+      "photos": [
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/hero-01.webp", "alt": "Vue extérieure Ecla Noisy-le-Grand", "order": 0, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/hero-02.webp", "alt": "Jardin Ecla Noisy-le-Grand", "order": 1, "context": "HERO", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/common-padel.webp", "alt": "Courts de padel Ecla NLG", "order": 2, "context": "COMMON", "typologyCode": null },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/typo-coloc-01.webp", "alt": "Colocation Ecla NLG", "order": 3, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/typo-studio-01.webp", "alt": "Studio Ecla NLG", "order": 4, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+        { "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/typo-t3-01.webp", "alt": "T3 Ecla NLG", "order": 5, "context": "TYPOLOGY", "typologyCode": "T3" }
+      ]
+    }
+  },
   "steps": [
     {
       "stepCode": "CHOOSE_RESIDENCE",

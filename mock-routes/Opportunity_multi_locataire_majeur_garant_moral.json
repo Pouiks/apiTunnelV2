@@ -1,0 +1,78 @@
+{
+  "contacts": [
+    {
+      "uxc_role": { "value": 944800000, "label": "Locataire" },
+      "prenom": "Yuki",
+      "nom": "Tanaka",
+      "email": "yuki.tanaka@company.jp",
+      "telephone": "+33756789012",
+      "dateDeNaissance": "1995-06-10",
+      "lieuDeNaissance": "Tokyo",
+      "nationalite": "d3f52a11-ebcc-ee11-907a-6045bd6cbb92",
+      "pays": "d3f52a11-ebcc-ee11-907a-6045bd6cbb92",
+      "mineur": { "value": 921280000, "label": "Non" },
+      "profilLocataire": { "value": 750280001, "label": "Salarié ou Fonctionnaire" },
+      "langueDeCommunication": { "value": 918210001, "label": "Anglais" },
+      "adresse": "8 Avenue Raymond Poincaré",
+      "codePostal": "91320",
+      "ville": "Palaiseau"
+    },
+    {
+      "uxc_role": { "value": 944800005, "label": "Co-locataire" },
+      "prenom": "Pierre",
+      "nom": "Moreau",
+      "email": "pierre.moreau@cnrs.fr",
+      "telephone": "+33745678901",
+      "dateDeNaissance": "1990-03-22",
+      "lieuDeNaissance": "Paris",
+      "nationalite": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "pays": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "mineur": { "value": 921280000, "label": "Non" },
+      "profilLocataire": { "value": 918210002, "label": "Chercheur" },
+      "langueDeCommunication": { "value": 918210000, "label": "Français" },
+      "adresse": "4 Rue Soufflot",
+      "codePostal": "75005",
+      "ville": "Paris"
+    }
+  ],
+  "opportunity": {
+    "typeDopportunite": { "value": 921280000, "label": "B2C" },
+    "source": { "value": 750280001, "label": "Site internet ECLA" },
+    "marqueDeLaResidence": { "value": 750280001, "label": "ECLA" },
+    "residenceId": "195644a8-4fa7-ef11-b8e9-6045bd19a503",
+    "residenceName": "ECLA MP",
+    "typeDeLot": "T2",
+    "typeDeBail": { "value": 921280001, "label": "Bail multi-locataires" },
+    "typeDeLogementSouhaitee": { "value": 750280000, "label": "Logement individuel" },
+    "contractType": { "value": 944800002, "label": "Contrat moyenne durée (1-7 mois)" },
+    "salesChannel": { "value": 944800000, "label": "B2C" },
+    "dateArrivee": "2026-10-01",
+    "dateDepart": "2027-04-30",
+    "statutDeLopportunite": { "value": 918210000, "label": "En pré-réservation" },
+    "necessiteDeGarant": { "value": 921280000, "label": "Oui" },
+    "typeDeGarant": { "value": 750280001, "label": "Moral" },
+    "depotDeGarantie": 800.00,
+    "fraisDeDossiers": 150.00,
+    "montant1erPaiement": 950.00,
+    "parkingSeul": { "value": 918210001, "label": "Non" },
+    "libelleopportunite": "O > 804 > Tanaka-Moreau > 2026.10.01-01",
+    "options": ["Climatisation", "Balcon"],
+    "abonnements": ["Le pack", "Kit Linge"],
+    "offres": [
+      {
+        "type": "offre",
+        "offreId": "OFFER_RENTREE_2026",
+        "nom": "Offre rentrée 2026",
+        "montant": 100.00,
+        "typeReduction": "%",
+        "cible": "frais_de_dossier",
+        "recurrence": "unique",
+        "recurrenceMois": null,
+        "dateDebut": "2026-10-01",
+        "dateFin": "2027-04-30",
+        "codePromo": null,
+        "etat": null
+      }
+    ]
+  }
+}

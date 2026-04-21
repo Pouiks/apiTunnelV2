@@ -1,0 +1,62 @@
+{
+  "contacts": [
+    {
+      "uxc_role": { "value": 944800000, "label": "Locataire" },
+      "prenom": "Lucas",
+      "nom": "Martin",
+      "email": "lucas.martin@mail.com",
+      "telephone": "+33645678901",
+      "dateDeNaissance": "2009-11-22",
+      "lieuDeNaissance": "Lyon",
+      "nationalite": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "pays": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "mineur": { "value": 921280001, "label": "Oui" },
+      "profilLocataire": { "value": 750280000, "label": "Etudiant" },
+      "langueDeCommunication": { "value": 918210000, "label": "Français" },
+      "adresse": "15 Rue de la République",
+      "codePostal": "69003",
+      "ville": "Lyon"
+    },
+    {
+      "uxc_role": { "value": 944800003, "label": "Représentant Légal Locataire" },
+      "prenom": "Sophie",
+      "nom": "Martin",
+      "email": "sophie.martin@mail.com",
+      "telephone": "+33678901234",
+      "dateDeNaissance": "1978-04-12",
+      "lieuDeNaissance": "Lyon",
+      "nationalite": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "pays": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "mineur": { "value": 921280000, "label": "Non" },
+      "langueDeCommunication": { "value": 918210000, "label": "Français" },
+      "adresse": "45 Boulevard Gambetta",
+      "codePostal": "69007",
+      "ville": "Lyon"
+    }
+  ],
+  "opportunity": {
+    "typeDopportunite": { "value": 921280000, "label": "B2C" },
+    "source": { "value": 750280000, "label": "Site internet UXCO" },
+    "marqueDeLaResidence": { "value": 750280000, "label": "UXCO Student" },
+    "residenceId": "ff5544a8-4fa7-ef11-b8e9-6045bd19a503",
+    "residenceName": "ALBERT THOMAS",
+    "typeDeLot": "STUDIO",
+    "typeDeBail": { "value": 921280000, "label": "Bail unique locataire" },
+    "typeDeLogementSouhaitee": { "value": 750280000, "label": "Logement individuel" },
+    "contractType": { "value": 921280000, "label": "Contrat 12 mois avec élection de domicile" },
+    "salesChannel": { "value": 944800000, "label": "B2C" },
+    "dateArrivee": "2026-09-01",
+    "dateDepart": "2027-08-31",
+    "statutDeLopportunite": { "value": 918210000, "label": "En pré-réservation" },
+    "necessiteDeGarant": { "value": 921280000, "label": "Oui" },
+    "typeDeGarant": { "value": 750280000, "label": "Physique" },
+    "depotDeGarantie": 400.00,
+    "fraisDeDossiers": 150.00,
+    "montant1erPaiement": 550.00,
+    "parkingSeul": { "value": 918210001, "label": "Non" },
+    "libelleopportunite": "O > 804 > Martin-Lucas > 2026.09.01-01",
+    "options": [],
+    "abonnements": ["TV"],
+    "offres": []
+  }
+}

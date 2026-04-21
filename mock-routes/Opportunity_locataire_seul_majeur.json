@@ -1,0 +1,75 @@
+{
+  "contacts": [
+    {
+      "uxc_role": { "value": 944800000, "label": "Locataire" },
+      "prenom": "Marie",
+      "nom": "Dupont",
+      "email": "marie.dupont@mail.com",
+      "telephone": "+33612345678",
+      "dateDeNaissance": "2002-03-15",
+      "lieuDeNaissance": "Paris",
+      "nationalite": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "pays": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "mineur": { "value": 921280000, "label": "Non" },
+      "profilLocataire": { "value": 750280000, "label": "Etudiant" },
+      "langueDeCommunication": { "value": 918210000, "label": "Français" },
+      "adresse": "12 Rue des Ecoles",
+      "codePostal": "75005",
+      "ville": "Paris"
+    }
+  ],
+  "opportunity": {
+    "typeDopportunite": { "value": 921280000, "label": "B2C" },
+    "source": { "value": 750280001, "label": "Site internet ECLA" },
+    "marqueDeLaResidence": { "value": 750280001, "label": "ECLA" },
+    "residenceId": "19f2179b-7d14-f011-998a-6045bd1919a1",
+    "residenceName": "ECLA GENEVE ARCHAMPS",
+    "typeDeLot": "STUDIO",
+    "typeDeBail": { "value": 921280000, "label": "Bail unique locataire" },
+    "typeDeLogementSouhaitee": { "value": 750280000, "label": "Logement individuel" },
+    "contractType": { "value": 921280000, "label": "Contrat 12 mois avec élection de domicile" },
+    "salesChannel": { "value": 944800000, "label": "B2C" },
+    "dateArrivee": "2026-09-01",
+    "dateDepart": "2027-08-31",
+    "statutDeLopportunite": { "value": 918210000, "label": "En pré-réservation" },
+    "necessiteDeGarant": { "value": 921280000, "label": "Oui" },
+    "typeDeGarant": { "value": 750280000, "label": "Physique" }, //nullable si non necessiteDeGarant
+    "depotDeGarantie": 500.00,
+    "fraisDeDossiers": 150.00,
+    "montant1erPaiement": 650.00,
+    "parkingSeul": { "value": 918210001, "label": "Non" },
+    "libelleopportunite": "O > 804 > Virgile testProd > 2026.04.20-01",
+    "options": ["Balcon"],
+    "abonnements": ["TV"],
+    "offres": [
+      {
+        "type": "offre",
+        "offreId": "OFFER_SUMMER_2026",
+        "nom": "Offre été 2026",
+        "montant": 50.00,
+        "typeReduction": "EUR",
+        "cible": "loyer",
+        "recurrence": "mensuelle",
+        "recurrenceMois": 3,
+        "dateDebut": "2026-09-01",
+        "dateFin": "2027-08-31",
+        "codePromo": null,
+        "etat": null
+      },
+      {
+        "type": "code_promo",
+        "offreId": "PROMOCODE_FDD50",
+        "nom": "Réduction Frais de dossier -50%",
+        "montant": 50.00,
+        "typeReduction": "%",
+        "cible": "frais_de_dossier",
+        "recurrence": "unique",
+        "recurrenceMois": null,
+        "dateDebut": "2026-09-01",
+        "dateFin": "2027-08-31",
+        "codePromo": "FDD50",
+        "etat": "valide"
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "contacts": [
+    {
+      "uxc_role": { "value": 944800000, "label": "Locataire" },
+      "prenom": "Emma",
+      "nom": "Bernard",
+      "email": "emma.bernard@mail.com",
+      "telephone": "+33623456789",
+      "dateDeNaissance": "2003-08-20",
+      "lieuDeNaissance": "Toulouse",
+      "nationalite": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "pays": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "mineur": { "value": 921280000, "label": "Non" },
+      "profilLocataire": { "value": 750280000, "label": "Etudiant" },
+      "langueDeCommunication": { "value": 918210000, "label": "Français" },
+      "adresse": "22 Allée des Tilleuls",
+      "codePostal": "31000",
+      "ville": "Toulouse"
+    },
+    {
+      "uxc_role": { "value": 944800005, "label": "Co-locataire" },
+      "prenom": "Léa",
+      "nom": "Petit",
+      "email": "lea.petit@mail.com",
+      "telephone": "+33634567890",
+      "dateDeNaissance": "2003-01-05",
+      "lieuDeNaissance": "Bordeaux",
+      "nationalite": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "pays": "cc211403-ebcc-ee11-907a-6045bd6cbb92",
+      "mineur": { "value": 921280000, "label": "Non" },
+      "profilLocataire": { "value": 944800003, "label": "Stagiaire" },
+      "langueDeCommunication": { "value": 918210000, "label": "Français" },
+      "adresse": "5 Place de la Bourse",
+      "codePostal": "33000",
+      "ville": "Bordeaux"
+    }
+  ],
+  "opportunity": {
+    "typeDopportunite": { "value": 921280000, "label": "B2C" },
+    "source": { "value": 921280003, "label": "Réseaux sociaux" },
+    "marqueDeLaResidence": { "value": 750280000, "label": "UXCO Student" },
+    "residenceId": "6ff9af84-6e14-f011-998a-6045bd6d55ca",
+    "residenceName": "ATLAS",
+    "typeDeLot": "COLOC",
+    "typeDeBail": { "value": 921280001, "label": "Bail multi-locataires" },
+    "typeDeLogementSouhaitee": { "value": 750280001, "label": "Logement collectif" },
+    "contractType": { "value": 921280000, "label": "Contrat 12 mois avec élection de domicile" },
+    "salesChannel": { "value": 944800000, "label": "B2C" },
+    "dateArrivee": "2026-09-01",
+    "dateDepart": "2027-08-31",
+    "statutDeLopportunite": { "value": 918210000, "label": "En pré-réservation" },
+    "necessiteDeGarant": { "value": 921280000, "label": "Oui" },
+    "typeDeGarant": { "value": 750280000, "label": "Physique" },
+    "depotDeGarantie": 350.00,
+    "fraisDeDossiers": 150.00,
+    "montant1erPaiement": 500.00,
+    "parkingSeul": { "value": 918210001, "label": "Non" },
+    "libelleopportunite": "O > 804 > Bernard-Petit > 2026.09.01-01",
+    "options": [],
+    "abonnements": ["Le pack", "TV", "Kit Linge"],
+    "offres": [
+      {
+        "type": "offre",
+        "offreId": "OFFER_SUMMER_2026",
+        "nom": "Offre été 2026",
+        "montant": 50.00,
+        "typeReduction": "EUR",
+        "cible": "loyer",
+        "recurrence": "mensuelle",
+        "recurrenceMois": 3,
+        "dateDebut": "2026-09-01",
+        "dateFin": "2027-08-31",
+        "codePromo": null,
+        "etat": null
+      }
+    ]
+  }
+}

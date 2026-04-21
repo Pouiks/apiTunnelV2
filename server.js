@@ -19,6 +19,14 @@ const allResidencesPayload = loadMockJSON("GetAllResidences.json");
 const residenceDetailsById = loadMockJSON("GetOneResidenceById.json");
 const offersPayload = loadMockJSON("GetOffers.json");
 const adminTRPayload = loadMockJSON("GetAdminTR.json");
+const opportunityScenarios = {
+  locataire_seul_majeur: loadMockJSON("Opportunity_locataire_seul_majeur.json"),
+  multi_locataire_majeur_garant_physique: loadMockJSON("Opportunity_multi_locataire_majeur_garant_physique.json"),
+  locataire_seul_mineur_garant_physique: loadMockJSON("Opportunity_locataire_seul_mineur_garant_physique.json"),
+  multi_locataire_dont_1_mineur: loadMockJSON("Opportunity_multi_locataire_dont_1_mineur.json"),
+  multi_locataire_majeur_garant_moral: loadMockJSON("Opportunity_multi_locataire_majeur_garant_moral.json"),
+  multi_locataire_1_mineur_garant_moral: loadMockJSON("Opportunity_multi_locataire_1_mineur_garant_moral.json"),
+};
 const postReservationAccepted = loadMockJSON("PostReservationAccepted.json");
 
 const swaggerPath = path.join(__dirname, "swagger.yaml");
@@ -63,12 +71,63 @@ function offersContextPayload() {
   };
 }
 
+const adminOverrides = adminTRPayload.residenceOverrides || {};
+
+function getAdminOverride(residenceId) {
+  return adminOverrides[residenceId] || null;
+}
+
+function filterOverridesByCity(cityFilter) {
+  const key = cityFilter.toLocaleLowerCase();
+  const result = {};
+  for (const [id, ov] of Object.entries(adminOverrides)) {
+    if (
+      (ov.city && ov.city.toLocaleLowerCase() === key) ||
+      (ov.cityAlias && ov.cityAlias.toLocaleLowerCase() === key)
+    ) {
+      result[id] = ov;
+    }
+  }
+  return result;
+}
+
+/**
+ * Merge admin flag into residence tag + typologyTags.
+ * - flag.typologies vide/absent = toutes les typologies heritent
+ * - flag.typologies renseigne = seules celles-ci le portent
+ */
+function applyAdminFlag(residence) {
+  const ov = getAdminOverride(residence.residenceId);
+  if (!ov || !ov.flag) return residence;
+
+  const { code, label, typologies: flagTypos } = ov.flag;
+  const tag = { code, label };
+
+  const typoCodes = (residence.typologies || []).map((t) => t.typologyCode);
+  const typologyTags = { ...residence.typologyTags };
+  const targeted =
+    Array.isArray(flagTypos) && flagTypos.length > 0 ? flagTypos : typoCodes;
+
+  for (const tc of targeted) {
+    typologyTags[tc] = { code, label };
+  }
+
+  return { ...residence, tag, typologyTags };
+}
+
+function applyAdminPhotos(detail) {
+  const ov = getAdminOverride(detail.residenceId);
+  if (!ov || !Array.isArray(ov.photos) || ov.photos.length === 0) return detail;
+
+  return { ...detail, photos: ov.photos };
+}
+
 function attachOffersToResidenceRow(r) {
   if (!r || r.residenceId == null) {
     return r;
   }
   return {
-    ...r,
+    ...applyAdminFlag(r),
     offerSummaries: offerSummariesForResidence(r.residenceId),
   };
 }
@@ -168,8 +227,11 @@ app.get("/cities/:cityAlias/residences/:id", (req, res) => {
   }
 
   const offers = offersForResidence(residenceId);
+  const withFlags = applyAdminFlag(detail);
+  const withPhotos = applyAdminPhotos(withFlags);
+
   res.json({
-    ...detail,
+    ...withPhotos,
     cityAlias,
     offersContext: offersContextPayload(),
     offerSummaries: offers.map(summarizeOffer),
@@ -178,7 +240,14 @@ app.get("/cities/:cityAlias/residences/:id", (req, res) => {
 });
 
 app.get("/admin-tr", (req, res) => {
-  res.json(adminTRPayload);
+  const { city } = req.query;
+  const base = { modals: adminTRPayload.modals, steps: adminTRPayload.steps };
+
+  if (city) {
+    base.residenceOverrides = filterOverridesByCity(city);
+  }
+
+  res.json(base);
 });
 
 /**
@@ -191,7 +260,22 @@ app.get("/offers", (req, res) => {
 });
 
 app.post("/reservations", (req, res) => {
-  res.json(postReservationAccepted);
+  const scenarioParam = (req.query.scenario || "").toLowerCase();
+  const validScenarios = Object.keys(opportunityScenarios);
+  const scenarioKey = validScenarios.includes(scenarioParam)
+    ? scenarioParam
+    : "locataire_seul_majeur";
+
+  const opportunityId = "OPP-" + Date.now().toString(36).toUpperCase();
+
+  res.json({
+    status: "ACCEPTED",
+    opportunityId,
+    scenario: scenarioKey,
+    availableScenarios: validScenarios,
+    submittedPayload: opportunityScenarios[scenarioKey],
+    confirmation: postReservationAccepted,
+  });
 });
 
 app.listen(PORT, () => {

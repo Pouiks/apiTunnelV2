@@ -102,12 +102,22 @@ paths:
       tags: [AdminTR]
       summary: GetInformationAdminTR
       description: >
-        Configuration globale du tunnel de reservation geree par l'espace admin.
-        Contient les modals (FR/EN) declenchees par step+event et les steps informatifs.
-        Independant de la residence — charge une seule fois au boot du tunnel.
+        Configuration du tunnel de reservation geree par l'espace admin.
+        Sans query param : retourne uniquement `modals` + `steps` (config globale, boot).
+        Avec `?city=` : retourne en plus `residenceOverrides` — flags marketing et photos
+        filtrees sur la ville demandee (match sur `city` ou `cityAlias`).
+      parameters:
+        - in: query
+          name: city
+          required: false
+          schema:
+            type: string
+          description: >
+            Alias de ville (ex. Paris, Lyon). Si fourni, la reponse inclut
+            `residenceOverrides` avec les flags et photos des residences de cette ville.
       responses:
         "200":
-          description: Configuration admin tunnel
+          description: Configuration admin tunnel (+ overrides si city fourni)
           content:
             application/json:
               schema:
@@ -143,8 +153,25 @@ paths:
   /reservations:
     post:
       tags: [Reservations]
-      summary: PushReservationWithFullInformations
-      description: Retourne une confirmation fixe de reservation.
+      summary: Creation opportunite ECCO
+      description: |
+        Simule la creation d'une opportunite dans le CRM ECCO.
+        Le query param `scenario` selectionne le fichier mock a retourner.
+        Defaut : `locataire_seul_majeur`.
+      parameters:
+        - in: query
+          name: scenario
+          required: false
+          schema:
+            type: string
+            enum:
+              - locataire_seul_majeur
+              - multi_locataire_majeur_garant_physique
+              - locataire_seul_mineur_garant_physique
+              - multi_locataire_dont_1_mineur
+              - multi_locataire_majeur_garant_moral
+              - multi_locataire_1_mineur_garant_moral
+          description: Scenario de creation (defaut locataire_seul_majeur).
       requestBody:
         required: false
         content:
@@ -154,11 +181,11 @@ paths:
               additionalProperties: true
       responses:
         "200":
-          description: Reservation acceptee
+          description: Opportunite creee
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/ReservationAcceptedResponse"
+                $ref: "#/components/schemas/OpportunityCreationResponse"
 
 components:
   schemas:
@@ -820,12 +847,52 @@ components:
           $ref: "#/components/schemas/TunnelStepLocalized"
       required: [stepCode, order, fr, en]
 
+    ResidenceOverrideFlag:
+      type: object
+      description: >
+        Flag marketing attribue via l'admin. Heritage parent-enfant :
+        si `typologies` est vide ou absent, toutes les typologies de la residence heritent du flag.
+        Si `typologies` est renseigne, seules ces typologies le portent.
+      properties:
+        code:
+          type: string
+          enum: [POPULAR, SPECIAL_OFFER, NEW, LAST_UNITS]
+        label:
+          type: string
+        typologies:
+          type: array
+          items:
+            type: string
+          description: >
+            Codes typo cibles (ex. STUDIO, T2). Vide = toutes les typologies heritent.
+      required: [code, label]
+
+    ResidenceOverride:
+      type: object
+      description: >
+        Surcouche admin pour une residence : flag marketing et photos.
+        Les photos remplacent integralement celles de la masterdata.
+      properties:
+        residenceId:
+          type: string
+        city:
+          type: string
+        cityAlias:
+          type: string
+        flag:
+          $ref: "#/components/schemas/ResidenceOverrideFlag"
+        photos:
+          type: array
+          items:
+            $ref: "#/components/schemas/ResidencePhoto"
+      required: [residenceId, city, cityAlias]
+
     AdminTRResponse:
       type: object
       description: >
-        Configuration globale du tunnel de reservation.
+        Configuration du tunnel de reservation.
         Modals bilingues par step+trigger, steps informatifs.
-        Charge une seule fois au boot, independant de la residence.
+        `residenceOverrides` n'est present que si le query param `city` est fourni.
       properties:
         modals:
           type: object
@@ -835,9 +902,278 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/TunnelStep"
+        residenceOverrides:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/ResidenceOverride"
+          description: >
+            Cle = residenceId (UUID). Present uniquement si query param `city` fourni.
+            Contient les flags et photos admin des residences de la ville demandee.
       required: [modals, steps]
 
-    ReservationAcceptedResponse:
+    PicklistValue:
+      type: object
+      properties:
+        value:
+          type: integer
+        label:
+          type: string
+
+    Contact:
+      type: object
+      description: |
+        Contact CRM. Le tableau `contacts[]` est dynamique : seuls les contacts
+        effectivement renseignes sont inclus (pas de slots vides avec null).
+        Le champ `uxc_role` porte la picklist ECCO (uxc_role) qui determine le role
+        du contact dans l'opportunite. Valeurs disponibles :
+          944800000 Locataire (1er locataire)
+          944800005 Co-locataire (2e locataire, bail multi)
+          944800003 Representant Legal Locataire (locataire 1 mineur)
+          944800011 Representant Legal 2 Locataire (locataire 2 mineur)
+        Les garants (physique/moral) ne sont pas des contacts dans le payload —
+        ils sont geres via typeDeGarant sur l opportunity.
+        Tous les champs ci-dessous sont obligatoires sur chaque contact (pas de null).
+      properties:
+        uxc_role:
+          $ref: "#/components/schemas/PicklistValue"
+          description: >
+            Role ECCO du contact. Valeurs : 944800000 Locataire,
+            944800005 Co-locataire, 944800003 Representant Legal Locataire,
+            944800011 Representant Legal 2 Locataire.
+        prenom:
+          type: string
+        nom:
+          type: string
+        email:
+          type: string
+          format: email
+        telephone:
+          type: string
+        dateDeNaissance:
+          type: string
+          format: date
+        lieuDeNaissance:
+          type: string
+        nationalite:
+          type: string
+          description: GUID pays (Dataverse) ou code pays selon integration.
+        pays:
+          type: string
+          description: GUID pays (Dataverse) ou code pays selon integration.
+        mineur:
+          $ref: "#/components/schemas/PicklistValue"
+        profilLocataire:
+          nullable: true
+          allOf:
+            - $ref: "#/components/schemas/PicklistValue"
+          description: >
+            Profil locataire (picklist aps_profillocataire). Absent pour les contacts
+            `uxc_role` Representant Legal Locataire (944800003) ou
+            Representant Legal 2 Locataire (944800011) — ce profil n'est pas collecte.
+        langueDeCommunication:
+          $ref: "#/components/schemas/PicklistValue"
+        adresse:
+          type: string
+        codePostal:
+          type: string
+        ville:
+          type: string
+      required:
+        - uxc_role
+        - prenom
+        - nom
+        - email
+        - telephone
+        - dateDeNaissance
+        - lieuDeNaissance
+        - nationalite
+        - pays
+        - mineur
+        - langueDeCommunication
+        - adresse
+        - codePostal
+        - ville
+
+    Produit:
+      type: object
+      description: Logement selectionne par le client (reference produit ECCO).
+      properties:
+        productId:
+          type: string
+          description: GUID du produit dans ECCO.
+        productName:
+          type: string
+          description: Libelle du logement (ex. Studio 20m² - 3ème étage).
+        quantity:
+          type: integer
+          example: 1
+      required: [productId, productName, quantity]
+
+    OffreItem:
+      type: object
+      description: >
+        Entree dans le tableau `offres` de l'opportunity.
+        Le champ `type` discrimine l'offre standard (`offre`) du code promo (`code_promo`).
+        Les champs `codePromo` et `etat` sont toujours presents :
+        null pour une offre standard, renseignes pour un code promo.
+      properties:
+        type:
+          type: string
+          enum: [offre, code_promo]
+          description: Discriminant — offre automatique ou code promo saisi par le client.
+        offreId:
+          type: string
+          example: OFFER_SUMMER_2026
+        nom:
+          type: string
+        montant:
+          type: number
+          description: Valeur de la reduction (ex. 50.00).
+        typeReduction:
+          type: string
+          enum: [EUR, PERCENT]
+          description: EUR = montant fixe, PERCENT = pourcentage.
+        cible:
+          type: string
+          enum: [loyer, frais_de_dossier, depot_de_garantie]
+          description: Sur quoi porte la reduction.
+        recurrence:
+          type: string
+          enum: [unique, mensuelle]
+        recurrenceMois:
+          type: integer
+          nullable: true
+          description: Nombre de mois si mensuelle. Null si unique.
+        dateDebut:
+          type: string
+          format: date
+        dateFin:
+          type: string
+          format: date
+        codePromo:
+          type: string
+          nullable: true
+          description: Code saisi par le client. Null si type=offre.
+          example: FDD50
+        etat:
+          type: string
+          nullable: true
+          enum: [valide, invalide]
+          description: Etat de validation du code promo. Null si type=offre.
+      required: [type, offreId, nom, montant, typeReduction, cible, recurrence, dateDebut, dateFin, codePromo, etat]
+
+    OpportunityDetail:
+      type: object
+      description: |
+        Payload exhaustif a taille fixe. Tous les champs sont toujours presents.
+        Les champs non applicables valent `null`.
+      properties:
+        typeDopportunite:
+          $ref: "#/components/schemas/PicklistValue"
+        source:
+          $ref: "#/components/schemas/PicklistValue"
+        marqueDeLaResidence:
+          $ref: "#/components/schemas/PicklistValue"
+        residenceId:
+          type: string
+          format: uuid
+        residenceName:
+          type: string
+        typeDeLot:
+          type: string
+        typeDeBail:
+          $ref: "#/components/schemas/PicklistValue"
+        typeDeLogementSouhaitee:
+          $ref: "#/components/schemas/PicklistValue"
+        contractType:
+          $ref: "#/components/schemas/PicklistValue"
+        salesChannel:
+          $ref: "#/components/schemas/PicklistValue"
+        dateArrivee:
+          type: string
+          format: date
+        dateDepart:
+          type: string
+          format: date
+        statutDeLopportunite:
+          $ref: "#/components/schemas/PicklistValue"
+        necessiteDeGarant:
+          $ref: "#/components/schemas/PicklistValue"
+          description: >
+            Indique si un garant est requis. Les equipes sales gerent
+            le detail garant apres la pre-reservation.
+        typeDeGarant:
+          $ref: "#/components/schemas/PicklistValue"
+          description: Physique ou Moral. Suffit pour la pre-reservation.
+        depotDeGarantie:
+          type: number
+        fraisDeDossiers:
+          type: number
+        montant1erPaiement:
+          type: number
+        parkingSeul:
+          $ref: "#/components/schemas/PicklistValue"
+        libelleopportunite:
+          type: string
+        options:
+          type: array
+          items:
+            type: string
+          description: Options selectionnees par le client (ex. Balcon, Climatisation). ECCO gere les prix.
+        abonnements:
+          type: array
+          items:
+            type: string
+          description: Abonnements selectionnes par le client (ex. Le pack, TV, Kit Linge). ECCO gere les prix.
+        offres:
+          type: array
+          description: >
+            Offres et codes promo appliques par le client. Tableau vide si aucune offre.
+            Chaque entree a un `type` (offre | code_promo) pour discriminer.
+          items:
+            $ref: "#/components/schemas/OffreItem"
+
+    OpportunityScenarioPayload:
+      type: object
+      description: |
+        Payload de creation opportunite ECCO.
+        `contacts[]` est dynamique : seuls les contacts renseignes sont inclus.
+        Chaque contact porte un `uxc_role` (picklist ECCO) qui determine son role.
+        Les garants ne sont pas des contacts — ils sont captures via
+        `necessiteDeGarant` et `typeDeGarant` sur l opportunity.
+      properties:
+        contacts:
+          type: array
+          minItems: 1
+          items:
+            $ref: "#/components/schemas/Contact"
+        opportunity:
+          $ref: "#/components/schemas/OpportunityDetail"
+      required: [contacts, opportunity]
+
+    OpportunityCreationResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: ACCEPTED
+        opportunityId:
+          type: string
+          example: OPP-M1A2B3C4
+        scenario:
+          type: string
+          example: locataire_seul_majeur
+        availableScenarios:
+          type: array
+          items:
+            type: string
+        submittedPayload:
+          $ref: "#/components/schemas/OpportunityScenarioPayload"
+        confirmation:
+          $ref: "#/components/schemas/ReservationConfirmation"
+      required: [status, opportunityId, scenario, availableScenarios, submittedPayload, confirmation]
+
+    ReservationConfirmation:
       type: object
       properties:
         status:
@@ -852,4 +1188,3 @@ components:
         message:
           type: string
           example: Reservation creee avec succes dans ECCO.
-      required: [status, quoteRequestId, eccoOpportunityId, message]
