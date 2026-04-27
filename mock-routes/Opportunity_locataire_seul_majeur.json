@@ -15,7 +15,9 @@
       "langueDeCommunication": { "value": 918210000, "label": "Français" },
       "adresse": "12 Rue des Ecoles",
       "codePostal": "75005",
-      "ville": "Paris"
+      "ville": "Paris",
+      "rgpd_consetement": "true",
+      "rgpd_consentement": "true"
     }
   ],
   "opportunity": {
@@ -33,14 +35,19 @@
     "dateDepart": "2027-08-31",
     "statutDeLopportunite": { "value": 918210000, "label": "En pré-réservation" },
     "necessiteDeGarant": { "value": 921280000, "label": "Oui" },
-    "typeDeGarant": { "value": 750280000, "label": "Physique" }, //nullable si non necessiteDeGarant
+    "typeDeGarant": { "value": 750280000, "label": "Physique" },
     "depotDeGarantie": 500.00,
     "fraisDeDossiers": 150.00,
     "montant1erPaiement": 650.00,
     "parkingSeul": { "value": 918210001, "label": "Non" },
-    "libelleopportunite": "O > 804 > Virgile testProd > 2026.04.20-01",
     "options": ["Balcon"],
     "abonnements": ["TV"],
+    "source_utm_campaign": "GR_ACQ_PERFORMANCE_MAX_ECLA_ARCHAMPS_FR/CH_FR",
+    "source_utm_gclid": "Cj0KCQiA9OnJBhD-ARIsAPV51xMG4zSe5J6xxZ-sth429fFGwTCUGyYg7SsbphfpHefGD59InoE34z4aAkeDEALw_wcB",
+    "source_utm_medium": "cpc",
+    "source_utm_source": "google",
+    "source_utm_term": "ecla massy",
+    "source_utm_content": "151727920520",
     "offres": [
       {
         "type": "offre",

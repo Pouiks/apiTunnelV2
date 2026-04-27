@@ -95,6 +95,7 @@ function filterOverridesByCity(cityFilter) {
  * Merge admin flag into residence tag + typologyTags.
  * - flag.typologies vide/absent = toutes les typologies heritent
  * - flag.typologies renseigne = seules celles-ci le portent
+ * Les fichiers masterdata (`GetAllResidences`, `GetOneResidenceById`) ne contiennent pas ces champs : ils viennent uniquement de l'admin.
  */
 function applyAdminFlag(residence) {
   const ov = getAdminOverride(residence.residenceId);
@@ -104,7 +105,7 @@ function applyAdminFlag(residence) {
   const tag = { code, label };
 
   const typoCodes = (residence.typologies || []).map((t) => t.typologyCode);
-  const typologyTags = { ...residence.typologyTags };
+  const typologyTags = { ...(residence.typologyTags || {}) };
   const targeted =
     Array.isArray(flagTypos) && flagTypos.length > 0 ? flagTypos : typoCodes;
 

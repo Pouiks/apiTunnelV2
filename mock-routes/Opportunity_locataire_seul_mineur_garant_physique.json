@@ -15,7 +15,9 @@
       "langueDeCommunication": { "value": 918210000, "label": "Français" },
       "adresse": "15 Rue de la République",
       "codePostal": "69003",
-      "ville": "Lyon"
+      "ville": "Lyon",
+      "rgpd_consetement": "true",
+      "rgpd_consentement": "true"
     },
     {
       "uxc_role": { "value": 944800003, "label": "Représentant Légal Locataire" },
@@ -54,9 +56,43 @@
     "fraisDeDossiers": 150.00,
     "montant1erPaiement": 550.00,
     "parkingSeul": { "value": 918210001, "label": "Non" },
-    "libelleopportunite": "O > 804 > Martin-Lucas > 2026.09.01-01",
-    "options": [],
+    "options": ["Balcon", "Climatisation"],
     "abonnements": ["TV"],
-    "offres": []
+    "source_utm_campaign": "GR_ACQ_PERFORMANCE_MAX_ECLA_ARCHAMPS_FR/CH_FR",
+    "source_utm_gclid": "Cj0KCQiA9OnJBhD-ARIsAPV51xMG4zSe5J6xxZ-sth429fFGwTCUGyYg7SsbphfpHefGD59InoE34z4aAkeDEALw_wcB",
+    "source_utm_medium": "cpc",
+    "source_utm_source": "google",
+    "source_utm_term": "ecla massy",
+    "source_utm_content": "151727920520",
+    "offres": [
+      {
+        "type": "offre",
+        "offreId": "OFFER_SUMMER_2026",
+        "nom": "Offre été 2026",
+        "montant": 50.00,
+        "typeReduction": "EUR",
+        "cible": "loyer",
+        "recurrence": "mensuelle",
+        "recurrenceMois": 3,
+        "dateDebut": "2026-09-01",
+        "dateFin": "2027-08-31",
+        "codePromo": null,
+        "etat": null
+      },
+      {
+        "type": "code_promo",
+        "offreId": "PROMOCODE_FDD50",
+        "nom": "Réduction Frais de dossier -50%",
+        "montant": 50.00,
+        "typeReduction": "%",
+        "cible": "frais_de_dossier",
+        "recurrence": "unique",
+        "recurrenceMois": null,
+        "dateDebut": "2026-09-01",
+        "dateFin": "2027-08-31",
+        "codePromo": "FDD50",
+        "etat": "valide"
+      }
+    ]
   }
 }

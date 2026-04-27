@@ -60,8 +60,8 @@ paths:
       summary: GetOneResidence
       description: >
         Fiche residence complete en un seul appel.
-        Inclut `typologyScenarios` (STANDARD, EARLY_BIRD, HIGH_DEMAND avec pricing/options),
-        `adminOverlay` (surcouche back-office), `offerSummaries`, `offers` et `offersContext`.
+        Inclut `typologies` (pricing + amenities par typologie), `configurationOptions`
+        (grilles d’options unitaires communes a la residence), `offerSummaries`, `offers` et `offersContext`.
         Le front charge et cache cette reponse pour alimenter tout le tunnel.
       parameters:
         - in: path
@@ -284,11 +284,15 @@ components:
           type: number
         tag:
           $ref: "#/components/schemas/ResidenceTag"
+          description: >
+            Absent du fichier masterdata ; le serveur mock l’ajoute si un `flag`
+            existe dans `GetAdminTR.residenceOverrides` pour cette residence.
         typologyTags:
           type: object
           additionalProperties:
             $ref: "#/components/schemas/ResidenceTag"
-          description: Un tag par typologyCode (max un actif par typologie).
+          description: >
+            Idem : injecte par merge admin (heritage du flag sur les typologies ciblees).
         photos:
           type: array
           items:
@@ -319,8 +323,6 @@ components:
         - coordinates
         - availabilityStatus
         - baseRentFrom
-        - tag
-        - typologyTags
         - photos
         - typologies
         - floors
@@ -406,8 +408,43 @@ components:
           type: string
       required: [code, label]
 
+    AbonnementResidence:
+      type: object
+      description: >
+        Service recurrent optionnel (ménage, parking, location TV, pack) affiche sur la fiche residence.
+      properties:
+        code:
+          type: string
+          description: Identifiant fonctionnel (ex. CLEANING_SERVICE, PARKING_SPACE).
+        title:
+          type: string
+        description:
+          type: string
+        pricePerMonth:
+          type: number
+        currency:
+          type: string
+          example: EUR
+        billingPeriod:
+          type: string
+          description: Periode de facturation (ex. month).
+        icon:
+          type: string
+          description: Cle d’icone UI (ex. cleaning, parking, tv, gift).
+      required:
+        - code
+        - title
+        - description
+        - pricePerMonth
+        - currency
+        - billingPeriod
+        - icon
+
     TypologyDetail:
       type: object
+      description: >
+        Typologie sur la fiche residence : tarification et amenities inclus logement.
+        Les options configurables (etage, surface, etc.) sont dans `configurationOptions`.
       properties:
         typologyCode:
           type: string
@@ -415,19 +452,21 @@ components:
           type: string
         surface:
           type: number
-        baseRent:
+          description: Surface indicative (m2), si fournie par la vue.
+        reducedBaseRent:
           type: number
-        lowestUnitPrice:
-          type: number
-        highestUnitPrice:
-          type: number
+          description: Loyer reduit eventuel (promo).
+        pricing:
+          $ref: "#/components/schemas/Pricing"
+        amenities:
+          type: array
+          items:
+            $ref: "#/components/schemas/Amenity"
       required:
         - typologyCode
         - label
-        - surface
-        - baseRent
-        - lowestUnitPrice
-        - highestUnitPrice
+        - pricing
+        - amenities
 
     Pricing:
       type: object
@@ -493,90 +532,12 @@ components:
             $ref: "#/components/schemas/OptionVariant"
       required: [groupCode, label, variants]
 
-    TypologyWithPricing:
-      type: object
-      properties:
-        typologyCode:
-          type: string
-        label:
-          type: string
-        pricing:
-          $ref: "#/components/schemas/Pricing"
-        productCode:
-          type: string
-          nullable: true
-        amenities:
-          type: array
-          items:
-            $ref: "#/components/schemas/Amenity"
-        optionGroups:
-          type: array
-          items:
-            $ref: "#/components/schemas/OptionGroup"
-      required: [typologyCode, label, pricing, amenities, optionGroups]
-
-    TypologyScenario:
-      type: object
-      description: >
-        Payload typologies/pricing/options pour un scenario donne (STANDARD, EARLY_BIRD, HIGH_DEMAND).
-      properties:
-        residenceId:
-          type: string
-        scenario:
-          type: string
-          enum: [STANDARD, EARLY_BIRD, HIGH_DEMAND]
-        startDate:
-          type: string
-          format: date
-        bookingDate:
-          type: string
-          format: date
-        typologies:
-          type: array
-          items:
-            $ref: "#/components/schemas/TypologyWithPricing"
-        floors:
-          $ref: "#/components/schemas/Floors"
-      required: [residenceId, scenario, startDate, bookingDate, typologies]
-
-    TypologyScenarios:
-      type: object
-      description: >
-        Les 3 scenarios de pricing embarques dans la fiche residence.
-        Le front selectionne le scenario adapte (bookingDate, promo, etc.).
-      properties:
-        STANDARD:
-          $ref: "#/components/schemas/TypologyScenario"
-        EARLY_BIRD:
-          $ref: "#/components/schemas/TypologyScenario"
-        HIGH_DEMAND:
-          $ref: "#/components/schemas/TypologyScenario"
-      required: [STANDARD, EARLY_BIRD, HIGH_DEMAND]
-
-    AdminOverlay:
-      type: object
-      description: Surcouche back-office / ERP embarquee dans la fiche residence.
-      properties:
-        managementCompany:
-          type: string
-        contractType:
-          type: string
-        internalContactEmail:
-          type: string
-        lastAuditDate:
-          type: string
-          format: date
-        complianceStatus:
-          type: string
-        operatorNotes:
-          type: string
-          nullable: true
-
     ResidenceDetail:
       type: object
       description: >
-        Fiche complete residence : infos generales, typologies avec pricing par scenario,
-        surcouche admin, offres completes et contexte offres. Un seul appel pour le tunnel.
+        Fiche complete residence : infos generales, typologies (pricing + amenities),
+        options unitaires communes (`configurationOptions`), offres completes et contexte offres.
+        Un seul appel pour le tunnel.
       properties:
         residenceId:
           type: string
@@ -603,10 +564,15 @@ components:
           type: string
         tag:
           $ref: "#/components/schemas/ResidenceTag"
+          description: >
+            Absent du fichier masterdata ; le serveur mock l’ajoute si un `flag`
+            existe dans `GetAdminTR.residenceOverrides` pour cette residence.
         typologyTags:
           type: object
           additionalProperties:
             $ref: "#/components/schemas/ResidenceTag"
+          description: >
+            Idem : injecte par merge admin (heritage du flag sur les typologies ciblees).
         photos:
           type: array
           items:
@@ -615,20 +581,24 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/CommonAmenity"
-        features:
+        abonnements:
           type: array
           items:
-            type: string
+            $ref: "#/components/schemas/AbonnementResidence"
         typologies:
           type: array
           items:
             $ref: "#/components/schemas/TypologyDetail"
         floors:
           $ref: "#/components/schemas/Floors"
-        typologyScenarios:
-          $ref: "#/components/schemas/TypologyScenarios"
-        adminOverlay:
-          $ref: "#/components/schemas/AdminOverlay"
+        configurationOptions:
+          type: array
+          description: >
+            Options configurables communes a la residence (etage, surface, literie, clim, balcon, etc.).
+            Les montants sont identiques quel que soit le type de logement selectionne.
+            Le groupe `PREMIUM` n’est present que pour les residences qui le proposent (ex. Noisy-le-Grand).
+          items:
+            $ref: "#/components/schemas/OptionGroup"
         offersContext:
           $ref: "#/components/schemas/OffersContext"
         offerSummaries:
@@ -651,15 +621,12 @@ components:
         - coordinates
         - availabilityStatus
         - description
-        - tag
-        - typologyTags
         - photos
         - commonAmenities
-        - features
+        - abonnements
         - typologies
         - floors
-        - typologyScenarios
-        - adminOverlay
+        - configurationOptions
         - offersContext
         - offerSummaries
         - offers
@@ -978,6 +945,18 @@ components:
           type: string
         ville:
           type: string
+        rgpd_consetement:
+          type: string
+          enum: ["true", "false"]
+          description: >
+            Consentement RGPD (cle alignee ECCO, orthographe historique `consetement`).
+            `true` uniquement pour le premier locataire (`uxc_role` Locataire 944800000).
+        rgpd_consentement:
+          type: string
+          enum: ["true", "false"]
+          description: >
+            Second flag consentement. `true` pour locataire 944800000 ; `false` pour
+            co-locataire (944800005) et representants legaux (944800003, 944800011).
       required:
         - uxc_role
         - prenom
@@ -993,6 +972,8 @@ components:
         - adresse
         - codePostal
         - ville
+        - rgpd_consetement
+        - rgpd_consentement
 
     Produit:
       type: object
@@ -1125,6 +1106,22 @@ components:
           items:
             type: string
           description: Abonnements selectionnes par le client (ex. Le pack, TV, Kit Linge). ECCO gere les prix.
+        source_utm_campaign:
+          type: string
+          description: Parametre UTM campaign (tracking acquisition).
+        source_utm_gclid:
+          type: string
+          description: Google Click ID (si applicable).
+        source_utm_medium:
+          type: string
+          example: cpc
+        source_utm_source:
+          type: string
+          example: google
+        source_utm_term:
+          type: string
+        source_utm_content:
+          type: string
         offres:
           type: array
           description: >

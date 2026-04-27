@@ -24,7 +24,7 @@ Deux sources distinctes alimentent le tunnel :
 
 Le serveur mock fusionne automatiquement les deux sources dans les reponses :
 
-- **Flags** : l'admin definit des flags (POPULAR, NEW, etc.) par residence. Si aucune typologie n'est precisee, toutes heritent du flag. Les flags admin se fusionnent (merge) avec les tags masterdata.
+- **Flags** : l'admin definit des flags (POPULAR, NEW, etc.) par residence. Si aucune typologie n'est precisee, toutes heritent du flag. Les badges `tag` / `typologyTags` ne sont pas dans les fichiers masterdata : le serveur les ajoute depuis `GetAdminTR` (listing et fiche).
 - **Photos** : l'admin fournit les photos par residence/typologie. Elles remplacent integralement celles de la masterdata.
 
 ## Donnees mock (fichiers par route)
@@ -33,8 +33,8 @@ Les reponses statiques sont chargees depuis le dossier [`mock-routes/`](mock-rou
 
 | Fichier | Route | Contenu |
 | --- | --- | --- |
-| `GetAllResidences.json` | `GET /residences` | Listing : residences[] avec commercialName, tag, typologyTags, photos, offerSummaries |
-| `GetOneResidenceById.json` | `GET /residences/:id` | Fiche complete par UUID : typologyScenarios, adminOverlay, photos, tag, offers |
+| `GetAllResidences.json` | `GET /residences` | Listing : residences[] avec commercialName, photos, offerSummaries — `tag`/`typologyTags` injectes par le serveur depuis `GetAdminTR` |
+| `GetOneResidenceById.json` | `GET /residences/:id` | Fiche complete : `typologies` (pricing + amenities), `configurationOptions` (options unitaires), photos, offers, abonnements — pas de `tag`/`typologyTags` dans le fichier (injectes par le serveur depuis `GetAdminTR`) |
 | `GetAdminTR.json` | `GET /admin-tr` | Config tunnel : modals, steps + `residenceOverrides` (flags et photos par residence, filtrable par ville) |
 | `GetOffers.json` | `GET /offers` | Referentiel offres (aussi injecte dans les deux routes residences) |
 | `Opportunity_locataire_seul_majeur.json` | `POST /reservations` | 1 locataire majeur, garant physique |
@@ -52,7 +52,7 @@ Les reponses statiques sont chargees depuis le dossier [`mock-routes/`](mock-rou
 | GET | `/residences` | Dezoom map — catalogue global France | 200 | `{ offersContext, residences[] }` |
 | GET | `/cities/:cityAlias/residences` | Selection ville (ex. Paris → 4 ECLA) | 200 | `{ cityAlias, offersContext, residences[] }` |
 | GET | `/cities/:cityAlias/residences` | Ville inconnue | 200 | `residences: []` (vide) |
-| GET | `/cities/:cityAlias/residences/:id` | Fiche complete d'une residence | 200 | Detail + typologyScenarios + adminOverlay + offers + photos |
+| GET | `/cities/:cityAlias/residences/:id` | Fiche complete d'une residence | 200 | Detail + typologies + configurationOptions + offers + photos (+ merge admin : tag, typologyTags, photos) |
 | GET | `/cities/:cityAlias/residences/:id` | UUID inconnu | 404 | `{ error, cityAlias, residenceId }` |
 | GET | `/admin-tr` | Config globale tunnel (modals, steps) | 200 | `{ modals, steps }` |
 | GET | `/admin-tr?city=Paris` | Config tunnel + overrides d'une ville | 200 | `{ modals, steps, residenceOverrides }` |
@@ -81,8 +81,8 @@ Catalogue global France (dezoom map). Retourne les 10 residences sans filtre.
 | `commercialName` | string | Nom commercial (peut differer du nom technique) |
 | `brand` | string | `ECLA` ou `UXCO STUDENT` |
 | `city` / `cityAlias` | string | Ville reelle / alias de recherche |
-| `tag` | object or null | Badge residence : `{ code, label }` — codes : POPULAR, SPECIAL_OFFER, NEW, LAST_UNITS. Fusionne avec les flags admin. |
-| `typologyTags` | object | Badge par typologyCode : `{ STUDIO: { code, label } }` — un seul actif par typologie. Fusionne avec les flags admin (heritage parent-enfant). |
+| `tag` | object or null | Absent du fichier masterdata ; ajoute par le serveur si un `flag` existe dans `GetAdminTR` pour cette residence (`{ code, label }`). |
+| `typologyTags` | object | Idem : construit par merge admin selon `flag.typologies` (heritage sur les typologies ciblees). |
 | `photos` | array | URLs S3 simulees — contextes : HERO, COMMON, TYPOLOGY |
 | `typologies` | array | Preview par typologie (code, label, baseRent, lowestUnitPrice) |
 | `offerSummaries` | array | Offres applicables (injectees par le serveur) |
@@ -105,7 +105,7 @@ curl "http://localhost:8081/cities/Inconnu/residences"    # => residences: []
 
 ### GET /cities/:cityAlias/residences/:id
 
-Fiche residence complete en un seul appel. Le `cityAlias` dans le path alimente les etats in-app. Les flags admin sont fusionnes dans `tag` / `typologyTags` et les photos admin remplacent les photos masterdata si presentes.
+Fiche residence complete en un seul appel. Le `cityAlias` dans le path alimente les etats in-app. Les badges `tag` / `typologyTags` sont ajoutes uniquement si un `flag` existe dans `GetAdminTR` pour cette residence ; les photos admin remplacent les photos masterdata si presentes.
 
 **Champs supplementaires par rapport au listing :**
 
@@ -113,8 +113,10 @@ Fiche residence complete en un seul appel. Le `cityAlias` dans le path alimente 
 | --- | --- | --- |
 | `description` | string | Texte descriptif de la residence |
 | `commonAmenities` | array | Equipements communs `{ code, label }` |
-| `typologyScenarios` | object | 3 scenarios de pricing : `STANDARD`, `EARLY_BIRD`, `HIGH_DEMAND`. Chacun contient `typologies[]` avec pricing, amenities, optionGroups |
-| `adminOverlay` | object | Surcouche back-office : managementCompany, contractType, complianceStatus, etc. |
+| `typologies` | array | Catalogue logements : `pricing`, `amenities`, surface / `reducedBaseRent` eventuels (plus de scenarios). |
+| `abonnements` | array | Services recurrents optionnels (menage, parking, TV, pack). |
+| `configurationOptions` | array | Options unitaires communes a la residence (etage, surface, literie, clim, balcon, etc.). Memes montants pour toutes les typologies. Groupe `PREMIUM` seulement si la residence le propose (ex. Noisy-le-Grand). |
+| `tag` / `typologyTags` | object | Presentes seulement apres merge serveur depuis `GetAdminTR.residenceOverrides` (`flag`) |
 | `photos` | array | Photos admin (remplacent les photos masterdata si un override admin existe) |
 | `offers` | array | Offres completes filtrees par residence |
 | `offerSummaries` | array | Resume des offres |
@@ -226,9 +228,9 @@ Le tableau `contacts[]` est **dynamique** — seuls les contacts effectivement r
 
 Les garants ne sont pas des contacts — ils sont captures via `necessiteDeGarant` et `typeDeGarant` sur l'opportunity (Physique/Moral). Les equipes sales gerent les details apres la pre-reservation.
 
-**Champs obligatoires sur chaque contact** (jamais `null`) : `prenom`, `nom`, `email`, `telephone`, `dateDeNaissance`, `lieuDeNaissance`, `nationalite`, `pays` (GUID Dataverse dans les mocks), `mineur`, `langueDeCommunication`, `adresse`, `codePostal`, `ville`. Le champ `profilLocataire` est **uniquement** pour les locataires / co-locataires (`uxc_role` 944800000 ou 944800005) — il n'est **pas** envoye pour les representants legaux (944800003, 944800011).
+**Champs obligatoires sur chaque contact** (jamais `null`) : `prenom`, `nom`, `email`, `telephone`, `dateDeNaissance`, `lieuDeNaissance`, `nationalite`, `pays` (GUID Dataverse dans les mocks), `mineur`, `langueDeCommunication`, `adresse`, `codePostal`, `ville`, `rgpd_consetement`, `rgpd_consentement` (chaines `"true"` / `"false"`). Pour le **locataire** (`uxc_role` 944800000) les deux sont `"true"` ; pour **co-locataire** (944800005) et **representants legaux** (944800003, 944800011), les deux sont `"false"`. Le champ `profilLocataire` est **uniquement** pour les locataires / co-locataires (`uxc_role` 944800000 ou 944800005) — il n'est **pas** envoye pour les representants legaux (944800003, 944800011).
 
-- `opportunity` — residence, typologie (`typeDeLot`), bail, dates, montants, picklists CRM (pas de champ `payeur` dans le payload)
+- `opportunity` — residence, typologie (`typeDeLot`), bail, dates, montants, picklists CRM (pas de champ `payeur` dans le payload), parametres tracking `source_utm_*` (`source_utm_campaign`, `source_utm_gclid`, `source_utm_medium`, `source_utm_source`, `source_utm_term`, `source_utm_content`)
   - Garantie : `necessiteDeGarant`, `typeDeGarant` (pas de contact garant dans le payload)
   - `options` / `abonnements` : tableaux de strings — ECCO gere les prix
   - `offres[]` : offres et codes promo (`type` : `offre` ou `code_promo`) ; les frais de dossier offerts passent par une offre (ex. 100 % sur `frais_de_dossier`), pas par un booleen separe

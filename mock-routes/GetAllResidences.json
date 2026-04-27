@@ -1,5 +1,8 @@
 {
-  "brands": ["ECLA", "UXCO STUDENT"],
+  "brands": [
+    "ECLA",
+    "UXCO STUDENT"
+  ],
   "residences": [
     {
       "residenceId": "ff5544a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -70,16 +73,6 @@
         "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Albert Thomas",
-      "tag": {
-        "code": "POPULAR",
-        "label": "Populaire"
-      },
-      "typologyTags": {
-        "STUDIO": {
-          "code": "SPECIAL_OFFER",
-          "label": "Offre spéciale"
-        }
-      },
       "reducedBaseRentFrom": 415
     },
     {
@@ -149,13 +142,6 @@
         "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Andromaque",
-      "tag": null,
-      "typologyTags": {
-        "COLOC": {
-          "code": "POPULAR",
-          "label": "Populaire"
-        }
-      },
       "reducedBaseRentFrom": 420
     },
     {
@@ -224,11 +210,6 @@
         "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Aquitaine",
-      "tag": {
-        "code": "NEW",
-        "label": "Nouveauté"
-      },
-      "typologyTags": {},
       "reducedBaseRentFrom": 395
     },
     {
@@ -298,16 +279,6 @@
         "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Atlas",
-      "tag": {
-        "code": "SPECIAL_OFFER",
-        "label": "Offre spéciale"
-      },
-      "typologyTags": {
-        "T2": {
-          "code": "POPULAR",
-          "label": "Populaire"
-        }
-      },
       "reducedBaseRentFrom": 415
     },
     {
@@ -376,13 +347,6 @@
         "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Babylone",
-      "tag": null,
-      "typologyTags": {
-        "STUDIO": {
-          "code": "LAST_UNITS",
-          "label": "Dernières disponibilités"
-        }
-      },
       "reducedBaseRentFrom": 385
     },
     {
@@ -453,11 +417,6 @@
         "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Baker Hill",
-      "tag": {
-        "code": "POPULAR",
-        "label": "Populaire"
-      },
-      "typologyTags": {},
       "reducedBaseRentFrom": 375
     },
     {
@@ -527,16 +486,6 @@
         "Interval – restauration"
       ],
       "commercialName": "Ecla Genève-Archamps",
-      "tag": {
-        "code": "SPECIAL_OFFER",
-        "label": "Offre spéciale"
-      },
-      "typologyTags": {
-        "T2_DUPLEX": {
-          "code": "POPULAR",
-          "label": "Populaire"
-        }
-      },
       "reducedBaseRentFrom": 575
     },
     {
@@ -608,16 +557,6 @@
         "Interval – restauration"
       ],
       "commercialName": "Ecla Massy-Palaiseau",
-      "tag": {
-        "code": "POPULAR",
-        "label": "Populaire"
-      },
-      "typologyTags": {
-        "STUDIO": {
-          "code": "SPECIAL_OFFER",
-          "label": "Offre spéciale"
-        }
-      },
       "reducedBaseRentFrom": 475
     },
     {
@@ -687,13 +626,6 @@
         "Interval – restauration"
       ],
       "commercialName": "Ecla Palaiseau OPCO",
-      "tag": null,
-      "typologyTags": {
-        "T1_BIS": {
-          "code": "NEW",
-          "label": "Nouveauté"
-        }
-      },
       "reducedBaseRentFrom": 480
     },
     {
@@ -763,20 +695,6 @@
         "Interval – restauration"
       ],
       "commercialName": "Ecla Noisy-le-Grand",
-      "tag": {
-        "code": "NEW",
-        "label": "Nouveauté"
-      },
-      "typologyTags": {
-        "COLOC": {
-          "code": "POPULAR",
-          "label": "Populaire"
-        },
-        "T3": {
-          "code": "SPECIAL_OFFER",
-          "label": "Offre spéciale"
-        }
-      },
       "reducedBaseRentFrom": 445
     }
   ]
