@@ -206,14 +206,25 @@ components:
         typologyCode:
           type: string
           example: STUDIO
-        label:
+        sous-type-marketing_fr:
           type: string
-          example: Studio
-        baseRent:
-          type: number
+          description: Libelle marketing FR affiche sur le listing.
+        sous_type_marketing_en:
+          type: string
+          description: Libelle marketing EN affiche sur le listing.
         lowestUnitPrice:
           type: number
-      required: [typologyCode, label, baseRent, lowestUnitPrice]
+          description: >
+            Borne basse du loyer pour cette typologie (alignee sur la fiche
+            `GetOneResidenceById` quand disponible ; T2_DUPLEX / T3 deduits du T2 si besoin).
+        reducedBaseRent:
+          type: number
+          description: Loyer reduit eventuel (promo), si fourni par la vue.
+      required:
+        - typologyCode
+        - sous-type-marketing_fr
+        - sous_type_marketing_en
+        - lowestUnitPrice
 
     Floors:
       type: object
@@ -301,12 +312,6 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/TypologyPreview"
-        floors:
-          $ref: "#/components/schemas/Floors"
-        features:
-          type: array
-          items:
-            type: string
         offerSummaries:
           type: array
           items:
@@ -325,8 +330,6 @@ components:
         - baseRentFrom
         - photos
         - typologies
-        - floors
-        - features
         - offerSummaries
 
     OffersContext:
@@ -518,14 +521,13 @@ components:
 
     OptionGroup:
       type: object
+      description: >
+        Groupe d’options configurables ; pas d’icone en masterdata (mapping UI cote client ou referentiel separe).
       properties:
         groupCode:
           type: string
         label:
           type: string
-        icon:
-          type: string
-          nullable: true
         variants:
           type: array
           items:

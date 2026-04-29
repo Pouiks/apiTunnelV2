@@ -39,7 +39,6 @@
       {
         "groupCode": "string (FLOOR | SURFACE | BEDDING | PREMIUM | AC | BALCONY)",
         "label": "string",
-        "icon": "string",
         "variants": [
           {
             "variantCode": "string",

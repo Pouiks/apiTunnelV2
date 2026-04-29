@@ -21,56 +21,44 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 430,
-          "lowestUnitPrice": 430,
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480,
           "reducedBaseRent": 415
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 515,
-          "lowestUnitPrice": 515
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 575,
-          "lowestUnitPrice": 575,
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 570
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 655,
-          "lowestUnitPrice": 655
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 745,
-          "lowestUnitPrice": 745,
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690,
           "reducedBaseRent": 740
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 835,
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
           "lowestUnitPrice": 835,
           "reducedBaseRent": 825
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 8
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Laverie 24/7",
-        "Salles d'étude",
-        "Local vélos sécurisé",
-        "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Albert Thomas",
       "reducedBaseRentFrom": 415
@@ -92,54 +80,42 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 425,
-          "lowestUnitPrice": 425,
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480,
           "reducedBaseRent": 420
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 505,
-          "lowestUnitPrice": 505
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 565,
-          "lowestUnitPrice": 565,
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 550
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 645,
-          "lowestUnitPrice": 645
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 725,
-          "lowestUnitPrice": 725
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 810,
-          "lowestUnitPrice": 810
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 6
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Laverie 24/7",
-        "Salles d'étude",
-        "Local vélos sécurisé",
-        "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Andromaque",
       "reducedBaseRentFrom": 420
@@ -161,53 +137,41 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 410,
-          "lowestUnitPrice": 410
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 490,
-          "lowestUnitPrice": 490
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 550,
-          "lowestUnitPrice": 550
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 625,
-          "lowestUnitPrice": 625
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 705,
-          "lowestUnitPrice": 705
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 790,
-          "lowestUnitPrice": 790,
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835,
           "reducedBaseRent": 780
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 5
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Laverie 24/7",
-        "Salles d'étude",
-        "Local vélos sécurisé",
-        "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Aquitaine",
       "reducedBaseRentFrom": 395
@@ -229,54 +193,42 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 420,
-          "lowestUnitPrice": 420
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 500,
-          "lowestUnitPrice": 500
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 565,
-          "lowestUnitPrice": 565
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 645,
-          "lowestUnitPrice": 645,
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 640
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 730,
-          "lowestUnitPrice": 730,
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690,
           "reducedBaseRent": 720
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 820,
-          "lowestUnitPrice": 820
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 7
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Laverie 24/7",
-        "Salles d'étude",
-        "Local vélos sécurisé",
-        "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Atlas",
       "reducedBaseRentFrom": 415
@@ -298,53 +250,41 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 395,
-          "lowestUnitPrice": 395
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 475,
-          "lowestUnitPrice": 475
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 535,
-          "lowestUnitPrice": 535
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 615,
-          "lowestUnitPrice": 615
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 695,
-          "lowestUnitPrice": 695,
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690,
           "reducedBaseRent": 680
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 780,
-          "lowestUnitPrice": 780
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 6
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Laverie 24/7",
-        "Salles d'étude",
-        "Local vélos sécurisé",
-        "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Babylone",
       "reducedBaseRentFrom": 385
@@ -366,55 +306,43 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 380,
-          "lowestUnitPrice": 380,
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480,
           "reducedBaseRent": 375
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 455,
-          "lowestUnitPrice": 455
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 510,
-          "lowestUnitPrice": 510,
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 500
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 590,
-          "lowestUnitPrice": 590
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 670,
-          "lowestUnitPrice": 670,
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690,
           "reducedBaseRent": 660
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 755,
-          "lowestUnitPrice": 755
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 5
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Laverie 24/7",
-        "Salles d'étude",
-        "Local vélos sécurisé",
-        "Wi-Fi fibre"
       ],
       "commercialName": "Résidence Baker Hill",
       "reducedBaseRentFrom": 375
@@ -436,54 +364,42 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 590,
-          "lowestUnitPrice": 590
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 720,
-          "lowestUnitPrice": 720,
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 705
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 810,
-          "lowestUnitPrice": 810,
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 800
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 920,
-          "lowestUnitPrice": 920
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 1040,
-          "lowestUnitPrice": 1040
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 1180,
-          "lowestUnitPrice": 1180
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 9
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Cinébox",
-        "Courts de padel",
-        "Laverie 24/7",
-        "Interval – restauration"
       ],
       "commercialName": "Ecla Genève-Archamps",
       "reducedBaseRentFrom": 575
@@ -505,56 +421,44 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 480,
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
           "lowestUnitPrice": 480,
           "reducedBaseRent": 475
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 600,
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 590
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 685,
-          "lowestUnitPrice": 685
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 760,
-          "lowestUnitPrice": 760,
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 755
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 870,
-          "lowestUnitPrice": 870
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 990,
-          "lowestUnitPrice": 990,
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835,
           "reducedBaseRent": 975
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 8
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Cinébox",
-        "Courts de padel",
-        "Laverie 24/7",
-        "Interval – restauration"
       ],
       "commercialName": "Ecla Massy-Palaiseau",
       "reducedBaseRentFrom": 475
@@ -576,54 +480,42 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 490,
-          "lowestUnitPrice": 490
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 615,
-          "lowestUnitPrice": 615
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 700,
-          "lowestUnitPrice": 700
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 785,
-          "lowestUnitPrice": 785
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 895,
-          "lowestUnitPrice": 895,
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690,
           "reducedBaseRent": 880
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 1015,
-          "lowestUnitPrice": 1015,
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835,
           "reducedBaseRent": 1010
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 7
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Cinébox",
-        "Courts de padel",
-        "Laverie 24/7",
-        "Interval – restauration"
       ],
       "commercialName": "Ecla Palaiseau OPCO",
       "reducedBaseRentFrom": 480
@@ -645,54 +537,42 @@
       "typologies": [
         {
           "typologyCode": "COLOC",
-          "label": "Chambre en colocation",
-          "baseRent": 460,
-          "lowestUnitPrice": 460
+          "sous-type-marketing_fr": "Chambre en colocation",
+          "sous_type_marketing_en": "Shared room",
+          "lowestUnitPrice": 480
         },
         {
           "typologyCode": "STUDIO",
-          "label": "Studio",
-          "baseRent": 585,
-          "lowestUnitPrice": 585,
+          "sous-type-marketing_fr": "Studio",
+          "sous_type_marketing_en": "Studio",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 575
         },
         {
           "typologyCode": "T1_BIS",
-          "label": "T1 BIS",
-          "baseRent": 665,
-          "lowestUnitPrice": 665,
+          "sous-type-marketing_fr": "T1 BIS",
+          "sous_type_marketing_en": "T1 BIS",
+          "lowestUnitPrice": 600,
           "reducedBaseRent": 650
         },
         {
           "typologyCode": "T2",
-          "label": "T2",
-          "baseRent": 745,
-          "lowestUnitPrice": 745
+          "sous-type-marketing_fr": "T2",
+          "sous_type_marketing_en": "T2",
+          "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "label": "T2 Duplex",
-          "baseRent": 860,
-          "lowestUnitPrice": 860
+          "sous-type-marketing_fr": "T2 Duplex",
+          "sous_type_marketing_en": "T2 Duplex",
+          "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "label": "T3",
-          "baseRent": 970,
-          "lowestUnitPrice": 970
+          "sous-type-marketing_fr": "T3",
+          "sous_type_marketing_en": "T3",
+          "lowestUnitPrice": 835
         }
-      ],
-      "floors": {
-        "min": 0,
-        "max": 8
-      },
-      "features": [
-        "Salle de sport",
-        "Espace coworking",
-        "Cinébox",
-        "Courts de padel",
-        "Laverie 24/7",
-        "Interval – restauration"
       ],
       "commercialName": "Ecla Noisy-le-Grand",
       "reducedBaseRentFrom": 445

@@ -84,7 +84,7 @@ Catalogue global France (dezoom map). Retourne les 10 residences sans filtre.
 | `tag` | object or null | Absent du fichier masterdata ; ajoute par le serveur si un `flag` existe dans `GetAdminTR` pour cette residence (`{ code, label }`). |
 | `typologyTags` | object | Idem : construit par merge admin selon `flag.typologies` (heritage sur les typologies ciblees). |
 | `photos` | array | URLs S3 simulees — contextes : HERO, COMMON, TYPOLOGY |
-| `typologies` | array | Preview par typologie (code, label, baseRent, lowestUnitPrice) |
+| `typologies` | array | Preview : `typologyCode`, `sous-type-marketing_fr`, `sous_type_marketing_en`, `lowestUnitPrice`, `reducedBaseRent` eventuel |
 | `offerSummaries` | array | Offres applicables (injectees par le serveur) |
 
 La racine inclut `offersContext` (`bookingDate`, `city`) pour aligner le cache React.
