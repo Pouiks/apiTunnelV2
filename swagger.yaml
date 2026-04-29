@@ -272,6 +272,9 @@ components:
           type: string
         residenceCode:
           type: string
+        residenceCodeAnalytic:
+          type: string
+          description: Code analytique / comptable (ERP) associe a la residence.
         name:
           type: string
         commercialName:
@@ -319,6 +322,7 @@ components:
       required:
         - residenceId
         - residenceCode
+        - residenceCodeAnalytic
         - name
         - commercialName
         - brand
@@ -473,18 +477,33 @@ components:
 
     Pricing:
       type: object
+      description: >
+        Bornes tarifaires par typologie (loyer, options, offres, frais et caution).
+        `MinimumBaseRentWithOptionsWithOffers` utilise `reducedBaseRent` de la typologie
+        lorsqu’il est strictement inferieur au loyer de base, sinon loyer de base - 20 €.
       properties:
-        baseRent:
+        MinimumBaseRent:
           type: number
-        lowestUnitPrice:
+        MinimumBaseRentWithOptions:
           type: number
-        highestUnitPrice:
+        MinimumBaseRentWithOptionsWithOffers:
           type: number
-        applicationFee:
+        MinimumApplicationFee:
           type: number
-        securityDeposit:
+        MinimumSecurityDeposit:
           type: number
-      required: [baseRent, lowestUnitPrice, highestUnitPrice, applicationFee, securityDeposit]
+        MinimumApplicationFeeWithOffers:
+          type: number
+        MinimumSecurityDepositWithOffers:
+          type: number
+      required:
+        - MinimumBaseRent
+        - MinimumBaseRentWithOptions
+        - MinimumBaseRentWithOptionsWithOffers
+        - MinimumApplicationFee
+        - MinimumSecurityDeposit
+        - MinimumApplicationFeeWithOffers
+        - MinimumSecurityDepositWithOffers
 
     Amenity:
       type: object
@@ -558,6 +577,13 @@ components:
           type: string
         address:
           type: string
+        telephone:
+          type: string
+          description: Numero de contact residence (affichage / click-to-call).
+        email:
+          type: string
+          format: email
+          description: Adresse e-mail de contact residence.
         coordinates:
           $ref: "#/components/schemas/Coordinates"
         availabilityStatus:
@@ -620,6 +646,8 @@ components:
         - city
         - cityAlias
         - address
+        - telephone
+        - email
         - coordinates
         - availabilityStatus
         - description

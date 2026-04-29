@@ -1,0 +1,154 @@
+{
+      
+      "residence": {
+        "ff5544a8-4fa7-ef11-b8e9-6045bd19a503": {
+          "residenceId": "ff5544a8-4fa7-ef11-b8e9-6045bd19a503",
+          "city": "Lyon",
+          "cityAlias": "Lyon",
+          "description": "Résidence étudiante UXCO STUDENT au cœur de Lyon, proche transports et commerces. Espaces communs récents, studio à coliving, sécurisée 24h/24.",
+          "residenceBenefits": [
+            {
+              "code": "GYM",
+              "label_fr": "Salle de sport",
+              "label_en": "Gym"
+            },
+            {
+              "code": "COWORK",
+              "label_fr": "Espace coworking",
+              "label_en": "Coworking space"
+            },
+            {
+              "code": "LAUNDRY",
+              "label_fr": "Laverie 24/7",
+              "label_en": "Laundry 24/7"
+            },
+            {
+              "code": "STUDY",
+              "label_fr": "Salles d'étude",
+              "label_en": "Study rooms"
+            },
+            {
+              "code": "BIKE",
+              "label_fr": "Local vélos sécurisé",
+              "label_en": "Secure bike storage"
+            },
+            {
+              "code": "WIFI",
+              "label_fr": "Wi-Fi fibre",
+              "label_en": "Fibre Wi-Fi"
+            }
+          ],
+          "inclusiveRent":[
+            {
+                "icon": "Electricity",
+                "label_fr": "Electricité",
+                "label_en": "Electricity"
+            },
+            {
+                "icon": "Water",
+                "label_fr": "Eau",
+                "label_en": "Water"
+            },
+            {
+                "icon": "Heating",
+                "label_fr": "Chauffage",
+                "label_en": "Heating"
+            },
+            {
+                "icon": "Wi-Fi",
+                "label_fr": "Wi-Fi",
+                "label_en": "Wi-Fi"
+            },
+            {
+                "icon": "Facilities",
+                "label_fr": "Installations",
+                "label_en": "Facilities"
+            }
+          ],
+          "photos": [
+            { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-01.webp", "alt": "Vue extérieure Résidence Albert Thomas", "order": 0, "context": "HERO", "typologyCode": null },
+            { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-02.webp", "alt": "Hall d'entrée Albert Thomas", "order": 1, "context": "HERO", "typologyCode": null },
+            { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-gym.webp", "alt": "Salle de sport Albert Thomas", "order": 2, "context": "COMMON", "typologyCode": null },
+            { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-cowork.webp", "alt": "Espace coworking Albert Thomas", "order": 3, "context": "COMMON", "typologyCode": null },
+            { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-coloc-01.webp", "alt": "Chambre colocation Albert Thomas", "order": 4, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+            { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-studio-01.webp", "alt": "Studio Albert Thomas", "order": 5, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+            { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-t2-01.webp", "alt": "T2 Albert Thomas", "order": 6, "context": "TYPOLOGY", "typologyCode": "T2" }
+          ]
+        },
+        "typologies": [
+            {
+                "typologyCode": "COLOC",
+                "label_fr": "Chambre en colocation",
+                "label_en": "Room in colocation",
+                "pricing": {
+                    "MinimumBaseRent": 400,
+                    "MinimumBaseRentWithOptions": 420,
+                    "MinimumBaseRentWithOptionsWithOffers": 380,
+                    "MinimumApplicationFee": 250,
+                    "MinimumSecurityDeposit": 480,
+                    "MinimumApplicationFeeWithOffers": 200
+                },
+                "tag": {
+                    "code": "Promo en cours",
+                    "label_fr": "Promo en cours",
+                    "label_en": "Promo in progress"
+                  },
+                  "photos": [
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-01.webp", "alt": "Vue extérieure Résidence Albert Thomas", "order": 0, "context": "HERO", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-02.webp", "alt": "Hall d'entrée Albert Thomas", "order": 1, "context": "HERO", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-gym.webp", "alt": "Salle de sport Albert Thomas", "order": 2, "context": "COMMON", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-cowork.webp", "alt": "Espace coworking Albert Thomas", "order": 3, "context": "COMMON", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-coloc-01.webp", "alt": "Chambre colocation Albert Thomas", "order": 4, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-studio-01.webp", "alt": "Studio Albert Thomas", "order": 5, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-t2-01.webp", "alt": "T2 Albert Thomas", "order": 6, "context": "TYPOLOGY", "typologyCode": "T2" }
+                  ]
+            },
+            {
+                "typologyCode": "STUDIO",
+                "label_fr": "Studio",
+                "label_en": "Studio",
+                "pricing": {
+                    "MinimumBaseRent": 400,
+                    "MinimumBaseRentWithOptions": 420,
+                    "MinimumBaseRentWithOptionsWithOffers": 380,
+                    "MinimumApplicationFee": 250,
+                    "MinimumSecurityDeposit": 480,
+                    "MinimumApplicationFeeWithOffers": 200
+                },
+                "tag": {},
+                "photos": [
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-01.webp", "alt": "Vue extérieure Résidence Albert Thomas", "order": 0, "context": "HERO", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-02.webp", "alt": "Hall d'entrée Albert Thomas", "order": 1, "context": "HERO", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-gym.webp", "alt": "Salle de sport Albert Thomas", "order": 2, "context": "COMMON", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-cowork.webp", "alt": "Espace coworking Albert Thomas", "order": 3, "context": "COMMON", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-coloc-01.webp", "alt": "Chambre colocation Albert Thomas", "order": 4, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-studio-01.webp", "alt": "Studio Albert Thomas", "order": 5, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-t2-01.webp", "alt": "T2 Albert Thomas", "order": 6, "context": "TYPOLOGY", "typologyCode": "T2" }
+                  ]
+            },
+            {
+                "typologyCode": "T1",
+                "label_fr": "T1",
+                "label_en": "T1",
+                "pricing": {
+                    "MinimumBaseRent": 400,
+                    "MinimumBaseRentWithOptions": 420,
+                    "MinimumBaseRentWithOptionsWithOffers": 380,
+                    "MinimumApplicationFee": 250,
+                    "MinimumSecurityDeposit": 480,
+                    "MinimumApplicationFeeWithOffers": 200
+                },
+                "tag": {},
+                "photos": [
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-01.webp", "alt": "Vue extérieure Résidence Albert Thomas", "order": 0, "context": "HERO", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-02.webp", "alt": "Hall d'entrée Albert Thomas", "order": 1, "context": "HERO", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-gym.webp", "alt": "Salle de sport Albert Thomas", "order": 2, "context": "COMMON", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-cowork.webp", "alt": "Espace coworking Albert Thomas", "order": 3, "context": "COMMON", "typologyCode": null },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-coloc-01.webp", "alt": "Chambre colocation Albert Thomas", "order": 4, "context": "TYPOLOGY", "typologyCode": "COLOC" },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-studio-01.webp", "alt": "Studio Albert Thomas", "order": 5, "context": "TYPOLOGY", "typologyCode": "STUDIO" },
+                    { "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-t2-01.webp", "alt": "T2 Albert Thomas", "order": 6, "context": "TYPOLOGY", "typologyCode": "T2" }
+                  ]
+            }
+        ]
+    }
+}

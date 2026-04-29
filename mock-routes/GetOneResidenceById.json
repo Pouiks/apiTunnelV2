@@ -7,7 +7,10 @@
     "brand": "UXCO STUDENT",
     "city": "Lyon",
     "cityAlias": "Lyon",
-    "address": "14 Avenue Berthelot, 69007 Lyon",
+    "address": "14 Avenue Berthelot",
+    "postal_code":"69007", 
+    "telephone": "04 78 90 12 34",
+    "email": "contact@albert-thomas.com",
     "coordinates": {
       "lat": 45.7439,
       "lng": 4.8357
@@ -45,11 +48,13 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "MinimumBaseRent": 400,
+          "MinimumBaseRentWithOptions": 420,
+          "MinimumBaseRentWithOptionsWithOffers": 380,
+          "MinimumApplicationFee": 250,
+          "MinimumSecurityDeposit": 480,
+          "MinimumApplicationFeeWithOffers": 200,
+          "MinimumSecurityDepositWithOffers": 400
         },
         "amenities": [
           {
@@ -69,7 +74,7 @@
             "label": "Cuisine partagée"
           }
         ],
-        "surface": 11
+        "MinimumSurface": 11
       },
       {
         "typologyCode": "STUDIO",
@@ -219,7 +224,7 @@
             "variantCode": "FLOOR_LOW",
             "label": "Low",
             "description": "0-1",
-            "amount": 0,
+            "amount": 20,
             "billingTiming": "RECURRING",
             "isDefault": true,
             "productCode": null,
@@ -377,10 +382,13 @@
     "residenceId": "045644a8-4fa7-ef11-b8e9-6045bd19a503",
     "residenceCode": "ANDROMAQUE",
     "name": "ANDROMAQUE",
+    "commercialName": "Résidence Andromaque",
     "brand": "UXCO STUDENT",
     "city": "Villeurbanne",
     "cityAlias": "Villeurbanne",
     "address": "107 Cours Émile Zola, 69100 Villeurbanne",
+    "telephone": "04 78 22 33 44",
+    "email": "contact@andromaque.uxco-student.fr",
     "coordinates": {
       "lat": 45.7719,
       "lng": 4.8902
@@ -546,7 +554,6 @@
       "min": 0,
       "max": 6
     },
-    "commercialName": "Résidence Andromaque",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",
@@ -752,10 +759,13 @@
     "residenceId": "065644a8-4fa7-ef11-b8e9-6045bd19a503",
     "residenceCode": "AQUITAINE",
     "name": "AQUITAINE",
+    "commercialName": "Résidence Aquitaine",
     "brand": "UXCO STUDENT",
     "city": "Bègles",
     "cityAlias": "Bègles",
     "address": "1 Rue de Pelleport, 33130 Bègles",
+    "telephone": "05 56 44 55 66",
+    "email": "contact@aquitaine.uxco-student.fr",
     "coordinates": {
       "lat": 44.8076,
       "lng": -0.5514
@@ -921,7 +931,6 @@
       "min": 0,
       "max": 5
     },
-    "commercialName": "Résidence Aquitaine",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",
@@ -1127,10 +1136,13 @@
     "residenceId": "6ff9af84-6e14-f011-998a-6045bd6d55ca",
     "residenceCode": "ATLAS",
     "name": "ATLAS",
+    "commercialName": "Résidence Atlas",
     "brand": "UXCO STUDENT",
     "city": "Toulouse",
     "cityAlias": "Toulouse",
     "address": "2 Allée de Brienne, 31000 Toulouse",
+    "telephone": "05 61 33 22 11",
+    "email": "contact@atlas.uxco-student.fr",
     "coordinates": {
       "lat": 43.6047,
       "lng": 1.4442
@@ -1294,7 +1306,6 @@
       "min": 0,
       "max": 7
     },
-    "commercialName": "Résidence Atlas",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",
@@ -1500,10 +1511,13 @@
     "residenceId": "0c5644a8-4fa7-ef11-b8e9-6045bd19a503",
     "residenceCode": "BABYLONE",
     "name": "BABYLONE",
+    "commercialName": "Résidence Babylone",
     "brand": "UXCO STUDENT",
     "city": "Villeneuve-d'Ascq",
     "cityAlias": "Villeneuve-d'Ascq",
     "address": "125 Avenue du Huit Mai 1945, 59650 Villeneuve-d'Ascq",
+    "telephone": "03 20 55 66 77",
+    "email": "contact@babylone.uxco-student.fr",
     "coordinates": {
       "lat": 50.6229,
       "lng": 3.1479
@@ -1667,7 +1681,6 @@
       "min": 0,
       "max": 6
     },
-    "commercialName": "Résidence Babylone",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",
@@ -1873,10 +1886,13 @@
     "residenceId": "359b3195-7814-f011-998a-6045bd6bf874",
     "residenceCode": "BAKER_HILL",
     "name": "BAKER HILL",
+    "commercialName": "Résidence Baker Hill",
     "brand": "UXCO STUDENT",
     "city": "Saint-Étienne",
     "cityAlias": "Saint-Étienne",
     "address": "10 Rue Gambetta, 42000 Saint-Étienne",
+    "telephone": "04 77 88 99 00",
+    "email": "contact@baker-hill.uxco-student.fr",
     "coordinates": {
       "lat": 45.4397,
       "lng": 4.3872
@@ -2040,7 +2056,6 @@
       "min": 0,
       "max": 5
     },
-    "commercialName": "Résidence Baker Hill",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",
@@ -2246,10 +2261,13 @@
     "residenceId": "19f2179b-7d14-f011-998a-6045bd1919a1",
     "residenceCode": "ECLA_GENEVE_ARCHAMPS",
     "name": "ECLA GENEVE ARCHAMPS",
+    "commercialName": "Ecla Genève-Archamps",
     "brand": "ECLA",
     "city": "Archamps",
     "cityAlias": "Paris",
     "address": "Route des Creuses, 74160 Archamps",
+    "telephone": "04 50 12 34 56",
+    "email": "contact@ecla-geneve-archamps.ecla.io",
     "coordinates": {
       "lat": 46.1328,
       "lng": 6.1399
@@ -2414,7 +2432,6 @@
       "min": 0,
       "max": 9
     },
-    "commercialName": "Ecla Genève-Archamps",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",
@@ -2620,10 +2637,13 @@
     "residenceId": "195644a8-4fa7-ef11-b8e9-6045bd19a503",
     "residenceCode": "ECLA_MP",
     "name": "ECLA MP",
+    "commercialName": "Ecla Massy-Palaiseau",
     "brand": "ECLA",
     "city": "Massy",
     "cityAlias": "Paris",
     "address": "2 Rue des Maraîchers, 91300 Massy",
+    "telephone": "01 69 11 22 33",
+    "email": "contact@ecla-mp.ecla.io",
     "coordinates": {
       "lat": 48.7167,
       "lng": 2.2667
@@ -2787,7 +2807,6 @@
       "min": 0,
       "max": 8
     },
-    "commercialName": "Ecla Massy-Palaiseau",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",
@@ -2993,10 +3012,13 @@
     "residenceId": "1d5644a8-4fa7-ef11-b8e9-6045bd19a503",
     "residenceCode": "ECLA_PALAISEAU_EXTENSION_OPCO",
     "name": "ECLA PALAISEAU EXTENSION OPCO",
+    "commercialName": "Ecla Palaiseau OPCO",
     "brand": "ECLA",
     "city": "Massy",
     "cityAlias": "Paris",
     "address": "8 Avenue de Cambridge, 91300 Massy",
+    "telephone": "01 69 44 55 66",
+    "email": "contact@ecla-palaiseau-opco.ecla.io",
     "coordinates": {
       "lat": 48.7149,
       "lng": 2.2603
@@ -3161,7 +3183,6 @@
       "min": 0,
       "max": 7
     },
-    "commercialName": "Ecla Palaiseau OPCO",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",
@@ -3367,10 +3388,13 @@
     "residenceId": "1b5644a8-4fa7-ef11-b8e9-6045bd19a503",
     "residenceCode": "ECLA_NLG",
     "name": "ECLA NLG",
+    "commercialName": "Ecla Noisy-le-Grand",
     "brand": "ECLA",
     "city": "Noisy-le-Grand",
     "cityAlias": "Paris",
     "address": "12 Avenue du Général de Gaulle, 93160 Noisy-le-Grand",
+    "telephone": "01 48 77 88 99",
+    "email": "contact@ecla-noisy-le-grand.ecla.io",
     "coordinates": {
       "lat": 48.8478,
       "lng": 2.5522
@@ -3537,7 +3561,6 @@
       "min": 0,
       "max": 8
     },
-    "commercialName": "Ecla Noisy-le-Grand",
     "abonnements": [
       {
         "code": "CLEANING_SERVICE",

@@ -4,6 +4,7 @@
     {
       "residenceId": "string (uuid)",
       "residenceCode": "string",
+      "residenceCodeAnalytic": "string (code ERP / analytique)",
       "name": "string",
       "commercialName": "string",
       "brand": "string (ECLA | UXCO STUDENT)",
@@ -16,7 +17,6 @@
       },
       "availabilityStatus": "string (AVAILABLE | PARTIAL)",
       "baseRentFrom": "number (€)",
-      "reducedBaseRentFrom": "number (€) | undefined",
       "typologies": [
         {
           "typologyCode": "string (COLOC | STUDIO | T1_BIS | T2 | T2_DUPLEX | T3)",

@@ -8,6 +8,8 @@
     "city": "string",
     "cityAlias": "string",
     "address": "string",
+    "telephone": "string",
+    "email": "string (email contact residence)",
     "coordinates": { "lat": "number", "lng": "number" },
     "availabilityStatus": "string (AVAILABLE | PARTIAL)",
     "description": "string",
@@ -23,11 +25,13 @@
         "surface": "number (m²) | optional",
         "reducedBaseRent": "number (€) | optional",
         "pricing": {
-          "baseRent": "number (€)",
-          "lowestUnitPrice": "number (€)",
-          "highestUnitPrice": "number (€)",
-          "applicationFee": "number (€)",
-          "securityDeposit": "number (€)"
+          "MinimumBaseRent": "number (€)",
+          "MinimumBaseRentWithOptions": "number (€)",
+          "MinimumBaseRentWithOptionsWithOffers": "number (€)",
+          "MinimumApplicationFee": "number (€)",
+          "MinimumSecurityDeposit": "number (€)",
+          "MinimumApplicationFeeWithOffers": "number (€)",
+          "MinimumSecurityDepositWithOffers": "number (€)"
         },
         "amenities": [
           { "code": "string (FURNISHED | WIFI | ...)", "label": "string" }

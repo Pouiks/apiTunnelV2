@@ -33,8 +33,8 @@ Les reponses statiques sont chargees depuis le dossier [`mock-routes/`](mock-rou
 
 | Fichier | Route | Contenu |
 | --- | --- | --- |
-| `GetAllResidences.json` | `GET /residences` | Listing : residences[] avec commercialName, photos, offerSummaries — `tag`/`typologyTags` injectes par le serveur depuis `GetAdminTR` |
-| `GetOneResidenceById.json` | `GET /residences/:id` | Fiche complete : `typologies` (pricing + amenities), `configurationOptions` (options unitaires), photos, offers, abonnements — pas de `tag`/`typologyTags` dans le fichier (injectes par le serveur depuis `GetAdminTR`) |
+| `GetAllResidences.json` | `GET /residences` | Listing : residences[] avec `residenceCode`, `residenceCodeAnalytic`, commercialName, photos, offerSummaries — `tag`/`typologyTags` injectes par le serveur depuis `GetAdminTR` |
+| `GetOneResidenceById.json` | `GET /residences/:id` | Fiche complete : `telephone`, `email`, `typologies` (pricing + amenities), `configurationOptions`, photos, offers, abonnements — pas de `tag`/`typologyTags` dans le fichier (injectes par le serveur depuis `GetAdminTR`) |
 | `GetAdminTR.json` | `GET /admin-tr` | Config tunnel : modals, steps + `residenceOverrides` (flags et photos par residence, filtrable par ville) |
 | `GetOffers.json` | `GET /offers` | Referentiel offres (aussi injecte dans les deux routes residences) |
 | `Opportunity_locataire_seul_majeur.json` | `POST /reservations` | 1 locataire majeur, garant physique |
@@ -77,6 +77,8 @@ Catalogue global France (dezoom map). Retourne les 10 residences sans filtre.
 | Champ | Type | Description |
 | --- | --- | --- |
 | `residenceId` | string (UUID) | Identifiant unique |
+| `residenceCode` | string | Code technique (cle metier) |
+| `residenceCodeAnalytic` | string | Code analytique / comptable (ERP) |
 | `name` | string | Nom technique |
 | `commercialName` | string | Nom commercial (peut differer du nom technique) |
 | `brand` | string | `ECLA` ou `UXCO STUDENT` |
@@ -112,8 +114,10 @@ Fiche residence complete en un seul appel. Le `cityAlias` dans le path alimente 
 | Champ | Type | Description |
 | --- | --- | --- |
 | `description` | string | Texte descriptif de la residence |
+| `telephone` | string | Numero de contact (ex. accueil residence). |
+| `email` | string | E-mail de contact residence. |
 | `commonAmenities` | array | Equipements communs `{ code, label }` |
-| `typologies` | array | Catalogue logements : `pricing`, `amenities`, surface / `reducedBaseRent` eventuels (plus de scenarios). |
+| `typologies` | array | Catalogue logements : `pricing` (`MinimumBaseRent`, options, offres, frais et cautions minimums), `amenities`, surface / `reducedBaseRent` eventuel (promo ; sert aussi au calcul du loyer « avec offres » dans `pricing`). |
 | `abonnements` | array | Services recurrents optionnels (menage, parking, TV, pack). |
 | `configurationOptions` | array | Options unitaires communes a la residence (etage, surface, literie, clim, balcon, etc.). Memes montants pour toutes les typologies. Groupe `PREMIUM` seulement si la residence le propose (ex. Noisy-le-Grand). |
 | `tag` / `typologyTags` | object | Presentes seulement apres merge serveur depuis `GetAdminTR.residenceOverrides` (`flag`) |
