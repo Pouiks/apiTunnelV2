@@ -421,10 +421,8 @@
       "flag": {
         "code": "POPULAR",
         "label": "Populaire",
-        "typologies": [
-          "STUDIO",
-          "COLOC"
-        ]
+        "typologies": [],
+        "label_en": "Popular"
       }
     },
     "045644a8-4fa7-ef11-b8e9-6045bd19a503": {
@@ -497,9 +495,7 @@
       "flag": {
         "code": "LAST_UNITS",
         "label": "Dernières disponibilités",
-        "typologies": [
-          "COLOC"
-        ]
+        "typologies": []
       }
     },
     "065644a8-4fa7-ef11-b8e9-6045bd19a503": {

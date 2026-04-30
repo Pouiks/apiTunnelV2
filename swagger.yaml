@@ -202,10 +202,18 @@ components:
 
     TypologyPreview:
       type: object
+      description: >
+        Apercu typologie sur le listing. La ligne colocation peut utiliser `Sous_type`
+        + bornes `MinimumBaseRent*` au lieu de `typologyCode` + `lowestUnitPrice`.
       properties:
         typologyCode:
           type: string
           example: STUDIO
+          nullable: true
+        Sous_type:
+          type: string
+          nullable: true
+          description: Libelle sous-type pour la ligne colocation (ex. Colocation).
         sous-type-marketing_fr:
           type: string
           description: Libelle marketing FR affiche sur le listing.
@@ -214,17 +222,24 @@ components:
           description: Libelle marketing EN affiche sur le listing.
         lowestUnitPrice:
           type: number
+          nullable: true
           description: >
-            Borne basse du loyer pour cette typologie (alignee sur la fiche
-            `GetOneResidenceById` quand disponible ; T2_DUPLEX / T3 deduits du T2 si besoin).
+            Borne basse du loyer pour cette typologie (hors ligne colocation `Sous_type`).
+        MinimumBaseRent:
+          type: number
+          nullable: true
+        MinimumBaseRentWithOptions:
+          type: number
+          nullable: true
+        MinimumBaseRentWithOptionsWithOffers:
+          type: number
+          nullable: true
         reducedBaseRent:
           type: number
           description: Loyer reduit eventuel (promo), si fourni par la vue.
       required:
-        - typologyCode
         - sous-type-marketing_fr
         - sous_type_marketing_en
-        - lowestUnitPrice
 
     Floors:
       type: object
@@ -290,12 +305,29 @@ components:
           description: Alias de ville pour le front (ECLA => Paris).
         address:
           type: string
+        postal_code:
+          type: string
+          description: Code postal (5 chiffres).
         coordinates:
           $ref: "#/components/schemas/Coordinates"
+        Residence_availability:
+          type: string
+          description: >
+            Disponibilite synthetique (ex. `AVAILABLE || FULL`, `PARTIAL || FULL`).
+        MinimumBaseRent:
+          type: number
+        MinimumBaseRentWithOptions:
+          type: number
+        MinimumBaseRentWithOptionsWithOffers:
+          type: number
         availabilityStatus:
           type: string
+          deprecated: true
+          description: Remplace par `Residence_availability` dans le mock listing.
         baseRentFrom:
           type: number
+          deprecated: true
+          description: Remplace par `MinimumBaseRent*` dans le mock listing.
         tag:
           $ref: "#/components/schemas/ResidenceTag"
           description: >
@@ -329,10 +361,13 @@ components:
         - city
         - cityAlias
         - address
+        - postal_code
         - coordinates
-        - availabilityStatus
-        - baseRentFrom
         - photos
+        - Residence_availability
+        - MinimumBaseRent
+        - MinimumBaseRentWithOptions
+        - MinimumBaseRentWithOptionsWithOffers
         - typologies
         - offerSummaries
 
@@ -844,6 +879,20 @@ components:
           $ref: "#/components/schemas/TunnelStepLocalized"
       required: [stepCode, order, fr, en]
 
+    AdminCommonAmenity:
+      type: object
+      description: Equipement commun residence (FR + EN) pour la surcouche admin.
+      properties:
+        code:
+          type: string
+        label:
+          type: string
+          description: Libelle affiche (FR).
+        label_en:
+          type: string
+          description: Libelle anglais.
+      required: [code, label, label_en]
+
     ResidenceOverrideFlag:
       type: object
       description: >
@@ -856,6 +905,9 @@ components:
           enum: [POPULAR, SPECIAL_OFFER, NEW, LAST_UNITS]
         label:
           type: string
+        label_en:
+          type: string
+          description: Libelle du flag en anglais (tunnel bilingue).
         typologies:
           type: array
           items:
@@ -867,8 +919,8 @@ components:
     ResidenceOverride:
       type: object
       description: >
-        Surcouche admin pour une residence : flag marketing et photos.
-        Les photos remplacent integralement celles de la masterdata.
+        Surcouche admin pour une residence : texte marketing, equipements communs,
+        flag marketing et photos. Les photos remplacent integralement celles de la masterdata.
       properties:
         residenceId:
           type: string
@@ -876,6 +928,14 @@ components:
           type: string
         cityAlias:
           type: string
+        description:
+          type: string
+          description: Texte descriptif marketing (tunnel / fiche enrichie).
+        commonAmenities:
+          type: array
+          items:
+            $ref: "#/components/schemas/AdminCommonAmenity"
+          description: Equipements communs avec libelles FR et EN.
         flag:
           $ref: "#/components/schemas/ResidenceOverrideFlag"
         photos:

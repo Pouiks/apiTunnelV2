@@ -33,9 +33,18 @@
       "residenceId": "string (uuid)",
       "city": "string",
       "cityAlias": "string",
+      "description": "string (texte marketing residence)",
+      "commonAmenities": [
+        {
+          "code": "string (GYM | COWORK | ...)",
+          "label": "string (FR)",
+          "label_en": "string (EN)"
+        }
+      ],
       "flag": {
         "code": "string (POPULAR | NEW | SPECIAL_OFFER | LAST_UNITS)",
         "label": "string",
+        "label_en": "string | optional",
         "typologies": "string[] (COLOC | STUDIO | T1_BIS | T2 | T2_DUPLEX | T3) — vide = toutes les typologies heritent"
       },
       "photos": [

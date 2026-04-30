@@ -33,9 +33,9 @@ Les reponses statiques sont chargees depuis le dossier [`mock-routes/`](mock-rou
 
 | Fichier | Route | Contenu |
 | --- | --- | --- |
-| `GetAllResidences.json` | `GET /residences` | Listing : residences[] avec `residenceCode`, `residenceCodeAnalytic`, commercialName, photos, offerSummaries — `tag`/`typologyTags` injectes par le serveur depuis `GetAdminTR` |
+| `GetAllResidences.json` | `GET /residences` | Listing : `postal_code`, `photos`, `Residence_availability`, `MinimumBaseRent*`, `typologies` (ligne colocation `Sous_type` + autres `typologyCode`) — `tag`/`typologyTags` injectes depuis `GetAdminTR` |
 | `GetOneResidenceById.json` | `GET /residences/:id` | Fiche complete : `telephone`, `email`, `typologies` (pricing + amenities), `configurationOptions`, photos, offers, abonnements — pas de `tag`/`typologyTags` dans le fichier (injectes par le serveur depuis `GetAdminTR`) |
-| `GetAdminTR.json` | `GET /admin-tr` | Config tunnel : modals, steps + `residenceOverrides` (flags et photos par residence, filtrable par ville) |
+| `GetAdminTR.json` | `GET /admin-tr` | Config tunnel : modals, steps + `residenceOverrides` (`description`, `commonAmenities` FR/EN, `flag`, photos par residence, filtrable par ville) |
 | `GetOffers.json` | `GET /offers` | Referentiel offres (aussi injecte dans les deux routes residences) |
 | `Opportunity_locataire_seul_majeur.json` | `POST /reservations` | 1 locataire majeur, garant physique |
 | `Opportunity_multi_locataire_majeur_garant_physique.json` | `POST /reservations` | 2 locataires majeurs, bail multi, garant physique |
@@ -83,10 +83,13 @@ Catalogue global France (dezoom map). Retourne les 10 residences sans filtre.
 | `commercialName` | string | Nom commercial (peut differer du nom technique) |
 | `brand` | string | `ECLA` ou `UXCO STUDENT` |
 | `city` / `cityAlias` | string | Ville reelle / alias de recherche |
+| `postal_code` | string | Code postal |
+| `photos` | array | Photos (souvent alignees sur l’admin mock) — HERO, COMMON, TYPOLOGY |
+| `Residence_availability` | string | Disponibilite synthetique (ex. valeurs `AVAILABLE \|\| FULL` ou `PARTIAL \|\| FULL` dans le mock) |
+| `MinimumBaseRent` / `MinimumBaseRentWithOptions` / `MinimumBaseRentWithOptionsWithOffers` | number | Bornes loyer synthetiques (alignees sur la ligne colocation) |
 | `tag` | object or null | Absent du fichier masterdata ; ajoute par le serveur si un `flag` existe dans `GetAdminTR` pour cette residence (`{ code, label }`). |
 | `typologyTags` | object | Idem : construit par merge admin selon `flag.typologies` (heritage sur les typologies ciblees). |
-| `photos` | array | URLs S3 simulees — contextes : HERO, COMMON, TYPOLOGY |
-| `typologies` | array | Preview : `typologyCode`, `sous-type-marketing_fr`, `sous_type_marketing_en`, `lowestUnitPrice`, `reducedBaseRent` eventuel |
+| `typologies` | array | Ligne 1 colocation : `Sous_type`, `MinimumBaseRent*` ; suivantes : `typologyCode`, `lowestUnitPrice`, `reducedBaseRent` eventuel |
 | `offerSummaries` | array | Offres applicables (injectees par le serveur) |
 
 La racine inclut `offersContext` (`bookingDate`, `city`) pour aligner le cache React.

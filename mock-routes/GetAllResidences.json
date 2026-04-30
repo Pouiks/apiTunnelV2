@@ -254,7 +254,7 @@
           "typologyCode": "T3"
         }
       ],
-      "Residence_availability": "AVAILABLE || FULL",
+      "Residence_availability": "PARTIAL || FULL",
       "MinimumBaseRent": 480,
       "MinimumBaseRentWithOptions": 500,
       "MinimumBaseRentWithOptionsWithOffers": 460,
@@ -535,7 +535,7 @@
           "typologyCode": "T1_BIS"
         }
       ],
-      "Residence_availability": "AVAILABLE || FULL",
+      "Residence_availability": "PARTIAL || FULL",
       "MinimumBaseRent": 480,
       "MinimumBaseRentWithOptions": 500,
       "MinimumBaseRentWithOptionsWithOffers": 460,
@@ -974,7 +974,7 @@
           "typologyCode": "T3"
         }
       ],
-      "Residence_availability": "AVAILABLE || FULL",
+      "Residence_availability": "PARTIAL || FULL",
       "MinimumBaseRent": 480,
       "MinimumBaseRentWithOptions": 500,
       "MinimumBaseRentWithOptionsWithOffers": 460,

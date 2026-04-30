@@ -11,7 +11,10 @@ const root = path.join(__dirname, "..");
 const mock = (...p) => path.join(root, "mock-routes", ...p);
 
 const details = JSON.parse(fs.readFileSync(mock("GetOneResidenceById.json"), "utf-8"));
-const adminSource = JSON.parse(fs.readFileSync(mock("GetAdminTAllResidence.json"), "utf-8"));
+const adminPath = fs.existsSync(mock("GetAdminTR.json"))
+  ? mock("GetAdminTR.json")
+  : mock("GetAdminTAllResidence.json");
+const adminSource = JSON.parse(fs.readFileSync(adminPath, "utf-8"));
 const listingPath = mock("GetAllResidences.json");
 const listing = JSON.parse(fs.readFileSync(listingPath, "utf-8"));
 
@@ -119,7 +122,9 @@ function normalizeResidenceRow(r) {
   const ov = adminSource.residenceOverrides?.[r.residenceId];
   const photos = Array.isArray(ov?.photos) ? ov.photos : [];
 
-  const status = r.availabilityStatus || "AVAILABLE";
+  const d = details[r.residenceId];
+  const status =
+    r.availabilityStatus || (d && d.availabilityStatus) || "AVAILABLE";
   const residenceAvailability =
     status === "PARTIAL" ? "PARTIAL || FULL" : "AVAILABLE || FULL";
 

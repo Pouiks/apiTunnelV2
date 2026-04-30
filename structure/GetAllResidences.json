@@ -11,15 +11,27 @@
       "city": "string",
       "cityAlias": "string",
       "address": "string",
+      "postal_code": "string (5 chiffres)",
       "coordinates": {
         "lat": "number",
         "lng": "number"
       },
-      "availabilityStatus": "string (AVAILABLE | PARTIAL)",
-      "baseRentFrom": "number (€)",
+      "photos": [],
+      "Residence_availability": "string (AVAILABLE || FULL | PARTIAL || FULL)",
+      "MinimumBaseRent": "number (€)",
+      "MinimumBaseRentWithOptions": "number (€)",
+      "MinimumBaseRentWithOptionsWithOffers": "number (€)",
       "typologies": [
         {
-          "typologyCode": "string (COLOC | STUDIO | T1_BIS | T2 | T2_DUPLEX | T3)",
+          "Sous_type": "Colocation",
+          "sous-type-marketing_fr": "string",
+          "sous_type_marketing_en": "string",
+          "MinimumBaseRent": "number (€)",
+          "MinimumBaseRentWithOptions": "number (€)",
+          "MinimumBaseRentWithOptionsWithOffers": "number (€)"
+        },
+        {
+          "typologyCode": "string (STUDIO | T1_BIS | T2 | T2_DUPLEX | T3)",
           "sous-type-marketing_fr": "string",
           "sous_type_marketing_en": "string",
           "lowestUnitPrice": "number (€)",

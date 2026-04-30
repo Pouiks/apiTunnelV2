@@ -17,7 +17,7 @@
       "codePostal": "75005",
       "ville": "Paris",
       "rgpd_consetement": "true",
-      "rgpd_consentement": "true"
+      "rgpd_commercial_consentement": "true"
     }
   ],
   "opportunity": {
