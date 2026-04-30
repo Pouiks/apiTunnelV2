@@ -166,11 +166,7 @@ paths:
             type: string
             enum:
               - locataire_seul_majeur
-              - multi_locataire_majeur_garant_physique
               - locataire_seul_mineur_garant_physique
-              - multi_locataire_dont_1_mineur
-              - multi_locataire_majeur_garant_moral
-              - multi_locataire_1_mineur_garant_moral
           description: Scenario de creation (defaut locataire_seul_majeur).
       requestBody:
         required: false

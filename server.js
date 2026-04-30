@@ -21,11 +21,9 @@ const offersPayload = loadMockJSON("GetOffers.json");
 const adminTRPayload = loadMockJSON("GetAdminTR.json");
 const opportunityScenarios = {
   locataire_seul_majeur: loadMockJSON("Opportunity_locataire_seul_majeur.json"),
-  multi_locataire_majeur_garant_physique: loadMockJSON("Opportunity_multi_locataire_majeur_garant_physique.json"),
-  locataire_seul_mineur_garant_physique: loadMockJSON("Opportunity_locataire_seul_mineur_garant_physique.json"),
-  multi_locataire_dont_1_mineur: loadMockJSON("Opportunity_multi_locataire_dont_1_mineur.json"),
-  multi_locataire_majeur_garant_moral: loadMockJSON("Opportunity_multi_locataire_majeur_garant_moral.json"),
-  multi_locataire_1_mineur_garant_moral: loadMockJSON("Opportunity_multi_locataire_1_mineur_garant_moral.json"),
+  locataire_seul_mineur_garant_physique: loadMockJSON(
+    "Opportunity_locataire_seul_mineur_garant_physique.json",
+  ),
 };
 const postReservationAccepted = loadMockJSON("PostReservationAccepted.json");
 

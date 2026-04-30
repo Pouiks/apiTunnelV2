@@ -38,11 +38,7 @@ Les reponses statiques sont chargees depuis le dossier [`mock-routes/`](mock-rou
 | `GetAdminTR.json` | `GET /admin-tr` | Config tunnel : modals, steps + `residenceOverrides` (`description`, `commonAmenities` FR/EN, `flag`, photos par residence, filtrable par ville) |
 | `GetOffers.json` | `GET /offers` | Referentiel offres (aussi injecte dans les deux routes residences) |
 | `Opportunity_locataire_seul_majeur.json` | `POST /reservations` | 1 locataire majeur, garant physique |
-| `Opportunity_multi_locataire_majeur_garant_physique.json` | `POST /reservations` | 2 locataires majeurs, bail multi, garant physique |
 | `Opportunity_locataire_seul_mineur_garant_physique.json` | `POST /reservations` | 1 locataire mineur + représentant légal, garant physique |
-| `Opportunity_multi_locataire_dont_1_mineur.json` | `POST /reservations` | 2 locataires dont 1 mineur + représentant légal 2, garant physique |
-| `Opportunity_multi_locataire_majeur_garant_moral.json` | `POST /reservations` | 2 locataires majeurs, bail multi, garant moral |
-| `Opportunity_multi_locataire_1_mineur_garant_moral.json` | `POST /reservations` | 2 locataires dont 1 mineur + représentant légal 2, garant moral |
 | `PostReservationAccepted.json` | `POST /reservations` | Confirmation incluse dans la reponse |
 
 ## Routes — synthese rapide
@@ -58,11 +54,7 @@ Les reponses statiques sont chargees depuis le dossier [`mock-routes/`](mock-rou
 | GET | `/admin-tr?city=Paris` | Config tunnel + overrides d'une ville | 200 | `{ modals, steps, residenceOverrides }` |
 | GET | `/offers` | Referentiel offres global | 200 | `{ bookingDate, city, offers[] }` |
 | POST | `/reservations` | Creation opportunite ECCO (defaut : locataire_seul_majeur) | 200 | `{ status, opportunityId, scenario, availableScenarios, submittedPayload, confirmation }` |
-| POST | `/reservations?scenario=multi_locataire_majeur_garant_physique` | 2 locataires majeurs, garant physique | 200 | idem |
 | POST | `/reservations?scenario=locataire_seul_mineur_garant_physique` | 1 locataire mineur + représentant légal | 200 | idem |
-| POST | `/reservations?scenario=multi_locataire_dont_1_mineur` | 2 locataires dont 1 mineur | 200 | idem |
-| POST | `/reservations?scenario=multi_locataire_majeur_garant_moral` | 2 locataires majeurs, garant moral | 200 | idem |
-| POST | `/reservations?scenario=multi_locataire_1_mineur_garant_moral` | 2 locataires dont 1 mineur, garant moral | 200 | idem |
 | GET | `/docs` | Swagger UI (navigateur) | 200 | HTML |
 | GET | `/openapi.yaml` | Spec OpenAPI brute | 200 | YAML |
 
@@ -216,11 +208,7 @@ Simule la creation d'une opportunite dans ECCO (CRM). Le query param `?scenario=
 | Scenario | Fichier | Contacts |
 | --- | --- | --- |
 | `locataire_seul_majeur` (defaut) | `Opportunity_locataire_seul_majeur.json` | 1 locataire majeur |
-| `multi_locataire_majeur_garant_physique` | `Opportunity_multi_locataire_majeur_garant_physique.json` | Locataire + Co-locataire, majeurs |
 | `locataire_seul_mineur_garant_physique` | `Opportunity_locataire_seul_mineur_garant_physique.json` | Locataire mineur + Représentant Légal |
-| `multi_locataire_dont_1_mineur` | `Opportunity_multi_locataire_dont_1_mineur.json` | Locataire + Co-locataire mineur + Représentant Légal 2 |
-| `multi_locataire_majeur_garant_moral` | `Opportunity_multi_locataire_majeur_garant_moral.json` | Locataire + Co-locataire, garant moral |
-| `multi_locataire_1_mineur_garant_moral` | `Opportunity_multi_locataire_1_mineur_garant_moral.json` | Locataire + Co-locataire mineur + Représentant Légal 2, garant moral |
 
 **Structure du payload :**
 
@@ -246,11 +234,7 @@ Les champs picklist suivent le format `{ value: <number>, label: "<texte>" }`.
 
 ```bash
 curl -X POST "http://localhost:8081/reservations"
-curl -X POST "http://localhost:8081/reservations?scenario=multi_locataire_majeur_garant_physique"
 curl -X POST "http://localhost:8081/reservations?scenario=locataire_seul_mineur_garant_physique"
-curl -X POST "http://localhost:8081/reservations?scenario=multi_locataire_dont_1_mineur"
-curl -X POST "http://localhost:8081/reservations?scenario=multi_locataire_majeur_garant_moral"
-curl -X POST "http://localhost:8081/reservations?scenario=multi_locataire_1_mineur_garant_moral"
 ```
 
 ## Residences mock
