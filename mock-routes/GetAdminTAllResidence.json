@@ -339,32 +339,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "STUDY",
           "label": "Salles d'étude",
-          "label_en": "Study rooms"
+          "labelEn": "Study rooms"
         },
         {
           "code": "BIKE",
           "label": "Local vélos sécurisé",
-          "label_en": "Secure bike storage"
+          "labelEn": "Secure bike storage"
         },
         {
           "code": "WIFI",
           "label": "Wi-Fi fibre",
-          "label_en": "Fibre Wi-Fi"
+          "labelEn": "Fibre Wi-Fi"
         }
       ],
       "photos": [
@@ -422,7 +422,7 @@
         "code": "POPULAR",
         "label": "Populaire",
         "typologies": [],
-        "label_en": "Popular"
+        "labelEn": "Popular"
       }
     },
     "045644a8-4fa7-ef11-b8e9-6045bd19a503": {
@@ -464,32 +464,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "STUDY",
           "label": "Salles d'étude",
-          "label_en": "Study rooms"
+          "labelEn": "Study rooms"
         },
         {
           "code": "BIKE",
           "label": "Local vélos sécurisé",
-          "label_en": "Secure bike storage"
+          "labelEn": "Secure bike storage"
         },
         {
           "code": "WIFI",
           "label": "Wi-Fi fibre",
-          "label_en": "Fibre Wi-Fi"
+          "labelEn": "Fibre Wi-Fi"
         }
       ],
       "flag": {
@@ -537,32 +537,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "STUDY",
           "label": "Salles d'étude",
-          "label_en": "Study rooms"
+          "labelEn": "Study rooms"
         },
         {
           "code": "BIKE",
           "label": "Local vélos sécurisé",
-          "label_en": "Secure bike storage"
+          "labelEn": "Secure bike storage"
         },
         {
           "code": "WIFI",
           "label": "Wi-Fi fibre",
-          "label_en": "Fibre Wi-Fi"
+          "labelEn": "Fibre Wi-Fi"
         }
       ],
       "flag": {
@@ -624,32 +624,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "STUDY",
           "label": "Salles d'étude",
-          "label_en": "Study rooms"
+          "labelEn": "Study rooms"
         },
         {
           "code": "BIKE",
           "label": "Local vélos sécurisé",
-          "label_en": "Secure bike storage"
+          "labelEn": "Secure bike storage"
         },
         {
           "code": "WIFI",
           "label": "Wi-Fi fibre",
-          "label_en": "Fibre Wi-Fi"
+          "labelEn": "Fibre Wi-Fi"
         }
       ],
       "flag": {
@@ -690,32 +690,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "STUDY",
           "label": "Salles d'étude",
-          "label_en": "Study rooms"
+          "labelEn": "Study rooms"
         },
         {
           "code": "BIKE",
           "label": "Local vélos sécurisé",
-          "label_en": "Secure bike storage"
+          "labelEn": "Secure bike storage"
         },
         {
           "code": "WIFI",
           "label": "Wi-Fi fibre",
-          "label_en": "Fibre Wi-Fi"
+          "labelEn": "Fibre Wi-Fi"
         }
       ],
       "flag": {
@@ -765,32 +765,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "STUDY",
           "label": "Salles d'étude",
-          "label_en": "Study rooms"
+          "labelEn": "Study rooms"
         },
         {
           "code": "BIKE",
           "label": "Local vélos sécurisé",
-          "label_en": "Secure bike storage"
+          "labelEn": "Secure bike storage"
         },
         {
           "code": "WIFI",
           "label": "Wi-Fi fibre",
-          "label_en": "Fibre Wi-Fi"
+          "labelEn": "Fibre Wi-Fi"
         }
       ],
       "flag": {
@@ -866,32 +866,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "CINEMA",
           "label": "Cinébox",
-          "label_en": "Cinema"
+          "labelEn": "Cinema"
         },
         {
           "code": "PADEL",
           "label": "Courts de padel",
-          "label_en": "Padel courts"
+          "labelEn": "Padel courts"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "RESTO",
           "label": "Interval – restauration",
-          "label_en": "Restaurant"
+          "labelEn": "Restaurant"
         }
       ],
       "flag": {
@@ -963,32 +963,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "CINEMA",
           "label": "Cinébox",
-          "label_en": "Cinema"
+          "labelEn": "Cinema"
         },
         {
           "code": "PADEL",
           "label": "Courts de padel",
-          "label_en": "Padel courts"
+          "labelEn": "Padel courts"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "RESTO",
           "label": "Interval – restauration",
-          "label_en": "Restaurant"
+          "labelEn": "Restaurant"
         }
       ],
       "flag": {
@@ -1043,32 +1043,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "CINEMA",
           "label": "Cinébox",
-          "label_en": "Cinema"
+          "labelEn": "Cinema"
         },
         {
           "code": "PADEL",
           "label": "Courts de padel",
-          "label_en": "Padel courts"
+          "labelEn": "Padel courts"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "RESTO",
           "label": "Interval – restauration",
-          "label_en": "Restaurant"
+          "labelEn": "Restaurant"
         }
       ],
       "flag": {
@@ -1133,32 +1133,32 @@
         {
           "code": "GYM",
           "label": "Salle de sport",
-          "label_en": "Gym"
+          "labelEn": "Gym"
         },
         {
           "code": "COWORK",
           "label": "Espace coworking",
-          "label_en": "Coworking space"
+          "labelEn": "Coworking space"
         },
         {
           "code": "CINEMA",
           "label": "Cinébox",
-          "label_en": "Cinema"
+          "labelEn": "Cinema"
         },
         {
           "code": "PADEL",
           "label": "Courts de padel",
-          "label_en": "Padel courts"
+          "labelEn": "Padel courts"
         },
         {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
-          "label_en": "Laundry 24/7"
+          "labelEn": "Laundry 24/7"
         },
         {
           "code": "RESTO",
           "label": "Interval – restauration",
-          "label_en": "Restaurant"
+          "labelEn": "Restaurant"
         }
       ],
       "flag": {

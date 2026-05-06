@@ -8,7 +8,7 @@
     "city": "Lyon",
     "cityAlias": "Lyon",
     "address": "14 Avenue Berthelot",
-    "postal_code":"69007", 
+    "postalCode": "69007",
     "telephone": "04 78 90 12 34",
     "email": "contact@albert-thomas.com",
     "coordinates": {
@@ -48,13 +48,13 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "MinimumBaseRent": 400,
-          "MinimumBaseRentWithOptions": 420,
-          "MinimumBaseRentWithOptionsWithOffers": 380,
-          "MinimumApplicationFee": 250,
-          "MinimumSecurityDeposit": 480,
-          "MinimumApplicationFeeWithOffers": 200,
-          "MinimumSecurityDepositWithOffers": 400
+          "minimumBaseRent": 400,
+          "minimumBaseRentWithOptions": 420,
+          "minimumBaseRentWithOptionsWithOffers": 380,
+          "minimumApplicationFee": 250,
+          "minimumSecurityDeposit": 480,
+          "minimumApplicationFeeWithOffers": 200,
+          "minimumSecurityDepositWithOffers": 400
         },
         "amenities": [
           {
@@ -74,7 +74,7 @@
             "label": "Cuisine partagée"
           }
         ],
-        "MinimumSurface": 11
+        "minimumSurface": 11
       },
       {
         "typologyCode": "STUDIO",

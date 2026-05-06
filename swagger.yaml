@@ -199,43 +199,43 @@ components:
     TypologyPreview:
       type: object
       description: >
-        Apercu typologie sur le listing. La ligne colocation peut utiliser `Sous_type`
-        + bornes `MinimumBaseRent*` au lieu de `typologyCode` + `lowestUnitPrice`.
+        Apercu typologie sur le listing. La ligne colocation peut utiliser `sousType`
+        + bornes `minimumBaseRent*` au lieu de `typologyCode` + `lowestUnitPrice`.
       properties:
         typologyCode:
           type: string
           example: STUDIO
           nullable: true
-        Sous_type:
+        sousType:
           type: string
           nullable: true
           description: Libelle sous-type pour la ligne colocation (ex. Colocation).
-        sous-type-marketing_fr:
+        sousTypeMarketingFr:
           type: string
           description: Libelle marketing FR affiche sur le listing.
-        sous_type_marketing_en:
+        sousTypeMarketingEn:
           type: string
           description: Libelle marketing EN affiche sur le listing.
         lowestUnitPrice:
           type: number
           nullable: true
           description: >
-            Borne basse du loyer pour cette typologie (hors ligne colocation `Sous_type`).
-        MinimumBaseRent:
+            Borne basse du loyer pour cette typologie (hors ligne colocation `sousType`).
+        minimumBaseRent:
           type: number
           nullable: true
-        MinimumBaseRentWithOptions:
+        minimumBaseRentWithOptions:
           type: number
           nullable: true
-        MinimumBaseRentWithOptionsWithOffers:
+        minimumBaseRentWithOptionsWithOffers:
           type: number
           nullable: true
         reducedBaseRent:
           type: number
           description: Loyer reduit eventuel (promo), si fourni par la vue.
       required:
-        - sous-type-marketing_fr
-        - sous_type_marketing_en
+        - sousTypeMarketingFr
+        - sousTypeMarketingEn
 
     Floors:
       type: object
@@ -301,29 +301,29 @@ components:
           description: Alias de ville pour le front (ECLA => Paris).
         address:
           type: string
-        postal_code:
+        postalCode:
           type: string
           description: Code postal (5 chiffres).
         coordinates:
           $ref: "#/components/schemas/Coordinates"
-        Residence_availability:
+        residenceAvailability:
           type: string
           description: >
             Disponibilite synthetique (ex. `AVAILABLE || FULL`, `PARTIAL || FULL`).
-        MinimumBaseRent:
+        minimumBaseRent:
           type: number
-        MinimumBaseRentWithOptions:
+        minimumBaseRentWithOptions:
           type: number
-        MinimumBaseRentWithOptionsWithOffers:
+        minimumBaseRentWithOptionsWithOffers:
           type: number
         availabilityStatus:
           type: string
           deprecated: true
-          description: Remplace par `Residence_availability` dans le mock listing.
+          description: Remplace par `residenceAvailability` dans le mock listing.
         baseRentFrom:
           type: number
           deprecated: true
-          description: Remplace par `MinimumBaseRent*` dans le mock listing.
+          description: Remplace par `minimumBaseRent*` dans le mock listing.
         tag:
           $ref: "#/components/schemas/ResidenceTag"
           description: >
@@ -357,13 +357,13 @@ components:
         - city
         - cityAlias
         - address
-        - postal_code
+        - postalCode
         - coordinates
         - photos
-        - Residence_availability
-        - MinimumBaseRent
-        - MinimumBaseRentWithOptions
-        - MinimumBaseRentWithOptionsWithOffers
+        - residenceAvailability
+        - minimumBaseRent
+        - minimumBaseRentWithOptions
+        - minimumBaseRentWithOptionsWithOffers
         - typologies
         - offerSummaries
 
@@ -510,31 +510,31 @@ components:
       type: object
       description: >
         Bornes tarifaires par typologie (loyer, options, offres, frais et caution).
-        `MinimumBaseRentWithOptionsWithOffers` utilise `reducedBaseRent` de la typologie
+        `minimumBaseRentWithOptionsWithOffers` utilise `reducedBaseRent` de la typologie
         lorsqu’il est strictement inferieur au loyer de base, sinon loyer de base - 20 €.
       properties:
-        MinimumBaseRent:
+        minimumBaseRent:
           type: number
-        MinimumBaseRentWithOptions:
+        minimumBaseRentWithOptions:
           type: number
-        MinimumBaseRentWithOptionsWithOffers:
+        minimumBaseRentWithOptionsWithOffers:
           type: number
-        MinimumApplicationFee:
+        minimumApplicationFee:
           type: number
-        MinimumSecurityDeposit:
+        minimumSecurityDeposit:
           type: number
-        MinimumApplicationFeeWithOffers:
+        minimumApplicationFeeWithOffers:
           type: number
-        MinimumSecurityDepositWithOffers:
+        minimumSecurityDepositWithOffers:
           type: number
       required:
-        - MinimumBaseRent
-        - MinimumBaseRentWithOptions
-        - MinimumBaseRentWithOptionsWithOffers
-        - MinimumApplicationFee
-        - MinimumSecurityDeposit
-        - MinimumApplicationFeeWithOffers
-        - MinimumSecurityDepositWithOffers
+        - minimumBaseRent
+        - minimumBaseRentWithOptions
+        - minimumBaseRentWithOptionsWithOffers
+        - minimumApplicationFee
+        - minimumSecurityDeposit
+        - minimumApplicationFeeWithOffers
+        - minimumSecurityDepositWithOffers
 
     Amenity:
       type: object
@@ -884,10 +884,10 @@ components:
         label:
           type: string
           description: Libelle affiche (FR).
-        label_en:
+        labelEn:
           type: string
           description: Libelle anglais.
-      required: [code, label, label_en]
+      required: [code, label, labelEn]
 
     ResidenceOverrideFlag:
       type: object
@@ -901,7 +901,7 @@ components:
           enum: [POPULAR, SPECIAL_OFFER, NEW, LAST_UNITS]
         label:
           type: string
-        label_en:
+        labelEn:
           type: string
           description: Libelle du flag en anglais (tunnel bilingue).
         typologies:
@@ -977,7 +977,7 @@ components:
       description: |
         Contact CRM. Le tableau `contacts[]` est dynamique : seuls les contacts
         effectivement renseignes sont inclus (pas de slots vides avec null).
-        Le champ `uxc_role` porte la picklist ECCO (uxc_role) qui determine le role
+        Le champ `uxcRole` porte la picklist ECCO (uxcRole) qui determine le role
         du contact dans l'opportunite. Valeurs disponibles :
           944800000 Locataire (1er locataire)
           944800005 Co-locataire (2e locataire, bail multi)
@@ -987,7 +987,7 @@ components:
         ils sont geres via typeDeGarant sur l opportunity.
         Tous les champs ci-dessous sont obligatoires sur chaque contact (pas de null).
       properties:
-        uxc_role:
+        uxcRole:
           $ref: "#/components/schemas/PicklistValue"
           description: >
             Role ECCO du contact. Valeurs : 944800000 Locataire,
@@ -1021,7 +1021,7 @@ components:
             - $ref: "#/components/schemas/PicklistValue"
           description: >
             Profil locataire (picklist aps_profillocataire). Absent pour les contacts
-            `uxc_role` Representant Legal Locataire (944800003) ou
+            `uxcRole` Representant Legal Locataire (944800003) ou
             Representant Legal 2 Locataire (944800011) — ce profil n'est pas collecte.
         langueDeCommunication:
           $ref: "#/components/schemas/PicklistValue"
@@ -1031,20 +1031,20 @@ components:
           type: string
         ville:
           type: string
-        rgpd_consetement:
+        rgpdConsetement:
           type: string
           enum: ["true", "false"]
           description: >
             Consentement RGPD (cle alignee ECCO, orthographe historique `consetement`).
-            `true` uniquement pour le premier locataire (`uxc_role` Locataire 944800000).
-        rgpd_consentement:
+            `true` uniquement pour le premier locataire (`uxcRole` Locataire 944800000).
+        rgpdConsentement:
           type: string
           enum: ["true", "false"]
           description: >
             Second flag consentement. `true` pour locataire 944800000 ; `false` pour
             co-locataire (944800005) et representants legaux (944800003, 944800011).
       required:
-        - uxc_role
+        - uxcRole
         - prenom
         - nom
         - email
@@ -1058,8 +1058,8 @@ components:
         - adresse
         - codePostal
         - ville
-        - rgpd_consetement
-        - rgpd_consentement
+        - rgpdConsetement
+        - rgpdConsentement
 
     Produit:
       type: object
@@ -1192,21 +1192,21 @@ components:
           items:
             type: string
           description: Abonnements selectionnes par le client (ex. Le pack, TV, Kit Linge). ECCO gere les prix.
-        source_utm_campaign:
+        sourceUtmCampaign:
           type: string
           description: Parametre UTM campaign (tracking acquisition).
-        source_utm_gclid:
+        sourceUtmGclid:
           type: string
           description: Google Click ID (si applicable).
-        source_utm_medium:
+        sourceUtmMedium:
           type: string
           example: cpc
-        source_utm_source:
+        sourceUtmSource:
           type: string
           example: google
-        source_utm_term:
+        sourceUtmTerm:
           type: string
-        source_utm_content:
+        sourceUtmContent:
           type: string
         offres:
           type: array
@@ -1221,7 +1221,7 @@ components:
       description: |
         Payload de creation opportunite ECCO.
         `contacts[]` est dynamique : seuls les contacts renseignes sont inclus.
-        Chaque contact porte un `uxc_role` (picklist ECCO) qui determine son role.
+        Chaque contact porte un `uxcRole` (picklist ECCO) qui determine son role.
         Les garants ne sont pas des contacts — ils sont captures via
         `necessiteDeGarant` et `typeDeGarant` sur l opportunity.
       properties:

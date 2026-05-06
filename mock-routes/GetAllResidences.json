@@ -14,105 +14,54 @@
       "city": "Lyon",
       "cityAlias": "Lyon",
       "address": "14 Avenue Berthelot",
-      "postal_code": "69007",
+      "postalCode": "69007",
       "coordinates": {
         "lat": 45.7439,
         "lng": 4.8357
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-01.webp",
-          "alt": "Vue extérieure Résidence Albert Thomas",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/hero-02.webp",
-          "alt": "Hall d'entrée Albert Thomas",
-          "order": 1,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-gym.webp",
-          "alt": "Salle de sport Albert Thomas",
-          "order": 2,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/common-cowork.webp",
-          "alt": "Espace coworking Albert Thomas",
-          "order": 3,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-coloc-01.webp",
-          "alt": "Chambre colocation Albert Thomas",
-          "order": 4,
-          "context": "TYPOLOGY",
-          "typologyCode": "COLOC"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-studio-01.webp",
-          "alt": "Studio Albert Thomas",
-          "order": 5,
-          "context": "TYPOLOGY",
-          "typologyCode": "STUDIO"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/lyon/albert-thomas/typo-t2-01.webp",
-          "alt": "T2 Albert Thomas",
-          "order": 6,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2"
-        }
-      ],
-      "Residence_availability": "AVAILABLE || FULL",
-      "MinimumBaseRent": 400,
-      "MinimumBaseRentWithOptions": 420,
-      "MinimumBaseRentWithOptionsWithOffers": 380,
+      "residenceAvailability": "AVAILABLE || FULL",
+      "minimumBaseRent": 400,
+      "minimumBaseRentWithOptions": 420,
+      "minimumBaseRentWithOptionsWithOffers": 380,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 400,
-          "MinimumBaseRentWithOptions": 420,
-          "MinimumBaseRentWithOptionsWithOffers": 380
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 400,
+          "minimumBaseRentWithOptions": 420,
+          "minimumBaseRentWithOptionsWithOffers": 380
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 570
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690,
           "reducedBaseRent": 740
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835,
           "reducedBaseRent": 825
         }
@@ -128,83 +77,53 @@
       "city": "Villeurbanne",
       "cityAlias": "Villeurbanne",
       "address": "107 Cours Émile Zola, 69100 Villeurbanne",
-      "postal_code": "69100",
+      "postalCode": "69100",
       "coordinates": {
         "lat": 45.7719,
         "lng": 4.8902
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/villeurbanne/andromaque/hero-01.webp",
-          "alt": "Vue extérieure Résidence Andromaque",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/villeurbanne/andromaque/common-laundry.webp",
-          "alt": "Laverie Andromaque",
-          "order": 1,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/villeurbanne/andromaque/typo-coloc-01.webp",
-          "alt": "Colocation Andromaque",
-          "order": 2,
-          "context": "TYPOLOGY",
-          "typologyCode": "COLOC"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/villeurbanne/andromaque/typo-studio-01.webp",
-          "alt": "Studio Andromaque",
-          "order": 3,
-          "context": "TYPOLOGY",
-          "typologyCode": "STUDIO"
-        }
-      ],
-      "Residence_availability": "AVAILABLE || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "AVAILABLE || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 550
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835
         }
       ]
@@ -219,82 +138,52 @@
       "city": "Bègles",
       "cityAlias": "Bègles",
       "address": "1 Rue de Pelleport, 33130 Bègles",
-      "postal_code": "33130",
+      "postalCode": "33130",
       "coordinates": {
         "lat": 44.8076,
         "lng": -0.5514
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/begles/aquitaine/hero-01.webp",
-          "alt": "Vue extérieure Résidence Aquitaine",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/begles/aquitaine/common-study.webp",
-          "alt": "Salle d'étude Aquitaine",
-          "order": 1,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/begles/aquitaine/typo-t1bis-01.webp",
-          "alt": "T1 BIS Aquitaine",
-          "order": 2,
-          "context": "TYPOLOGY",
-          "typologyCode": "T1_BIS"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/begles/aquitaine/typo-t3-01.webp",
-          "alt": "T3 Aquitaine",
-          "order": 3,
-          "context": "TYPOLOGY",
-          "typologyCode": "T3"
-        }
-      ],
-      "Residence_availability": "PARTIAL || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "PARTIAL || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835,
           "reducedBaseRent": 780
         }
@@ -310,98 +199,54 @@
       "city": "Toulouse",
       "cityAlias": "Toulouse",
       "address": "2 Allée de Brienne, 31000 Toulouse",
-      "postal_code": "31000",
+      "postalCode": "31000",
       "coordinates": {
         "lat": 43.6047,
         "lng": 1.4442
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/toulouse/atlas/hero-01.webp",
-          "alt": "Vue extérieure Résidence Atlas",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/toulouse/atlas/hero-02.webp",
-          "alt": "Entrée principale Atlas",
-          "order": 1,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/toulouse/atlas/common-gym.webp",
-          "alt": "Salle de sport Atlas",
-          "order": 2,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/toulouse/atlas/typo-coloc-01.webp",
-          "alt": "Colocation Atlas",
-          "order": 3,
-          "context": "TYPOLOGY",
-          "typologyCode": "COLOC"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/toulouse/atlas/typo-t2-01.webp",
-          "alt": "T2 Atlas",
-          "order": 4,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/toulouse/atlas/typo-t2duplex-01.webp",
-          "alt": "T2 Duplex Atlas",
-          "order": 5,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2_DUPLEX"
-        }
-      ],
-      "Residence_availability": "AVAILABLE || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "AVAILABLE || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 640
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690,
           "reducedBaseRent": 720
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835
         }
       ]
@@ -416,76 +261,53 @@
       "city": "Villeneuve-d'Ascq",
       "cityAlias": "Villeneuve-d'Ascq",
       "address": "125 Avenue du Huit Mai 1945, 59650 Villeneuve-d'Ascq",
-      "postal_code": "59650",
+      "postalCode": "59650",
       "coordinates": {
         "lat": 50.6229,
         "lng": 3.1479
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/villeneuve/babylone/hero-01.webp",
-          "alt": "Vue extérieure Résidence Babylone",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/villeneuve/babylone/typo-studio-01.webp",
-          "alt": "Studio Babylone",
-          "order": 1,
-          "context": "TYPOLOGY",
-          "typologyCode": "STUDIO"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/villeneuve/babylone/typo-t2duplex-01.webp",
-          "alt": "T2 Duplex Babylone",
-          "order": 2,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2_DUPLEX"
-        }
-      ],
-      "Residence_availability": "AVAILABLE || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "AVAILABLE || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690,
           "reducedBaseRent": 680
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835
         }
       ]
@@ -500,7 +322,7 @@
       "city": "Saint-Étienne",
       "cityAlias": "Saint-Étienne",
       "address": "10 Rue Gambetta, 42000 Saint-Étienne",
-      "postal_code": "42000",
+      "postalCode": "42000",
       "coordinates": {
         "lat": 45.4397,
         "lng": 4.3872
@@ -535,49 +357,49 @@
           "typologyCode": "T1_BIS"
         }
       ],
-      "Residence_availability": "PARTIAL || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "PARTIAL || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 500
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690,
           "reducedBaseRent": 660
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835
         }
       ]
@@ -592,112 +414,54 @@
       "city": "Archamps",
       "cityAlias": "Genève",
       "address": "Route des Creuses, 74160 Archamps",
-      "postal_code": "74160",
+      "postalCode": "74160",
       "coordinates": {
         "lat": 46.1328,
         "lng": 6.1399
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/hero-01.webp",
-          "alt": "Vue aérienne Ecla Genève-Archamps",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/hero-02.webp",
-          "alt": "Façade Ecla Genève-Archamps",
-          "order": 1,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/common-padel.webp",
-          "alt": "Courts de padel Ecla Archamps",
-          "order": 2,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/common-cinema.webp",
-          "alt": "Cinébox Ecla Archamps",
-          "order": 3,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/typo-studio-01.webp",
-          "alt": "Studio Ecla Archamps",
-          "order": 4,
-          "context": "TYPOLOGY",
-          "typologyCode": "STUDIO"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/typo-t1bis-01.webp",
-          "alt": "T1 BIS Ecla Archamps",
-          "order": 5,
-          "context": "TYPOLOGY",
-          "typologyCode": "T1_BIS"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/typo-t2-01.webp",
-          "alt": "T2 Ecla Archamps",
-          "order": 6,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/geneve/ecla-archamps/typo-t2duplex-01.webp",
-          "alt": "T2 Duplex Ecla Archamps",
-          "order": 7,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2_DUPLEX"
-        }
-      ],
-      "Residence_availability": "AVAILABLE || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "AVAILABLE || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 705
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 800
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835
         }
       ]
@@ -712,105 +476,54 @@
       "city": "Massy",
       "cityAlias": "Paris",
       "address": "2 Rue des Maraîchers, 91300 Massy",
-      "postal_code": "91300",
+      "postalCode": "91300",
       "coordinates": {
         "lat": 48.7167,
         "lng": 2.2667
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-mp/hero-01.webp",
-          "alt": "Vue extérieure Ecla Massy-Palaiseau",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-mp/hero-02.webp",
-          "alt": "Rooftop Ecla Massy-Palaiseau",
-          "order": 1,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-mp/common-cowork.webp",
-          "alt": "Espace coworking Ecla MP",
-          "order": 2,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-mp/common-resto.webp",
-          "alt": "Restaurant Interval Ecla MP",
-          "order": 3,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-mp/typo-coloc-01.webp",
-          "alt": "Colocation Ecla MP",
-          "order": 4,
-          "context": "TYPOLOGY",
-          "typologyCode": "COLOC"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-mp/typo-studio-01.webp",
-          "alt": "Studio Ecla MP",
-          "order": 5,
-          "context": "TYPOLOGY",
-          "typologyCode": "STUDIO"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-mp/typo-t2-01.webp",
-          "alt": "T2 Ecla MP",
-          "order": 6,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2"
-        }
-      ],
-      "Residence_availability": "AVAILABLE || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "AVAILABLE || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 590
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 755
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835,
           "reducedBaseRent": 975
         }
@@ -826,90 +539,53 @@
       "city": "Massy",
       "cityAlias": "Paris",
       "address": "8 Avenue de Cambridge, 91300 Massy",
-      "postal_code": "91300",
+      "postalCode": "91300",
       "coordinates": {
         "lat": 48.7149,
         "lng": 2.2603
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/hero-01.webp",
-          "alt": "Vue extérieure Ecla Palaiseau OPCO",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/common-gym.webp",
-          "alt": "Salle de sport Ecla OPCO",
-          "order": 1,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t1bis-01.webp",
-          "alt": "T1 BIS Ecla OPCO",
-          "order": 2,
-          "context": "TYPOLOGY",
-          "typologyCode": "T1_BIS"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t2-01.webp",
-          "alt": "T2 Ecla OPCO",
-          "order": 3,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t2duplex-01.webp",
-          "alt": "T2 Duplex Ecla OPCO",
-          "order": 4,
-          "context": "TYPOLOGY",
-          "typologyCode": "T2_DUPLEX"
-        }
-      ],
-      "Residence_availability": "AVAILABLE || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "AVAILABLE || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690,
           "reducedBaseRent": 880
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835,
           "reducedBaseRent": 1010
         }
@@ -925,98 +601,54 @@
       "city": "Noisy-le-Grand",
       "cityAlias": "Paris",
       "address": "12 Avenue du Général de Gaulle, 93160 Noisy-le-Grand",
-      "postal_code": "93160",
+      "postalCode": "93160",
       "coordinates": {
         "lat": 48.8478,
         "lng": 2.5522
       },
-      "photos": [
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/hero-01.webp",
-          "alt": "Vue extérieure Ecla Noisy-le-Grand",
-          "order": 0,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/hero-02.webp",
-          "alt": "Jardin Ecla Noisy-le-Grand",
-          "order": 1,
-          "context": "HERO",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/common-padel.webp",
-          "alt": "Courts de padel Ecla NLG",
-          "order": 2,
-          "context": "COMMON",
-          "typologyCode": null
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/typo-coloc-01.webp",
-          "alt": "Colocation Ecla NLG",
-          "order": 3,
-          "context": "TYPOLOGY",
-          "typologyCode": "COLOC"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/typo-studio-01.webp",
-          "alt": "Studio Ecla NLG",
-          "order": 4,
-          "context": "TYPOLOGY",
-          "typologyCode": "STUDIO"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-nlg/typo-t3-01.webp",
-          "alt": "T3 Ecla NLG",
-          "order": 5,
-          "context": "TYPOLOGY",
-          "typologyCode": "T3"
-        }
-      ],
-      "Residence_availability": "PARTIAL || FULL",
-      "MinimumBaseRent": 480,
-      "MinimumBaseRentWithOptions": 500,
-      "MinimumBaseRentWithOptionsWithOffers": 460,
+      "residenceAvailability": "PARTIAL || FULL",
+      "minimumBaseRent": 480,
+      "minimumBaseRentWithOptions": 500,
+      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "Sous_type": "Colocation",
-          "sous-type-marketing_fr": "Chambre en colocation",
-          "sous_type_marketing_en": "Shared room",
-          "MinimumBaseRent": 480,
-          "MinimumBaseRentWithOptions": 500,
-          "MinimumBaseRentWithOptionsWithOffers": 460
+          "sousType": "Colocation",
+          "sousTypeMarketingFr": "Chambre en colocation",
+          "sousTypeMarketingEn": "Shared room",
+          "minimumBaseRent": 480,
+          "minimumBaseRentWithOptions": 500,
+          "minimumBaseRentWithOptionsWithOffers": 460
         },
         {
           "typologyCode": "STUDIO",
-          "sous-type-marketing_fr": "Studio",
-          "sous_type_marketing_en": "Studio",
+          "sousTypeMarketingFr": "Studio",
+          "sousTypeMarketingEn": "Studio",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 575
         },
         {
           "typologyCode": "T1_BIS",
-          "sous-type-marketing_fr": "T1 BIS",
-          "sous_type_marketing_en": "T1 BIS",
+          "sousTypeMarketingFr": "T1 BIS",
+          "sousTypeMarketingEn": "T1 BIS",
           "lowestUnitPrice": 600,
           "reducedBaseRent": 650
         },
         {
           "typologyCode": "T2",
-          "sous-type-marketing_fr": "T2",
-          "sous_type_marketing_en": "T2",
+          "sousTypeMarketingFr": "T2",
+          "sousTypeMarketingEn": "T2",
           "lowestUnitPrice": 600
         },
         {
           "typologyCode": "T2_DUPLEX",
-          "sous-type-marketing_fr": "T2 Duplex",
-          "sous_type_marketing_en": "T2 Duplex",
+          "sousTypeMarketingFr": "T2 Duplex",
+          "sousTypeMarketingEn": "T2 Duplex",
           "lowestUnitPrice": 690
         },
         {
           "typologyCode": "T3",
-          "sous-type-marketing_fr": "T3",
-          "sous_type_marketing_en": "T3",
+          "sousTypeMarketingFr": "T3",
+          "sousTypeMarketingEn": "T3",
           "lowestUnitPrice": 835
         }
       ]
