@@ -224,10 +224,31 @@ components:
         minimumBaseRent:
           type: number
           nullable: true
+          description: Loyer mensuel minimum pour un sejour court (short stay).
+        minimumBaseRentMidStay:
+          type: number
+          nullable: true
+          description: Loyer mensuel minimum pour un sejour intermediaire (mid stay).
+        minimumBaseRentLongStay:
+          type: number
+          nullable: true
+          description: Loyer mensuel minimum pour un sejour long (long stay).
         minimumBaseRentWithOptions:
           type: number
           nullable: true
+        minimumBaseRentMidStayWithOptions:
+          type: number
+          nullable: true
+        minimumBaseRentLongStayWithOptions:
+          type: number
+          nullable: true
         minimumBaseRentWithOptionsWithOffers:
+          type: number
+          nullable: true
+        minimumBaseRentMidStayWithOptionsWithOffers:
+          type: number
+          nullable: true
+        minimumBaseRentLongStayWithOptionsWithOffers:
           type: number
           nullable: true
         reducedBaseRent:
@@ -515,9 +536,24 @@ components:
       properties:
         minimumBaseRent:
           type: number
+          description: Loyer mensuel minimum (short stay).
+        minimumBaseRentMidStay:
+          type: number
+          description: Loyer mensuel minimum pour sejour intermediaire (mid stay).
+        minimumBaseRentLongStay:
+          type: number
+          description: Loyer mensuel minimum pour sejour long (long stay).
         minimumBaseRentWithOptions:
           type: number
+        minimumBaseRentMidStayWithOptions:
+          type: number
+        minimumBaseRentLongStayWithOptions:
+          type: number
         minimumBaseRentWithOptionsWithOffers:
+          type: number
+        minimumBaseRentMidStayWithOptionsWithOffers:
+          type: number
+        minimumBaseRentLongStayWithOptionsWithOffers:
           type: number
         minimumApplicationFee:
           type: number
@@ -529,8 +565,14 @@ components:
           type: number
       required:
         - minimumBaseRent
+        - minimumBaseRentMidStay
+        - minimumBaseRentLongStay
         - minimumBaseRentWithOptions
+        - minimumBaseRentMidStayWithOptions
+        - minimumBaseRentLongStayWithOptions
         - minimumBaseRentWithOptionsWithOffers
+        - minimumBaseRentMidStayWithOptionsWithOffers
+        - minimumBaseRentLongStayWithOptionsWithOffers
         - minimumApplicationFee
         - minimumSecurityDeposit
         - minimumApplicationFeeWithOffers
