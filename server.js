@@ -17,7 +17,6 @@ function loadMockJSON(filename) {
 
 const allResidencesPayload = loadMockJSON("GetAllResidences.json");
 const residenceDetailsById = loadMockJSON("GetOneResidenceById.json");
-const offersPayload = loadMockJSON("GetOffers.json");
 const adminTRPayload = loadMockJSON("GetAdminTR.json");
 const opportunityScenarios = {
   locataire_seul_majeur: loadMockJSON("Opportunity_locataire_seul_majeur.json"),
@@ -28,46 +27,6 @@ const opportunityScenarios = {
 const postReservationAccepted = loadMockJSON("PostReservationAccepted.json");
 
 const swaggerPath = path.join(__dirname, "swagger.yaml");
-
-function offerAppliesToResidence(offer, residenceId) {
-  const res = offer.scope && offer.scope.residences;
-  if (!Array.isArray(res) || res.length === 0) {
-    return true;
-  }
-  return res.includes(residenceId);
-}
-
-function summarizeOffer(offer) {
-  const d = offer.discount;
-  return {
-    offerCode: offer.offerCode,
-    label: offer.label,
-    badge: offer.badge,
-    type: offer.type,
-    promoCode: offer.promoCode,
-    bookingDeadline: offer.conditions ? offer.conditions.bookingDeadline : null,
-    discountTarget: d ? d.target : null,
-    discountAmount: d ? d.amount : null,
-    discountReductionType: d ? d.reductionType : null,
-    billingTiming: d ? d.billingTiming : null,
-  };
-}
-
-function offersForResidence(residenceId) {
-  const list = offersPayload.offers || [];
-  return list.filter((o) => offerAppliesToResidence(o, residenceId));
-}
-
-function offerSummariesForResidence(residenceId) {
-  return offersForResidence(residenceId).map(summarizeOffer);
-}
-
-function offersContextPayload() {
-  return {
-    bookingDate: offersPayload.bookingDate,
-    city: offersPayload.city,
-  };
-}
 
 const adminOverrides = adminTRPayload.residenceOverrides || {};
 
@@ -93,7 +52,9 @@ function filterOverridesByCity(cityFilter) {
  * Merge admin flag into residence tag + typologyTags.
  * - flag.typologies vide/absent = toutes les typologies heritent
  * - flag.typologies renseigne = seules celles-ci le portent
- * Les fichiers masterdata (`GetAllResidences`, `GetOneResidenceById`) ne contiennent pas ces champs : ils viennent uniquement de l'admin.
+ * Les fichiers masterdata (`GetAllResidences`, `GetOneResidenceById`) ne contiennent pas
+ * ces champs : ils viennent uniquement de l'admin. Les codes typologie pour le fallback
+ * "toutes les typologies" sont lus depuis la source residence (listing ou detail).
  */
 function applyAdminFlag(residence) {
   const ov = getAdminOverride(residence.residenceId);
@@ -102,7 +63,8 @@ function applyAdminFlag(residence) {
   const { code, label, typologies: flagTypos } = ov.flag;
   const tag = { code, label };
 
-  const typoCodes = (residence.typologies || []).map((t) => t.typologyCode);
+  const detailTypos = residenceDetailsById[residence.residenceId]?.typologies || [];
+  const typoCodes = detailTypos.map((t) => t.typologyCode).filter(Boolean);
   const typologyTags = { ...(residence.typologyTags || {}) };
   const targeted =
     Array.isArray(flagTypos) && flagTypos.length > 0 ? flagTypos : typoCodes;
@@ -119,16 +81,6 @@ function applyAdminPhotos(detail) {
   if (!ov || !Array.isArray(ov.photos) || ov.photos.length === 0) return detail;
 
   return { ...detail, photos: ov.photos };
-}
-
-function attachOffersToResidenceRow(r) {
-  if (!r || r.residenceId == null) {
-    return r;
-  }
-  return {
-    ...applyAdminFlag(r),
-    offerSummaries: offerSummariesForResidence(r.residenceId),
-  };
 }
 
 app.use(
@@ -191,8 +143,7 @@ app.get("/residences", (req, res) => {
   const residences = allResidencesPayload.residences || [];
 
   res.json({
-    offersContext: offersContextPayload(),
-    residences: residences.map(attachOffersToResidenceRow),
+    residences: residences.map(applyAdminFlag),
   });
 });
 
@@ -208,8 +159,7 @@ app.get("/cities/:cityAlias/residences", (req, res) => {
 
   res.json({
     cityAlias,
-    offersContext: offersContextPayload(),
-    residences: filtered.map(attachOffersToResidenceRow),
+    residences: filtered.map(applyAdminFlag),
   });
 });
 
@@ -225,16 +175,12 @@ app.get("/cities/:cityAlias/residences/:id", (req, res) => {
     return;
   }
 
-  const offers = offersForResidence(residenceId);
   const withFlags = applyAdminFlag(detail);
   const withPhotos = applyAdminPhotos(withFlags);
 
   res.json({
     ...withPhotos,
     cityAlias,
-    offersContext: offersContextPayload(),
-    offerSummaries: offers.map(summarizeOffer),
-    offers,
   });
 });
 
@@ -247,15 +193,6 @@ app.get("/admin-tr", (req, res) => {
   }
 
   res.json(base);
-});
-
-/**
- * Referentiel offres global (vue Fabric / outils). Preferer les champs
- * `offerSummaries` + `offers` sur GET /cities/:cityAlias/residences et
- * GET /cities/:cityAlias/residences/:id pour le tunnel.
- */
-app.get("/offers", (req, res) => {
-  res.json(offersPayload);
 });
 
 app.post("/reservations", (req, res) => {

@@ -335,7 +335,7 @@
       "city": "Lyon",
       "cityAlias": "Lyon",
       "description": "Résidence étudiante UXCO STUDENT au cœur de Lyon, proche transports et commerces. Espaces communs récents, studio à coliving, sécurisée 24h/24.",
-      "commonAmenities": [
+      "commonAmenities": [ // A verifier
         {
           "code": "GYM",
           "label": "Salle de sport",
@@ -418,12 +418,21 @@
           "typologyCode": "T2"
         }
       ],
-      "flag": {
+      "flag": [
+        {
         "code": "POPULAR",
         "label": "Populaire",
-        "typologies": [],
+        "typologies": ["T2"],
         "labelEn": "Popular"
-      }
+        },
+        {
+        "code": "POPULAR",
+        "label_fr": "Dernieres dispos",
+        "label_fr": "Last availabilities",
+        "typologies": ["T1", "chambre"],
+        "labelEn": "Popular"
+        }
+      ]
     },
     "045644a8-4fa7-ef11-b8e9-6045bd19a503": {
       "residenceId": "045644a8-4fa7-ef11-b8e9-6045bd19a503",

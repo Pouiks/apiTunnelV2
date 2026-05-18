@@ -20,101 +20,154 @@
         "lng": 4.8357
       },
       "residenceAvailability": "AVAILABLE || FULL",
-      "minimumBaseRent": 400,
-      "minimumBaseRentWithOptions": 420,
-      "minimumBaseRentWithOptionsWithOffers": 380,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 400,
-          "minimumBaseRentMidStay": 500,
-          "minimumBaseRentLongStay": 420,
-          "minimumBaseRentWithOptions": 420,
-          "minimumBaseRentMidStayWithOptions": 520,
-          "minimumBaseRentLongStayWithOptions": 440,
-          "minimumBaseRentWithOptionsWithOffers": 380,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 480,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 400
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 200,
+              "withOfferAmount": 180,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 200,
+              "withOfferAmount": 180,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 570,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 670,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 590,
-          "reducedBaseRent": 570
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 740,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 840,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 760,
-          "reducedBaseRent": 740
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 825,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 925,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 845,
-          "reducedBaseRent": 825
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -134,99 +187,154 @@
         "lng": 4.8902
       },
       "residenceAvailability": "AVAILABLE || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 550,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 650,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 570,
-          "reducedBaseRent": 550
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 650,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 750,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 670
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 795,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 895,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 815
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -246,99 +354,154 @@
         "lng": -0.5514
       },
       "residenceAvailability": "PARTIAL || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 650,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 750,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 670
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 780,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 880,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 800,
-          "reducedBaseRent": 780
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -358,100 +521,154 @@
         "lng": 1.4442
       },
       "residenceAvailability": "AVAILABLE || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 640,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 740,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 660,
-          "reducedBaseRent": 640
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 720,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 820,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 740,
-          "reducedBaseRent": 720
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 795,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 895,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 815
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -471,99 +688,154 @@
         "lng": 3.1479
       },
       "residenceAvailability": "AVAILABLE || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 680,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 780,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 700,
-          "reducedBaseRent": 680
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 795,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 895,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 815
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -613,100 +885,154 @@
         }
       ],
       "residenceAvailability": "PARTIAL || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 500,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 600,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 520,
-          "reducedBaseRent": 500
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 660,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 760,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 680,
-          "reducedBaseRent": 660
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 795,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 895,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 815
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -726,100 +1052,154 @@
         "lng": 6.1399
       },
       "residenceAvailability": "AVAILABLE || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 705,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 805,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 725,
-          "reducedBaseRent": 705
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 800,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 900,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 820,
-          "reducedBaseRent": 800
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 650,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 750,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 670
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 795,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 895,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 815
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -839,101 +1219,154 @@
         "lng": 2.2667
       },
       "residenceAvailability": "AVAILABLE || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 590,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 690,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 610,
-          "reducedBaseRent": 590
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 755,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 855,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 775,
-          "reducedBaseRent": 755
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 650,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 750,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 670
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 975,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 1075,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 995,
-          "reducedBaseRent": 975
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -953,100 +1386,154 @@
         "lng": 2.2603
       },
       "residenceAvailability": "AVAILABLE || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 880,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 980,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 900,
-          "reducedBaseRent": 880
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 1010,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 1110,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 1030,
-          "reducedBaseRent": 1010
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     },
@@ -1066,100 +1553,154 @@
         "lng": 2.5522
       },
       "residenceAvailability": "PARTIAL || FULL",
-      "minimumBaseRent": 480,
-      "minimumBaseRentWithOptions": 500,
-      "minimumBaseRentWithOptionsWithOffers": 460,
       "typologies": [
         {
-          "sousType": "Colocation",
-          "sousTypeMarketingFr": "Chambre en colocation",
-          "sousTypeMarketingEn": "Shared room",
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 460,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 560,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 480
+          "typologyCode": "COLOC",
+          "pricing": {
+            "longStay": {
+              "baseRent": 500,
+              "withOfferAmount": 500,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 580,
+              "withOfferAmount": 580,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         },
         {
           "typologyCode": "STUDIO",
-          "sousTypeMarketingFr": "Studio",
-          "sousTypeMarketingEn": "Studio",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 575,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 675,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 595,
-          "reducedBaseRent": 575
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
-          "typologyCode": "T1_BIS",
-          "sousTypeMarketingFr": "T1 BIS",
-          "sousTypeMarketingEn": "T1 BIS",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 650,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 750,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 670,
-          "reducedBaseRent": 650
+          "typologyCode": "T1",
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 570,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 650,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-08-01",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-10-01",
+              "minDurationMonths": 3
+            },
+            "discount": {
+              "target": "BASE_RENT",
+              "reductionType": "FIXED_AMOUNT",
+              "amount": -50,
+              "billingTiming": "RECURRING",
+              "recurrenceMonths": 3
+            }
+          }
         },
         {
           "typologyCode": "T2",
-          "sousTypeMarketingFr": "T2",
-          "sousTypeMarketingEn": "T2",
-          "lowestUnitPrice": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "sousTypeMarketingFr": "T2 Duplex",
-          "sousTypeMarketingEn": "T2 Duplex",
-          "lowestUnitPrice": 690,
-          "minimumBaseRent": 690,
-          "minimumBaseRentMidStay": 790,
-          "minimumBaseRentLongStay": 710,
-          "minimumBaseRentWithOptions": 710,
-          "minimumBaseRentMidStayWithOptions": 810,
-          "minimumBaseRentLongStayWithOptions": 730,
-          "minimumBaseRentWithOptionsWithOffers": 650,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 750,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 670
-        },
-        {
-          "typologyCode": "T3",
-          "sousTypeMarketingFr": "T3",
-          "sousTypeMarketingEn": "T3",
-          "lowestUnitPrice": 835,
-          "minimumBaseRent": 835,
-          "minimumBaseRentMidStay": 935,
-          "minimumBaseRentLongStay": 855,
-          "minimumBaseRentWithOptions": 855,
-          "minimumBaseRentMidStayWithOptions": 955,
-          "minimumBaseRentLongStayWithOptions": 875,
-          "minimumBaseRentWithOptionsWithOffers": 795,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 895,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 815
+          "pricing": {
+            "longStay": {
+              "baseRent": 620,
+              "withOfferAmount": 620,
+              "securityDeposit": "",
+              "securityDepositWithOffer": "",
+              "applicationFees": "",
+              "applicationFeesWithOffer": ""
+            },
+            "midStay": {
+              "baseRent": 700,
+              "withOfferAmount": 700,
+              "securityDeposit": 200,
+              "securityDepositWithOffer": 180,
+              "applicationFees": 200,
+              "applicationFeesWithOffer": 180
+            }
+          },
+          "offer": {
+            "bookingDate": "2026-07-15",
+            "conditions": {
+              "bookingDeadline": "2026-09-30",
+              "startDateFrom": "2026-09-01",
+              "startDateTo": "2026-11-01",
+              "minDurationMonths": 9
+            },
+            "discount": {
+              "target": "APP_FEE",
+              "reductionType": "PERCENTAGE",
+              "amount": -100,
+              "billingTiming": "ONE_SHOT",
+              "recurrenceMonths": null
+            }
+          }
         }
       ]
     }

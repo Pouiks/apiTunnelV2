@@ -15,91 +15,69 @@
       "lat": 45.7439,
       "lng": 4.8357
     },
-    "availabilityStatus": "AVAILABLE",
-    "description": "Résidence étudiante UXCO STUDENT au cœur de Lyon, proche transports et commerces. Espaces communs récents, studio à coliving, sécurisée 24h/24.",
-    "commonAmenities": [
-      {
-        "code": "GYM",
-        "label": "Salle de sport"
-      },
-      {
-        "code": "COWORK",
-        "label": "Espace coworking"
-      },
-      {
-        "code": "LAUNDRY",
-        "label": "Laverie 24/7"
-      },
-      {
-        "code": "STUDY",
-        "label": "Salles d'étude"
-      },
-      {
-        "code": "BIKE",
-        "label": "Local vélos sécurisé"
-      },
-      {
-        "code": "WIFI",
-        "label": "Wi-Fi fibre"
-      }
-    ],
+    "availabilityStatus": "AVAILABLE ||FULL",
     "typologies": [
       {
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "minimumBaseRent": 400,
-          "minimumBaseRentMidStay": 500,
-          "minimumBaseRentLongStay": 420,
-          "minimumBaseRentWithOptions": 420,
-          "minimumBaseRentMidStayWithOptions": 520,
-          "minimumBaseRentLongStayWithOptions": 440,
-          "minimumBaseRentWithOptionsWithOffers": 380,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 480,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 400,
-          "minimumApplicationFee": 250,
-          "minimumSecurityDeposit": 480,
-          "minimumApplicationFeeWithOffers": 200,
-          "minimumSecurityDepositWithOffers": 400
-        },
-        "amenities": [
-          {
-            "code": "FURNISHED",
-            "label": "Meublé"
+          "longStay": {
+            "baseRent": 200,
+            "securityDeposit": 200,
+            "applicationFees": 200,
+            "offers":{
+              "offerLabel":"totoLong",
+              "baseRent": 200,
+              "securityDeposit": 200,
+              "applicationFees": 200
+            }
           },
-          {
-            "code": "WIFI",
-            "label": "Wi-Fi inclus"
+          "midStay": {
+            "baseRent": 200,
+            "securityDeposit": 200,
+            "applicationFees": 200,
+            "offers":{
+              "offerLabel":"totoMid",
+              "baseRent": 200,
+              "securityDeposit": 200,
+              "applicationFees": 200
+            }
           },
-          {
-            "code": "SHARED_BATH",
-            "label": "Salle de bain partagée"
-          },
-          {
-            "code": "SHARED_KITCH",
-            "label": "Cuisine partagée"
+          "stagiaire": {
+            "baseRent": 200,
+            "securityDeposit": 200,
+            "applicationFees": 200,
+            "offers":{
+              "offerLabel":"totoStagiaire",
+              "baseRent": 200,
+              "securityDeposit": 200,
+              "applicationFees": 200
+            }
           }
-        ],
-        "minimumSurface": 11
+        },
+        "minimumSurface": 11,
+        "maxSurface": 35
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": 620,
+            "securityDepositWithOffer": 570,
+            "applicationFees": 620,
+            "applicationFeesWithOffer": 540
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -120,26 +98,43 @@
           }
         ],
         "surface": 19,
-        "reducedBaseRent": 495
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -160,26 +155,43 @@
           }
         ],
         "surface": 26,
-        "reducedBaseRent": 565
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -203,7 +215,23 @@
             "label": "Salon séparé"
           }
         ],
-        "surface": 34
+        "surface": 34,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -218,7 +246,8 @@
         "pricePerMonth": 50,
         "currency": "EUR",
         "billingPeriod": "month",
-        "icon": "cleaning"
+        "icon": "cleaning",
+        "inpack": "false"
       },
       {
         "code": "PARKING_SPACE",
@@ -227,7 +256,8 @@
         "pricePerMonth": 30,
         "currency": "EUR",
         "billingPeriod": "month",
-        "icon": "parking"
+        "icon": "parking",
+        "inpack": "false"
       },
       {
         "code": "TV_RENTAL",
@@ -236,7 +266,8 @@
         "pricePerMonth": 20,
         "currency": "EUR",
         "billingPeriod": "month",
-        "icon": "tv"
+        "icon": "tv",
+        "inpack": "true"
       },
       {
         "code": "THE_PACK",
@@ -248,7 +279,7 @@
         "icon": "gift"
       }
     ],
-    "configurationOptions": [
+    "configurationOptions": // Pour la valeur par défaut, on utlise la valeur du montant selectionné en negatif ou on affiche 0 si inclus n'est plus selectionné ? [
       {
         "groupCode": "FLOOR",
         "label": "Floor",
@@ -258,29 +289,21 @@
             "label": "Low",
             "description": "0-1",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
-            "accountingDestinationCode": "DEST_SUP_FLOOR"
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_HIGH",
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -288,9 +311,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -302,21 +323,16 @@
           {
             "variantCode": "SURFACE_COMPACT",
             "label": "Compact",
-            "description": "18-22 m²",
+            "description": "18-22 m²", // Comment on gere l'affichage d'une description sur des typologie qui n'aurai pas les memes surface ? selection "mini studio" et choix "spacious"
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -324,9 +340,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -340,19 +354,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -366,19 +375,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -392,19 +396,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -459,20 +458,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -492,26 +493,44 @@
             "label": "Cuisine partagée"
           }
         ],
-        "surface": 11
+        "surface": 11,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -532,26 +551,43 @@
           }
         ],
         "surface": 19,
-        "reducedBaseRent": 500
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -572,26 +608,43 @@
           }
         ],
         "surface": 26,
-        "reducedBaseRent": 550
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -616,7 +669,22 @@
           }
         ],
         "surface": 34,
-        "reducedBaseRent": 630
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -671,19 +739,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -691,9 +754,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -701,9 +762,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -717,19 +776,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -737,9 +791,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -753,19 +805,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -779,19 +826,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -805,19 +847,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -872,20 +909,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -906,26 +945,43 @@
           }
         ],
         "surface": 11,
-        "reducedBaseRent": 400
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -946,26 +1002,43 @@
           }
         ],
         "surface": 19,
-        "reducedBaseRent": 475
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -985,26 +1058,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 26
+        "surface": 26,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1029,7 +1120,22 @@
           }
         ],
         "surface": 34,
-        "reducedBaseRent": 610
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -1084,19 +1190,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -1104,9 +1205,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -1114,9 +1213,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -1130,19 +1227,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -1150,9 +1242,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -1166,19 +1256,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -1192,19 +1277,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -1218,19 +1298,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -1285,20 +1360,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1318,26 +1395,44 @@
             "label": "Cuisine partagée"
           }
         ],
-        "surface": 11
+        "surface": 11,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1358,26 +1453,43 @@
           }
         ],
         "surface": 19,
-        "reducedBaseRent": 495
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1397,26 +1509,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 26
+        "surface": 26,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1440,7 +1570,23 @@
             "label": "Salon séparé"
           }
         ],
-        "surface": 34
+        "surface": 34,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -1495,19 +1641,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -1515,9 +1656,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -1525,9 +1664,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -1541,19 +1678,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -1561,9 +1693,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -1577,19 +1707,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -1603,19 +1728,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -1629,19 +1749,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -1696,20 +1811,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1730,26 +1847,43 @@
           }
         ],
         "surface": 11,
-        "reducedBaseRent": 390
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1769,26 +1903,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 19
+        "surface": 19,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1808,26 +1960,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 26
+        "surface": 26,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -1851,7 +2021,23 @@
             "label": "Salon séparé"
           }
         ],
-        "surface": 34
+        "surface": 34,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -1906,19 +2092,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -1926,9 +2107,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -1936,9 +2115,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -1952,19 +2129,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -1972,9 +2144,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -1988,19 +2158,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -2014,19 +2179,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -2040,19 +2200,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -2107,20 +2262,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2140,26 +2297,44 @@
             "label": "Cuisine partagée"
           }
         ],
-        "surface": 11
+        "surface": 11,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2179,26 +2354,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 19
+        "surface": 19,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2219,26 +2412,43 @@
           }
         ],
         "surface": 26,
-        "reducedBaseRent": 495
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2262,7 +2472,23 @@
             "label": "Salon séparé"
           }
         ],
-        "surface": 34
+        "surface": 34,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -2317,19 +2543,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -2337,9 +2558,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -2347,9 +2566,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -2363,19 +2580,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -2383,9 +2595,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -2399,19 +2609,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -2425,19 +2630,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -2451,19 +2651,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -2518,20 +2713,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2552,26 +2749,43 @@
           }
         ],
         "surface": 11,
-        "reducedBaseRent": 575
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2591,26 +2805,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 19
+        "surface": 19,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2630,26 +2862,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 26
+        "surface": 26,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2674,7 +2924,22 @@
           }
         ],
         "surface": 34,
-        "reducedBaseRent": 915
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -2729,19 +2994,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -2749,9 +3009,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -2759,9 +3017,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -2775,19 +3031,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -2795,9 +3046,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -2811,19 +3060,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -2837,19 +3081,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -2863,19 +3102,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -2930,20 +3164,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -2963,26 +3199,44 @@
             "label": "Cuisine partagée"
           }
         ],
-        "surface": 11
+        "surface": 11,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3002,26 +3256,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 19
+        "surface": 19,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3042,26 +3314,43 @@
           }
         ],
         "surface": 26,
-        "reducedBaseRent": 680
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3085,7 +3374,23 @@
             "label": "Salon séparé"
           }
         ],
-        "surface": 34
+        "surface": 34,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -3140,19 +3445,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -3160,9 +3460,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -3170,9 +3468,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -3186,19 +3482,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -3206,9 +3497,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -3222,19 +3511,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -3248,19 +3532,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -3274,19 +3553,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -3341,20 +3615,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3374,26 +3650,44 @@
             "label": "Cuisine partagée"
           }
         ],
-        "surface": 11
+        "surface": 11,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3414,26 +3708,43 @@
           }
         ],
         "surface": 19,
-        "reducedBaseRent": 610
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3453,26 +3764,44 @@
             "label": "Salle de bain privative"
           }
         ],
-        "surface": 26
+        "surface": 26,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3497,7 +3826,22 @@
           }
         ],
         "surface": 34,
-        "reducedBaseRent": 780
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -3552,19 +3896,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -3572,9 +3911,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -3582,9 +3919,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -3598,19 +3933,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -3618,9 +3948,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -3634,19 +3962,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -3660,19 +3983,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -3686,19 +4004,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]
@@ -3753,20 +4066,22 @@
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "baseRent": 480,
-          "minimumBaseRent": 480,
-          "minimumBaseRentMidStay": 580,
-          "minimumBaseRentLongStay": 500,
-          "minimumBaseRentWithOptions": 500,
-          "minimumBaseRentMidStayWithOptions": 600,
-          "minimumBaseRentLongStayWithOptions": 520,
-          "minimumBaseRentWithOptionsWithOffers": 440,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 540,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 460,
-          "lowestUnitPrice": 480,
-          "highestUnitPrice": 480,
-          "applicationFee": 250,
-          "securityDeposit": 480
+          "longStay": {
+            "baseRent": 500,
+            "withOfferAmount": 500,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 580,
+            "withOfferAmount": 580,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3787,26 +4102,43 @@
           }
         ],
         "surface": 11,
-        "reducedBaseRent": 455
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       },
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 880,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3827,26 +4159,43 @@
           }
         ],
         "surface": 19,
-        "reducedBaseRent": 565
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1030,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 570,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 650,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3867,26 +4216,43 @@
           }
         ],
         "surface": 26,
-        "reducedBaseRent": 650
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
       },
       {
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "baseRent": 600,
-          "minimumBaseRent": 600,
-          "minimumBaseRentMidStay": 700,
-          "minimumBaseRentLongStay": 620,
-          "minimumBaseRentWithOptions": 620,
-          "minimumBaseRentMidStayWithOptions": 720,
-          "minimumBaseRentLongStayWithOptions": 640,
-          "minimumBaseRentWithOptionsWithOffers": 560,
-          "minimumBaseRentMidStayWithOptionsWithOffers": 660,
-          "minimumBaseRentLongStayWithOptionsWithOffers": 580,
-          "lowestUnitPrice": 600,
-          "highestUnitPrice": 1290,
-          "applicationFee": 250,
-          "securityDeposit": 600
+          "longStay": {
+            "baseRent": 620,
+            "withOfferAmount": 620,
+            "securityDeposit": "",
+            "securityDepositWithOffer": "",
+            "applicationFees": "",
+            "applicationFeesWithOffer": ""
+          },
+          "midStay": {
+            "baseRent": 700,
+            "withOfferAmount": 700,
+            "securityDeposit": 200,
+            "securityDepositWithOffer": 180,
+            "applicationFees": 200,
+            "applicationFeesWithOffer": 180
+          }
         },
         "amenities": [
           {
@@ -3911,7 +4277,22 @@
           }
         ],
         "surface": 34,
-        "reducedBaseRent": 740
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
       }
     ],
     "floors": {
@@ -3966,19 +4347,14 @@
             "label": "Low",
             "description": "0-1",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "FLOOR"
           },
           {
             "variantCode": "FLOOR_MID_LOW",
             "label": "Mid-Low",
             "description": "2-3",
             "amount": 20,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDLOW_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -3986,9 +4362,7 @@
             "label": "Mid-High",
             "description": "4-5",
             "amount": 30,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_MIDHIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           },
           {
@@ -3996,9 +4370,7 @@
             "label": "High",
             "description": "6+",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_FLOOR_HIGH_MPL",
+            "productCode": "FLOOR",
             "accountingDestinationCode": "DEST_SUP_FLOOR"
           }
         ]
@@ -4012,19 +4384,14 @@
             "label": "Compact",
             "description": "18-22 m²",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_COMFORTABLE",
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_COMFORTABLE_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           },
           {
@@ -4032,9 +4399,7 @@
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_SURFACE_SPACIOUS_MPL",
+            "productCode": "SURFACE",
             "accountingDestinationCode": "DEST_SUP_SURFACE"
           }
         ]
@@ -4048,19 +4413,14 @@
             "label": "Standard bed",
             "description": "< 140 cm",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BEDDING"
           },
           {
             "variantCode": "BEDDING_KING",
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BEDDING_KING_MPL",
+            "productCode": "BEDDING",
             "accountingDestinationCode": "DEST_SUP_BEDDING"
           }
         ]
@@ -4074,19 +4434,14 @@
             "label": "Standard",
             "description": "Essential comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "PREMIUM"
           },
           {
             "variantCode": "PREMIUM_PREMIUM",
             "label": "Premium",
             "description": "TV, Hotel finishes, Hair dryer, King bed 180cm",
             "amount": 100,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_PREMIUM_MPL",
+            "productCode": "PREMIUM",
             "accountingDestinationCode": "DEST_SUP_PREMIUM"
           }
         ]
@@ -4100,19 +4455,14 @@
             "label": "Without air conditioning",
             "description": "Standard comfort",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "AC"
           },
           {
             "variantCode": "AC_WITH",
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_AC_MPL",
+            "productCode": "AC",
             "accountingDestinationCode": "DEST_SUP_AC"
           }
         ]
@@ -4126,19 +4476,14 @@
             "label": "Without balcony",
             "description": "More affordable",
             "amount": 0,
-            "billingTiming": "RECURRING",
-            "isDefault": true,
-            "productCode": null,
-            "accountingDestinationCode": null
+            "productCode": "BALCONY"
           },
           {
             "variantCode": "BALCONY_WITH",
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "billingTiming": "RECURRING",
-            "isDefault": false,
-            "productCode": "SUP_BALCONY_MPL",
+            "productCode": "BALCONY",
             "accountingDestinationCode": "DEST_SUP_BALCONY"
           }
         ]

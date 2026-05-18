@@ -4,7 +4,12 @@
       "Bash(node scripts/to-camel-case-dryrun.js mock-routes)",
       "Bash(node scripts/to-camel-case.js mock-routes)",
       "Bash(node -e ' *)",
-      "Bash(node scripts/add-stay-pricing.js)"
+      "Bash(node scripts/add-stay-pricing.js)",
+      "Bash(node \"c:\\\\All devs\\\\ApiTunnelv2\\\\scripts\\\\migrate-pricing-and-inline-offers.js\")",
+      "Bash(git -C \"c:\\\\All devs\\\\ApiTunnelv2\" log --oneline -5)",
+      "Bash(git -C \"c:\\\\All devs\\\\ApiTunnelv2\" show HEAD:mock-routes/GetOneResidenceById.json)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(node -e \"const yaml=require\\('js-yaml'\\);const fs=require\\('fs'\\);try{const d=yaml.load\\(fs.readFileSync\\('c:/All devs/ApiTunnelv2/swagger.yaml','utf-8'\\)\\);console.log\\('YAML OK, schemas:',Object.keys\\(d.components.schemas\\).length\\);}catch\\(e\\){console.error\\('YAML ERROR:',e.message\\);}\")"
     ]
   }
 }

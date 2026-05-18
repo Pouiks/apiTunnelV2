@@ -5,14 +5,13 @@ info:
   description: >
     API REST mock Node.js + Express pour simuler Snaplogic pendant le developpement.
     Architecture simplifiee : chaque GET /residences/:id retourne la fiche complete
-    (typologies, scenarios pricing, offres, admin overlay) en un seul appel.
+    (typologies avec pricing + offre inlines, admin overlay) en un seul appel.
 servers:
   - url: http://localhost:8081
     description: Local mock server
 tags:
   - name: Residences
   - name: AdminTR
-  - name: Offers
   - name: Reservations
 
 paths:
@@ -23,7 +22,8 @@ paths:
       description: >
         Catalogue global de toutes les residences France (dezoom map).
         Aucun filtre ville — retourne les 10 residences mock.
-        Chaque ligne inclut `offerSummaries`.
+        Chaque ligne porte un array minimal `typologies` avec pricing
+        (longStay / midStay) et l'offre eventuelle inlinee par typologie.
       responses:
         "200":
           description: Catalogue complet
@@ -60,8 +60,8 @@ paths:
       summary: GetOneResidence
       description: >
         Fiche residence complete en un seul appel.
-        Inclut `typologies` (pricing + amenities par typologie), `configurationOptions`
-        (grilles d’options unitaires communes a la residence), `offerSummaries`, `offers` et `offersContext`.
+        Inclut `typologies` (pricing + amenities + offre eventuelle inlinee par typologie)
+        et `configurationOptions` (grilles d’options unitaires communes a la residence).
         Le front charge et cache cette reponse pour alimenter tout le tunnel.
       parameters:
         - in: path
@@ -123,33 +123,6 @@ paths:
               schema:
                 $ref: "#/components/schemas/AdminTRResponse"
 
-  /offers:
-    get:
-      tags: [Offers]
-      summary: GetOffers
-      description: >
-        Referentiel offres global (vue Fabric / outils). Pour le tunnel React,
-        privilegier `offerSummaries` et `offers` sur GET /residences et GET /residences/:id.
-      parameters:
-        - in: query
-          name: city
-          required: false
-          schema:
-            type: string
-        - in: query
-          name: bookingDate
-          required: false
-          schema:
-            type: string
-            format: date
-      responses:
-        "200":
-          description: Liste des offres
-          content:
-            application/json:
-              schema:
-                $ref: "#/components/schemas/OffersResponse"
-
   /reservations:
     post:
       tags: [Reservations]
@@ -196,67 +169,23 @@ components:
           format: double
       required: [lat, lng]
 
-    TypologyPreview:
+    TypologyListing:
       type: object
       description: >
-        Apercu typologie sur le listing. La ligne colocation peut utiliser `sousType`
-        + bornes `minimumBaseRent*` au lieu de `typologyCode` + `lowestUnitPrice`.
+        Apercu typologie sur le listing. Minimal : code typologie, pricing
+        (longStay / midStay) et offre eventuelle inlinee.
       properties:
         typologyCode:
           type: string
           example: STUDIO
-          nullable: true
-        sousType:
-          type: string
-          nullable: true
-          description: Libelle sous-type pour la ligne colocation (ex. Colocation).
-        sousTypeMarketingFr:
-          type: string
-          description: Libelle marketing FR affiche sur le listing.
-        sousTypeMarketingEn:
-          type: string
-          description: Libelle marketing EN affiche sur le listing.
-        lowestUnitPrice:
-          type: number
-          nullable: true
-          description: >
-            Borne basse du loyer pour cette typologie (hors ligne colocation `sousType`).
-        minimumBaseRent:
-          type: number
-          nullable: true
-          description: Loyer mensuel minimum pour un sejour court (short stay).
-        minimumBaseRentMidStay:
-          type: number
-          nullable: true
-          description: Loyer mensuel minimum pour un sejour intermediaire (mid stay).
-        minimumBaseRentLongStay:
-          type: number
-          nullable: true
-          description: Loyer mensuel minimum pour un sejour long (long stay).
-        minimumBaseRentWithOptions:
-          type: number
-          nullable: true
-        minimumBaseRentMidStayWithOptions:
-          type: number
-          nullable: true
-        minimumBaseRentLongStayWithOptions:
-          type: number
-          nullable: true
-        minimumBaseRentWithOptionsWithOffers:
-          type: number
-          nullable: true
-        minimumBaseRentMidStayWithOptionsWithOffers:
-          type: number
-          nullable: true
-        minimumBaseRentLongStayWithOptionsWithOffers:
-          type: number
-          nullable: true
-        reducedBaseRent:
-          type: number
-          description: Loyer reduit eventuel (promo), si fourni par la vue.
+        pricing:
+          $ref: "#/components/schemas/TypologyPricing"
+        offer:
+          $ref: "#/components/schemas/TypologyOffer"
+          description: Presente uniquement si une offre s'applique a cette typologie.
       required:
-        - sousTypeMarketingFr
-        - sousTypeMarketingEn
+        - typologyCode
+        - pricing
 
     Floors:
       type: object
@@ -331,20 +260,10 @@ components:
           type: string
           description: >
             Disponibilite synthetique (ex. `AVAILABLE || FULL`, `PARTIAL || FULL`).
-        minimumBaseRent:
-          type: number
-        minimumBaseRentWithOptions:
-          type: number
-        minimumBaseRentWithOptionsWithOffers:
-          type: number
         availabilityStatus:
           type: string
           deprecated: true
           description: Remplace par `residenceAvailability` dans le mock listing.
-        baseRentFrom:
-          type: number
-          deprecated: true
-          description: Remplace par `minimumBaseRent*` dans le mock listing.
         tag:
           $ref: "#/components/schemas/ResidenceTag"
           description: >
@@ -356,6 +275,7 @@ components:
             $ref: "#/components/schemas/ResidenceTag"
           description: >
             Idem : injecte par merge admin (heritage du flag sur les typologies ciblees).
+            Les codes typo viennent de la fiche detail (`GetOneResidenceById`).
         photos:
           type: array
           items:
@@ -363,11 +283,7 @@ components:
         typologies:
           type: array
           items:
-            $ref: "#/components/schemas/TypologyPreview"
-        offerSummaries:
-          type: array
-          items:
-            $ref: "#/components/schemas/OfferSummary"
+            $ref: "#/components/schemas/TypologyListing"
       required:
         - residenceId
         - residenceCode
@@ -380,69 +296,18 @@ components:
         - address
         - postalCode
         - coordinates
-        - photos
         - residenceAvailability
-        - minimumBaseRent
-        - minimumBaseRentWithOptions
-        - minimumBaseRentWithOptionsWithOffers
         - typologies
-        - offerSummaries
-
-    OffersContext:
-      type: object
-      description: Metadonnees communes au referentiel offres (alignement cache).
-      properties:
-        bookingDate:
-          type: string
-          format: date
-        city:
-          type: string
-      required: [bookingDate, city]
-
-    OfferSummary:
-      type: object
-      properties:
-        offerCode:
-          type: string
-        label:
-          type: string
-        badge:
-          type: string
-          nullable: true
-        type:
-          type: string
-        promoCode:
-          type: string
-          nullable: true
-        bookingDeadline:
-          type: string
-          format: date
-          nullable: true
-        discountTarget:
-          type: string
-          nullable: true
-        discountAmount:
-          type: number
-          nullable: true
-        discountReductionType:
-          type: string
-          nullable: true
-        billingTiming:
-          type: string
-          nullable: true
-      required: [offerCode, label, type]
 
     ResidencesResponse:
       type: object
       description: Catalogue global (GET /residences) — toutes les residences France.
       properties:
-        offersContext:
-          $ref: "#/components/schemas/OffersContext"
         residences:
           type: array
           items:
             $ref: "#/components/schemas/ResidenceListItem"
-      required: [offersContext, residences]
+      required: [residences]
 
     CityResidencesResponse:
       type: object
@@ -450,13 +315,11 @@ components:
       properties:
         cityAlias:
           type: string
-        offersContext:
-          $ref: "#/components/schemas/OffersContext"
         residences:
           type: array
           items:
             $ref: "#/components/schemas/ResidenceListItem"
-      required: [cityAlias, offersContext, residences]
+      required: [cityAlias, residences]
 
     CommonAmenity:
       type: object
@@ -502,8 +365,10 @@ components:
     TypologyDetail:
       type: object
       description: >
-        Typologie sur la fiche residence : tarification et amenities inclus logement.
-        Les options configurables (etage, surface, etc.) sont dans `configurationOptions`.
+        Typologie sur la fiche residence : tarification, amenities incluses
+        et offre eventuelle inlinee. Les options configurables (etage, surface, etc.)
+        sont dans `configurationOptions` au niveau residence et s'additionnent
+        au `baseRent` (ou `withOfferAmount`).
       properties:
         typologyCode:
           type: string
@@ -511,72 +376,100 @@ components:
           type: string
         surface:
           type: number
-          description: Surface indicative (m2), si fournie par la vue.
-        reducedBaseRent:
+          description: Surface indicative (m2) pour les typologies a logement entier.
+        minimumSurface:
           type: number
-          description: Loyer reduit eventuel (promo).
+          description: Surface minimum (m2) pour les typologies en colocation.
         pricing:
-          $ref: "#/components/schemas/Pricing"
+          $ref: "#/components/schemas/TypologyPricing"
         amenities:
           type: array
           items:
             $ref: "#/components/schemas/Amenity"
+        offer:
+          $ref: "#/components/schemas/TypologyOffer"
+          description: Presente uniquement si une offre s'applique a cette typologie.
       required:
         - typologyCode
         - label
         - pricing
         - amenities
 
-    Pricing:
+    StayPricing:
       type: object
       description: >
-        Bornes tarifaires par typologie (loyer, options, offres, frais et caution).
-        `minimumBaseRentWithOptionsWithOffers` utilise `reducedBaseRent` de la typologie
-        lorsqu’il est strictement inferieur au loyer de base, sinon loyer de base - 20 €.
+        Tarification pour une duree donnee : loyer de base + variante avec offre,
+        plus depot de garantie et frais de dossier (chacun avec leur variante avec offre).
+        Les variantes `with*` valent la version remisee si une offre cible le champ
+        correspondant, sinon elles peuvent etre vides ("").
       properties:
-        minimumBaseRent:
+        baseRent:
           type: number
-          description: Loyer mensuel minimum (short stay).
-        minimumBaseRentMidStay:
+          description: Loyer mensuel hors options et hors offre.
+        withOfferAmount:
           type: number
-          description: Loyer mensuel minimum pour sejour intermediaire (mid stay).
-        minimumBaseRentLongStay:
-          type: number
-          description: Loyer mensuel minimum pour sejour long (long stay).
-        minimumBaseRentWithOptions:
-          type: number
-        minimumBaseRentMidStayWithOptions:
-          type: number
-        minimumBaseRentLongStayWithOptions:
-          type: number
-        minimumBaseRentWithOptionsWithOffers:
-          type: number
-        minimumBaseRentMidStayWithOptionsWithOffers:
-          type: number
-        minimumBaseRentLongStayWithOptionsWithOffers:
-          type: number
-        minimumApplicationFee:
-          type: number
-        minimumSecurityDeposit:
-          type: number
-        minimumApplicationFeeWithOffers:
-          type: number
-        minimumSecurityDepositWithOffers:
-          type: number
+          description: >
+            Loyer mensuel apres application de l'offre attachee a la typologie
+            (egal a `baseRent` si aucune offre ne cible BASE_RENT).
+        securityDeposit:
+          oneOf:
+            - type: number
+            - type: string
+          description: Depot de garantie. Vide ("") si non applicable a cette duree.
+        securityDepositWithOffer:
+          oneOf:
+            - type: number
+            - type: string
+          description: Depot de garantie apres offre. Vide ("") si non applicable.
+        applicationFees:
+          oneOf:
+            - type: number
+            - type: string
+          description: Frais de dossier. Vide ("") si non applicable a cette duree.
+        applicationFeesWithOffer:
+          oneOf:
+            - type: number
+            - type: string
+          description: Frais de dossier apres offre. Vide ("") si non applicable.
       required:
-        - minimumBaseRent
-        - minimumBaseRentMidStay
-        - minimumBaseRentLongStay
-        - minimumBaseRentWithOptions
-        - minimumBaseRentMidStayWithOptions
-        - minimumBaseRentLongStayWithOptions
-        - minimumBaseRentWithOptionsWithOffers
-        - minimumBaseRentMidStayWithOptionsWithOffers
-        - minimumBaseRentLongStayWithOptionsWithOffers
-        - minimumApplicationFee
-        - minimumSecurityDeposit
-        - minimumApplicationFeeWithOffers
-        - minimumSecurityDepositWithOffers
+        - baseRent
+        - withOfferAmount
+        - securityDeposit
+        - securityDepositWithOffer
+        - applicationFees
+        - applicationFeesWithOffer
+
+    TypologyPricing:
+      type: object
+      description: >
+        Tarification typologie par duree de sejour. Le client peut prendre
+        `longStay` ou `midStay` selon son besoin ; chaque duree expose un
+        `baseRent` et un `withOfferAmount` (loyer apres remise eventuelle).
+        Les options configurables (`configurationOptions`) s'additionnent ensuite
+        au loyer choisi.
+      properties:
+        longStay:
+          $ref: "#/components/schemas/StayPricing"
+        midStay:
+          $ref: "#/components/schemas/StayPricing"
+      required: [longStay, midStay]
+
+    TypologyOffer:
+      type: object
+      description: >
+        Offre inlinee dans une typologie. La presence de cette cle signale qu'une offre
+        s'applique ; l'effet sur le loyer est deja reflete dans `pricing.*.withOfferAmount`
+        lorsque `discount.target` vaut `BASE_RENT`.
+      properties:
+        bookingDate:
+          type: string
+          format: date
+          description: Date de reference du referentiel offres au moment du snapshot.
+        conditions:
+          $ref: "#/components/schemas/OfferConditions"
+        discount:
+          $ref: "#/components/schemas/OfferDiscount"
+      required: [bookingDate, conditions, discount]
 
     Amenity:
       type: object
@@ -592,6 +485,7 @@ components:
       properties:
         variantCode:
           type: string
+          description: Code variant qualifiant (ex. FLOOR_LOW, SURFACE_COMFORTABLE).
         label:
           type: string
         description:
@@ -599,17 +493,14 @@ components:
           nullable: true
         amount:
           type: number
-        billingTiming:
-          type: string
-        isDefault:
-          type: boolean
+          description: Montant additionnel mensuel par rapport au baseRent (0 pour le variant par defaut).
         productCode:
           type: string
-          nullable: true
+          description: Code du produit parent (= `groupCode` du groupe d'options).
         accountingDestinationCode:
           type: string
-          nullable: true
-      required: [variantCode, label, amount, billingTiming, isDefault]
+          description: Destination comptable, presente uniquement pour les variants payants.
+      required: [variantCode, label, amount, productCode]
 
     OptionGroup:
       type: object
@@ -629,8 +520,8 @@ components:
     ResidenceDetail:
       type: object
       description: >
-        Fiche complete residence : infos generales, typologies (pricing + amenities),
-        options unitaires communes (`configurationOptions`), offres completes et contexte offres.
+        Fiche complete residence : infos generales, typologies (pricing + amenities
+        + offre eventuelle inlinee) et options unitaires communes (`configurationOptions`).
         Un seul appel pour le tunnel.
       properties:
         residenceId:
@@ -696,20 +587,11 @@ components:
           type: array
           description: >
             Options configurables communes a la residence (etage, surface, literie, clim, balcon, etc.).
-            Les montants sont identiques quel que soit le type de logement selectionne.
+            Les montants sont identiques quel que soit le type de logement selectionne et
+            s'additionnent au `baseRent` (ou `withOfferAmount`) de la typologie choisie.
             Le groupe `PREMIUM` n’est present que pour les residences qui le proposent (ex. Noisy-le-Grand).
           items:
             $ref: "#/components/schemas/OptionGroup"
-        offersContext:
-          $ref: "#/components/schemas/OffersContext"
-        offerSummaries:
-          type: array
-          items:
-            $ref: "#/components/schemas/OfferSummary"
-        offers:
-          type: array
-          items:
-            $ref: "#/components/schemas/Offer"
       required:
         - residenceId
         - residenceCode
@@ -723,29 +605,12 @@ components:
         - email
         - coordinates
         - availabilityStatus
-        - description
         - photos
         - commonAmenities
         - abonnements
         - typologies
         - floors
         - configurationOptions
-        - offersContext
-        - offerSummaries
-        - offers
-
-    OfferScope:
-      type: object
-      properties:
-        residences:
-          type: array
-          items:
-            type: string
-        typologies:
-          type: array
-          items:
-            type: string
-      required: [residences, typologies]
 
     OfferConditions:
       type: object
@@ -772,72 +637,22 @@ components:
       properties:
         target:
           type: string
+          enum: [BASE_RENT, APP_FEE, SECURITY_DEPOSIT]
+          description: Sur quoi porte la reduction.
         reductionType:
           type: string
+          enum: [FIXED_AMOUNT, PERCENTAGE]
         amount:
           type: number
+          description: Valeur negative (ex. -50 pour -50€).
         billingTiming:
           type: string
+          enum: [ONE_SHOT, RECURRING]
         recurrenceMonths:
           type: integer
           nullable: true
+          description: Nombre de mois de recurrence si `billingTiming = RECURRING`, sinon null.
       required: [target, reductionType, amount, billingTiming]
-
-    OfferAccounting:
-      type: object
-      properties:
-        productCode:
-          type: string
-        accountingDestinationCode:
-          type: string
-      required: [productCode, accountingDestinationCode]
-
-    Offer:
-      type: object
-      properties:
-        offerCode:
-          type: string
-        label:
-          type: string
-        badge:
-          type: string
-          nullable: true
-        promoCode:
-          type: string
-          nullable: true
-        scope:
-          $ref: "#/components/schemas/OfferScope"
-        conditions:
-          $ref: "#/components/schemas/OfferConditions"
-        discount:
-          $ref: "#/components/schemas/OfferDiscount"
-        accounting:
-          $ref: "#/components/schemas/OfferAccounting"
-        type:
-          type: string
-      required:
-        - offerCode
-        - label
-        - promoCode
-        - scope
-        - conditions
-        - discount
-        - accounting
-        - type
-
-    OffersResponse:
-      type: object
-      properties:
-        bookingDate:
-          type: string
-          format: date
-        city:
-          type: string
-        offers:
-          type: array
-          items:
-            $ref: "#/components/schemas/Offer"
-      required: [bookingDate, city, offers]
 
     ModalInfoBox:
       type: object
