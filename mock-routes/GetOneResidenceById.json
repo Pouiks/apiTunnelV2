@@ -279,7 +279,7 @@
         "icon": "gift"
       }
     ],
-    "configurationOptions": // Pour la valeur par défaut, on utlise la valeur du montant selectionné en negatif ou on affiche 0 si inclus n'est plus selectionné ? [
+    "configurationOptions": [
       {
         "groupCode": "FLOOR",
         "label": "Floor",
@@ -323,7 +323,7 @@
           {
             "variantCode": "SURFACE_COMPACT",
             "label": "Compact",
-            "description": "18-22 m²", // Comment on gere l'affichage d'une description sur des typologie qui n'aurai pas les memes surface ? selection "mini studio" et choix "spacious"
+            "description": "18-22 m²",
             "amount": 0,
             "productCode": "SURFACE"
           },
@@ -332,16 +332,14 @@
             "label": "Comfortable",
             "description": "23-28 m²",
             "amount": 50,
-            "productCode": "SURFACE",
-            "accountingDestinationCode": "DEST_SUP_SURFACE"
+            "productCode": "SURFACE"
           },
           {
             "variantCode": "SURFACE_SPACIOUS",
             "label": "Spacious",
             "description": "29-35 m²",
             "amount": 100,
-            "productCode": "SURFACE",
-            "accountingDestinationCode": "DEST_SUP_SURFACE"
+            "productCode": "SURFACE"
           }
         ]
       },
@@ -361,8 +359,7 @@
             "label": "King Size bed",
             "description": "180 cm",
             "amount": 50,
-            "productCode": "BEDDING",
-            "accountingDestinationCode": "DEST_SUP_BEDDING"
+            "productCode": "BEDDING"
           }
         ]
       },
@@ -382,8 +379,7 @@
             "label": "With air conditioning",
             "description": "Enhanced comfort",
             "amount": 40,
-            "productCode": "AC",
-            "accountingDestinationCode": "DEST_SUP_AC"
+            "productCode": "AC"
           }
         ]
       },
@@ -403,8 +399,7 @@
             "label": "With balcony",
             "description": "Private outdoor space",
             "amount": 50,
-            "productCode": "BALCONY",
-            "accountingDestinationCode": "DEST_SUP_BALCONY"
+            "productCode": "BALCONY"
           }
         ]
       }
