@@ -500,39 +500,39 @@
     },
     "065644a8-4fa7-ef11-b8e9-6045bd19a503": {
       "residenceId": "065644a8-4fa7-ef11-b8e9-6045bd19a503",
-      "city": "Bègles",
-      "cityAlias": "Bègles",
+      "city": "Gradignan",
+      "cityAlias": "Bordeaux",
       "photos": [
         {
-          "url": "https://cdn.mock.ecla.io/begles/aquitaine/hero-01.webp",
-          "alt": "Vue extérieure Résidence Aquitaine",
+          "url": "https://cdn.mock.ecla.io/bordeaux/ecla-gradignan/hero-01.webp",
+          "alt": "Vue extérieure ECLA Bordeaux",
           "order": 0,
           "context": "HERO",
           "typologyCode": null
         },
         {
-          "url": "https://cdn.mock.ecla.io/begles/aquitaine/common-study.webp",
-          "alt": "Salle d'étude Aquitaine",
+          "url": "https://cdn.mock.ecla.io/bordeaux/ecla-gradignan/common-gym.webp",
+          "alt": "Salle de sport ECLA Bordeaux",
           "order": 1,
           "context": "COMMON",
           "typologyCode": null
         },
         {
-          "url": "https://cdn.mock.ecla.io/begles/aquitaine/typo-t1bis-01.webp",
-          "alt": "T1 BIS Aquitaine",
+          "url": "https://cdn.mock.ecla.io/bordeaux/ecla-gradignan/typo-studio-01.webp",
+          "alt": "Studio ECLA Bordeaux",
           "order": 2,
           "context": "TYPOLOGY",
-          "typologyCode": "T1_BIS"
+          "typologyCode": "STUDIO"
         },
         {
-          "url": "https://cdn.mock.ecla.io/begles/aquitaine/typo-t3-01.webp",
-          "alt": "T3 Aquitaine",
+          "url": "https://cdn.mock.ecla.io/bordeaux/ecla-gradignan/typo-t3-01.webp",
+          "alt": "T3 ECLA Bordeaux",
           "order": 3,
           "context": "TYPOLOGY",
           "typologyCode": "T3"
         }
       ],
-      "description": "AQUITAINE à Bègles, à proximité de Bordeaux et des lignes de tram. Mix studio / colocation et appartements famille, résidence sécurisée avec services malin.",
+      "description": "ECLA Bordeaux prend place sur le campus universitaire de Gradignan, à quelques minutes de Bordeaux, Talence et Pessac. 495 logements, ouverture 2026.",
       "commonAmenities": [
         {
           "code": "GYM",
@@ -545,30 +545,31 @@
           "labelEn": "Coworking space"
         },
         {
+          "code": "CINEMA",
+          "label": "Cinébox",
+          "labelEn": "Cinema"
+        },
+        {
+          "code": "PADEL",
+          "label": "Courts de padel",
+          "labelEn": "Padel courts"
+        },
+        {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
           "labelEn": "Laundry 24/7"
         },
         {
-          "code": "STUDY",
-          "label": "Salles d'étude",
-          "labelEn": "Study rooms"
-        },
-        {
-          "code": "BIKE",
-          "label": "Local vélos sécurisé",
-          "labelEn": "Secure bike storage"
-        },
-        {
-          "code": "WIFI",
-          "label": "Wi-Fi fibre",
-          "labelEn": "Fibre Wi-Fi"
+          "code": "RESTO",
+          "label": "Interval – restauration",
+          "labelEn": "Restaurant"
         }
       ],
       "flag": {
         "code": "NEW",
         "label": "Nouveauté",
-        "typologies": []
+        "typologies": [],
+        "labelEn": "New"
       }
     },
     "6ff9af84-6e14-f011-998a-6045bd6d55ca": {
@@ -660,32 +661,39 @@
     },
     "0c5644a8-4fa7-ef11-b8e9-6045bd19a503": {
       "residenceId": "0c5644a8-4fa7-ef11-b8e9-6045bd19a503",
-      "city": "Villeneuve-d'Ascq",
-      "cityAlias": "Villeneuve-d'Ascq",
+      "city": "Lomme",
+      "cityAlias": "Lille",
       "photos": [
         {
-          "url": "https://cdn.mock.ecla.io/villeneuve/babylone/hero-01.webp",
-          "alt": "Vue extérieure Résidence Babylone",
+          "url": "https://cdn.mock.ecla.io/lille/ecla-lomme/hero-01.webp",
+          "alt": "Vue extérieure ECLA Lille",
           "order": 0,
           "context": "HERO",
           "typologyCode": null
         },
         {
-          "url": "https://cdn.mock.ecla.io/villeneuve/babylone/typo-studio-01.webp",
-          "alt": "Studio Babylone",
+          "url": "https://cdn.mock.ecla.io/lille/ecla-lomme/common-resto.webp",
+          "alt": "Restaurant Interval ECLA Lille",
           "order": 1,
-          "context": "TYPOLOGY",
-          "typologyCode": "STUDIO"
+          "context": "COMMON",
+          "typologyCode": null
         },
         {
-          "url": "https://cdn.mock.ecla.io/villeneuve/babylone/typo-t2duplex-01.webp",
-          "alt": "T2 Duplex Babylone",
+          "url": "https://cdn.mock.ecla.io/lille/ecla-lomme/typo-coloc-01.webp",
+          "alt": "Chambre coliving ECLA Lille",
           "order": 2,
           "context": "TYPOLOGY",
-          "typologyCode": "T2_DUPLEX"
+          "typologyCode": "COLOC"
+        },
+        {
+          "url": "https://cdn.mock.ecla.io/lille/ecla-lomme/typo-studio-01.webp",
+          "alt": "Studio ECLA Lille",
+          "order": 3,
+          "context": "TYPOLOGY",
+          "typologyCode": "STUDIO"
         }
       ],
-      "description": "BABYLONE dessert le campus lillois avec des formules étudiants claires. Studios lumineux, T2/T3 familiaux et chambres en colocation avec accès équipements communs.",
+      "description": "ECLA Lille s'installe à Lomme, au cœur de la Métropole Européenne de Lille. 787 lits, bâtiment certifié BREEAM Very Good et RE2020, ouverture été 2026.",
       "commonAmenities": [
         {
           "code": "GYM",
@@ -698,32 +706,31 @@
           "labelEn": "Coworking space"
         },
         {
+          "code": "CINEMA",
+          "label": "Cinébox",
+          "labelEn": "Cinema"
+        },
+        {
+          "code": "PADEL",
+          "label": "Courts de padel",
+          "labelEn": "Padel courts"
+        },
+        {
           "code": "LAUNDRY",
           "label": "Laverie 24/7",
           "labelEn": "Laundry 24/7"
         },
         {
-          "code": "STUDY",
-          "label": "Salles d'étude",
-          "labelEn": "Study rooms"
-        },
-        {
-          "code": "BIKE",
-          "label": "Local vélos sécurisé",
-          "labelEn": "Secure bike storage"
-        },
-        {
-          "code": "WIFI",
-          "label": "Wi-Fi fibre",
-          "labelEn": "Fibre Wi-Fi"
+          "code": "RESTO",
+          "label": "Interval – restauration",
+          "labelEn": "Restaurant"
         }
       ],
       "flag": {
-        "code": "LAST_UNITS",
-        "label": "Dernières disponibilités",
-        "typologies": [
-          "STUDIO"
-        ]
+        "code": "NEW",
+        "label": "Nouveauté",
+        "typologies": [],
+        "labelEn": "New"
       }
     },
     "359b3195-7814-f011-998a-6045bd6bf874": {
@@ -999,46 +1006,53 @@
     },
     "1d5644a8-4fa7-ef11-b8e9-6045bd19a503": {
       "residenceId": "1d5644a8-4fa7-ef11-b8e9-6045bd19a503",
-      "city": "Massy",
+      "city": "Villejuif",
       "cityAlias": "Paris",
       "photos": [
         {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/hero-01.webp",
-          "alt": "Vue extérieure Ecla Palaiseau OPCO",
+          "url": "https://cdn.mock.ecla.io/paris/ecla-villejuif/hero-01.webp",
+          "alt": "Vue extérieure ECLA Paris Villejuif",
           "order": 0,
           "context": "HERO",
           "typologyCode": null
         },
         {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/common-gym.webp",
-          "alt": "Salle de sport Ecla OPCO",
+          "url": "https://cdn.mock.ecla.io/paris/ecla-villejuif/hero-02.webp",
+          "alt": "Lounge ECLA Villejuif",
           "order": 1,
+          "context": "HERO",
+          "typologyCode": null
+        },
+        {
+          "url": "https://cdn.mock.ecla.io/paris/ecla-villejuif/common-gym.webp",
+          "alt": "Salle de sport ECLA Villejuif",
+          "order": 2,
           "context": "COMMON",
           "typologyCode": null
         },
         {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t1bis-01.webp",
-          "alt": "T1 BIS Ecla OPCO",
-          "order": 2,
-          "context": "TYPOLOGY",
-          "typologyCode": "T1_BIS"
-        },
-        {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t2-01.webp",
-          "alt": "T2 Ecla OPCO",
+          "url": "https://cdn.mock.ecla.io/paris/ecla-villejuif/typo-coloc-01.webp",
+          "alt": "Chambre coliving ECLA Villejuif",
           "order": 3,
           "context": "TYPOLOGY",
-          "typologyCode": "T2"
+          "typologyCode": "COLOC"
         },
         {
-          "url": "https://cdn.mock.ecla.io/paris/ecla-opco/typo-t2duplex-01.webp",
-          "alt": "T2 Duplex Ecla OPCO",
+          "url": "https://cdn.mock.ecla.io/paris/ecla-villejuif/typo-studio-01.webp",
+          "alt": "Studio ECLA Villejuif",
           "order": 4,
           "context": "TYPOLOGY",
-          "typologyCode": "T2_DUPLEX"
+          "typologyCode": "STUDIO"
+        },
+        {
+          "url": "https://cdn.mock.ecla.io/paris/ecla-villejuif/typo-t2-01.webp",
+          "alt": "T2 ECLA Villejuif",
+          "order": 5,
+          "context": "TYPOLOGY",
+          "typologyCode": "T2"
         }
       ],
-      "description": "Extension ECLA Massy-Palaiseau dédiée aux parcours professionnels et OPCO : logements neufs, flex office, événements résidents et conciergerie.",
+      "description": "ECLA Paris Villejuif : coliving tout inclus dans le Val-de-Marne, à 10 min à pied du métro ligne 7. 754 logements de la chambre au T3, espaces communs et services premium.",
       "commonAmenities": [
         {
           "code": "GYM",
@@ -1074,10 +1088,8 @@
       "flag": {
         "code": "NEW",
         "label": "Nouveauté",
-        "typologies": [
-          "T1_BIS",
-          "T2"
-        ]
+        "typologies": [],
+        "labelEn": "New"
       }
     },
     "1b5644a8-4fa7-ef11-b8e9-6045bd19a503": {
