@@ -21,7 +21,7 @@ paths:
       summary: GetAllResidences
       description: >
         Catalogue global de toutes les residences France (dezoom map).
-        Aucun filtre ville — retourne les 10 residences mock.
+        Aucun filtre ville — retourne les 7 residences mock.
         Chaque ligne porte un array minimal `typologies` avec pricing
         (longStay / midStay) et l'offre eventuelle inlinee par typologie.
       responses:
@@ -38,7 +38,7 @@ paths:
       summary: GetResidencesByCity
       description: >
         Residences d'une ville (filtre sur `cityAlias` ou `city`).
-        Ex. `/cities/Paris/residences` retourne les 4 ECLA.
+        Ex. `/cities/Paris/residences` retourne les 3 ECLA.
       parameters:
         - in: path
           name: cityAlias

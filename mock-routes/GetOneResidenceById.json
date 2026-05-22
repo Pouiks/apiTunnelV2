@@ -453,5 +453,2780 @@
         ]
       }
     ]
+  },
+  "195644a8-4fa7-ef11-b8e9-6045bd19a503": {
+    "residenceId": "195644a8-4fa7-ef11-b8e9-6045bd19a503",
+    "residenceCode": "ECLA_MASSY_PALAISEAU",
+    "name": "ECLA MASSY-PALAISEAU",
+    "commercialName": "ECLA Paris Massy-Palaiseau",
+    "brand": "ECLA",
+    "city": "Palaiseau",
+    "cityAlias": "Paris",
+    "address": "12 Rue Émile Baudot",
+    "postalCode": "91120",
+    "telephone": "01 84 25 10 00",
+    "email": "massy-palaiseau@ecla.com",
+    "coordinates": {
+      "lat": 48.7145,
+      "lng": 2.2459
+    },
+    "availabilityStatus": "AVAILABLE",
+    "typologies": [
+      {
+        "typologyCode": "COLOC",
+        "label": "Chambre en colocation",
+        "pricing": {
+          "longStay": {
+            "baseRent": 790,
+            "securityDeposit": 790,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 740,
+              "securityDeposit": 790,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 880,
+            "securityDeposit": 880,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 840,
+              "securityDeposit": 880,
+              "applicationFees": 300
+            }
+          },
+          "stagiaire": {
+            "baseRent": 950,
+            "securityDeposit": 950,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 920,
+              "securityDeposit": 950,
+              "applicationFees": 250
+            }
+          }
+        },
+        "minimumSurface": 12,
+        "maxSurface": 18
+      },
+      {
+        "typologyCode": "STUDIO",
+        "label": "Studio",
+        "pricing": {
+          "longStay": {
+            "baseRent": 980,
+            "securityDeposit": 980,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 930,
+              "securityDeposit": 980,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1070,
+            "securityDeposit": 1070,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1030,
+              "securityDeposit": 1070,
+              "applicationFees": 300
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1140,
+            "securityDeposit": 1140,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1110,
+              "securityDeposit": 1140,
+              "applicationFees": 250
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 20,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T2",
+        "label": "T2",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1490,
+            "securityDeposit": 1490,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1440,
+              "securityDeposit": 1490,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1580,
+            "securityDeposit": 1580,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1540,
+              "securityDeposit": 1580,
+              "applicationFees": 300
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1650,
+            "securityDeposit": 1650,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1620,
+              "securityDeposit": 1650,
+              "applicationFees": 250
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 38,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      },
+      {
+        "typologyCode": "T3",
+        "label": "T3",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1890,
+            "securityDeposit": 1890,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1840,
+              "securityDeposit": 1890,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1980,
+            "securityDeposit": 1980,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1940,
+              "securityDeposit": 1980,
+              "applicationFees": 300
+            }
+          },
+          "stagiaire": {
+            "baseRent": 2050,
+            "securityDeposit": 2050,
+            "applicationFees": 300,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 2020,
+              "securityDeposit": 2050,
+              "applicationFees": 250
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 58,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      }
+    ],
+    "floors": {
+      "min": 0,
+      "max": 12
+    },
+    "abonnements": [
+      {
+        "code": "CLEANING_SERVICE",
+        "title": "Cleaning service",
+        "description": "Keep your residence spotless with our regular cleaning service.",
+        "pricePerMonth": 50,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "cleaning",
+        "inpack": "false"
+      },
+      {
+        "code": "PARKING_SPACE",
+        "title": "Parking space",
+        "description": "Secure parking space included for your convenience.",
+        "pricePerMonth": 30,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "parking",
+        "inpack": "false"
+      },
+      {
+        "code": "TV_RENTAL",
+        "title": "TV rental",
+        "description": "32\" Smart TV with streaming apps",
+        "pricePerMonth": 20,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "tv",
+        "inpack": "true"
+      },
+      {
+        "code": "THE_PACK",
+        "title": "The Pack",
+        "description": "Linen kit + biweekly cleaning with sheet change + TV screen",
+        "pricePerMonth": 60,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "gift"
+      }
+    ],
+    "configurationOptions": [
+      {
+        "groupCode": "FLOOR",
+        "label": "Floor",
+        "variants": [
+          {
+            "variantCode": "FLOOR_LOW",
+            "label": "Low",
+            "description": "0-1",
+            "amount": 20,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_LOW",
+            "label": "Mid-Low",
+            "description": "2-3",
+            "amount": 0,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_HIGH",
+            "label": "Mid-High",
+            "description": "4-5",
+            "amount": 30,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_HIGH",
+            "label": "High",
+            "description": "6+",
+            "amount": 40,
+            "productCode": "FLOOR"
+          }
+        ]
+      },
+      {
+        "groupCode": "SURFACE",
+        "label": "Surface",
+        "variants": [
+          {
+            "variantCode": "SURFACE_COMPACT",
+            "label": "Compact",
+            "description": "18-22 m²",
+            "amount": 0,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_COMFORTABLE",
+            "label": "Comfortable",
+            "description": "23-28 m²",
+            "amount": 50,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_SPACIOUS",
+            "label": "Spacious",
+            "description": "29-35 m²",
+            "amount": 100,
+            "productCode": "SURFACE"
+          }
+        ]
+      },
+      {
+        "groupCode": "BEDDING",
+        "label": "Bedding",
+        "variants": [
+          {
+            "variantCode": "BEDDING_STANDARD",
+            "label": "Standard bed",
+            "description": "< 140 cm",
+            "amount": 0,
+            "productCode": "BEDDING"
+          },
+          {
+            "variantCode": "BEDDING_KING",
+            "label": "King Size bed",
+            "description": "180 cm",
+            "amount": 50,
+            "productCode": "BEDDING"
+          }
+        ]
+      },
+      {
+        "groupCode": "AC",
+        "label": "Air conditioning",
+        "variants": [
+          {
+            "variantCode": "AC_WITHOUT",
+            "label": "Without air conditioning",
+            "description": "Standard comfort",
+            "amount": 0,
+            "productCode": "AC"
+          },
+          {
+            "variantCode": "AC_WITH",
+            "label": "With air conditioning",
+            "description": "Enhanced comfort",
+            "amount": 40,
+            "productCode": "AC"
+          }
+        ]
+      },
+      {
+        "groupCode": "BALCONY",
+        "label": "Balcony",
+        "variants": [
+          {
+            "variantCode": "BALCONY_WITHOUT",
+            "label": "Without balcony",
+            "description": "More affordable",
+            "amount": 0,
+            "productCode": "BALCONY"
+          },
+          {
+            "variantCode": "BALCONY_WITH",
+            "label": "With balcony",
+            "description": "Private outdoor space",
+            "amount": 50,
+            "productCode": "BALCONY"
+          }
+        ]
+      }
+    ]
+  },
+  "1b5644a8-4fa7-ef11-b8e9-6045bd19a503": {
+    "residenceId": "1b5644a8-4fa7-ef11-b8e9-6045bd19a503",
+    "residenceCode": "ECLA_NOISY_LE_GRAND",
+    "name": "ECLA NOISY-LE-GRAND",
+    "commercialName": "ECLA Paris Noisy-le-Grand",
+    "brand": "ECLA",
+    "city": "Noisy-le-Grand",
+    "cityAlias": "Paris",
+    "address": "20 Allée Jean Rostand",
+    "postalCode": "93160",
+    "telephone": "01 84 25 20 00",
+    "email": "noisy-le-grand@ecla.com",
+    "coordinates": {
+      "lat": 48.84,
+      "lng": 2.553
+    },
+    "availabilityStatus": "AVAILABLE",
+    "typologies": [
+      {
+        "typologyCode": "COLOC",
+        "label": "Chambre en colocation",
+        "pricing": {
+          "longStay": {
+            "baseRent": 720,
+            "securityDeposit": 720,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 670,
+              "securityDeposit": 720,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 810,
+            "securityDeposit": 810,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 770,
+              "securityDeposit": 810,
+              "applicationFees": 250
+            }
+          },
+          "stagiaire": {
+            "baseRent": 880,
+            "securityDeposit": 880,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 850,
+              "securityDeposit": 880,
+              "applicationFees": 200
+            }
+          }
+        },
+        "minimumSurface": 12,
+        "maxSurface": 18
+      },
+      {
+        "typologyCode": "STUDIO",
+        "label": "Studio",
+        "pricing": {
+          "longStay": {
+            "baseRent": 910,
+            "securityDeposit": 910,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 860,
+              "securityDeposit": 910,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1000,
+            "securityDeposit": 1000,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 960,
+              "securityDeposit": 1000,
+              "applicationFees": 250
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1070,
+            "securityDeposit": 1070,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1040,
+              "securityDeposit": 1070,
+              "applicationFees": 200
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 20,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T2",
+        "label": "T2",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1350,
+            "securityDeposit": 1350,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1300,
+              "securityDeposit": 1350,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1440,
+            "securityDeposit": 1440,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1400,
+              "securityDeposit": 1440,
+              "applicationFees": 250
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1510,
+            "securityDeposit": 1510,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1480,
+              "securityDeposit": 1510,
+              "applicationFees": 200
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 38,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      },
+      {
+        "typologyCode": "T3",
+        "label": "T3",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1720,
+            "securityDeposit": 1720,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1670,
+              "securityDeposit": 1720,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1810,
+            "securityDeposit": 1810,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1770,
+              "securityDeposit": 1810,
+              "applicationFees": 250
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1880,
+            "securityDeposit": 1880,
+            "applicationFees": 250,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1850,
+              "securityDeposit": 1880,
+              "applicationFees": 200
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 58,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      }
+    ],
+    "floors": {
+      "min": 0,
+      "max": 7
+    },
+    "abonnements": [
+      {
+        "code": "CLEANING_SERVICE",
+        "title": "Cleaning service",
+        "description": "Keep your residence spotless with our regular cleaning service.",
+        "pricePerMonth": 50,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "cleaning",
+        "inpack": "false"
+      },
+      {
+        "code": "PARKING_SPACE",
+        "title": "Parking space",
+        "description": "Secure parking space included for your convenience.",
+        "pricePerMonth": 30,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "parking",
+        "inpack": "false"
+      },
+      {
+        "code": "TV_RENTAL",
+        "title": "TV rental",
+        "description": "32\" Smart TV with streaming apps",
+        "pricePerMonth": 20,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "tv",
+        "inpack": "true"
+      },
+      {
+        "code": "THE_PACK",
+        "title": "The Pack",
+        "description": "Linen kit + biweekly cleaning with sheet change + TV screen",
+        "pricePerMonth": 60,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "gift"
+      }
+    ],
+    "configurationOptions": [
+      {
+        "groupCode": "FLOOR",
+        "label": "Floor",
+        "variants": [
+          {
+            "variantCode": "FLOOR_LOW",
+            "label": "Low",
+            "description": "0-1",
+            "amount": 20,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_LOW",
+            "label": "Mid-Low",
+            "description": "2-3",
+            "amount": 0,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_HIGH",
+            "label": "Mid-High",
+            "description": "4-5",
+            "amount": 30,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_HIGH",
+            "label": "High",
+            "description": "6+",
+            "amount": 40,
+            "productCode": "FLOOR"
+          }
+        ]
+      },
+      {
+        "groupCode": "SURFACE",
+        "label": "Surface",
+        "variants": [
+          {
+            "variantCode": "SURFACE_COMPACT",
+            "label": "Compact",
+            "description": "18-22 m²",
+            "amount": 0,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_COMFORTABLE",
+            "label": "Comfortable",
+            "description": "23-28 m²",
+            "amount": 50,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_SPACIOUS",
+            "label": "Spacious",
+            "description": "29-35 m²",
+            "amount": 100,
+            "productCode": "SURFACE"
+          }
+        ]
+      },
+      {
+        "groupCode": "BEDDING",
+        "label": "Bedding",
+        "variants": [
+          {
+            "variantCode": "BEDDING_STANDARD",
+            "label": "Standard bed",
+            "description": "< 140 cm",
+            "amount": 0,
+            "productCode": "BEDDING"
+          },
+          {
+            "variantCode": "BEDDING_KING",
+            "label": "King Size bed",
+            "description": "180 cm",
+            "amount": 50,
+            "productCode": "BEDDING"
+          }
+        ]
+      },
+      {
+        "groupCode": "AC",
+        "label": "Air conditioning",
+        "variants": [
+          {
+            "variantCode": "AC_WITHOUT",
+            "label": "Without air conditioning",
+            "description": "Standard comfort",
+            "amount": 0,
+            "productCode": "AC"
+          },
+          {
+            "variantCode": "AC_WITH",
+            "label": "With air conditioning",
+            "description": "Enhanced comfort",
+            "amount": 40,
+            "productCode": "AC"
+          }
+        ]
+      },
+      {
+        "groupCode": "BALCONY",
+        "label": "Balcony",
+        "variants": [
+          {
+            "variantCode": "BALCONY_WITHOUT",
+            "label": "Without balcony",
+            "description": "More affordable",
+            "amount": 0,
+            "productCode": "BALCONY"
+          },
+          {
+            "variantCode": "BALCONY_WITH",
+            "label": "With balcony",
+            "description": "Private outdoor space",
+            "amount": 50,
+            "productCode": "BALCONY"
+          }
+        ]
+      }
+    ]
+  },
+  "1d5644a8-4fa7-ef11-b8e9-6045bd19a503": {
+    "residenceId": "1d5644a8-4fa7-ef11-b8e9-6045bd19a503",
+    "residenceCode": "ECLA_VILLEJUIF",
+    "name": "ECLA VILLEJUIF",
+    "commercialName": "ECLA Paris Villejuif",
+    "brand": "ECLA",
+    "city": "Villejuif",
+    "cityAlias": "Paris",
+    "address": "45 Avenue de la République",
+    "postalCode": "94800",
+    "telephone": "01 84 25 30 00",
+    "email": "villejuif@ecla.com",
+    "coordinates": {
+      "lat": 48.793,
+      "lng": 2.366
+    },
+    "availabilityStatus": "PARTIAL",
+    "typologies": [
+      {
+        "typologyCode": "COLOC",
+        "label": "Chambre en colocation",
+        "pricing": {
+          "longStay": {
+            "baseRent": 760,
+            "securityDeposit": 760,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 710,
+              "securityDeposit": 760,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 850,
+            "securityDeposit": 850,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 810,
+              "securityDeposit": 850,
+              "applicationFees": 280
+            }
+          },
+          "stagiaire": {
+            "baseRent": 920,
+            "securityDeposit": 920,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 890,
+              "securityDeposit": 920,
+              "applicationFees": 230
+            }
+          }
+        },
+        "minimumSurface": 12,
+        "maxSurface": 18
+      },
+      {
+        "typologyCode": "STUDIO",
+        "label": "Studio",
+        "pricing": {
+          "longStay": {
+            "baseRent": 950,
+            "securityDeposit": 950,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 900,
+              "securityDeposit": 950,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1040,
+            "securityDeposit": 1040,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1000,
+              "securityDeposit": 1040,
+              "applicationFees": 280
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1110,
+            "securityDeposit": 1110,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1080,
+              "securityDeposit": 1110,
+              "applicationFees": 230
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 20,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T1",
+        "label": "T1",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1180,
+            "securityDeposit": 1180,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1130,
+              "securityDeposit": 1180,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1270,
+            "securityDeposit": 1270,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1230,
+              "securityDeposit": 1270,
+              "applicationFees": 280
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1340,
+            "securityDeposit": 1340,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1310,
+              "securityDeposit": 1340,
+              "applicationFees": 230
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 26,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T2",
+        "label": "T2",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1450,
+            "securityDeposit": 1450,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1400,
+              "securityDeposit": 1450,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1540,
+            "securityDeposit": 1540,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1500,
+              "securityDeposit": 1540,
+              "applicationFees": 280
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1610,
+            "securityDeposit": 1610,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1580,
+              "securityDeposit": 1610,
+              "applicationFees": 230
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 38,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      },
+      {
+        "typologyCode": "T3",
+        "label": "T3",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1850,
+            "securityDeposit": 1850,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1800,
+              "securityDeposit": 1850,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1940,
+            "securityDeposit": 1940,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1900,
+              "securityDeposit": 1940,
+              "applicationFees": 280
+            }
+          },
+          "stagiaire": {
+            "baseRent": 2010,
+            "securityDeposit": 2010,
+            "applicationFees": 280,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1980,
+              "securityDeposit": 2010,
+              "applicationFees": 230
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 58,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      }
+    ],
+    "floors": {
+      "min": 0,
+      "max": 9
+    },
+    "abonnements": [
+      {
+        "code": "CLEANING_SERVICE",
+        "title": "Cleaning service",
+        "description": "Keep your residence spotless with our regular cleaning service.",
+        "pricePerMonth": 50,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "cleaning",
+        "inpack": "false"
+      },
+      {
+        "code": "PARKING_SPACE",
+        "title": "Parking space",
+        "description": "Secure parking space included for your convenience.",
+        "pricePerMonth": 30,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "parking",
+        "inpack": "false"
+      },
+      {
+        "code": "TV_RENTAL",
+        "title": "TV rental",
+        "description": "32\" Smart TV with streaming apps",
+        "pricePerMonth": 20,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "tv",
+        "inpack": "true"
+      },
+      {
+        "code": "THE_PACK",
+        "title": "The Pack",
+        "description": "Linen kit + biweekly cleaning with sheet change + TV screen",
+        "pricePerMonth": 60,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "gift"
+      }
+    ],
+    "configurationOptions": [
+      {
+        "groupCode": "FLOOR",
+        "label": "Floor",
+        "variants": [
+          {
+            "variantCode": "FLOOR_LOW",
+            "label": "Low",
+            "description": "0-1",
+            "amount": 20,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_LOW",
+            "label": "Mid-Low",
+            "description": "2-3",
+            "amount": 0,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_HIGH",
+            "label": "Mid-High",
+            "description": "4-5",
+            "amount": 30,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_HIGH",
+            "label": "High",
+            "description": "6+",
+            "amount": 40,
+            "productCode": "FLOOR"
+          }
+        ]
+      },
+      {
+        "groupCode": "SURFACE",
+        "label": "Surface",
+        "variants": [
+          {
+            "variantCode": "SURFACE_COMPACT",
+            "label": "Compact",
+            "description": "18-22 m²",
+            "amount": 0,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_COMFORTABLE",
+            "label": "Comfortable",
+            "description": "23-28 m²",
+            "amount": 50,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_SPACIOUS",
+            "label": "Spacious",
+            "description": "29-35 m²",
+            "amount": 100,
+            "productCode": "SURFACE"
+          }
+        ]
+      },
+      {
+        "groupCode": "BEDDING",
+        "label": "Bedding",
+        "variants": [
+          {
+            "variantCode": "BEDDING_STANDARD",
+            "label": "Standard bed",
+            "description": "< 140 cm",
+            "amount": 0,
+            "productCode": "BEDDING"
+          },
+          {
+            "variantCode": "BEDDING_KING",
+            "label": "King Size bed",
+            "description": "180 cm",
+            "amount": 50,
+            "productCode": "BEDDING"
+          }
+        ]
+      },
+      {
+        "groupCode": "AC",
+        "label": "Air conditioning",
+        "variants": [
+          {
+            "variantCode": "AC_WITHOUT",
+            "label": "Without air conditioning",
+            "description": "Standard comfort",
+            "amount": 0,
+            "productCode": "AC"
+          },
+          {
+            "variantCode": "AC_WITH",
+            "label": "With air conditioning",
+            "description": "Enhanced comfort",
+            "amount": 40,
+            "productCode": "AC"
+          }
+        ]
+      },
+      {
+        "groupCode": "BALCONY",
+        "label": "Balcony",
+        "variants": [
+          {
+            "variantCode": "BALCONY_WITHOUT",
+            "label": "Without balcony",
+            "description": "More affordable",
+            "amount": 0,
+            "productCode": "BALCONY"
+          },
+          {
+            "variantCode": "BALCONY_WITH",
+            "label": "With balcony",
+            "description": "Private outdoor space",
+            "amount": 50,
+            "productCode": "BALCONY"
+          }
+        ]
+      }
+    ]
+  },
+  "19f2179b-7d14-f011-998a-6045bd1919a1": {
+    "residenceId": "19f2179b-7d14-f011-998a-6045bd1919a1",
+    "residenceCode": "ECLA_GENEVE_ARCHAMPS",
+    "name": "ECLA GENEVE-ARCHAMPS",
+    "commercialName": "ECLA Genève Archamps",
+    "brand": "ECLA",
+    "city": "Archamps",
+    "cityAlias": "Genève",
+    "address": "218 Avenue de Genève",
+    "postalCode": "74160",
+    "telephone": "04 50 95 38 00",
+    "email": "geneve-archamps@ecla.com",
+    "coordinates": {
+      "lat": 46.134,
+      "lng": 6.108
+    },
+    "availabilityStatus": "AVAILABLE",
+    "typologies": [
+      {
+        "typologyCode": "STUDIO",
+        "label": "Studio",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1150,
+            "securityDeposit": 1150,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1100,
+              "securityDeposit": 1150,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1240,
+            "securityDeposit": 1240,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1200,
+              "securityDeposit": 1240,
+              "applicationFees": 320
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1310,
+            "securityDeposit": 1310,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1280,
+              "securityDeposit": 1310,
+              "applicationFees": 270
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 20,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T1_BIS",
+        "label": "T1 BIS",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1390,
+            "securityDeposit": 1390,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1340,
+              "securityDeposit": 1390,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1480,
+            "securityDeposit": 1480,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1440,
+              "securityDeposit": 1480,
+              "applicationFees": 320
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1550,
+            "securityDeposit": 1550,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1520,
+              "securityDeposit": 1550,
+              "applicationFees": 270
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 30,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T2",
+        "label": "T2",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1690,
+            "securityDeposit": 1690,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1640,
+              "securityDeposit": 1690,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1780,
+            "securityDeposit": 1780,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1740,
+              "securityDeposit": 1780,
+              "applicationFees": 320
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1850,
+            "securityDeposit": 1850,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1820,
+              "securityDeposit": 1850,
+              "applicationFees": 270
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 38,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      },
+      {
+        "typologyCode": "T2_DUPLEX",
+        "label": "T2 Duplex",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1890,
+            "securityDeposit": 1890,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1840,
+              "securityDeposit": 1890,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1980,
+            "securityDeposit": 1980,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1940,
+              "securityDeposit": 1980,
+              "applicationFees": 320
+            }
+          },
+          "stagiaire": {
+            "baseRent": 2050,
+            "securityDeposit": 2050,
+            "applicationFees": 320,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 2020,
+              "securityDeposit": 2050,
+              "applicationFees": 270
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 44,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      }
+    ],
+    "floors": {
+      "min": 0,
+      "max": 6
+    },
+    "abonnements": [
+      {
+        "code": "CLEANING_SERVICE",
+        "title": "Cleaning service",
+        "description": "Keep your residence spotless with our regular cleaning service.",
+        "pricePerMonth": 50,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "cleaning",
+        "inpack": "false"
+      },
+      {
+        "code": "PARKING_SPACE",
+        "title": "Parking space",
+        "description": "Secure parking space included for your convenience.",
+        "pricePerMonth": 30,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "parking",
+        "inpack": "false"
+      },
+      {
+        "code": "TV_RENTAL",
+        "title": "TV rental",
+        "description": "32\" Smart TV with streaming apps",
+        "pricePerMonth": 20,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "tv",
+        "inpack": "true"
+      },
+      {
+        "code": "THE_PACK",
+        "title": "The Pack",
+        "description": "Linen kit + biweekly cleaning with sheet change + TV screen",
+        "pricePerMonth": 60,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "gift"
+      }
+    ],
+    "configurationOptions": [
+      {
+        "groupCode": "FLOOR",
+        "label": "Floor",
+        "variants": [
+          {
+            "variantCode": "FLOOR_LOW",
+            "label": "Low",
+            "description": "0-1",
+            "amount": 20,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_LOW",
+            "label": "Mid-Low",
+            "description": "2-3",
+            "amount": 0,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_HIGH",
+            "label": "Mid-High",
+            "description": "4-5",
+            "amount": 30,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_HIGH",
+            "label": "High",
+            "description": "6+",
+            "amount": 40,
+            "productCode": "FLOOR"
+          }
+        ]
+      },
+      {
+        "groupCode": "SURFACE",
+        "label": "Surface",
+        "variants": [
+          {
+            "variantCode": "SURFACE_COMPACT",
+            "label": "Compact",
+            "description": "18-22 m²",
+            "amount": 0,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_COMFORTABLE",
+            "label": "Comfortable",
+            "description": "23-28 m²",
+            "amount": 50,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_SPACIOUS",
+            "label": "Spacious",
+            "description": "29-35 m²",
+            "amount": 100,
+            "productCode": "SURFACE"
+          }
+        ]
+      },
+      {
+        "groupCode": "BEDDING",
+        "label": "Bedding",
+        "variants": [
+          {
+            "variantCode": "BEDDING_STANDARD",
+            "label": "Standard bed",
+            "description": "< 140 cm",
+            "amount": 0,
+            "productCode": "BEDDING"
+          },
+          {
+            "variantCode": "BEDDING_KING",
+            "label": "King Size bed",
+            "description": "180 cm",
+            "amount": 50,
+            "productCode": "BEDDING"
+          }
+        ]
+      },
+      {
+        "groupCode": "AC",
+        "label": "Air conditioning",
+        "variants": [
+          {
+            "variantCode": "AC_WITHOUT",
+            "label": "Without air conditioning",
+            "description": "Standard comfort",
+            "amount": 0,
+            "productCode": "AC"
+          },
+          {
+            "variantCode": "AC_WITH",
+            "label": "With air conditioning",
+            "description": "Enhanced comfort",
+            "amount": 40,
+            "productCode": "AC"
+          }
+        ]
+      },
+      {
+        "groupCode": "BALCONY",
+        "label": "Balcony",
+        "variants": [
+          {
+            "variantCode": "BALCONY_WITHOUT",
+            "label": "Without balcony",
+            "description": "More affordable",
+            "amount": 0,
+            "productCode": "BALCONY"
+          },
+          {
+            "variantCode": "BALCONY_WITH",
+            "label": "With balcony",
+            "description": "Private outdoor space",
+            "amount": 50,
+            "productCode": "BALCONY"
+          }
+        ]
+      }
+    ]
+  },
+  "0c5644a8-4fa7-ef11-b8e9-6045bd19a503": {
+    "residenceId": "0c5644a8-4fa7-ef11-b8e9-6045bd19a503",
+    "residenceCode": "ECLA_LILLE_LOMME",
+    "name": "ECLA LILLE-LOMME",
+    "commercialName": "ECLA Lille",
+    "brand": "ECLA",
+    "city": "Lomme",
+    "cityAlias": "Lille",
+    "address": "120 Rue de la Mitterie",
+    "postalCode": "59160",
+    "telephone": "03 20 15 40 00",
+    "email": "lille-lomme@ecla.com",
+    "coordinates": {
+      "lat": 50.647,
+      "lng": 3.008
+    },
+    "availabilityStatus": "PARTIAL",
+    "typologies": [
+      {
+        "typologyCode": "COLOC",
+        "label": "Chambre en colocation",
+        "pricing": {
+          "longStay": {
+            "baseRent": 560,
+            "securityDeposit": 560,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 510,
+              "securityDeposit": 560,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 650,
+            "securityDeposit": 650,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 610,
+              "securityDeposit": 650,
+              "applicationFees": 200
+            }
+          },
+          "stagiaire": {
+            "baseRent": 720,
+            "securityDeposit": 720,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 690,
+              "securityDeposit": 720,
+              "applicationFees": 150
+            }
+          }
+        },
+        "minimumSurface": 12,
+        "maxSurface": 18
+      },
+      {
+        "typologyCode": "STUDIO",
+        "label": "Studio",
+        "pricing": {
+          "longStay": {
+            "baseRent": 690,
+            "securityDeposit": 690,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 640,
+              "securityDeposit": 690,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 780,
+            "securityDeposit": 780,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 740,
+              "securityDeposit": 780,
+              "applicationFees": 200
+            }
+          },
+          "stagiaire": {
+            "baseRent": 850,
+            "securityDeposit": 850,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 820,
+              "securityDeposit": 850,
+              "applicationFees": 150
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 20,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T1",
+        "label": "T1",
+        "pricing": {
+          "longStay": {
+            "baseRent": 850,
+            "securityDeposit": 850,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 800,
+              "securityDeposit": 850,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 940,
+            "securityDeposit": 940,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 900,
+              "securityDeposit": 940,
+              "applicationFees": 200
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1010,
+            "securityDeposit": 1010,
+            "applicationFees": 200,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 980,
+              "securityDeposit": 1010,
+              "applicationFees": 150
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 26,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      }
+    ],
+    "floors": {
+      "min": 0,
+      "max": 8
+    },
+    "abonnements": [
+      {
+        "code": "CLEANING_SERVICE",
+        "title": "Cleaning service",
+        "description": "Keep your residence spotless with our regular cleaning service.",
+        "pricePerMonth": 50,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "cleaning",
+        "inpack": "false"
+      },
+      {
+        "code": "PARKING_SPACE",
+        "title": "Parking space",
+        "description": "Secure parking space included for your convenience.",
+        "pricePerMonth": 30,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "parking",
+        "inpack": "false"
+      },
+      {
+        "code": "TV_RENTAL",
+        "title": "TV rental",
+        "description": "32\" Smart TV with streaming apps",
+        "pricePerMonth": 20,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "tv",
+        "inpack": "true"
+      },
+      {
+        "code": "THE_PACK",
+        "title": "The Pack",
+        "description": "Linen kit + biweekly cleaning with sheet change + TV screen",
+        "pricePerMonth": 60,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "gift"
+      }
+    ],
+    "configurationOptions": [
+      {
+        "groupCode": "FLOOR",
+        "label": "Floor",
+        "variants": [
+          {
+            "variantCode": "FLOOR_LOW",
+            "label": "Low",
+            "description": "0-1",
+            "amount": 20,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_LOW",
+            "label": "Mid-Low",
+            "description": "2-3",
+            "amount": 0,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_HIGH",
+            "label": "Mid-High",
+            "description": "4-5",
+            "amount": 30,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_HIGH",
+            "label": "High",
+            "description": "6+",
+            "amount": 40,
+            "productCode": "FLOOR"
+          }
+        ]
+      },
+      {
+        "groupCode": "SURFACE",
+        "label": "Surface",
+        "variants": [
+          {
+            "variantCode": "SURFACE_COMPACT",
+            "label": "Compact",
+            "description": "18-22 m²",
+            "amount": 0,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_COMFORTABLE",
+            "label": "Comfortable",
+            "description": "23-28 m²",
+            "amount": 50,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_SPACIOUS",
+            "label": "Spacious",
+            "description": "29-35 m²",
+            "amount": 100,
+            "productCode": "SURFACE"
+          }
+        ]
+      },
+      {
+        "groupCode": "BEDDING",
+        "label": "Bedding",
+        "variants": [
+          {
+            "variantCode": "BEDDING_STANDARD",
+            "label": "Standard bed",
+            "description": "< 140 cm",
+            "amount": 0,
+            "productCode": "BEDDING"
+          },
+          {
+            "variantCode": "BEDDING_KING",
+            "label": "King Size bed",
+            "description": "180 cm",
+            "amount": 50,
+            "productCode": "BEDDING"
+          }
+        ]
+      },
+      {
+        "groupCode": "AC",
+        "label": "Air conditioning",
+        "variants": [
+          {
+            "variantCode": "AC_WITHOUT",
+            "label": "Without air conditioning",
+            "description": "Standard comfort",
+            "amount": 0,
+            "productCode": "AC"
+          },
+          {
+            "variantCode": "AC_WITH",
+            "label": "With air conditioning",
+            "description": "Enhanced comfort",
+            "amount": 40,
+            "productCode": "AC"
+          }
+        ]
+      },
+      {
+        "groupCode": "BALCONY",
+        "label": "Balcony",
+        "variants": [
+          {
+            "variantCode": "BALCONY_WITHOUT",
+            "label": "Without balcony",
+            "description": "More affordable",
+            "amount": 0,
+            "productCode": "BALCONY"
+          },
+          {
+            "variantCode": "BALCONY_WITH",
+            "label": "With balcony",
+            "description": "Private outdoor space",
+            "amount": 50,
+            "productCode": "BALCONY"
+          }
+        ]
+      }
+    ]
+  },
+  "065644a8-4fa7-ef11-b8e9-6045bd19a503": {
+    "residenceId": "065644a8-4fa7-ef11-b8e9-6045bd19a503",
+    "residenceCode": "ECLA_BORDEAUX_GRADIGNAN",
+    "name": "ECLA BORDEAUX-GRADIGNAN",
+    "commercialName": "ECLA Bordeaux",
+    "brand": "ECLA",
+    "city": "Gradignan",
+    "cityAlias": "Bordeaux",
+    "address": "75 Cours du Général de Gaulle",
+    "postalCode": "33170",
+    "telephone": "05 56 12 50 00",
+    "email": "bordeaux-gradignan@ecla.com",
+    "coordinates": {
+      "lat": 44.7726,
+      "lng": -0.6156
+    },
+    "availabilityStatus": "PARTIAL",
+    "typologies": [
+      {
+        "typologyCode": "COLOC",
+        "label": "Chambre en colocation",
+        "pricing": {
+          "longStay": {
+            "baseRent": 590,
+            "securityDeposit": 590,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 540,
+              "securityDeposit": 590,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 680,
+            "securityDeposit": 680,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 640,
+              "securityDeposit": 680,
+              "applicationFees": 230
+            }
+          },
+          "stagiaire": {
+            "baseRent": 750,
+            "securityDeposit": 750,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 720,
+              "securityDeposit": 750,
+              "applicationFees": 180
+            }
+          }
+        },
+        "minimumSurface": 12,
+        "maxSurface": 18
+      },
+      {
+        "typologyCode": "STUDIO",
+        "label": "Studio",
+        "pricing": {
+          "longStay": {
+            "baseRent": 740,
+            "securityDeposit": 740,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 690,
+              "securityDeposit": 740,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 830,
+            "securityDeposit": 830,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 790,
+              "securityDeposit": 830,
+              "applicationFees": 230
+            }
+          },
+          "stagiaire": {
+            "baseRent": 900,
+            "securityDeposit": 900,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 870,
+              "securityDeposit": 900,
+              "applicationFees": 180
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 20,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T1_BIS",
+        "label": "T1 BIS",
+        "pricing": {
+          "longStay": {
+            "baseRent": 920,
+            "securityDeposit": 920,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 870,
+              "securityDeposit": 920,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1010,
+            "securityDeposit": 1010,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 970,
+              "securityDeposit": 1010,
+              "applicationFees": 230
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1080,
+            "securityDeposit": 1080,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1050,
+              "securityDeposit": 1080,
+              "applicationFees": 180
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Kitchenette équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          }
+        ],
+        "surface": 30,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-08-01",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-10-01",
+            "minDurationMonths": 3
+          },
+          "discount": {
+            "target": "BASE_RENT",
+            "reductionType": "FIXED_AMOUNT",
+            "amount": -50,
+            "billingTiming": "RECURRING",
+            "recurrenceMonths": 3
+          }
+        }
+      },
+      {
+        "typologyCode": "T3",
+        "label": "T3",
+        "pricing": {
+          "longStay": {
+            "baseRent": 1380,
+            "securityDeposit": 1380,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Offre rentrée 2026",
+              "baseRent": 1330,
+              "securityDeposit": 1380,
+              "applicationFees": 0
+            }
+          },
+          "midStay": {
+            "baseRent": 1470,
+            "securityDeposit": 1470,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Offre flex 6 mois",
+              "baseRent": 1430,
+              "securityDeposit": 1470,
+              "applicationFees": 230
+            }
+          },
+          "stagiaire": {
+            "baseRent": 1540,
+            "securityDeposit": 1540,
+            "applicationFees": 230,
+            "offers": {
+              "offerLabel": "Pack stagiaire",
+              "baseRent": 1510,
+              "securityDeposit": 1540,
+              "applicationFees": 180
+            }
+          }
+        },
+        "amenities": [
+          {
+            "code": "FURNISHED",
+            "label": "Meublé"
+          },
+          {
+            "code": "KITCHEN",
+            "label": "Cuisine équipée"
+          },
+          {
+            "code": "WIFI",
+            "label": "Wi-Fi inclus"
+          },
+          {
+            "code": "BATHROOM",
+            "label": "Salle de bain privative"
+          },
+          {
+            "code": "LIVING",
+            "label": "Salon séparé"
+          }
+        ],
+        "surface": 58,
+        "offer": {
+          "bookingDate": "2026-07-15",
+          "conditions": {
+            "bookingDeadline": "2026-09-30",
+            "startDateFrom": "2026-09-01",
+            "startDateTo": "2026-11-01",
+            "minDurationMonths": 9
+          },
+          "discount": {
+            "target": "APP_FEE",
+            "reductionType": "PERCENTAGE",
+            "amount": -100,
+            "billingTiming": "ONE_SHOT",
+            "recurrenceMonths": null
+          }
+        }
+      }
+    ],
+    "floors": {
+      "min": 0,
+      "max": 5
+    },
+    "abonnements": [
+      {
+        "code": "CLEANING_SERVICE",
+        "title": "Cleaning service",
+        "description": "Keep your residence spotless with our regular cleaning service.",
+        "pricePerMonth": 50,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "cleaning",
+        "inpack": "false"
+      },
+      {
+        "code": "PARKING_SPACE",
+        "title": "Parking space",
+        "description": "Secure parking space included for your convenience.",
+        "pricePerMonth": 30,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "parking",
+        "inpack": "false"
+      },
+      {
+        "code": "TV_RENTAL",
+        "title": "TV rental",
+        "description": "32\" Smart TV with streaming apps",
+        "pricePerMonth": 20,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "tv",
+        "inpack": "true"
+      },
+      {
+        "code": "THE_PACK",
+        "title": "The Pack",
+        "description": "Linen kit + biweekly cleaning with sheet change + TV screen",
+        "pricePerMonth": 60,
+        "currency": "EUR",
+        "billingPeriod": "month",
+        "icon": "gift"
+      }
+    ],
+    "configurationOptions": [
+      {
+        "groupCode": "FLOOR",
+        "label": "Floor",
+        "variants": [
+          {
+            "variantCode": "FLOOR_LOW",
+            "label": "Low",
+            "description": "0-1",
+            "amount": 20,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_LOW",
+            "label": "Mid-Low",
+            "description": "2-3",
+            "amount": 0,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_MID_HIGH",
+            "label": "Mid-High",
+            "description": "4-5",
+            "amount": 30,
+            "productCode": "FLOOR"
+          },
+          {
+            "variantCode": "FLOOR_HIGH",
+            "label": "High",
+            "description": "6+",
+            "amount": 40,
+            "productCode": "FLOOR"
+          }
+        ]
+      },
+      {
+        "groupCode": "SURFACE",
+        "label": "Surface",
+        "variants": [
+          {
+            "variantCode": "SURFACE_COMPACT",
+            "label": "Compact",
+            "description": "18-22 m²",
+            "amount": 0,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_COMFORTABLE",
+            "label": "Comfortable",
+            "description": "23-28 m²",
+            "amount": 50,
+            "productCode": "SURFACE"
+          },
+          {
+            "variantCode": "SURFACE_SPACIOUS",
+            "label": "Spacious",
+            "description": "29-35 m²",
+            "amount": 100,
+            "productCode": "SURFACE"
+          }
+        ]
+      },
+      {
+        "groupCode": "BEDDING",
+        "label": "Bedding",
+        "variants": [
+          {
+            "variantCode": "BEDDING_STANDARD",
+            "label": "Standard bed",
+            "description": "< 140 cm",
+            "amount": 0,
+            "productCode": "BEDDING"
+          },
+          {
+            "variantCode": "BEDDING_KING",
+            "label": "King Size bed",
+            "description": "180 cm",
+            "amount": 50,
+            "productCode": "BEDDING"
+          }
+        ]
+      },
+      {
+        "groupCode": "AC",
+        "label": "Air conditioning",
+        "variants": [
+          {
+            "variantCode": "AC_WITHOUT",
+            "label": "Without air conditioning",
+            "description": "Standard comfort",
+            "amount": 0,
+            "productCode": "AC"
+          },
+          {
+            "variantCode": "AC_WITH",
+            "label": "With air conditioning",
+            "description": "Enhanced comfort",
+            "amount": 40,
+            "productCode": "AC"
+          }
+        ]
+      },
+      {
+        "groupCode": "BALCONY",
+        "label": "Balcony",
+        "variants": [
+          {
+            "variantCode": "BALCONY_WITHOUT",
+            "label": "Without balcony",
+            "description": "More affordable",
+            "amount": 0,
+            "productCode": "BALCONY"
+          },
+          {
+            "variantCode": "BALCONY_WITH",
+            "label": "With balcony",
+            "description": "Private outdoor space",
+            "amount": 50,
+            "productCode": "BALCONY"
+          }
+        ]
+      }
+    ]
   }
 }
