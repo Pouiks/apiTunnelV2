@@ -16,43 +16,85 @@
       "lng": 4.8357
     },
     "availabilityStatus": "AVAILABLE ||FULL",
+    "description": "Située à Lyon, Résidence Albert Thomas propose des logements meublés tout équipés et de nombreux espaces partagés pour étudier, travailler et se détendre.",
+    "descriptionEn": "Located in Lyon, Résidence Albert Thomas offers fully furnished accommodation and a wide range of shared spaces to study, work and unwind.",
+    "commonAmenities": [
+      {
+        "code": "COWORKING",
+        "label": "Espace coworking"
+      },
+      {
+        "code": "FITNESS",
+        "label": "Salle de sport"
+      },
+      {
+        "code": "LAUNDRY",
+        "label": "Laverie"
+      },
+      {
+        "code": "ROOFTOP",
+        "label": "Rooftop"
+      },
+      {
+        "code": "GAME_ROOM",
+        "label": "Salle de jeux"
+      },
+      {
+        "code": "BIKE_STORAGE",
+        "label": "Local à vélos sécurisé"
+      },
+      {
+        "code": "CINEMA",
+        "label": "Salle de cinéma"
+      },
+      {
+        "code": "GARDEN",
+        "label": "Espaces verts"
+      }
+    ],
+    "photos": {
+      "exterior": [
+        "https://picsum.photos/seed/albert_thomas-exterior-1/1200/800",
+        "https://picsum.photos/seed/albert_thomas-exterior-2/1200/800",
+        "https://picsum.photos/seed/albert_thomas-exterior-3/1200/800"
+      ],
+      "commonAreas": [
+        "https://picsum.photos/seed/albert_thomas-common-1/1200/800",
+        "https://picsum.photos/seed/albert_thomas-common-2/1200/800",
+        "https://picsum.photos/seed/albert_thomas-common-3/1200/800",
+        "https://picsum.photos/seed/albert_thomas-common-4/1200/800"
+      ],
+      "COLOC": [
+        "https://picsum.photos/seed/albert_thomas-coloc-1/1200/800",
+        "https://picsum.photos/seed/albert_thomas-coloc-2/1200/800"
+      ],
+      "STUDIO": [
+        "https://picsum.photos/seed/albert_thomas-studio-1/1200/800",
+        "https://picsum.photos/seed/albert_thomas-studio-2/1200/800"
+      ],
+      "T1": [
+        "https://picsum.photos/seed/albert_thomas-t1-1/1200/800",
+        "https://picsum.photos/seed/albert_thomas-t1-2/1200/800"
+      ],
+      "T2": [
+        "https://picsum.photos/seed/albert_thomas-t2-1/1200/800",
+        "https://picsum.photos/seed/albert_thomas-t2-2/1200/800"
+      ]
+    },
     "typologies": [
       {
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "longStay": {
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 200,
+          "securityDeposit": 200,
+          "applicationFees": 200,
+          "offers": {
+            "offerLabel": "totoLong",
             "baseRent": 200,
             "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoLong",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
-          },
-          "midStay": {
-            "baseRent": 200,
-            "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoMid",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
-          },
-          "stagiaire": {
-            "baseRent": 200,
-            "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoStagiaire",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
+            "applicationFees": 200
           }
         },
         "minimumSurface": 11,
@@ -62,38 +104,15 @@
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "longStay": {
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 200,
+          "securityDeposit": 200,
+          "applicationFees": 200,
+          "offers": {
+            "offerLabel": "totoLong",
             "baseRent": 200,
             "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoLong",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
-          },
-          "midStay": {
-            "baseRent": 200,
-            "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoMid",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
-          },
-          "stagiaire": {
-            "baseRent": 200,
-            "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoStagiaire",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
+            "applicationFees": 200
           }
         },
         "amenities": [
@@ -136,38 +155,15 @@
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "longStay": {
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 200,
+          "securityDeposit": 200,
+          "applicationFees": 200,
+          "offers": {
+            "offerLabel": "totoLong",
             "baseRent": 200,
             "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoLong",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
-          },
-          "midStay": {
-            "baseRent": 200,
-            "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoMid",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
-          },
-          "stagiaire": {
-            "baseRent": 200,
-            "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoStagiaire",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
+            "applicationFees": 200
           }
         },
         "amenities": [
@@ -210,38 +206,15 @@
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "longStay": {
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 200,
+          "securityDeposit": 200,
+          "applicationFees": 200,
+          "offers": {
+            "offerLabel": "totoLong",
             "baseRent": 200,
             "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoLong",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
-          },
-          "midStay": {
-            "baseRent": 200,
-            "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoMid",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
-          },
-          "stagiaire": {
-            "baseRent": 200,
-            "securityDeposit": 200,
-            "applicationFees": 200,
-            "offers":{
-              "offerLabel":"totoStagiaire",
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200
-            }
+            "applicationFees": 200
           }
         },
         "amenities": [
@@ -471,43 +444,85 @@
       "lng": 2.2459
     },
     "availabilityStatus": "AVAILABLE",
+    "description": "Située à Palaiseau, ECLA Paris Massy-Palaiseau propose des logements meublés tout équipés et de nombreux espaces partagés pour étudier, travailler et se détendre.",
+    "descriptionEn": "Located in Palaiseau, ECLA Paris Massy-Palaiseau offers fully furnished accommodation and a wide range of shared spaces to study, work and unwind.",
+    "commonAmenities": [
+      {
+        "code": "COWORKING",
+        "label": "Espace coworking"
+      },
+      {
+        "code": "FITNESS",
+        "label": "Salle de sport"
+      },
+      {
+        "code": "LAUNDRY",
+        "label": "Laverie"
+      },
+      {
+        "code": "ROOFTOP",
+        "label": "Rooftop"
+      },
+      {
+        "code": "GAME_ROOM",
+        "label": "Salle de jeux"
+      },
+      {
+        "code": "BIKE_STORAGE",
+        "label": "Local à vélos sécurisé"
+      },
+      {
+        "code": "CINEMA",
+        "label": "Salle de cinéma"
+      },
+      {
+        "code": "GARDEN",
+        "label": "Espaces verts"
+      }
+    ],
+    "photos": {
+      "exterior": [
+        "https://picsum.photos/seed/ecla_massy_palaiseau-exterior-1/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-exterior-2/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-exterior-3/1200/800"
+      ],
+      "commonAreas": [
+        "https://picsum.photos/seed/ecla_massy_palaiseau-common-1/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-common-2/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-common-3/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-common-4/1200/800"
+      ],
+      "COLOC": [
+        "https://picsum.photos/seed/ecla_massy_palaiseau-coloc-1/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-coloc-2/1200/800"
+      ],
+      "STUDIO": [
+        "https://picsum.photos/seed/ecla_massy_palaiseau-studio-1/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-studio-2/1200/800"
+      ],
+      "T2": [
+        "https://picsum.photos/seed/ecla_massy_palaiseau-t2-1/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-t2-2/1200/800"
+      ],
+      "T3": [
+        "https://picsum.photos/seed/ecla_massy_palaiseau-t3-1/1200/800",
+        "https://picsum.photos/seed/ecla_massy_palaiseau-t3-2/1200/800"
+      ]
+    },
     "typologies": [
       {
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "longStay": {
-            "baseRent": 790,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 790,
+          "securityDeposit": 790,
+          "applicationFees": 300,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 740,
             "securityDeposit": 790,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 740,
-              "securityDeposit": 790,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 880,
-            "securityDeposit": 880,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 840,
-              "securityDeposit": 880,
-              "applicationFees": 300
-            }
-          },
-          "stagiaire": {
-            "baseRent": 950,
-            "securityDeposit": 950,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 920,
-              "securityDeposit": 950,
-              "applicationFees": 250
-            }
+            "applicationFees": 0
           }
         },
         "minimumSurface": 12,
@@ -517,38 +532,15 @@
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "longStay": {
-            "baseRent": 980,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 980,
+          "securityDeposit": 980,
+          "applicationFees": 300,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 930,
             "securityDeposit": 980,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 930,
-              "securityDeposit": 980,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1070,
-            "securityDeposit": 1070,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1030,
-              "securityDeposit": 1070,
-              "applicationFees": 300
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1140,
-            "securityDeposit": 1140,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1110,
-              "securityDeposit": 1140,
-              "applicationFees": 250
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -591,38 +583,15 @@
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "longStay": {
-            "baseRent": 1490,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1490,
+          "securityDeposit": 1490,
+          "applicationFees": 300,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1440,
             "securityDeposit": 1490,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1440,
-              "securityDeposit": 1490,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1580,
-            "securityDeposit": 1580,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1540,
-              "securityDeposit": 1580,
-              "applicationFees": 300
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1650,
-            "securityDeposit": 1650,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1620,
-              "securityDeposit": 1650,
-              "applicationFees": 250
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -669,38 +638,15 @@
         "typologyCode": "T3",
         "label": "T3",
         "pricing": {
-          "longStay": {
-            "baseRent": 1890,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1890,
+          "securityDeposit": 1890,
+          "applicationFees": 300,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1840,
             "securityDeposit": 1890,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1840,
-              "securityDeposit": 1890,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1980,
-            "securityDeposit": 1980,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1940,
-              "securityDeposit": 1980,
-              "applicationFees": 300
-            }
-          },
-          "stagiaire": {
-            "baseRent": 2050,
-            "securityDeposit": 2050,
-            "applicationFees": 300,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 2020,
-              "securityDeposit": 2050,
-              "applicationFees": 250
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -930,43 +876,85 @@
       "lng": 2.553
     },
     "availabilityStatus": "AVAILABLE",
+    "description": "Située à Noisy-le-Grand, ECLA Paris Noisy-le-Grand propose des logements meublés tout équipés et de nombreux espaces partagés pour étudier, travailler et se détendre.",
+    "descriptionEn": "Located in Noisy-le-Grand, ECLA Paris Noisy-le-Grand offers fully furnished accommodation and a wide range of shared spaces to study, work and unwind.",
+    "commonAmenities": [
+      {
+        "code": "COWORKING",
+        "label": "Espace coworking"
+      },
+      {
+        "code": "FITNESS",
+        "label": "Salle de sport"
+      },
+      {
+        "code": "LAUNDRY",
+        "label": "Laverie"
+      },
+      {
+        "code": "ROOFTOP",
+        "label": "Rooftop"
+      },
+      {
+        "code": "GAME_ROOM",
+        "label": "Salle de jeux"
+      },
+      {
+        "code": "BIKE_STORAGE",
+        "label": "Local à vélos sécurisé"
+      },
+      {
+        "code": "CINEMA",
+        "label": "Salle de cinéma"
+      },
+      {
+        "code": "GARDEN",
+        "label": "Espaces verts"
+      }
+    ],
+    "photos": {
+      "exterior": [
+        "https://picsum.photos/seed/ecla_noisy_le_grand-exterior-1/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-exterior-2/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-exterior-3/1200/800"
+      ],
+      "commonAreas": [
+        "https://picsum.photos/seed/ecla_noisy_le_grand-common-1/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-common-2/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-common-3/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-common-4/1200/800"
+      ],
+      "COLOC": [
+        "https://picsum.photos/seed/ecla_noisy_le_grand-coloc-1/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-coloc-2/1200/800"
+      ],
+      "STUDIO": [
+        "https://picsum.photos/seed/ecla_noisy_le_grand-studio-1/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-studio-2/1200/800"
+      ],
+      "T2": [
+        "https://picsum.photos/seed/ecla_noisy_le_grand-t2-1/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-t2-2/1200/800"
+      ],
+      "T3": [
+        "https://picsum.photos/seed/ecla_noisy_le_grand-t3-1/1200/800",
+        "https://picsum.photos/seed/ecla_noisy_le_grand-t3-2/1200/800"
+      ]
+    },
     "typologies": [
       {
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "longStay": {
-            "baseRent": 720,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 720,
+          "securityDeposit": 720,
+          "applicationFees": 250,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 670,
             "securityDeposit": 720,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 670,
-              "securityDeposit": 720,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 810,
-            "securityDeposit": 810,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 770,
-              "securityDeposit": 810,
-              "applicationFees": 250
-            }
-          },
-          "stagiaire": {
-            "baseRent": 880,
-            "securityDeposit": 880,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 850,
-              "securityDeposit": 880,
-              "applicationFees": 200
-            }
+            "applicationFees": 0
           }
         },
         "minimumSurface": 12,
@@ -976,38 +964,15 @@
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "longStay": {
-            "baseRent": 910,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 910,
+          "securityDeposit": 910,
+          "applicationFees": 250,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 860,
             "securityDeposit": 910,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 860,
-              "securityDeposit": 910,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1000,
-            "securityDeposit": 1000,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 960,
-              "securityDeposit": 1000,
-              "applicationFees": 250
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1070,
-            "securityDeposit": 1070,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1040,
-              "securityDeposit": 1070,
-              "applicationFees": 200
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -1050,38 +1015,15 @@
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "longStay": {
-            "baseRent": 1350,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1350,
+          "securityDeposit": 1350,
+          "applicationFees": 250,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1300,
             "securityDeposit": 1350,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1300,
-              "securityDeposit": 1350,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1440,
-            "securityDeposit": 1440,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1400,
-              "securityDeposit": 1440,
-              "applicationFees": 250
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1510,
-            "securityDeposit": 1510,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1480,
-              "securityDeposit": 1510,
-              "applicationFees": 200
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -1128,38 +1070,15 @@
         "typologyCode": "T3",
         "label": "T3",
         "pricing": {
-          "longStay": {
-            "baseRent": 1720,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1720,
+          "securityDeposit": 1720,
+          "applicationFees": 250,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1670,
             "securityDeposit": 1720,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1670,
-              "securityDeposit": 1720,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1810,
-            "securityDeposit": 1810,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1770,
-              "securityDeposit": 1810,
-              "applicationFees": 250
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1880,
-            "securityDeposit": 1880,
-            "applicationFees": 250,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1850,
-              "securityDeposit": 1880,
-              "applicationFees": 200
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -1389,43 +1308,89 @@
       "lng": 2.366
     },
     "availabilityStatus": "PARTIAL",
+    "description": "Située à Villejuif, ECLA Paris Villejuif propose des logements meublés tout équipés et de nombreux espaces partagés pour étudier, travailler et se détendre.",
+    "descriptionEn": "Located in Villejuif, ECLA Paris Villejuif offers fully furnished accommodation and a wide range of shared spaces to study, work and unwind.",
+    "commonAmenities": [
+      {
+        "code": "COWORKING",
+        "label": "Espace coworking"
+      },
+      {
+        "code": "FITNESS",
+        "label": "Salle de sport"
+      },
+      {
+        "code": "LAUNDRY",
+        "label": "Laverie"
+      },
+      {
+        "code": "ROOFTOP",
+        "label": "Rooftop"
+      },
+      {
+        "code": "GAME_ROOM",
+        "label": "Salle de jeux"
+      },
+      {
+        "code": "BIKE_STORAGE",
+        "label": "Local à vélos sécurisé"
+      },
+      {
+        "code": "CINEMA",
+        "label": "Salle de cinéma"
+      },
+      {
+        "code": "GARDEN",
+        "label": "Espaces verts"
+      }
+    ],
+    "photos": {
+      "exterior": [
+        "https://picsum.photos/seed/ecla_villejuif-exterior-1/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-exterior-2/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-exterior-3/1200/800"
+      ],
+      "commonAreas": [
+        "https://picsum.photos/seed/ecla_villejuif-common-1/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-common-2/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-common-3/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-common-4/1200/800"
+      ],
+      "COLOC": [
+        "https://picsum.photos/seed/ecla_villejuif-coloc-1/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-coloc-2/1200/800"
+      ],
+      "STUDIO": [
+        "https://picsum.photos/seed/ecla_villejuif-studio-1/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-studio-2/1200/800"
+      ],
+      "T1": [
+        "https://picsum.photos/seed/ecla_villejuif-t1-1/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-t1-2/1200/800"
+      ],
+      "T2": [
+        "https://picsum.photos/seed/ecla_villejuif-t2-1/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-t2-2/1200/800"
+      ],
+      "T3": [
+        "https://picsum.photos/seed/ecla_villejuif-t3-1/1200/800",
+        "https://picsum.photos/seed/ecla_villejuif-t3-2/1200/800"
+      ]
+    },
     "typologies": [
       {
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "longStay": {
-            "baseRent": 760,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 760,
+          "securityDeposit": 760,
+          "applicationFees": 280,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 710,
             "securityDeposit": 760,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 710,
-              "securityDeposit": 760,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 850,
-            "securityDeposit": 850,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 810,
-              "securityDeposit": 850,
-              "applicationFees": 280
-            }
-          },
-          "stagiaire": {
-            "baseRent": 920,
-            "securityDeposit": 920,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 890,
-              "securityDeposit": 920,
-              "applicationFees": 230
-            }
+            "applicationFees": 0
           }
         },
         "minimumSurface": 12,
@@ -1435,38 +1400,15 @@
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "longStay": {
-            "baseRent": 950,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 950,
+          "securityDeposit": 950,
+          "applicationFees": 280,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 900,
             "securityDeposit": 950,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 900,
-              "securityDeposit": 950,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1040,
-            "securityDeposit": 1040,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1000,
-              "securityDeposit": 1040,
-              "applicationFees": 280
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1110,
-            "securityDeposit": 1110,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1080,
-              "securityDeposit": 1110,
-              "applicationFees": 230
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -1509,38 +1451,15 @@
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "longStay": {
-            "baseRent": 1180,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1180,
+          "securityDeposit": 1180,
+          "applicationFees": 280,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1130,
             "securityDeposit": 1180,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1130,
-              "securityDeposit": 1180,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1270,
-            "securityDeposit": 1270,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1230,
-              "securityDeposit": 1270,
-              "applicationFees": 280
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1340,
-            "securityDeposit": 1340,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1310,
-              "securityDeposit": 1340,
-              "applicationFees": 230
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -1583,38 +1502,15 @@
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "longStay": {
-            "baseRent": 1450,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1450,
+          "securityDeposit": 1450,
+          "applicationFees": 280,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1400,
             "securityDeposit": 1450,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1400,
-              "securityDeposit": 1450,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1540,
-            "securityDeposit": 1540,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1500,
-              "securityDeposit": 1540,
-              "applicationFees": 280
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1610,
-            "securityDeposit": 1610,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1580,
-              "securityDeposit": 1610,
-              "applicationFees": 230
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -1661,38 +1557,15 @@
         "typologyCode": "T3",
         "label": "T3",
         "pricing": {
-          "longStay": {
-            "baseRent": 1850,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1850,
+          "securityDeposit": 1850,
+          "applicationFees": 280,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1800,
             "securityDeposit": 1850,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1800,
-              "securityDeposit": 1850,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1940,
-            "securityDeposit": 1940,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1900,
-              "securityDeposit": 1940,
-              "applicationFees": 280
-            }
-          },
-          "stagiaire": {
-            "baseRent": 2010,
-            "securityDeposit": 2010,
-            "applicationFees": 280,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1980,
-              "securityDeposit": 2010,
-              "applicationFees": 230
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -1922,43 +1795,85 @@
       "lng": 6.108
     },
     "availabilityStatus": "AVAILABLE",
+    "description": "Située à Archamps, ECLA Genève Archamps propose des logements meublés tout équipés et de nombreux espaces partagés pour étudier, travailler et se détendre.",
+    "descriptionEn": "Located in Archamps, ECLA Genève Archamps offers fully furnished accommodation and a wide range of shared spaces to study, work and unwind.",
+    "commonAmenities": [
+      {
+        "code": "COWORKING",
+        "label": "Espace coworking"
+      },
+      {
+        "code": "FITNESS",
+        "label": "Salle de sport"
+      },
+      {
+        "code": "LAUNDRY",
+        "label": "Laverie"
+      },
+      {
+        "code": "ROOFTOP",
+        "label": "Rooftop"
+      },
+      {
+        "code": "GAME_ROOM",
+        "label": "Salle de jeux"
+      },
+      {
+        "code": "BIKE_STORAGE",
+        "label": "Local à vélos sécurisé"
+      },
+      {
+        "code": "CINEMA",
+        "label": "Salle de cinéma"
+      },
+      {
+        "code": "GARDEN",
+        "label": "Espaces verts"
+      }
+    ],
+    "photos": {
+      "exterior": [
+        "https://picsum.photos/seed/ecla_geneve_archamps-exterior-1/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-exterior-2/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-exterior-3/1200/800"
+      ],
+      "commonAreas": [
+        "https://picsum.photos/seed/ecla_geneve_archamps-common-1/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-common-2/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-common-3/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-common-4/1200/800"
+      ],
+      "STUDIO": [
+        "https://picsum.photos/seed/ecla_geneve_archamps-studio-1/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-studio-2/1200/800"
+      ],
+      "T1_BIS": [
+        "https://picsum.photos/seed/ecla_geneve_archamps-t1_bis-1/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-t1_bis-2/1200/800"
+      ],
+      "T2": [
+        "https://picsum.photos/seed/ecla_geneve_archamps-t2-1/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-t2-2/1200/800"
+      ],
+      "T2_DUPLEX": [
+        "https://picsum.photos/seed/ecla_geneve_archamps-t2_duplex-1/1200/800",
+        "https://picsum.photos/seed/ecla_geneve_archamps-t2_duplex-2/1200/800"
+      ]
+    },
     "typologies": [
       {
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "longStay": {
-            "baseRent": 1150,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1150,
+          "securityDeposit": 1150,
+          "applicationFees": 320,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1100,
             "securityDeposit": 1150,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1100,
-              "securityDeposit": 1150,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1240,
-            "securityDeposit": 1240,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1200,
-              "securityDeposit": 1240,
-              "applicationFees": 320
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1310,
-            "securityDeposit": 1310,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1280,
-              "securityDeposit": 1310,
-              "applicationFees": 270
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -2001,38 +1916,15 @@
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "pricing": {
-          "longStay": {
-            "baseRent": 1390,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1390,
+          "securityDeposit": 1390,
+          "applicationFees": 320,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1340,
             "securityDeposit": 1390,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1340,
-              "securityDeposit": 1390,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1480,
-            "securityDeposit": 1480,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1440,
-              "securityDeposit": 1480,
-              "applicationFees": 320
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1550,
-            "securityDeposit": 1550,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1520,
-              "securityDeposit": 1550,
-              "applicationFees": 270
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -2075,38 +1967,15 @@
         "typologyCode": "T2",
         "label": "T2",
         "pricing": {
-          "longStay": {
-            "baseRent": 1690,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1690,
+          "securityDeposit": 1690,
+          "applicationFees": 320,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1640,
             "securityDeposit": 1690,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1640,
-              "securityDeposit": 1690,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1780,
-            "securityDeposit": 1780,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1740,
-              "securityDeposit": 1780,
-              "applicationFees": 320
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1850,
-            "securityDeposit": 1850,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1820,
-              "securityDeposit": 1850,
-              "applicationFees": 270
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -2153,38 +2022,15 @@
         "typologyCode": "T2_DUPLEX",
         "label": "T2 Duplex",
         "pricing": {
-          "longStay": {
-            "baseRent": 1890,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1890,
+          "securityDeposit": 1890,
+          "applicationFees": 320,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1840,
             "securityDeposit": 1890,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1840,
-              "securityDeposit": 1890,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1980,
-            "securityDeposit": 1980,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1940,
-              "securityDeposit": 1980,
-              "applicationFees": 320
-            }
-          },
-          "stagiaire": {
-            "baseRent": 2050,
-            "securityDeposit": 2050,
-            "applicationFees": 320,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 2020,
-              "securityDeposit": 2050,
-              "applicationFees": 270
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -2414,43 +2260,81 @@
       "lng": 3.008
     },
     "availabilityStatus": "PARTIAL",
+    "description": "Située à Lomme, ECLA Lille propose des logements meublés tout équipés et de nombreux espaces partagés pour étudier, travailler et se détendre.",
+    "descriptionEn": "Located in Lomme, ECLA Lille offers fully furnished accommodation and a wide range of shared spaces to study, work and unwind.",
+    "commonAmenities": [
+      {
+        "code": "COWORKING",
+        "label": "Espace coworking"
+      },
+      {
+        "code": "FITNESS",
+        "label": "Salle de sport"
+      },
+      {
+        "code": "LAUNDRY",
+        "label": "Laverie"
+      },
+      {
+        "code": "ROOFTOP",
+        "label": "Rooftop"
+      },
+      {
+        "code": "GAME_ROOM",
+        "label": "Salle de jeux"
+      },
+      {
+        "code": "BIKE_STORAGE",
+        "label": "Local à vélos sécurisé"
+      },
+      {
+        "code": "CINEMA",
+        "label": "Salle de cinéma"
+      },
+      {
+        "code": "GARDEN",
+        "label": "Espaces verts"
+      }
+    ],
+    "photos": {
+      "exterior": [
+        "https://picsum.photos/seed/ecla_lille_lomme-exterior-1/1200/800",
+        "https://picsum.photos/seed/ecla_lille_lomme-exterior-2/1200/800",
+        "https://picsum.photos/seed/ecla_lille_lomme-exterior-3/1200/800"
+      ],
+      "commonAreas": [
+        "https://picsum.photos/seed/ecla_lille_lomme-common-1/1200/800",
+        "https://picsum.photos/seed/ecla_lille_lomme-common-2/1200/800",
+        "https://picsum.photos/seed/ecla_lille_lomme-common-3/1200/800",
+        "https://picsum.photos/seed/ecla_lille_lomme-common-4/1200/800"
+      ],
+      "COLOC": [
+        "https://picsum.photos/seed/ecla_lille_lomme-coloc-1/1200/800",
+        "https://picsum.photos/seed/ecla_lille_lomme-coloc-2/1200/800"
+      ],
+      "STUDIO": [
+        "https://picsum.photos/seed/ecla_lille_lomme-studio-1/1200/800",
+        "https://picsum.photos/seed/ecla_lille_lomme-studio-2/1200/800"
+      ],
+      "T1": [
+        "https://picsum.photos/seed/ecla_lille_lomme-t1-1/1200/800",
+        "https://picsum.photos/seed/ecla_lille_lomme-t1-2/1200/800"
+      ]
+    },
     "typologies": [
       {
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "longStay": {
-            "baseRent": 560,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 560,
+          "securityDeposit": 560,
+          "applicationFees": 200,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 510,
             "securityDeposit": 560,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 510,
-              "securityDeposit": 560,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 650,
-            "securityDeposit": 650,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 610,
-              "securityDeposit": 650,
-              "applicationFees": 200
-            }
-          },
-          "stagiaire": {
-            "baseRent": 720,
-            "securityDeposit": 720,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 690,
-              "securityDeposit": 720,
-              "applicationFees": 150
-            }
+            "applicationFees": 0
           }
         },
         "minimumSurface": 12,
@@ -2460,38 +2344,15 @@
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "longStay": {
-            "baseRent": 690,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 690,
+          "securityDeposit": 690,
+          "applicationFees": 200,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 640,
             "securityDeposit": 690,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 640,
-              "securityDeposit": 690,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 780,
-            "securityDeposit": 780,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 740,
-              "securityDeposit": 780,
-              "applicationFees": 200
-            }
-          },
-          "stagiaire": {
-            "baseRent": 850,
-            "securityDeposit": 850,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 820,
-              "securityDeposit": 850,
-              "applicationFees": 150
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -2534,38 +2395,15 @@
         "typologyCode": "T1",
         "label": "T1",
         "pricing": {
-          "longStay": {
-            "baseRent": 850,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 850,
+          "securityDeposit": 850,
+          "applicationFees": 200,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 800,
             "securityDeposit": 850,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 800,
-              "securityDeposit": 850,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 940,
-            "securityDeposit": 940,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 900,
-              "securityDeposit": 940,
-              "applicationFees": 200
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1010,
-            "securityDeposit": 1010,
-            "applicationFees": 200,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 980,
-              "securityDeposit": 1010,
-              "applicationFees": 150
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -2791,43 +2629,85 @@
       "lng": -0.6156
     },
     "availabilityStatus": "PARTIAL",
+    "description": "Située à Gradignan, ECLA Bordeaux propose des logements meublés tout équipés et de nombreux espaces partagés pour étudier, travailler et se détendre.",
+    "descriptionEn": "Located in Gradignan, ECLA Bordeaux offers fully furnished accommodation and a wide range of shared spaces to study, work and unwind.",
+    "commonAmenities": [
+      {
+        "code": "COWORKING",
+        "label": "Espace coworking"
+      },
+      {
+        "code": "FITNESS",
+        "label": "Salle de sport"
+      },
+      {
+        "code": "LAUNDRY",
+        "label": "Laverie"
+      },
+      {
+        "code": "ROOFTOP",
+        "label": "Rooftop"
+      },
+      {
+        "code": "GAME_ROOM",
+        "label": "Salle de jeux"
+      },
+      {
+        "code": "BIKE_STORAGE",
+        "label": "Local à vélos sécurisé"
+      },
+      {
+        "code": "CINEMA",
+        "label": "Salle de cinéma"
+      },
+      {
+        "code": "GARDEN",
+        "label": "Espaces verts"
+      }
+    ],
+    "photos": {
+      "exterior": [
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-exterior-1/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-exterior-2/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-exterior-3/1200/800"
+      ],
+      "commonAreas": [
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-common-1/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-common-2/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-common-3/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-common-4/1200/800"
+      ],
+      "COLOC": [
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-coloc-1/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-coloc-2/1200/800"
+      ],
+      "STUDIO": [
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-studio-1/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-studio-2/1200/800"
+      ],
+      "T1_BIS": [
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-t1_bis-1/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-t1_bis-2/1200/800"
+      ],
+      "T3": [
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-t3-1/1200/800",
+        "https://picsum.photos/seed/ecla_bordeaux_gradignan-t3-2/1200/800"
+      ]
+    },
     "typologies": [
       {
         "typologyCode": "COLOC",
         "label": "Chambre en colocation",
         "pricing": {
-          "longStay": {
-            "baseRent": 590,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 590,
+          "securityDeposit": 590,
+          "applicationFees": 230,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 540,
             "securityDeposit": 590,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 540,
-              "securityDeposit": 590,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 680,
-            "securityDeposit": 680,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 640,
-              "securityDeposit": 680,
-              "applicationFees": 230
-            }
-          },
-          "stagiaire": {
-            "baseRent": 750,
-            "securityDeposit": 750,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 720,
-              "securityDeposit": 750,
-              "applicationFees": 180
-            }
+            "applicationFees": 0
           }
         },
         "minimumSurface": 12,
@@ -2837,38 +2717,15 @@
         "typologyCode": "STUDIO",
         "label": "Studio",
         "pricing": {
-          "longStay": {
-            "baseRent": 740,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 740,
+          "securityDeposit": 740,
+          "applicationFees": 230,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 690,
             "securityDeposit": 740,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 690,
-              "securityDeposit": 740,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 830,
-            "securityDeposit": 830,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 790,
-              "securityDeposit": 830,
-              "applicationFees": 230
-            }
-          },
-          "stagiaire": {
-            "baseRent": 900,
-            "securityDeposit": 900,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 870,
-              "securityDeposit": 900,
-              "applicationFees": 180
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -2911,38 +2768,15 @@
         "typologyCode": "T1_BIS",
         "label": "T1 BIS",
         "pricing": {
-          "longStay": {
-            "baseRent": 920,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 920,
+          "securityDeposit": 920,
+          "applicationFees": 230,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 870,
             "securityDeposit": 920,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 870,
-              "securityDeposit": 920,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1010,
-            "securityDeposit": 1010,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 970,
-              "securityDeposit": 1010,
-              "applicationFees": 230
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1080,
-            "securityDeposit": 1080,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1050,
-              "securityDeposit": 1080,
-              "applicationFees": 180
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [
@@ -2985,38 +2819,15 @@
         "typologyCode": "T3",
         "label": "T3",
         "pricing": {
-          "longStay": {
-            "baseRent": 1380,
+          "lengthOfStay": "LONG_STAY",
+          "baseRent": 1380,
+          "securityDeposit": 1380,
+          "applicationFees": 230,
+          "offers": {
+            "offerLabel": "Offre rentrée 2026",
+            "baseRent": 1330,
             "securityDeposit": 1380,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Offre rentrée 2026",
-              "baseRent": 1330,
-              "securityDeposit": 1380,
-              "applicationFees": 0
-            }
-          },
-          "midStay": {
-            "baseRent": 1470,
-            "securityDeposit": 1470,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Offre flex 6 mois",
-              "baseRent": 1430,
-              "securityDeposit": 1470,
-              "applicationFees": 230
-            }
-          },
-          "stagiaire": {
-            "baseRent": 1540,
-            "securityDeposit": 1540,
-            "applicationFees": 230,
-            "offers": {
-              "offerLabel": "Pack stagiaire",
-              "baseRent": 1510,
-              "securityDeposit": 1540,
-              "applicationFees": 180
-            }
+            "applicationFees": 0
           }
         },
         "amenities": [

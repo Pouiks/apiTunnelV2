@@ -21,9 +21,19 @@ paths:
       summary: GetAllResidences
       description: >
         Catalogue global de toutes les residences France (dezoom map).
-        Aucun filtre ville — retourne les 7 residences mock.
         Chaque ligne porte un array minimal `typologies` avec pricing
         (longStay / midStay) et l'offre eventuelle inlinee par typologie.
+        Le param `brand` permet de filtrer par marque (`uxco` ou `ecla`).
+      parameters:
+        - in: query
+          name: brand
+          required: false
+          schema:
+            type: string
+            enum: [uxco, ecla]
+          description: >
+            Filtre par marque. `uxco` retourne les residences UXCO Student,
+            `ecla` retourne les residences ECLA. Sans ce param, toutes les residences sont retournees.
       responses:
         "200":
           description: Catalogue complet
@@ -169,23 +179,55 @@ components:
           format: double
       required: [lat, lng]
 
-    TypologyListing:
+    ListingPricing:
       type: object
       description: >
-        Apercu typologie sur le listing. Minimal : code typologie, pricing
-        (longStay / midStay) et offre eventuelle inlinee.
+        Tarification synthetique de la residence sur le listing : une duree de
+        sejour (`lengthOfStay`) avec loyer de base, depot de garantie et frais
+        de dossier, plus l'offre eventuelle inlinee.
       properties:
-        typologyCode:
+        lengthOfStay:
           type: string
-          example: STUDIO
-        pricing:
-          $ref: "#/components/schemas/TypologyPricing"
-        offer:
-          $ref: "#/components/schemas/TypologyOffer"
-          description: Presente uniquement si une offre s'applique a cette typologie.
+          enum: [longStay, midStay, stagiaire]
+          description: Duree de sejour a laquelle se rapporte cette tarification.
+        baseRent:
+          type: number
+          format: double
+          description: Loyer mensuel hors offre.
+        securityDeposit:
+          type: number
+          format: double
+          description: Depot de garantie.
+        applicationFees:
+          type: number
+          format: double
+          description: Frais de dossier.
+        offers:
+          $ref: "#/components/schemas/ListingOffer"
+          description: Offre inlinee eventuelle.
       required:
-        - typologyCode
-        - pricing
+        - lengthOfStay
+        - baseRent
+        - securityDeposit
+        - applicationFees
+
+    ListingOffer:
+      type: object
+      description: "Offre inlinee sur le listing : libelle + tarifs remises."
+      properties:
+        offerLabel:
+          type: string
+          example: Offre WEB
+        baseRent:
+          type: number
+          format: double
+        securityDeposit:
+          type: number
+          format: double
+        applicationFees:
+          type: number
+          format: double
+      required: [offerLabel, baseRent, securityDeposit, applicationFees]
 
     Floors:
       type: object
@@ -280,10 +322,8 @@ components:
           type: array
           items:
             $ref: "#/components/schemas/ResidencePhoto"
-        typologies:
-          type: array
-          items:
-            $ref: "#/components/schemas/TypologyListing"
+        pricing:
+          $ref: "#/components/schemas/ListingPricing"
       required:
         - residenceId
         - residenceCode
@@ -297,7 +337,7 @@ components:
         - postalCode
         - coordinates
         - residenceAvailability
-        - typologies
+        - pricing
 
     ResidencesResponse:
       type: object
@@ -554,6 +594,10 @@ components:
           type: string
         description:
           type: string
+          description: Texte de présentation de la résidence (FR).
+        descriptionEn:
+          type: string
+          description: Texte de présentation de la résidence (EN).
         tag:
           $ref: "#/components/schemas/ResidenceTag"
           description: >
@@ -566,9 +610,23 @@ components:
           description: >
             Idem : injecte par merge admin (heritage du flag sur les typologies ciblees).
         photos:
-          type: array
-          items:
-            $ref: "#/components/schemas/ResidencePhoto"
+          type: object
+          description: >
+            Galeries de photos indexées par catégorie. Les clés sont soit des catégories
+            génériques en camelCase (`exterior`, `commonAreas`), soit un code typologie
+            (`STUDIO`, `T1`, `T1_BIS`, ...). Chaque valeur est une liste d'URLs d'images.
+          additionalProperties:
+            type: array
+            items:
+              type: string
+              format: uri
+          example:
+            exterior:
+              - "https://picsum.photos/seed/ecla-exterior-1/1200/800"
+            commonAreas:
+              - "https://picsum.photos/seed/ecla-common-1/1200/800"
+            STUDIO:
+              - "https://picsum.photos/seed/ecla-studio-1/1200/800"
         commonAmenities:
           type: array
           items:
@@ -792,9 +850,16 @@ components:
         flag:
           $ref: "#/components/schemas/ResidenceOverrideFlag"
         photos:
-          type: array
-          items:
-            $ref: "#/components/schemas/ResidencePhoto"
+          type: object
+          description: >
+            Galeries de photos indexées par catégorie (même forme que
+            `ResidenceDetail.photos`). Clés : `exterior`, `commonAreas` ou un code
+            typologie. Remplacent intégralement les photos de la masterdata.
+          additionalProperties:
+            type: array
+            items:
+              type: string
+              format: uri
       required: [residenceId, city, cityAlias]
 
     AdminTRResponse:

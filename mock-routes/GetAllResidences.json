@@ -1,4 +1,386 @@
 {
+  "photos": {
+    "ff5544a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/100/800/600",
+      "https://picsum.photos/id/101/800/600",
+      "https://picsum.photos/id/102/800/600"
+    ],
+    "195644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/103/800/600",
+      "https://picsum.photos/id/104/800/600",
+      "https://picsum.photos/id/105/800/600"
+    ],
+    "1b5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/106/800/600",
+      "https://picsum.photos/id/107/800/600",
+      "https://picsum.photos/id/108/800/600"
+    ],
+    "1d5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/109/800/600",
+      "https://picsum.photos/id/110/800/600",
+      "https://picsum.photos/id/111/800/600"
+    ],
+    "19f2179b-7d14-f011-998a-6045bd1919a1": [
+      "https://picsum.photos/id/112/800/600",
+      "https://picsum.photos/id/113/800/600",
+      "https://picsum.photos/id/114/800/600"
+    ],
+    "0c5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/115/800/600",
+      "https://picsum.photos/id/116/800/600",
+      "https://picsum.photos/id/117/800/600"
+    ],
+    "065644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/118/800/600",
+      "https://picsum.photos/id/119/800/600",
+      "https://picsum.photos/id/120/800/600"
+    ],
+    "0f66d4ea-fe07-f111-8407-000d3ae7a137": [
+      "https://picsum.photos/id/121/800/600",
+      "https://picsum.photos/id/122/800/600",
+      "https://picsum.photos/id/123/800/600"
+    ],
+    "185b4118-0308-f111-8407-000d3ae7a7a9": [
+      "https://picsum.photos/id/124/800/600",
+      "https://picsum.photos/id/125/800/600",
+      "https://picsum.photos/id/126/800/600"
+    ],
+    "b0a2d617-fa0e-f011-998a-0022483a5b4d": [
+      "https://picsum.photos/id/127/800/600",
+      "https://picsum.photos/id/128/800/600",
+      "https://picsum.photos/id/129/800/600"
+    ],
+    "045644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/130/800/600",
+      "https://picsum.photos/id/131/800/600",
+      "https://picsum.photos/id/132/800/600"
+    ],
+    "085644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/133/800/600",
+      "https://picsum.photos/id/134/800/600",
+      "https://picsum.photos/id/135/800/600"
+    ],
+    "0a5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/136/800/600",
+      "https://picsum.photos/id/137/800/600",
+      "https://picsum.photos/id/138/800/600"
+    ],
+    "0e5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/139/800/600",
+      "https://picsum.photos/id/140/800/600",
+      "https://picsum.photos/id/141/800/600"
+    ],
+    "105644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/142/800/600",
+      "https://picsum.photos/id/143/800/600",
+      "https://picsum.photos/id/144/800/600"
+    ],
+    "135644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/145/800/600",
+      "https://picsum.photos/id/146/800/600",
+      "https://picsum.photos/id/147/800/600"
+    ],
+    "155644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/148/800/600",
+      "https://picsum.photos/id/149/800/600",
+      "https://picsum.photos/id/150/800/600"
+    ],
+    "175644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/151/800/600",
+      "https://picsum.photos/id/152/800/600",
+      "https://picsum.photos/id/153/800/600"
+    ],
+    "215644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/154/800/600",
+      "https://picsum.photos/id/155/800/600",
+      "https://picsum.photos/id/156/800/600"
+    ],
+    "235644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/157/800/600",
+      "https://picsum.photos/id/158/800/600",
+      "https://picsum.photos/id/159/800/600"
+    ],
+    "255644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/160/800/600",
+      "https://picsum.photos/id/161/800/600",
+      "https://picsum.photos/id/162/800/600"
+    ],
+    "275644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/163/800/600",
+      "https://picsum.photos/id/164/800/600",
+      "https://picsum.photos/id/165/800/600"
+    ],
+    "295644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/166/800/600",
+      "https://picsum.photos/id/167/800/600",
+      "https://picsum.photos/id/168/800/600"
+    ],
+    "2b5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/169/800/600",
+      "https://picsum.photos/id/170/800/600",
+      "https://picsum.photos/id/171/800/600"
+    ],
+    "2d5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/172/800/600",
+      "https://picsum.photos/id/173/800/600",
+      "https://picsum.photos/id/174/800/600"
+    ],
+    "2f5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/175/800/600",
+      "https://picsum.photos/id/176/800/600",
+      "https://picsum.photos/id/177/800/600"
+    ],
+    "315644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/178/800/600",
+      "https://picsum.photos/id/179/800/600",
+      "https://picsum.photos/id/180/800/600"
+    ],
+    "335644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/181/800/600",
+      "https://picsum.photos/id/182/800/600",
+      "https://picsum.photos/id/183/800/600"
+    ],
+    "355644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/184/800/600",
+      "https://picsum.photos/id/185/800/600",
+      "https://picsum.photos/id/186/800/600"
+    ],
+    "385644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/187/800/600",
+      "https://picsum.photos/id/188/800/600",
+      "https://picsum.photos/id/189/800/600"
+    ],
+    "3a5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/190/800/600",
+      "https://picsum.photos/id/191/800/600",
+      "https://picsum.photos/id/192/800/600"
+    ],
+    "3e5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/193/800/600",
+      "https://picsum.photos/id/194/800/600",
+      "https://picsum.photos/id/195/800/600"
+    ],
+    "405644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/196/800/600",
+      "https://picsum.photos/id/197/800/600",
+      "https://picsum.photos/id/198/800/600"
+    ],
+    "425644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/199/800/600",
+      "https://picsum.photos/id/200/800/600",
+      "https://picsum.photos/id/201/800/600"
+    ],
+    "445644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/202/800/600",
+      "https://picsum.photos/id/203/800/600",
+      "https://picsum.photos/id/204/800/600"
+    ],
+    "465644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/205/800/600",
+      "https://picsum.photos/id/206/800/600",
+      "https://picsum.photos/id/207/800/600"
+    ],
+    "485644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/208/800/600",
+      "https://picsum.photos/id/209/800/600",
+      "https://picsum.photos/id/210/800/600"
+    ],
+    "4a5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/211/800/600",
+      "https://picsum.photos/id/212/800/600",
+      "https://picsum.photos/id/213/800/600"
+    ],
+    "4c5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/214/800/600",
+      "https://picsum.photos/id/215/800/600",
+      "https://picsum.photos/id/216/800/600"
+    ],
+    "4e5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/217/800/600",
+      "https://picsum.photos/id/218/800/600",
+      "https://picsum.photos/id/219/800/600"
+    ],
+    "505644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/220/800/600",
+      "https://picsum.photos/id/221/800/600",
+      "https://picsum.photos/id/222/800/600"
+    ],
+    "525644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/223/800/600",
+      "https://picsum.photos/id/224/800/600",
+      "https://picsum.photos/id/225/800/600"
+    ],
+    "545644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/226/800/600",
+      "https://picsum.photos/id/227/800/600",
+      "https://picsum.photos/id/228/800/600"
+    ],
+    "565644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/229/800/600",
+      "https://picsum.photos/id/230/800/600",
+      "https://picsum.photos/id/231/800/600"
+    ],
+    "585644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/232/800/600",
+      "https://picsum.photos/id/233/800/600",
+      "https://picsum.photos/id/234/800/600"
+    ],
+    "5a5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/235/800/600",
+      "https://picsum.photos/id/236/800/600",
+      "https://picsum.photos/id/237/800/600"
+    ],
+    "5d5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/238/800/600",
+      "https://picsum.photos/id/239/800/600",
+      "https://picsum.photos/id/240/800/600"
+    ],
+    "5f5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/241/800/600",
+      "https://picsum.photos/id/242/800/600",
+      "https://picsum.photos/id/243/800/600"
+    ],
+    "615644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/244/800/600",
+      "https://picsum.photos/id/245/800/600",
+      "https://picsum.photos/id/246/800/600"
+    ],
+    "635644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/247/800/600",
+      "https://picsum.photos/id/248/800/600",
+      "https://picsum.photos/id/249/800/600"
+    ],
+    "655644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/250/800/600",
+      "https://picsum.photos/id/251/800/600",
+      "https://picsum.photos/id/252/800/600"
+    ],
+    "685644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/253/800/600",
+      "https://picsum.photos/id/254/800/600",
+      "https://picsum.photos/id/255/800/600"
+    ],
+    "6a5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/256/800/600",
+      "https://picsum.photos/id/257/800/600",
+      "https://picsum.photos/id/258/800/600"
+    ],
+    "6c5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/259/800/600",
+      "https://picsum.photos/id/260/800/600",
+      "https://picsum.photos/id/261/800/600"
+    ],
+    "6e5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/262/800/600",
+      "https://picsum.photos/id/263/800/600",
+      "https://picsum.photos/id/264/800/600"
+    ],
+    "705644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/265/800/600",
+      "https://picsum.photos/id/266/800/600",
+      "https://picsum.photos/id/267/800/600"
+    ],
+    "725644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/268/800/600",
+      "https://picsum.photos/id/269/800/600",
+      "https://picsum.photos/id/270/800/600"
+    ],
+    "745644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/271/800/600",
+      "https://picsum.photos/id/272/800/600",
+      "https://picsum.photos/id/273/800/600"
+    ],
+    "765644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/274/800/600",
+      "https://picsum.photos/id/275/800/600",
+      "https://picsum.photos/id/276/800/600"
+    ],
+    "785644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/277/800/600",
+      "https://picsum.photos/id/278/800/600",
+      "https://picsum.photos/id/279/800/600"
+    ],
+    "7a5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/280/800/600",
+      "https://picsum.photos/id/281/800/600",
+      "https://picsum.photos/id/282/800/600"
+    ],
+    "7c5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/283/800/600",
+      "https://picsum.photos/id/284/800/600",
+      "https://picsum.photos/id/285/800/600"
+    ],
+    "7e5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/286/800/600",
+      "https://picsum.photos/id/287/800/600",
+      "https://picsum.photos/id/288/800/600"
+    ],
+    "805644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/289/800/600",
+      "https://picsum.photos/id/290/800/600",
+      "https://picsum.photos/id/291/800/600"
+    ],
+    "825644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/292/800/600",
+      "https://picsum.photos/id/293/800/600",
+      "https://picsum.photos/id/294/800/600"
+    ],
+    "845644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/295/800/600",
+      "https://picsum.photos/id/296/800/600",
+      "https://picsum.photos/id/297/800/600"
+    ],
+    "865644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/298/800/600",
+      "https://picsum.photos/id/299/800/600",
+      "https://picsum.photos/id/300/800/600"
+    ],
+    "885644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/301/800/600",
+      "https://picsum.photos/id/302/800/600",
+      "https://picsum.photos/id/303/800/600"
+    ],
+    "8a5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/304/800/600",
+      "https://picsum.photos/id/305/800/600",
+      "https://picsum.photos/id/306/800/600"
+    ],
+    "8c5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/307/800/600",
+      "https://picsum.photos/id/308/800/600",
+      "https://picsum.photos/id/309/800/600"
+    ],
+    "8e5644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/310/800/600",
+      "https://picsum.photos/id/311/800/600",
+      "https://picsum.photos/id/312/800/600"
+    ],
+    "905644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/313/800/600",
+      "https://picsum.photos/id/314/800/600",
+      "https://picsum.photos/id/315/800/600"
+    ],
+    "925644a8-4fa7-ef11-b8e9-6045bd19a503": [
+      "https://picsum.photos/id/316/800/600",
+      "https://picsum.photos/id/317/800/600",
+      "https://picsum.photos/id/318/800/600"
+    ],
+    "359b3195-7814-f011-998a-6045bd6bf874": [
+      "https://picsum.photos/id/319/800/600",
+      "https://picsum.photos/id/320/800/600",
+      "https://picsum.photos/id/321/800/600"
+    ],
+    "6ff9af84-6e14-f011-998a-6045bd6d55ca": [
+      "https://picsum.photos/id/322/800/600",
+      "https://picsum.photos/id/323/800/600",
+      "https://picsum.photos/id/324/800/600"
+    ],
+    "5aff1ab4-ff07-f111-8407-7ced8d8535a3": [
+      "https://picsum.photos/id/325/800/600",
+      "https://picsum.photos/id/326/800/600",
+      "https://picsum.photos/id/327/800/600"
+    ]
+  },
   "residences": [
     {
       "residenceId": "ff5544a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -15,225 +397,19 @@
         "lat": 45.7439,
         "lng": 4.8357
       },
-      "residenceAvailability": "AVAILABLE || FULL",
-      "typologies": [
-        {
-          "typologyCode": "COLOC",
-          "pricing": {
-            "longStay": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoLong",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            },
-            "midStay": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoMid",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            },
-            "stagiaire": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoStagiaire",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "STUDIO",
-          "pricing": {
-            "longStay": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoLong",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            },
-            "midStay": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoMid",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            },
-            "stagiaire": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoStagiaire",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T1",
-          "pricing": {
-            "longStay": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoLong",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            },
-            "midStay": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoMid",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            },
-            "stagiaire": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoStagiaire",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T2",
-          "pricing": {
-            "longStay": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoLong",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            },
-            "midStay": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoMid",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            },
-            "stagiaire": {
-              "baseRent": 200,
-              "securityDeposit": 200,
-              "applicationFees": 200,
-              "offers":{
-                "offerLabel":"totoStagiaire",
-                "baseRent": 200,
-                "securityDeposit": 200,
-                "applicationFees": 200
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
+      "residenceAvailability": "FULL",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 970,
+        "securityDeposit": 970,
+        "applicationFees": 175,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 945,
+          "securityDeposit": 970,
+          "applicationFees": 0
         }
-      ]
+      }
     },
     {
       "residenceId": "195644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -251,224 +427,18 @@
         "lng": 2.2459
       },
       "residenceAvailability": "AVAILABLE",
-      "typologies": [
-        {
-          "typologyCode": "COLOC",
-          "pricing": {
-            "longStay": {
-              "baseRent": 790,
-              "securityDeposit": 790,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 740,
-                "securityDeposit": 790,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 880,
-              "securityDeposit": 880,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 840,
-                "securityDeposit": 880,
-                "applicationFees": 300
-              }
-            },
-            "stagiaire": {
-              "baseRent": 950,
-              "securityDeposit": 950,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 920,
-                "securityDeposit": 950,
-                "applicationFees": 250
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "STUDIO",
-          "pricing": {
-            "longStay": {
-              "baseRent": 980,
-              "securityDeposit": 980,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 930,
-                "securityDeposit": 980,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1070,
-              "securityDeposit": 1070,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1030,
-                "securityDeposit": 1070,
-                "applicationFees": 300
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1140,
-              "securityDeposit": 1140,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1110,
-                "securityDeposit": 1140,
-                "applicationFees": 250
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T2",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1490,
-              "securityDeposit": 1490,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1440,
-                "securityDeposit": 1490,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1580,
-              "securityDeposit": 1580,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1540,
-                "securityDeposit": 1580,
-                "applicationFees": 300
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1650,
-              "securityDeposit": 1650,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1620,
-                "securityDeposit": 1650,
-                "applicationFees": 250
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "T3",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1890,
-              "securityDeposit": 1890,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1840,
-                "securityDeposit": 1890,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1980,
-              "securityDeposit": 1980,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1940,
-                "securityDeposit": 1980,
-                "applicationFees": 300
-              }
-            },
-            "stagiaire": {
-              "baseRent": 2050,
-              "securityDeposit": 2050,
-              "applicationFees": 300,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 2020,
-                "securityDeposit": 2050,
-                "applicationFees": 250
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 1125,
+        "securityDeposit": 1125,
+        "applicationFees": 305,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 1075,
+          "securityDeposit": 1125,
+          "applicationFees": 140
         }
-      ]
+      }
     },
     {
       "residenceId": "1b5644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -486,224 +456,18 @@
         "lng": 2.553
       },
       "residenceAvailability": "AVAILABLE",
-      "typologies": [
-        {
-          "typologyCode": "COLOC",
-          "pricing": {
-            "longStay": {
-              "baseRent": 720,
-              "securityDeposit": 720,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 670,
-                "securityDeposit": 720,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 810,
-              "securityDeposit": 810,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 770,
-                "securityDeposit": 810,
-                "applicationFees": 250
-              }
-            },
-            "stagiaire": {
-              "baseRent": 880,
-              "securityDeposit": 880,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 850,
-                "securityDeposit": 880,
-                "applicationFees": 200
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "STUDIO",
-          "pricing": {
-            "longStay": {
-              "baseRent": 910,
-              "securityDeposit": 910,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 860,
-                "securityDeposit": 910,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1000,
-              "securityDeposit": 1000,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 960,
-                "securityDeposit": 1000,
-                "applicationFees": 250
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1070,
-              "securityDeposit": 1070,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1040,
-                "securityDeposit": 1070,
-                "applicationFees": 200
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T2",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1350,
-              "securityDeposit": 1350,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1300,
-                "securityDeposit": 1350,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1440,
-              "securityDeposit": 1440,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1400,
-                "securityDeposit": 1440,
-                "applicationFees": 250
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1510,
-              "securityDeposit": 1510,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1480,
-                "securityDeposit": 1510,
-                "applicationFees": 200
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "T3",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1720,
-              "securityDeposit": 1720,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1670,
-                "securityDeposit": 1720,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1810,
-              "securityDeposit": 1810,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1770,
-                "securityDeposit": 1810,
-                "applicationFees": 250
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1880,
-              "securityDeposit": 1880,
-              "applicationFees": 250,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1850,
-                "securityDeposit": 1880,
-                "applicationFees": 200
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1195,
+        "securityDeposit": 1195,
+        "applicationFees": 295,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 1160,
+          "securityDeposit": 1195,
+          "applicationFees": 0
         }
-      ]
+      }
     },
     {
       "residenceId": "1d5644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -721,278 +485,18 @@
         "lng": 2.366
       },
       "residenceAvailability": "PARTIAL",
-      "typologies": [
-        {
-          "typologyCode": "COLOC",
-          "pricing": {
-            "longStay": {
-              "baseRent": 760,
-              "securityDeposit": 760,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 710,
-                "securityDeposit": 760,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 850,
-              "securityDeposit": 850,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 810,
-                "securityDeposit": 850,
-                "applicationFees": 280
-              }
-            },
-            "stagiaire": {
-              "baseRent": 920,
-              "securityDeposit": 920,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 890,
-                "securityDeposit": 920,
-                "applicationFees": 230
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "STUDIO",
-          "pricing": {
-            "longStay": {
-              "baseRent": 950,
-              "securityDeposit": 950,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 900,
-                "securityDeposit": 950,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1040,
-              "securityDeposit": 1040,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1000,
-                "securityDeposit": 1040,
-                "applicationFees": 280
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1110,
-              "securityDeposit": 1110,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1080,
-                "securityDeposit": 1110,
-                "applicationFees": 230
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T1",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1180,
-              "securityDeposit": 1180,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1130,
-                "securityDeposit": 1180,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1270,
-              "securityDeposit": 1270,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1230,
-                "securityDeposit": 1270,
-                "applicationFees": 280
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1340,
-              "securityDeposit": 1340,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1310,
-                "securityDeposit": 1340,
-                "applicationFees": 230
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T2",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1450,
-              "securityDeposit": 1450,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1400,
-                "securityDeposit": 1450,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1540,
-              "securityDeposit": 1540,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1500,
-                "securityDeposit": 1540,
-                "applicationFees": 280
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1610,
-              "securityDeposit": 1610,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1580,
-                "securityDeposit": 1610,
-                "applicationFees": 230
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "T3",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1850,
-              "securityDeposit": 1850,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1800,
-                "securityDeposit": 1850,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1940,
-              "securityDeposit": 1940,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1900,
-                "securityDeposit": 1940,
-                "applicationFees": 280
-              }
-            },
-            "stagiaire": {
-              "baseRent": 2010,
-              "securityDeposit": 2010,
-              "applicationFees": 280,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1980,
-                "securityDeposit": 2010,
-                "applicationFees": 230
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 1060,
+        "securityDeposit": 1060,
+        "applicationFees": 190,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 985,
+          "securityDeposit": 1060,
+          "applicationFees": 70
         }
-      ]
+      }
     },
     {
       "residenceId": "19f2179b-7d14-f011-998a-6045bd1919a1",
@@ -1010,224 +514,18 @@
         "lng": 6.108
       },
       "residenceAvailability": "AVAILABLE",
-      "typologies": [
-        {
-          "typologyCode": "STUDIO",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1150,
-              "securityDeposit": 1150,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1100,
-                "securityDeposit": 1150,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1240,
-              "securityDeposit": 1240,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1200,
-                "securityDeposit": 1240,
-                "applicationFees": 320
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1310,
-              "securityDeposit": 1310,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1280,
-                "securityDeposit": 1310,
-                "applicationFees": 270
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T1_BIS",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1390,
-              "securityDeposit": 1390,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1340,
-                "securityDeposit": 1390,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1480,
-              "securityDeposit": 1480,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1440,
-                "securityDeposit": 1480,
-                "applicationFees": 320
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1550,
-              "securityDeposit": 1550,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1520,
-                "securityDeposit": 1550,
-                "applicationFees": 270
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T2",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1690,
-              "securityDeposit": 1690,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1640,
-                "securityDeposit": 1690,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1780,
-              "securityDeposit": 1780,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1740,
-                "securityDeposit": 1780,
-                "applicationFees": 320
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1850,
-              "securityDeposit": 1850,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1820,
-                "securityDeposit": 1850,
-                "applicationFees": 270
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "T2_DUPLEX",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1890,
-              "securityDeposit": 1890,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1840,
-                "securityDeposit": 1890,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1980,
-              "securityDeposit": 1980,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1940,
-                "securityDeposit": 1980,
-                "applicationFees": 320
-              }
-            },
-            "stagiaire": {
-              "baseRent": 2050,
-              "securityDeposit": 2050,
-              "applicationFees": 320,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 2020,
-                "securityDeposit": 2050,
-                "applicationFees": 270
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 985,
+        "securityDeposit": 985,
+        "applicationFees": 290,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 930,
+          "securityDeposit": 985,
+          "applicationFees": 90
         }
-      ]
+      }
     },
     {
       "residenceId": "0c5644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -1245,170 +543,18 @@
         "lng": 3.008
       },
       "residenceAvailability": "PARTIAL",
-      "typologies": [
-        {
-          "typologyCode": "COLOC",
-          "pricing": {
-            "longStay": {
-              "baseRent": 560,
-              "securityDeposit": 560,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 510,
-                "securityDeposit": 560,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 650,
-              "securityDeposit": 650,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 610,
-                "securityDeposit": 650,
-                "applicationFees": 200
-              }
-            },
-            "stagiaire": {
-              "baseRent": 720,
-              "securityDeposit": 720,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 690,
-                "securityDeposit": 720,
-                "applicationFees": 150
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "STUDIO",
-          "pricing": {
-            "longStay": {
-              "baseRent": 690,
-              "securityDeposit": 690,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 640,
-                "securityDeposit": 690,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 780,
-              "securityDeposit": 780,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 740,
-                "securityDeposit": 780,
-                "applicationFees": 200
-              }
-            },
-            "stagiaire": {
-              "baseRent": 850,
-              "securityDeposit": 850,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 820,
-                "securityDeposit": 850,
-                "applicationFees": 150
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T1",
-          "pricing": {
-            "longStay": {
-              "baseRent": 850,
-              "securityDeposit": 850,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 800,
-                "securityDeposit": 850,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 940,
-              "securityDeposit": 940,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 900,
-                "securityDeposit": 940,
-                "applicationFees": 200
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1010,
-              "securityDeposit": 1010,
-              "applicationFees": 200,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 980,
-                "securityDeposit": 1010,
-                "applicationFees": 150
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 655,
+        "securityDeposit": 655,
+        "applicationFees": 155,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 585,
+          "securityDeposit": 655,
+          "applicationFees": 135
         }
-      ]
+      }
     },
     {
       "residenceId": "065644a8-4fa7-ef11-b8e9-6045bd19a503",
@@ -1426,224 +572,2019 @@
         "lng": -0.6156
       },
       "residenceAvailability": "PARTIAL",
-      "typologies": [
-        {
-          "typologyCode": "COLOC",
-          "pricing": {
-            "longStay": {
-              "baseRent": 590,
-              "securityDeposit": 590,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 540,
-                "securityDeposit": 590,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 680,
-              "securityDeposit": 680,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 640,
-                "securityDeposit": 680,
-                "applicationFees": 230
-              }
-            },
-            "stagiaire": {
-              "baseRent": 750,
-              "securityDeposit": 750,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 720,
-                "securityDeposit": 750,
-                "applicationFees": 180
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
-        },
-        {
-          "typologyCode": "STUDIO",
-          "pricing": {
-            "longStay": {
-              "baseRent": 740,
-              "securityDeposit": 740,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 690,
-                "securityDeposit": 740,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 830,
-              "securityDeposit": 830,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 790,
-                "securityDeposit": 830,
-                "applicationFees": 230
-              }
-            },
-            "stagiaire": {
-              "baseRent": 900,
-              "securityDeposit": 900,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 870,
-                "securityDeposit": 900,
-                "applicationFees": 180
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T1_BIS",
-          "pricing": {
-            "longStay": {
-              "baseRent": 920,
-              "securityDeposit": 920,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 870,
-                "securityDeposit": 920,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1010,
-              "securityDeposit": 1010,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 970,
-                "securityDeposit": 1010,
-                "applicationFees": 230
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1080,
-              "securityDeposit": 1080,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1050,
-                "securityDeposit": 1080,
-                "applicationFees": 180
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-08-01",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-10-01",
-              "minDurationMonths": 3
-            },
-            "discount": {
-              "target": "BASE_RENT",
-              "reductionType": "FIXED_AMOUNT",
-              "amount": -50,
-              "billingTiming": "RECURRING",
-              "recurrenceMonths": 3
-            }
-          }
-        },
-        {
-          "typologyCode": "T3",
-          "pricing": {
-            "longStay": {
-              "baseRent": 1380,
-              "securityDeposit": 1380,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Offre rentrée 2026",
-                "baseRent": 1330,
-                "securityDeposit": 1380,
-                "applicationFees": 0
-              }
-            },
-            "midStay": {
-              "baseRent": 1470,
-              "securityDeposit": 1470,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Offre flex 6 mois",
-                "baseRent": 1430,
-                "securityDeposit": 1470,
-                "applicationFees": 230
-              }
-            },
-            "stagiaire": {
-              "baseRent": 1540,
-              "securityDeposit": 1540,
-              "applicationFees": 230,
-              "offers": {
-                "offerLabel": "Pack stagiaire",
-                "baseRent": 1510,
-                "securityDeposit": 1540,
-                "applicationFees": 180
-              }
-            }
-          },
-          "offer": {
-            "bookingDate": "2026-07-15",
-            "conditions": {
-              "bookingDeadline": "2026-09-30",
-              "startDateFrom": "2026-09-01",
-              "startDateTo": "2026-11-01",
-              "minDurationMonths": 9
-            },
-            "discount": {
-              "target": "APP_FEE",
-              "reductionType": "PERCENTAGE",
-              "amount": -100,
-              "billingTiming": "ONE_SHOT",
-              "recurrenceMonths": null
-            }
-          }
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 565,
+        "securityDeposit": 565,
+        "applicationFees": 280,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 500,
+          "securityDeposit": 565,
+          "applicationFees": 0
         }
-      ]
+      }
+    },
+    {
+      "residenceId": "0f66d4ea-fe07-f111-8407-000d3ae7a137",
+      "residenceCode": "UXCO_STUDENT_BEZONS",
+      "residenceCodeAnalytic": "515",
+      "name": "UXCO STUDENT BEZONS",
+      "commercialName": "Uxco Student Bezons",
+      "brand": "UXCO STUDENT",
+      "city": "Bezons",
+      "cityAlias": "Bezons",
+      "address": "61 Rue Maurice Berteaux",
+      "postalCode": "95870",
+      "coordinates": {
+        "lat": 48.925554,
+        "lng": 2.2141266
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 1020,
+        "securityDeposit": 1020,
+        "applicationFees": 340,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 985,
+          "securityDeposit": 1020,
+          "applicationFees": 70
+        }
+      }
+    },
+    {
+      "residenceId": "185b4118-0308-f111-8407-000d3ae7a7a9",
+      "residenceCode": "UXCO_STUDENT_CHAMBERY",
+      "residenceCodeAnalytic": "513",
+      "name": "UXCO STUDENT CHAMBERY",
+      "commercialName": "Uxco Student Chambery",
+      "brand": "UXCO STUDENT",
+      "city": "Chambéry",
+      "cityAlias": "Chambéry",
+      "address": "67 rue Jeanne Barret",
+      "postalCode": "73000",
+      "coordinates": {
+        "lat": 45.5739063,
+        "lng": 5.9205242
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 725,
+        "securityDeposit": 725,
+        "applicationFees": 335,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 690,
+          "securityDeposit": 725,
+          "applicationFees": 120
+        }
+      }
+    },
+    {
+      "residenceId": "b0a2d617-fa0e-f011-998a-0022483a5b4d",
+      "residenceCode": "REDWOOD",
+      "residenceCodeAnalytic": "157",
+      "name": "REDWOOD",
+      "commercialName": "Redwood",
+      "brand": "UXCO STUDENT",
+      "city": "Vichy",
+      "cityAlias": "Vichy",
+      "address": "3-13 Rue Fleury",
+      "postalCode": "03200",
+      "coordinates": {
+        "lat": 46.1204115,
+        "lng": 3.4327434
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1100,
+        "securityDeposit": 1100,
+        "applicationFees": 200,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 1070,
+          "securityDeposit": 1100,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "045644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "ANDROMAQUE",
+      "residenceCodeAnalytic": "056",
+      "name": "ANDROMAQUE",
+      "commercialName": "Andromaque",
+      "brand": "UXCO STUDENT",
+      "city": "Villeurbanne",
+      "cityAlias": "Lyon",
+      "address": "90 rue Anatole France",
+      "postalCode": "69100",
+      "coordinates": {
+        "lat": 45.7677824,
+        "lng": 4.8778751
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 850,
+        "securityDeposit": 850,
+        "applicationFees": 270,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 800,
+          "securityDeposit": 850,
+          "applicationFees": 145
+        }
+      }
+    },
+    {
+      "residenceId": "085644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "ARC_EN_CIEL",
+      "residenceCodeAnalytic": "014",
+      "name": "ARC EN CIEL",
+      "commercialName": "Arc En Ciel",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "1021 avenue de Toulouse",
+      "postalCode": "34070",
+      "coordinates": {
+        "lat": 43.5937464,
+        "lng": 3.860363
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 745,
+        "securityDeposit": 745,
+        "applicationFees": 205,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 680,
+          "securityDeposit": 745,
+          "applicationFees": 190
+        }
+      }
+    },
+    {
+      "residenceId": "0a5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "AVIGNON_EXPRESS",
+      "residenceCodeAnalytic": "136",
+      "name": "AVIGNON EXPRESS",
+      "commercialName": "Avignon Express",
+      "brand": "UXCO STUDENT",
+      "city": "Avignon",
+      "cityAlias": "Avignon",
+      "address": "2 Rue Rigoberta Menchu",
+      "postalCode": "84000",
+      "coordinates": {
+        "lat": 43.9268332,
+        "lng": 4.7843179
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 875,
+        "securityDeposit": 875,
+        "applicationFees": 330,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 800,
+          "securityDeposit": 875,
+          "applicationFees": 90
+        }
+      }
+    },
+    {
+      "residenceId": "0e5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "CARRE_VILLON",
+      "residenceCodeAnalytic": "053",
+      "name": "CARRE VILLON",
+      "commercialName": "Carré Villon",
+      "brand": "UXCO STUDENT",
+      "city": "Lyon",
+      "cityAlias": "Lyon",
+      "address": "32 rue des Héridaux",
+      "postalCode": "69008",
+      "coordinates": {
+        "lat": 45.7357913,
+        "lng": 4.854041
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 565,
+        "securityDeposit": 565,
+        "applicationFees": 165,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 520,
+          "securityDeposit": 565,
+          "applicationFees": 100
+        }
+      }
+    },
+    {
+      "residenceId": "105644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "CITADELLE",
+      "residenceCodeAnalytic": "126",
+      "name": "CITADELLE",
+      "commercialName": "Citadelle",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "357 avenue du Professeur Etienne Antonelli",
+      "postalCode": "34070",
+      "coordinates": {
+        "lat": 43.5997428,
+        "lng": 3.8947495
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 740,
+        "securityDeposit": 740,
+        "applicationFees": 260,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 700,
+          "securityDeposit": 740,
+          "applicationFees": 160
+        }
+      }
+    },
+    {
+      "residenceId": "135644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "COTE_RAMBLA",
+      "residenceCodeAnalytic": "144",
+      "name": "COTE RAMBLA",
+      "commercialName": "Côte Rambla",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "187 Rambla des Calissons",
+      "postalCode": "34070",
+      "coordinates": {
+        "lat": 43.582844,
+        "lng": 3.8581065
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 905,
+        "securityDeposit": 905,
+        "applicationFees": 275,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 880,
+          "securityDeposit": 905,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "155644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "FLEEP_DIJON",
+      "residenceCodeAnalytic": "505",
+      "name": "FLEEP DIJON",
+      "commercialName": "Fleep Dijon",
+      "brand": "UXCO STUDENT",
+      "city": "Dijon",
+      "cityAlias": "Dijon",
+      "address": "7 Boulevard de Chicago",
+      "postalCode": "21000",
+      "coordinates": {
+        "lat": 47.3007667,
+        "lng": 5.060632
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 825,
+        "securityDeposit": 825,
+        "applicationFees": 330,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 795,
+          "securityDeposit": 825,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "175644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "DOCK_29",
+      "residenceCodeAnalytic": "150",
+      "name": "DOCK 29",
+      "commercialName": "Dock 29",
+      "brand": "UXCO STUDENT",
+      "city": "Brest",
+      "cityAlias": "Brest",
+      "address": "25 rue du Cap Finisterre",
+      "postalCode": "29200",
+      "coordinates": {
+        "lat": 48.3905778,
+        "lng": -4.5022443
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 750,
+        "securityDeposit": 750,
+        "applicationFees": 345,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 685,
+          "securityDeposit": 750,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "215644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "EINSTEIN_II",
+      "residenceCodeAnalytic": "054",
+      "name": "EINSTEIN II",
+      "commercialName": "Einstein II",
+      "brand": "UXCO STUDENT",
+      "city": "Nantes",
+      "cityAlias": "Nantes",
+      "address": "30 boulevard Einstein",
+      "postalCode": "44300",
+      "coordinates": {
+        "lat": 47.2612299,
+        "lng": -1.5638918
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 1170,
+        "securityDeposit": 1170,
+        "applicationFees": 175,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 1105,
+          "securityDeposit": 1170,
+          "applicationFees": 80
+        }
+      }
+    },
+    {
+      "residenceId": "235644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "FLEEP_LE_HAVRE",
+      "residenceCodeAnalytic": "158",
+      "name": "FLEEP LE HAVRE",
+      "commercialName": "Fleep Le Havre",
+      "brand": "UXCO STUDENT",
+      "city": "Le Havre",
+      "cityAlias": "Le Havre",
+      "address": "70 Rue des Chargeurs Réunis",
+      "postalCode": "76600",
+      "coordinates": {
+        "lat": 49.4843179,
+        "lng": 0.1381687
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 600,
+        "securityDeposit": 600,
+        "applicationFees": 290,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 555,
+          "securityDeposit": 600,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "255644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "FOKUS",
+      "residenceCodeAnalytic": "151",
+      "name": "FOKUS",
+      "commercialName": "Fokus",
+      "brand": "UXCO STUDENT",
+      "city": "Pau",
+      "cityAlias": "Pau",
+      "address": "1Bis avenue du Doyen Henri Vizioz",
+      "postalCode": "64000",
+      "coordinates": {
+        "lat": 43.2957547,
+        "lng": -0.3685668
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 880,
+        "securityDeposit": 880,
+        "applicationFees": 160,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 800,
+          "securityDeposit": 880,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "275644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "GAYA",
+      "residenceCodeAnalytic": "132",
+      "name": "GAYA",
+      "commercialName": "Gaya",
+      "brand": "UXCO STUDENT",
+      "city": "Tours",
+      "cityAlias": "Tours",
+      "address": "55 avenue Edouard Michelin",
+      "postalCode": "37200",
+      "coordinates": {
+        "lat": 47.3688542,
+        "lng": 0.6795374
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 760,
+        "securityDeposit": 760,
+        "applicationFees": 230,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 725,
+          "securityDeposit": 760,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "295644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "GREEN_BREAK",
+      "residenceCodeAnalytic": "143",
+      "name": "GREEN BREAK",
+      "commercialName": "Green Break",
+      "brand": "UXCO STUDENT",
+      "city": "Saint-Étienne",
+      "cityAlias": "Saint-Étienne",
+      "address": "6 Boulevard Alfred de Musset",
+      "postalCode": "42000",
+      "coordinates": {
+        "lat": 45.4428501,
+        "lng": 4.380138
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 710,
+        "securityDeposit": 710,
+        "applicationFees": 155,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 690,
+          "securityDeposit": 710,
+          "applicationFees": 170
+        }
+      }
+    },
+    {
+      "residenceId": "2b5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "GRENAD_INN",
+      "residenceCodeAnalytic": "501",
+      "name": "GRENAD'INN",
+      "commercialName": "Grenad'Inn",
+      "brand": "UXCO STUDENT",
+      "city": "Bordeaux",
+      "cityAlias": "Bordeaux",
+      "address": "25 rue Jean Fleuret",
+      "postalCode": "33000",
+      "coordinates": {
+        "lat": 44.8366221,
+        "lng": -0.5843295
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 555,
+        "securityDeposit": 555,
+        "applicationFees": 165,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 520,
+          "securityDeposit": 555,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "2d5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "H2O",
+      "residenceCodeAnalytic": "122",
+      "name": "H2O",
+      "commercialName": "H2O",
+      "brand": "UXCO STUDENT",
+      "city": "La Rochelle",
+      "cityAlias": "La Rochelle",
+      "address": "24 rue de la Désirée",
+      "postalCode": "17000",
+      "coordinates": {
+        "lat": 46.1495417,
+        "lng": -1.1556679
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 655,
+        "securityDeposit": 655,
+        "applicationFees": 330,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 605,
+          "securityDeposit": 655,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "2f5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "HACKER",
+      "residenceCodeAnalytic": "504",
+      "name": "HACKER",
+      "commercialName": "Hacker",
+      "brand": "UXCO STUDENT",
+      "city": "Palaiseau",
+      "cityAlias": "Palaiseau",
+      "address": "20 Boulevard Thomas Gobert",
+      "postalCode": "91120",
+      "coordinates": {
+        "lat": 48.711789,
+        "lng": 2.2018513
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 550,
+        "securityDeposit": 550,
+        "applicationFees": 315,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 515,
+          "securityDeposit": 550,
+          "applicationFees": 90
+        }
+      }
+    },
+    {
+      "residenceId": "315644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "HUGO_PARK",
+      "residenceCodeAnalytic": "130",
+      "name": "HUGO PARK",
+      "commercialName": "Hugo Park",
+      "brand": "UXCO STUDENT",
+      "city": "Villeurbanne",
+      "cityAlias": "Lyon",
+      "address": "73 route de Genas",
+      "postalCode": "69100",
+      "coordinates": {
+        "lat": 45.754604,
+        "lng": 4.881438
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 555,
+        "securityDeposit": 555,
+        "applicationFees": 160,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 535,
+          "securityDeposit": 555,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "335644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "INTERNATIONALE",
+      "residenceCodeAnalytic": "055",
+      "name": "INTERNATIONALE",
+      "commercialName": "Internationale",
+      "brand": "UXCO STUDENT",
+      "city": "Champs-sur-Marne",
+      "cityAlias": "Champs-sur-Marne",
+      "address": "9 Avenue Blaise Pascal",
+      "postalCode": "77420",
+      "coordinates": {
+        "lat": 48.8408141,
+        "lng": 2.5945622
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 875,
+        "securityDeposit": 875,
+        "applicationFees": 180,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 845,
+          "securityDeposit": 875,
+          "applicationFees": 155
+        }
+      }
+    },
+    {
+      "residenceId": "355644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "JARDINS_DE_PASTEUR",
+      "residenceCodeAnalytic": "042",
+      "name": "JARDINS DE PASTEUR",
+      "commercialName": "Jardins De Pasteur",
+      "brand": "UXCO STUDENT",
+      "city": "Nîmes",
+      "cityAlias": "Nîmes",
+      "address": "268 avenue de Bir Hakeim",
+      "postalCode": "30000",
+      "coordinates": {
+        "lat": 43.8427823,
+        "lng": 4.3828074
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 650,
+        "securityDeposit": 650,
+        "applicationFees": 305,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 575,
+          "securityDeposit": 650,
+          "applicationFees": 165
+        }
+      }
+    },
+    {
+      "residenceId": "385644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "K7",
+      "residenceCodeAnalytic": "156",
+      "name": "K7",
+      "commercialName": "K7",
+      "brand": "UXCO STUDENT",
+      "city": "Schiltigheim",
+      "cityAlias": "Schiltigheim",
+      "address": "2 Allée de Stockholm",
+      "postalCode": "67300",
+      "coordinates": {
+        "lat": 48.6142488,
+        "lng": 7.7123653
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 955,
+        "securityDeposit": 955,
+        "applicationFees": 225,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 880,
+          "securityDeposit": 955,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "3a5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "KABANE",
+      "residenceCodeAnalytic": "500",
+      "name": "KABANE",
+      "commercialName": "Kabane",
+      "brand": "UXCO STUDENT",
+      "city": "Lattes",
+      "cityAlias": "Lattes",
+      "address": "285 chemin du Floréal",
+      "postalCode": "34970",
+      "coordinates": {
+        "lat": 43.5872328,
+        "lng": 3.8987417
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 595,
+        "securityDeposit": 595,
+        "applicationFees": 260,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 515,
+          "securityDeposit": 595,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "3e5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "KAIMAN",
+      "residenceCodeAnalytic": "145",
+      "name": "KAIMAN",
+      "commercialName": "Kaiman",
+      "brand": "UXCO STUDENT",
+      "city": "Nîmes",
+      "cityAlias": "Nîmes",
+      "address": "407 rue Brillat Savarin",
+      "postalCode": "30900",
+      "coordinates": {
+        "lat": 43.8210123,
+        "lng": 4.3171744
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1025,
+        "securityDeposit": 1025,
+        "applicationFees": 335,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 985,
+          "securityDeposit": 1025,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "405644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "KAMPUS_30",
+      "residenceCodeAnalytic": "129",
+      "name": "KAMPUS 30",
+      "commercialName": "Kampus 30",
+      "brand": "UXCO STUDENT",
+      "city": "Nîmes",
+      "cityAlias": "Nîmes",
+      "address": "66 Impasse Du Levraut",
+      "postalCode": "30900",
+      "coordinates": {
+        "lat": 43.8198721,
+        "lng": 4.3164129
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 585,
+        "securityDeposit": 585,
+        "applicationFees": 345,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 520,
+          "securityDeposit": 585,
+          "applicationFees": 125
+        }
+      }
+    },
+    {
+      "residenceId": "425644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LA_BISCUITERIE",
+      "residenceCodeAnalytic": "148",
+      "name": "LA BISCUITERIE",
+      "commercialName": "La Biscuiterie",
+      "brand": "UXCO STUDENT",
+      "city": "Caen",
+      "cityAlias": "Caen",
+      "address": "35 Quai François Mitterrand",
+      "postalCode": "14000",
+      "coordinates": {
+        "lat": 49.1821343,
+        "lng": -0.3516511
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 1155,
+        "securityDeposit": 1155,
+        "applicationFees": 150,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 1130,
+          "securityDeposit": 1155,
+          "applicationFees": 200
+        }
+      }
+    },
+    {
+      "residenceId": "445644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LA_GALERIE",
+      "residenceCodeAnalytic": "502",
+      "name": "LA GALERIE",
+      "commercialName": "La Galerie",
+      "brand": "UXCO STUDENT",
+      "city": "Cergy",
+      "cityAlias": "Cergy",
+      "address": "1 boulevard de l'Oise",
+      "postalCode": "95000",
+      "coordinates": {
+        "lat": 49.0320852,
+        "lng": 2.0866253
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1125,
+        "securityDeposit": 1125,
+        "applicationFees": 180,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 1055,
+          "securityDeposit": 1125,
+          "applicationFees": 155
+        }
+      }
+    },
+    {
+      "residenceId": "465644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LA_POMMERAIE",
+      "residenceCodeAnalytic": "142",
+      "name": "LA POMMERAIE",
+      "commercialName": "La Pommeraie",
+      "brand": "UXCO STUDENT",
+      "city": "Caen",
+      "cityAlias": "Caen",
+      "address": "14 Rue de La Girafe",
+      "postalCode": "14000",
+      "coordinates": {
+        "lat": 49.204727,
+        "lng": -0.365795
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 1135,
+        "securityDeposit": 1135,
+        "applicationFees": 235,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 1100,
+          "securityDeposit": 1135,
+          "applicationFees": 65
+        }
+      }
+    },
+    {
+      "residenceId": "485644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "L_APOTHICAIRE",
+      "residenceCodeAnalytic": "152",
+      "name": "L'APOTHICAIRE",
+      "commercialName": "L'Apothicaire",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "868 route de Ganges",
+      "postalCode": "34090",
+      "coordinates": {
+        "lat": 43.6334456,
+        "lng": 3.8508218
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 935,
+        "securityDeposit": 935,
+        "applicationFees": 240,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 900,
+          "securityDeposit": 935,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "4a5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "L_ATELIER",
+      "residenceCodeAnalytic": "138",
+      "name": "L'ATELIER",
+      "commercialName": "L'Atelier",
+      "brand": "UXCO STUDENT",
+      "city": "Saint-Étienne",
+      "cityAlias": "Saint-Étienne",
+      "address": "3 Rue de la Corre",
+      "postalCode": "42100",
+      "coordinates": {
+        "lat": 45.414718,
+        "lng": 4.3959691
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 865,
+        "securityDeposit": 865,
+        "applicationFees": 205,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 810,
+          "securityDeposit": 865,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "4c5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LE_124",
+      "residenceCodeAnalytic": "124",
+      "name": "LE 124",
+      "commercialName": "Le 124",
+      "brand": "UXCO STUDENT",
+      "city": "Marseille",
+      "cityAlias": "Marseille",
+      "address": "124 boulevard National",
+      "postalCode": "13003",
+      "coordinates": {
+        "lat": 43.3072437,
+        "lng": 5.3824723
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 670,
+        "securityDeposit": 670,
+        "applicationFees": 300,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 640,
+          "securityDeposit": 670,
+          "applicationFees": 130
+        }
+      }
+    },
+    {
+      "residenceId": "4e5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LE_LAB",
+      "residenceCodeAnalytic": "154",
+      "name": "LE LAB",
+      "commercialName": "Le Lab",
+      "brand": "UXCO STUDENT",
+      "city": "Loos",
+      "cityAlias": "Loos",
+      "address": "3 Rue du Professeur Jules Driessens",
+      "postalCode": "59120",
+      "coordinates": {
+        "lat": 50.6028321,
+        "lng": 3.0360276
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 1095,
+        "securityDeposit": 1095,
+        "applicationFees": 340,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 1065,
+          "securityDeposit": 1095,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "505644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LE_PARC_BELVEDERE",
+      "residenceCodeAnalytic": "052",
+      "name": "LE PARC BELVEDERE",
+      "commercialName": "Le Parc Belvédère",
+      "brand": "UXCO STUDENT",
+      "city": "Clermont-Ferrand",
+      "cityAlias": "Clermont-Ferrand",
+      "address": "68 avenue de L'Union Soviétique",
+      "postalCode": "63000",
+      "coordinates": {
+        "lat": 45.7811095,
+        "lng": 3.1043583
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 970,
+        "securityDeposit": 970,
+        "applicationFees": 340,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 895,
+          "securityDeposit": 970,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "525644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LE_SPOT",
+      "residenceCodeAnalytic": "153",
+      "name": "LE SPOT",
+      "commercialName": "Le Spot",
+      "brand": "UXCO STUDENT",
+      "city": "La Rochelle",
+      "cityAlias": "La Rochelle",
+      "address": "49 boulevard Joffre",
+      "postalCode": "17000",
+      "coordinates": {
+        "lat": 46.158864,
+        "lng": -1.141756
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 965,
+        "securityDeposit": 965,
+        "applicationFees": 165,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 925,
+          "securityDeposit": 965,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "545644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LE_THELEME",
+      "residenceCodeAnalytic": "141",
+      "name": "LE THELEME",
+      "commercialName": "Le Thélème",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "343 rue de l'Agathois",
+      "postalCode": "34080",
+      "coordinates": {
+        "lat": 43.6325321,
+        "lng": 3.824697
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 850,
+        "securityDeposit": 850,
+        "applicationFees": 350,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 810,
+          "securityDeposit": 850,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "565644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LE_VINCI",
+      "residenceCodeAnalytic": "050",
+      "name": "LE VINCI",
+      "commercialName": "Le Vinci",
+      "brand": "UXCO STUDENT",
+      "city": "Blois",
+      "cityAlias": "Blois",
+      "address": "1 Boulevard Vauban",
+      "postalCode": "41000",
+      "coordinates": {
+        "lat": 47.592506,
+        "lng": 1.341312
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1040,
+        "securityDeposit": 1040,
+        "applicationFees": 235,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 1010,
+          "securityDeposit": 1040,
+          "applicationFees": 190
+        }
+      }
+    },
+    {
+      "residenceId": "585644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LEMON",
+      "residenceCodeAnalytic": "133",
+      "name": "LEMON",
+      "commercialName": "Lemon",
+      "brand": "UXCO STUDENT",
+      "city": "Brest",
+      "cityAlias": "Brest",
+      "address": "90 Rue du Cap Horn",
+      "postalCode": "29200",
+      "coordinates": {
+        "lat": 48.3913122,
+        "lng": -4.5024653
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 455,
+        "securityDeposit": 455,
+        "applicationFees": 330,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 390,
+          "securityDeposit": 455,
+          "applicationFees": 115
+        }
+      }
+    },
+    {
+      "residenceId": "5a5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LES_ARENES_D_ORSAY",
+      "residenceCodeAnalytic": "125",
+      "name": "LES ARENES D'ORSAY",
+      "commercialName": "Les Arènes d'Orsay",
+      "brand": "UXCO STUDENT",
+      "city": "Limoges",
+      "cityAlias": "Limoges",
+      "address": "43 rue du Petit-Tour",
+      "postalCode": "87000",
+      "coordinates": {
+        "lat": 45.8319464,
+        "lng": 1.2488769
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 1030,
+        "securityDeposit": 1030,
+        "applicationFees": 205,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 1005,
+          "securityDeposit": 1030,
+          "applicationFees": 55
+        }
+      }
+    },
+    {
+      "residenceId": "5d5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LES_MOULINS",
+      "residenceCodeAnalytic": "002",
+      "name": "LES MOULINS",
+      "commercialName": "Les Moulins",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "2400 avenue des Moulins",
+      "postalCode": "34080",
+      "coordinates": {
+        "lat": 43.6203121,
+        "lng": 3.8328848
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 765,
+        "securityDeposit": 765,
+        "applicationFees": 180,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 720,
+          "securityDeposit": 765,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "5f5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "LUCIEN_JONAS",
+      "residenceCodeAnalytic": "051",
+      "name": "LUCIEN JONAS",
+      "commercialName": "Lucien Jonas",
+      "brand": "UXCO STUDENT",
+      "city": "Aulnoy-lez-Valenciennes",
+      "cityAlias": "Aulnoy-lez-Valenciennes",
+      "address": "3 Rue des Bessemers",
+      "postalCode": "59300",
+      "coordinates": {
+        "lat": 50.3327352,
+        "lng": 3.5113368
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 995,
+        "securityDeposit": 995,
+        "applicationFees": 220,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 970,
+          "securityDeposit": 995,
+          "applicationFees": 160
+        }
+      }
+    },
+    {
+      "residenceId": "615644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "MEGARA",
+      "residenceCodeAnalytic": "139",
+      "name": "MEGARA",
+      "commercialName": "Megara",
+      "brand": "UXCO STUDENT",
+      "city": "Lyon",
+      "cityAlias": "Lyon",
+      "address": "13 Rue Lortet",
+      "postalCode": "69007",
+      "coordinates": {
+        "lat": 45.742899,
+        "lng": 4.8358657
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 800,
+        "securityDeposit": 800,
+        "applicationFees": 180,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 770,
+          "securityDeposit": 800,
+          "applicationFees": 55
+        }
+      }
+    },
+    {
+      "residenceId": "635644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "METROPOLIS",
+      "residenceCodeAnalytic": "128",
+      "name": "METROPOLIS",
+      "commercialName": "Metropolis",
+      "brand": "UXCO STUDENT",
+      "city": "Rennes",
+      "cityAlias": "Rennes",
+      "address": "86 rue de Saint-Brieuc",
+      "postalCode": "35000",
+      "coordinates": {
+        "lat": 48.1148214,
+        "lng": -1.7068241
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 760,
+        "securityDeposit": 760,
+        "applicationFees": 165,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 715,
+          "securityDeposit": 760,
+          "applicationFees": 80
+        }
+      }
+    },
+    {
+      "residenceId": "655644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "NEW_LEGEND",
+      "residenceCodeAnalytic": "131",
+      "name": "NEW LEGEND",
+      "commercialName": "New Legend",
+      "brand": "UXCO STUDENT",
+      "city": "Lyon",
+      "cityAlias": "Lyon",
+      "address": "2 rue du Vercors",
+      "postalCode": "69007",
+      "coordinates": {
+        "lat": 45.7251234,
+        "lng": 4.8265216
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 740,
+        "securityDeposit": 740,
+        "applicationFees": 260,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 710,
+          "securityDeposit": 740,
+          "applicationFees": 65
+        }
+      }
+    },
+    {
+      "residenceId": "685644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "OCEAN_BREAK",
+      "residenceCodeAnalytic": "140",
+      "name": "OCEAN BREAK",
+      "commercialName": "Ocean Break",
+      "brand": "UXCO STUDENT",
+      "city": "Nantes",
+      "cityAlias": "Nantes",
+      "address": "2 rue de Grande-Bretagne",
+      "postalCode": "44300",
+      "coordinates": {
+        "lat": 47.2597696,
+        "lng": -1.5101665
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 1090,
+        "securityDeposit": 1090,
+        "applicationFees": 200,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 1040,
+          "securityDeposit": 1090,
+          "applicationFees": 60
+        }
+      }
+    },
+    {
+      "residenceId": "6a5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "OMEGA",
+      "residenceCodeAnalytic": "106",
+      "name": "OMEGA",
+      "commercialName": "Omega",
+      "brand": "UXCO STUDENT",
+      "city": "Rouen",
+      "cityAlias": "Rouen",
+      "address": "9 Rue Duguay Trouin",
+      "postalCode": "76000",
+      "coordinates": {
+        "lat": 49.4423248,
+        "lng": 1.0816727
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 525,
+        "securityDeposit": 525,
+        "applicationFees": 320,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 450,
+          "securityDeposit": 525,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "6c5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "OXYGENE",
+      "residenceCodeAnalytic": "107",
+      "name": "OXYGENE",
+      "commercialName": "Oxygène",
+      "brand": "UXCO STUDENT",
+      "city": "Lyon",
+      "cityAlias": "Lyon",
+      "address": "3 rue Béchevelin",
+      "postalCode": "69007",
+      "coordinates": {
+        "lat": 45.7542317,
+        "lng": 4.8424813
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1125,
+        "securityDeposit": 1125,
+        "applicationFees": 225,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 1060,
+          "securityDeposit": 1125,
+          "applicationFees": 165
+        }
+      }
+    },
+    {
+      "residenceId": "6e5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "PALO_ALTO",
+      "residenceCodeAnalytic": "046",
+      "name": "PALO ALTO",
+      "commercialName": "Palo Alto",
+      "brand": "UXCO STUDENT",
+      "city": "Béziers",
+      "cityAlias": "Béziers",
+      "address": "29 rue de Lorraine",
+      "postalCode": "34500",
+      "coordinates": {
+        "lat": 43.3462831,
+        "lng": 3.2211995
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 525,
+        "securityDeposit": 525,
+        "applicationFees": 295,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 470,
+          "securityDeposit": 525,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "705644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "PALO_ALTO_2",
+      "residenceCodeAnalytic": "046",
+      "name": "PALO ALTO 2",
+      "commercialName": "Palo Alto 2",
+      "brand": "UXCO STUDENT",
+      "city": "Béziers",
+      "cityAlias": "Béziers",
+      "address": "26 rue d'Alsace",
+      "postalCode": "34500",
+      "coordinates": {
+        "lat": 43.3468059,
+        "lng": 3.2215451
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 580,
+        "securityDeposit": 580,
+        "applicationFees": 305,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 530,
+          "securityDeposit": 580,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "725644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "PARC_AVENUE",
+      "residenceCodeAnalytic": "037",
+      "name": "PARC AVENUE",
+      "commercialName": "Parc Avenue",
+      "brand": "UXCO STUDENT",
+      "city": "Annemasse",
+      "cityAlias": "Annemasse",
+      "address": "1 Rue d'Etrembières",
+      "postalCode": "74100",
+      "coordinates": {
+        "lat": 46.1910819,
+        "lng": 6.2339082
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 715,
+        "securityDeposit": 715,
+        "applicationFees": 340,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 670,
+          "securityDeposit": 715,
+          "applicationFees": 175
+        }
+      }
+    },
+    {
+      "residenceId": "745644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "PARC_AVENUE_2",
+      "residenceCodeAnalytic": "037",
+      "name": "PARC AVENUE 2",
+      "commercialName": "Parc Avenue 2",
+      "brand": "UXCO STUDENT",
+      "city": "Annemasse",
+      "cityAlias": "Annemasse",
+      "address": "6 rue Marc Courriard",
+      "postalCode": "74100",
+      "coordinates": {
+        "lat": 46.1905511,
+        "lng": 6.2342325
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1180,
+        "securityDeposit": 1180,
+        "applicationFees": 290,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 1120,
+          "securityDeposit": 1180,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "765644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "PIXEL",
+      "residenceCodeAnalytic": "149",
+      "name": "PIXEL",
+      "commercialName": "Pixel",
+      "brand": "UXCO STUDENT",
+      "city": "Nantes",
+      "cityAlias": "Nantes",
+      "address": "15 rue Rose Dieng-Kuntz",
+      "postalCode": "44300",
+      "coordinates": {
+        "lat": 47.2836822,
+        "lng": -1.5152951
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 695,
+        "securityDeposit": 695,
+        "applicationFees": 225,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 665,
+          "securityDeposit": 695,
+          "applicationFees": 170
+        }
+      }
+    },
+    {
+      "residenceId": "785644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "REPUBLIQUE",
+      "residenceCodeAnalytic": "073",
+      "name": "REPUBLIQUE",
+      "commercialName": "République",
+      "brand": "UXCO STUDENT",
+      "city": "Avignon",
+      "cityAlias": "Avignon",
+      "address": "25 rue de la République",
+      "postalCode": "84000",
+      "coordinates": {
+        "lat": 43.9462598,
+        "lng": 4.8058639
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 485,
+        "securityDeposit": 485,
+        "applicationFees": 330,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 430,
+          "securityDeposit": 485,
+          "applicationFees": 75
+        }
+      }
+    },
+    {
+      "residenceId": "7a5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "RESID_OC",
+      "residenceCodeAnalytic": "047",
+      "name": "RESID'OC",
+      "commercialName": "Résid'Oc",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "57 rue Favre de Saint-Castor",
+      "postalCode": "34080",
+      "coordinates": {
+        "lat": 43.6156785,
+        "lng": 3.8269195
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 1095,
+        "securityDeposit": 1095,
+        "applicationFees": 245,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 1030,
+          "securityDeposit": 1095,
+          "applicationFees": 105
+        }
+      }
+    },
+    {
+      "residenceId": "7c5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "RESID_OC_II",
+      "residenceCodeAnalytic": "111",
+      "name": "RESID'OC II",
+      "commercialName": "Résid'Oc II",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "57 rue Favre de Saint-Castor",
+      "postalCode": "34080",
+      "coordinates": {
+        "lat": 43.6156785,
+        "lng": 3.8269195
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 735,
+        "securityDeposit": 735,
+        "applicationFees": 300,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 705,
+          "securityDeposit": 735,
+          "applicationFees": 105
+        }
+      }
+    },
+    {
+      "residenceId": "7e5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "SIGMA",
+      "residenceCodeAnalytic": "121",
+      "name": "SIGMA",
+      "commercialName": "Sigma",
+      "brand": "UXCO STUDENT",
+      "city": "Reims",
+      "cityAlias": "Reims",
+      "address": "70 Avenue de Laon",
+      "postalCode": "51100",
+      "coordinates": {
+        "lat": 49.2657938,
+        "lng": 4.0260722
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 1010,
+        "securityDeposit": 1010,
+        "applicationFees": 180,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 935,
+          "securityDeposit": 1010,
+          "applicationFees": 170
+        }
+      }
+    },
+    {
+      "residenceId": "805644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "STATION_59",
+      "residenceCodeAnalytic": "510",
+      "name": "STATION 59",
+      "commercialName": "Station 59",
+      "brand": "UXCO STUDENT",
+      "city": "Villeneuve-d'Ascq",
+      "cityAlias": "Villeneuve-d'Ascq",
+      "address": "14 rue des Vétérans",
+      "postalCode": "59650",
+      "coordinates": {
+        "lat": 50.6236176,
+        "lng": 3.1294846
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 655,
+        "securityDeposit": 655,
+        "applicationFees": 285,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 625,
+          "securityDeposit": 655,
+          "applicationFees": 110
+        }
+      }
+    },
+    {
+      "residenceId": "825644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "STATION_59_2",
+      "residenceCodeAnalytic": "510",
+      "name": "STATION 59 2",
+      "commercialName": "Station 59 2",
+      "brand": "UXCO STUDENT",
+      "city": "Villeneuve-d'Ascq",
+      "cityAlias": "Villeneuve-d'Ascq",
+      "address": "10 rue des Vétérans",
+      "postalCode": "59650",
+      "coordinates": {
+        "lat": 50.6236095,
+        "lng": 3.1333637
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 1175,
+        "securityDeposit": 1175,
+        "applicationFees": 345,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 1135,
+          "securityDeposit": 1175,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "845644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "STREAMLINE",
+      "residenceCodeAnalytic": "146",
+      "name": "STREAMLINE",
+      "commercialName": "Streamline",
+      "brand": "UXCO STUDENT",
+      "city": "Boulogne-Billancourt",
+      "cityAlias": "Boulogne-Billancourt",
+      "address": "73 Rue de Sèvres",
+      "postalCode": "92100",
+      "coordinates": {
+        "lat": 48.8335184,
+        "lng": 2.2289899
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 955,
+        "securityDeposit": 955,
+        "applicationFees": 220,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 905,
+          "securityDeposit": 955,
+          "applicationFees": 75
+        }
+      }
+    },
+    {
+      "residenceId": "865644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "STUD_Y",
+      "residenceCodeAnalytic": "503",
+      "name": "STUD'Y",
+      "commercialName": "Stud'Y",
+      "brand": "UXCO STUDENT",
+      "city": "Saint-Denis",
+      "cityAlias": "Saint-Denis",
+      "address": "84 Boulevard Marcel Sembat",
+      "postalCode": "93200",
+      "coordinates": {
+        "lat": 48.935362,
+        "lng": 2.347961
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 650,
+        "securityDeposit": 650,
+        "applicationFees": 295,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 620,
+          "securityDeposit": 650,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "885644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "TERMINAL_94",
+      "residenceCodeAnalytic": "137",
+      "name": "TERMINAL 94",
+      "commercialName": "Terminal 94",
+      "brand": "UXCO STUDENT",
+      "city": "Orly",
+      "cityAlias": "Orly",
+      "address": "13 rue Christophe Colomb",
+      "postalCode": "94310",
+      "coordinates": {
+        "lat": 48.7508506,
+        "lng": 2.41764
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1035,
+        "securityDeposit": 1035,
+        "applicationFees": 350,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 995,
+          "securityDeposit": 1035,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "8a5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "THALES",
+      "residenceCodeAnalytic": "127",
+      "name": "THALES",
+      "commercialName": "Thalès",
+      "brand": "UXCO STUDENT",
+      "city": "Toulouse",
+      "cityAlias": "Toulouse",
+      "address": "6 avenue des Herbettes",
+      "postalCode": "31400",
+      "coordinates": {
+        "lat": 43.5778322,
+        "lng": 1.4717227
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 1160,
+        "securityDeposit": 1160,
+        "applicationFees": 285,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 1135,
+          "securityDeposit": 1160,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "8c5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "TIME",
+      "residenceCodeAnalytic": "134",
+      "name": "TIME",
+      "commercialName": "Time",
+      "brand": "UXCO STUDENT",
+      "city": "Saint-Martin-le-Vinoux",
+      "cityAlias": "Saint-Martin-le-Vinoux",
+      "address": "72 Avenue du Général Leclerc",
+      "postalCode": "38950",
+      "coordinates": {
+        "lat": 45.2141716,
+        "lng": 5.6987058
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 795,
+        "securityDeposit": 795,
+        "applicationFees": 330,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 745,
+          "securityDeposit": 795,
+          "applicationFees": 0
+        }
+      }
+    },
+    {
+      "residenceId": "8e5644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "TROPICAMPUS",
+      "residenceCodeAnalytic": "016",
+      "name": "TROPICAMPUS",
+      "commercialName": "Tropicampus",
+      "brand": "UXCO STUDENT",
+      "city": "Montpellier",
+      "cityAlias": "Montpellier",
+      "address": "1101 avenue d'Agropolis",
+      "postalCode": "34090",
+      "coordinates": {
+        "lat": 43.6461984,
+        "lng": 3.8686021
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "stagiaire",
+        "baseRent": 500,
+        "securityDeposit": 500,
+        "applicationFees": 180,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 475,
+          "securityDeposit": 500,
+          "applicationFees": 60
+        }
+      }
+    },
+    {
+      "residenceId": "905644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "UPPEHALLS",
+      "residenceCodeAnalytic": "147",
+      "name": "UPPeHALLS",
+      "commercialName": "UPPeHALLS",
+      "brand": "UXCO STUDENT",
+      "city": "Le Petit-Quevilly",
+      "cityAlias": "Le Petit-Quevilly",
+      "address": "85 avenue Jean Jaurès",
+      "postalCode": "76140",
+      "coordinates": {
+        "lat": 49.426977,
+        "lng": 1.064841
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 705,
+        "securityDeposit": 705,
+        "applicationFees": 275,
+        "offers": {
+          "offerLabel": "Offre rentrée 2026",
+          "baseRent": 630,
+          "securityDeposit": 705,
+          "applicationFees": 125
+        }
+      }
+    },
+    {
+      "residenceId": "925644a8-4fa7-ef11-b8e9-6045bd19a503",
+      "residenceCode": "VALHALLA",
+      "residenceCodeAnalytic": "506",
+      "name": "VALHALLA",
+      "commercialName": "Valhalla",
+      "brand": "UXCO STUDENT",
+      "city": "Rouen",
+      "cityAlias": "Rouen",
+      "address": "5Bis Rue Blaise Pascal",
+      "postalCode": "76100",
+      "coordinates": {
+        "lat": 49.428573,
+        "lng": 1.083346
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "midStay",
+        "baseRent": 1005,
+        "securityDeposit": 1005,
+        "applicationFees": 305,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 960,
+          "securityDeposit": 1005,
+          "applicationFees": 200
+        }
+      }
+    },
+    {
+      "residenceId": "359b3195-7814-f011-998a-6045bd6bf874",
+      "residenceCode": "BAKER_HILL",
+      "residenceCodeAnalytic": "511",
+      "name": "BAKER HILL",
+      "commercialName": "Baker Hill",
+      "brand": "UXCO STUDENT",
+      "city": "Saint-Étienne",
+      "cityAlias": "Saint-Étienne",
+      "address": "19 Rue de Montferré",
+      "postalCode": "42100",
+      "coordinates": {
+        "lat": 45.4266259,
+        "lng": 4.3844757
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 615,
+        "securityDeposit": 615,
+        "applicationFees": 340,
+        "offers": {
+          "offerLabel": "Offre Early Booking",
+          "baseRent": 575,
+          "securityDeposit": 615,
+          "applicationFees": 80
+        }
+      }
+    },
+    {
+      "residenceId": "6ff9af84-6e14-f011-998a-6045bd6d55ca",
+      "residenceCode": "ATLAS",
+      "residenceCodeAnalytic": "512",
+      "name": "ATLAS",
+      "commercialName": "Atlas",
+      "brand": "UXCO STUDENT",
+      "city": "Toulouse",
+      "cityAlias": "Toulouse",
+      "address": "26 rue de la caravelle",
+      "postalCode": "31500",
+      "coordinates": {
+        "lat": 43.6160957,
+        "lng": 1.4617875
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 515,
+        "securityDeposit": 515,
+        "applicationFees": 255,
+        "offers": {
+          "offerLabel": "Offre WEB",
+          "baseRent": 495,
+          "securityDeposit": 515,
+          "applicationFees": 170
+        }
+      }
+    },
+    {
+      "residenceId": "5aff1ab4-ff07-f111-8407-7ced8d8535a3",
+      "residenceCode": "UXCO_STUDENT_SAINT_OUEN",
+      "residenceCodeAnalytic": "516",
+      "name": "UXCO STUDENT SAINT OUEN",
+      "commercialName": "Uxco Student Saint Ouen",
+      "brand": "UXCO STUDENT",
+      "city": "Saint-Ouen",
+      "cityAlias": "Saint-Ouen",
+      "address": "2-3 Rue Alexandre Dumas",
+      "postalCode": "93400",
+      "coordinates": {
+        "lat": 48.905708,
+        "lng": 2.327565
+      },
+      "residenceAvailability": "AVAILABLE",
+      "pricing": {
+        "lengthOfStay": "longStay",
+        "baseRent": 545,
+        "securityDeposit": 545,
+        "applicationFees": 175,
+        "offers": {
+          "offerLabel": "Offre Flash",
+          "baseRent": 495,
+          "securityDeposit": 545,
+          "applicationFees": 50
+        }
+      }
     }
   ]
 }

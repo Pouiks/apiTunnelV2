@@ -63,7 +63,8 @@ function applyAdminFlag(residence) {
   const { code, label, typologies: flagTypos } = ov.flag;
   const tag = { code, label };
 
-  const detailTypos = residenceDetailsById[residence.residenceId]?.typologies || [];
+  const detailTypos =
+    residenceDetailsById[residence.residenceId]?.typologies || [];
   const typoCodes = detailTypos.map((t) => t.typologyCode).filter(Boolean);
   const typologyTags = { ...(residence.typologyTags || {}) };
   const targeted =
@@ -139,15 +140,25 @@ app.get("/docs", (req, res) => {
 </html>`);
 });
 
-app.get("/residences", (req, res) => {
-  const residences = allResidencesPayload.residences || [];
+app.get("/api/residences", (req, res) => {
+  let residences = allResidencesPayload.residences || [];
 
+  const { brand } = req.query;
+  if (brand) {
+    const brandKey = brand.toLocaleLowerCase();
+    residences = residences.filter(
+      (r) => r.brand.toLocaleLowerCase().split(" ")[0] === brandKey,
+    );
+  }
+  console.log(`Filtered residences by brand: ${brand || "all"}`);
+  console.log(`Total residences returned: ${residences}`);
   res.json({
     residences: residences.map(applyAdminFlag),
+    photos: allResidencesPayload.photos || [],
   });
 });
 
-app.get("/cities/:cityAlias/residences", (req, res) => {
+app.get("/api/cities/:cityAlias/residences", (req, res) => {
   const cityAlias = req.params.cityAlias.toLocaleLowerCase();
   const residences = allResidencesPayload.residences || [];
 
@@ -163,7 +174,7 @@ app.get("/cities/:cityAlias/residences", (req, res) => {
   });
 });
 
-app.get("/cities/:cityAlias/residences/:id", (req, res) => {
+app.get("/api/cities/:cityAlias/residences/:id", (req, res) => {
   const { cityAlias, id: residenceId } = req.params;
 
   const detail = residenceDetailsById[residenceId];
@@ -179,7 +190,7 @@ app.get("/cities/:cityAlias/residences/:id", (req, res) => {
   const withPhotos = applyAdminPhotos(withFlags);
 
   res.json({
-    ...withPhotos,
+    ...detail,
     cityAlias,
   });
 });
